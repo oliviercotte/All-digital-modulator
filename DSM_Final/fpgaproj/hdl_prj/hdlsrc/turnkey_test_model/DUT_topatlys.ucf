@@ -1,0 +1,20 @@
+# XUP Atlys Spartan-6 development board
+
+
+# Timing Specification Constraints
+
+NET "CLKIN" TNM_NET = "TN_CLKIN";
+TIMESPEC "TS_FPGA_CLK" = PERIOD "TN_CLKIN" 100 MHz;
+
+# FPGA Pin Location Constrain
+
+NET "CLKIN" LOC = "L15";
+NET "RESETIN_n" LOC = "T15";
+NET "LEDs<0>" LOC = "U18";
+NET "LEDs<1>" LOC = "M14";
+NET "LEDs<2>" LOC = "N14";
+NET "LEDs<3>" LOC = "L14";
+NET "LEDs<4>" LOC = "M13";
+NET "LEDs<5>" LOC = "D4";
+NET "LEDs<6>" LOC = "P16";
+NET "LEDs<7>" LOC = "N12";

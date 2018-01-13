@@ -1,0 +1,34 @@
+if { [catch {vsimulink trigonometric_function_generator -t 32.552083333333ns -voptargs=+acc  } errmsg] } {
+    echo "Loading simulation and HDL Verifier library failed."; 
+    echo $errmsg; 
+    quit -f; 
+}
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim 
+# Start time: 07:31:15 on Jan 08,2018
+# ** Error: (vsim-3000) Invalid resolution limit (-t 32.552083333333ns).
+# 
+# Use the -help option for complete vsim usage.
+# Error loading design
+# Error: Error loading design
+#        Executing onElabError command(s): echo "Loading simulation and HDL Verifier library failed."; quit -f
+# Loading simulation and HDL Verifier library failed.
+# End time: 07:31:15 on Jan 08,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

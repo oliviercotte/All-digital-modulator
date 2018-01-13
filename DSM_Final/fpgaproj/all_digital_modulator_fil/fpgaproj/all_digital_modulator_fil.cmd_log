@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/all_digital_modulator_fil/fpgaproj/all_digital_modulator_fil.xst" -ofn "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/all_digital_modulator_fil/fpgaproj/all_digital_modulator_fil.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/all_digital_modulator_fil/filsrc/all_digital_modulator_fil.ucf -p xc6slx45-csg324-2 all_digital_modulator_fil.ngc all_digital_modulator_fil.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o all_digital_modulator_fil_map.ncd all_digital_modulator_fil.ngd all_digital_modulator_fil.pcf 
+par -w -intstyle ise -ol high -mt off all_digital_modulator_fil_map.ncd all_digital_modulator_fil.ncd all_digital_modulator_fil.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml all_digital_modulator_fil.twx all_digital_modulator_fil.ncd -o all_digital_modulator_fil.twr all_digital_modulator_fil.pcf 
+bitgen -intstyle ise -f all_digital_modulator_fil.ut all_digital_modulator_fil.ncd 

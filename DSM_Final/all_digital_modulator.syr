@@ -1,0 +1,1056 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: all_digital_modulator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "all_digital_modulator.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "all_digital_modulator"
+Output Format                      : NGC
+Target Device                      : xc6slx150-3-fgg484
+
+---- Source Options
+Top Module Name                    : all_digital_modulator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\ipcore_dir\Halfband_1_61_44.vhd" into library work
+Parsing entity <Halfband_1_61_44>.
+Parsing architecture <Halfband_1_61_44_a> of entity <halfband_1_61_44>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\ipcore_dir\Halfband_2_122_88.vhd" into library work
+Parsing entity <Halfband_2_122_88>.
+Parsing architecture <Halfband_2_122_88_a> of entity <halfband_2_122_88>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\ipcore_dir\Halfband_3_245_76.vhd" into library work
+Parsing entity <Halfband_3_245_76>.
+Parsing architecture <Halfband_3_245_76_a> of entity <halfband_3_245_76>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\ipcore_dir\Clock_Generator_1.vhd" into library work
+Parsing entity <Clock_Generator_1>.
+Parsing architecture <xilinx> of entity <clock_generator_1>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\ipcore_dir\dds.vhd" into library work
+Parsing entity <dds>.
+Parsing architecture <dds_a> of entity <dds>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\Sign.vhd" into library work
+Parsing entity <Sign>.
+Parsing architecture <rtl> of entity <sign>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\Quantizer.vhd" into library work
+Parsing entity <Quantizer>.
+Parsing architecture <rtl> of entity <quantizer>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\Fourth_order_delta_sigma_modulator_pkg.vhd" into library work
+Parsing package <Fourth_order_delta_sigma_modulator_pkg>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\fixed_float_types_c.vhdl" into library work
+Parsing package <fixed_float_types>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\Eight_Order_Delta_Sigma_Modulator_pkg.vhd" into library work
+Parsing package <Eight_order_delta_sigma_modulator_pkg>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\pll_clock.vhd" into library work
+Parsing entity <PLL_CLOCK>.
+Parsing architecture <BEHAVIORAL> of entity <pll_clock>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\Halfband_4_491_52.vhd" into library work
+Parsing entity <Halfband_4_491_52>.
+Parsing architecture <rtl> of entity <halfband_4_491_52>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\Fourth_order_delta_sigma_modulator.vhd" into library work
+Parsing entity <Fourth_order_delta_sigma_modulator>.
+Parsing architecture <rtl> of entity <fourth_order_delta_sigma_modulator>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\fixed_pkg_c.vhdl" into library work
+Parsing package <fixed_pkg>.
+Parsing package body <fixed_pkg>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\Eight_order_delta_sigma_modulator.vhd" into library work
+Parsing entity <Eight_order_delta_sigma_modulator>.
+Parsing architecture <rtl> of entity <eight_order_delta_sigma_modulator>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\Channel_Filter.vhd" into library work
+Parsing entity <Channel_Filter>.
+Parsing architecture <Channel_Filter_a> of entity <channel_filter>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" into library work
+Parsing entity <all_digital_modulator>.
+Parsing architecture <Behavioral> of entity <all_digital_modulator>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:746 - "C:\Newcomputer\DSM_Final\DSM_Final\fixed_pkg_c.vhdl" Line 1469: Range is empty (null range)
+WARNING:HDLCompiler:746 - "C:\Newcomputer\DSM_Final\DSM_Final\fixed_pkg_c.vhdl" Line 1470: Range is empty (null range)
+WARNING:HDLCompiler:746 - "C:\Newcomputer\DSM_Final\DSM_Final\fixed_pkg_c.vhdl" Line 1471: Range is empty (null range)
+
+Elaborating entity <all_digital_modulator> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <PLL_CLOCK> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <Clock_Generator_1> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <dds> (architecture <dds_a>) from library <work>.
+
+Elaborating entity <Channel_Filter> (architecture <Channel_Filter_a>) from library <work>.
+
+Elaborating entity <Halfband_1_61_44> (architecture <Halfband_1_61_44_a>) from library <work>.
+
+Elaborating entity <Halfband_2_122_88> (architecture <Halfband_2_122_88_a>) from library <work>.
+
+Elaborating entity <Halfband_3_245_76> (architecture <Halfband_3_245_76_a>) from library <work>.
+
+Elaborating entity <Halfband_4_491_52> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" Line 300: Assignment to modulator_input ignored, since the identifier is never used
+
+Elaborating entity <Fourth_order_delta_sigma_modulator> (architecture <rtl>) from library <work>.
+
+Elaborating entity <Quantizer> (architecture <rtl>) from library <work>.
+
+Elaborating entity <Sign> (architecture <rtl>) from library <work>.
+
+Elaborating entity <Eight_order_delta_sigma_modulator> (architecture <rtl>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <all_digital_modulator>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd".
+        GEN_DIGITAL_UP_CONVERTER_EN = true
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" line 205: Output port <CLKFBOUT_OUT> of the instance <U0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" line 238: Output port <rfd> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" line 238: Output port <rdy> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" line 247: Output port <rfd> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" line 247: Output port <rdy> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" line 256: Output port <rfd> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" line 256: Output port <rdy> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" line 265: Output port <rfd> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" line 265: Output port <rdy> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" line 274: Output port <ce_out> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" line 304: Output port <ce_out> of the instance <U8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" line 315: Output port <ce_out> of the instance <U9> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <all_digital_modulator> synthesized.
+
+Synthesizing Unit <PLL_CLOCK>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\pll_clock.vhd".
+    Summary:
+	no macro.
+Unit <PLL_CLOCK> synthesized.
+
+Synthesizing Unit <Clock_Generator_1>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\ipcore_dir\Clock_Generator_1.vhd".
+    Summary:
+	no macro.
+Unit <Clock_Generator_1> synthesized.
+
+Synthesizing Unit <Halfband_4_491_52>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\Halfband_4_491_52.vhd".
+    Found 34-bit register for signal <delay_pipeline<0>>.
+    Found 34-bit register for signal <delay_pipeline<1>>.
+    Found 34-bit register for signal <delay_pipeline<2>>.
+    Found 34-bit register for signal <delay_pipeline<3>>.
+    Found 36-bit register for signal <sumdelay_pipeline1<0>>.
+    Found 36-bit register for signal <sumdelay_pipeline1<1>>.
+    Found 36-bit register for signal <output_register>.
+    Found 2-bit register for signal <cur_count>.
+    Found 2-bit adder for signal <cur_count[1]_GND_20_o_add_1_OUT> created at line 123.
+    Found 37-bit adder for signal <add_temp> created at line 173.
+    Found 37-bit adder for signal <add_temp_1> created at line 178.
+    Found 37-bit adder for signal <add_temp_2> created at line 194.
+    Found 34x35-bit multiplier for signal <mul_temp> created at line 147.
+    Found 34x35-bit multiplier for signal <mul_temp_1> created at line 154.
+    Found 34x35-bit multiplier for signal <mul_temp_2> created at line 161.
+    Found 34x35-bit multiplier for signal <mul_temp_3> created at line 168.
+    Found 2-bit comparator lessequal for signal <n0000> created at line 120
+    Summary:
+	inferred   4 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 246 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  15 Multiplexer(s).
+Unit <Halfband_4_491_52> synthesized.
+
+Synthesizing Unit <Fourth_order_delta_sigma_modulator>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\Fourth_order_delta_sigma_modulator.vhd".
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy> equivalent to <kconst_1> has been removed
+    Found 36-bit register for signal <Digital_PCM_signal_1>.
+    Found 36-bit register for signal <Gain_out1_1>.
+    Found 36-bit register for signal <Delay2_out1>.
+    Found 36-bit register for signal <Delay_out1>.
+    Found 36-bit register for signal <Intergrator_2>.
+    Found 36-bit register for signal <Quantizer_input>.
+    Found 1-bit register for signal <kconst_1>.
+    Found 36-bit subtractor for signal <_n0229> created at line 106.
+    Found 36-bit subtractor for signal <_n0221> created at line 119.
+    Found 36-bit adder for signal <Sum3_out1> created at line 119.
+    Found 36-bit subtractor for signal <_n0223> created at line 128.
+    Found 36-bit adder for signal <Sum7_out1> created at line 128.
+    Found 36-bit subtractor for signal <_n0225> created at line 100.
+    Found 36-bit subtractor for signal <_n0226> created at line 100.
+    Found 36-bit adder for signal <Integrator_3> created at line 100.
+    Found 36-bit subtractor for signal <_n0228> created at line 106.
+    Found 36-bit adder for signal <Integrator_1> created at line 106.
+    Found 36x36-bit multiplier for signal <Gain_mul_temp> created at line 239.
+    Found 36x36-bit multiplier for signal <Gain4_mul_temp> created at line 254.
+    Found 36x36-bit multiplier for signal <Gain3_mul_temp> created at line 269.
+    Found 36x36-bit multiplier for signal <Gain2_mul_temp> created at line 272.
+    Found 36x36-bit multiplier for signal <Gain1_mul_temp> created at line 289.
+    Found 26x36-bit multiplier for signal <n0107> created at line 292.
+    Found 28x36-bit multiplier for signal <n0116> created at line 320.
+    WARNING:Xst:2404 -  FFs/Latches <kconst_1<35:25>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <kconst_1<23:23>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <kconst_1<21:20>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <kconst_1<17:16>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <kconst_1<14:14>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <kconst_1<2:2>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch3_reg<0><35:0>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch1_reg<0><35:0>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch_reg<0><35:0>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch3_reg<1><35:0>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch2_reg<0><35:0>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch2_reg<1><35:0>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch1_reg<1><35:0>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch_reg<1><35:0>> (without init value) have a constant value of 0 in block <Fourth_order_delta_sigma_modulator>.
+    Summary:
+	inferred   7 Multiplier(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred 217 D-type flip-flop(s).
+Unit <Fourth_order_delta_sigma_modulator> synthesized.
+
+Synthesizing Unit <Quantizer>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\Quantizer.vhd".
+    Found 36-bit comparator greater for signal <GND_24_o_u_signed[35]_LessThan_2_o> created at line 39
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Quantizer> synthesized.
+
+Synthesizing Unit <Sign>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\Sign.vhd".
+    Found 36-bit comparator greater for signal <GND_25_o_u_signed[35]_LessThan_2_o> created at line 39
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Sign> synthesized.
+
+Synthesizing Unit <Eight_order_delta_sigma_modulator>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\Eight_order_delta_sigma_modulator.vhd".
+    Register <kconst_1_dummy_dummy> equivalent to <kconst_1> has been removed
+    Register <kconst_1_dummy> equivalent to <kconst_1> has been removed
+    Found 36-bit register for signal <Digital_PCM_signal_1>.
+    Found 36-bit register for signal <PipelineRegister_reg<0>>.
+    Found 36-bit register for signal <PipelineRegister_reg<1>>.
+    Found 36-bit register for signal <PipelineRegister_reg<2>>.
+    Found 36-bit register for signal <PipelineRegister_reg<3>>.
+    Found 36-bit register for signal <PipelineRegister_reg<4>>.
+    Found 36-bit register for signal <Delay_out1>.
+    Found 36-bit register for signal <Delay1_out1>.
+    Found 36-bit register for signal <Delay2_out1>.
+    Found 36-bit register for signal <Delay3_out1>.
+    Found 36-bit register for signal <Delay4_out1>.
+    Found 36-bit register for signal <Delay5_out1>.
+    Found 36-bit register for signal <Delay6_out1>.
+    Found 36-bit register for signal <Delay7_out1>.
+    Found 1-bit register for signal <kconst_1>.
+    Found 36-bit subtractor for signal <_n0602> created at line 135.
+    Found 36-bit adder for signal <_n0591> created at line 138.
+    Found 36-bit subtractor for signal <Sum3_out1> created at line 138.
+    Found 36-bit adder for signal <_n0593> created at line 168.
+    Found 36-bit adder for signal <_n0594> created at line 168.
+    Found 36-bit subtractor for signal <Sum15_out1> created at line 168.
+    Found 36-bit adder for signal <_n0596> created at line 146.
+    Found 36-bit adder for signal <_n0597> created at line 146.
+    Found 36-bit subtractor for signal <Sum5_out1> created at line 146.
+    Found 36-bit adder for signal <_n0599> created at line 149.
+    Found 36-bit subtractor for signal <Sum7_out1> created at line 149.
+    Found 36-bit subtractor for signal <_n0601> created at line 135.
+    Found 36-bit adder for signal <Sum1_out1> created at line 135.
+    Found 36-bit adder for signal <_n0605> created at line 157.
+    Found 36-bit adder for signal <_n0606> created at line 157.
+    Found 36-bit subtractor for signal <Sum9_out1> created at line 157.
+    Found 36-bit adder for signal <_n0608> created at line 160.
+    Found 36-bit subtractor for signal <Sum11_out1> created at line 160.
+    Found 36-bit adder for signal <_n0610> created at line 171.
+    Found 36-bit subtractor for signal <Sum13_out1> created at line 171.
+    Found 36x36-bit multiplier for signal <Gain_mul_temp> created at line 346.
+    Found 36x36-bit multiplier for signal <Gain25_mul_temp> created at line 363.
+    Found 36x36-bit multiplier for signal <Gain23_mul_temp> created at line 366.
+    Found 36x36-bit multiplier for signal <Gain19_mul_temp> created at line 369.
+    Found 36x36-bit multiplier for signal <Gain17_mul_temp> created at line 372.
+    Found 36x36-bit multiplier for signal <Gain4_mul_temp> created at line 375.
+    Found 36x36-bit multiplier for signal <Gain3_mul_temp> created at line 378.
+    Found 36x36-bit multiplier for signal <Gain2_mul_temp> created at line 381.
+    Found 36x36-bit multiplier for signal <Gain1_mul_temp> created at line 386.
+    Found 24x36-bit multiplier for signal <n0287> created at line 389.
+    Found 27x36-bit multiplier for signal <n0298> created at line 429.
+    Found 28x36-bit multiplier for signal <n0309> created at line 470.
+    Found 29x36-bit multiplier for signal <n0320> created at line 511.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch6_reg<0><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch4_reg<0><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <kconst_1<35:10>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <kconst_1<8:8>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <kconst_1<7:3>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <kconst_1<1:1>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch3_reg<0><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch5_reg<0><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch6_reg<1><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch1_reg<0><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch7_reg<0><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch7_reg<1><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch7_reg<2><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch7_reg<3><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch7_reg<4><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch7_reg<5><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch6_reg<2><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch6_reg<3><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch6_reg<4><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch6_reg<5><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch5_reg<1><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch5_reg<2><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch5_reg<3><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch5_reg<4><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch5_reg<5><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch4_reg<1><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch4_reg<2><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch4_reg<3><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch4_reg<4><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch4_reg<5><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch3_reg<1><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch3_reg<2><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch3_reg<3><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch3_reg<4><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch3_reg<5><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch2_reg<0><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch2_reg<1><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch2_reg<2><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch2_reg<3><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch2_reg<4><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch2_reg<5><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch1_reg<1><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch1_reg<2><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch1_reg<3><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch1_reg<4><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch1_reg<5><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch_reg<0><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch_reg<1><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch_reg<2><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch_reg<3><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch_reg<4><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    WARNING:Xst:2404 -  FFs/Latches <delayMatch_reg<5><35:0>> (without init value) have a constant value of 0 in block <Eight_order_delta_sigma_modulator>.
+    Summary:
+	inferred  13 Multiplier(s).
+	inferred  20 Adder/Subtractor(s).
+	inferred 505 D-type flip-flop(s).
+Unit <Eight_order_delta_sigma_modulator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 24
+ 35x34-bit multiplier                                  : 4
+ 36x24-bit multiplier                                  : 1
+ 36x26-bit multiplier                                  : 1
+ 36x27-bit multiplier                                  : 1
+ 36x28-bit multiplier                                  : 2
+ 36x29-bit multiplier                                  : 1
+ 36x36-bit multiplier                                  : 14
+# Adders/Subtractors                                   : 34
+ 2-bit adder                                           : 1
+ 36-bit adder                                          : 15
+ 36-bit subtractor                                     : 15
+ 37-bit adder                                          : 3
+# Registers                                            : 30
+ 1-bit register                                        : 2
+ 2-bit register                                        : 1
+ 34-bit register                                       : 4
+ 36-bit register                                       : 23
+# Comparators                                          : 5
+ 2-bit comparator lessequal                            : 1
+ 36-bit comparator greater                             : 4
+# Multiplexers                                         : 16
+ 2-bit 2-to-1 multiplexer                              : 1
+ 34-bit 2-to-1 multiplexer                             : 1
+ 36-bit 2-to-1 multiplexer                             : 14
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/Channel_Filter.ngc>.
+Reading core <ipcore_dir/dds.ngc>.
+Reading core <ipcore_dir/Halfband_1_61_44.ngc>.
+Reading core <ipcore_dir/Halfband_2_122_88.ngc>.
+Reading core <ipcore_dir/Halfband_3_245_76.ngc>.
+Loading core <Channel_Filter> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U3>.
+Loading core <dds> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U2>.
+Loading core <Halfband_1_61_44> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U4>.
+Loading core <Halfband_2_122_88> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U5>.
+Loading core <Halfband_3_245_76> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U6>.
+
+Synthesizing (advanced) Unit <Eight_order_delta_sigma_modulator>.
+	The following adders/subtractors are grouped into adder tree <Madd_Sum1_out11> :
+ 	<Msub__n0601> in block <Eight_order_delta_sigma_modulator>, 	<Msub__n0602> in block <Eight_order_delta_sigma_modulator>.
+	The following adders/subtractors are grouped into adder tree <Msub_Sum15_out11> :
+ 	<Madd__n0593> in block <Eight_order_delta_sigma_modulator>, 	<Madd__n0594> in block <Eight_order_delta_sigma_modulator>.
+	The following adders/subtractors are grouped into adder tree <Msub_Sum9_out11> :
+ 	<Madd__n0605> in block <Eight_order_delta_sigma_modulator>, 	<Madd__n0606> in block <Eight_order_delta_sigma_modulator>.
+	The following adders/subtractors are grouped into adder tree <Msub_Sum5_out11> :
+ 	<Madd__n0596> in block <Eight_order_delta_sigma_modulator>, 	<Madd__n0597> in block <Eight_order_delta_sigma_modulator>.
+Unit <Eight_order_delta_sigma_modulator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Fourth_order_delta_sigma_modulator>.
+The following registers are absorbed into accumulator <Intergrator_2>: 1 register on signal <Intergrator_2>.
+The following registers are absorbed into accumulator <Quantizer_input>: 1 register on signal <Quantizer_input>.
+	The following adders/subtractors are grouped into adder tree <Madd_Integrator_31> :
+ 	<Msub__n0225> in block <Fourth_order_delta_sigma_modulator>, 	<Msub__n0226> in block <Fourth_order_delta_sigma_modulator>.
+	The following adders/subtractors are grouped into adder tree <Madd_Integrator_11> :
+ 	<Msub__n0228> in block <Fourth_order_delta_sigma_modulator>, 	<Msub__n0229> in block <Fourth_order_delta_sigma_modulator>.
+Unit <Fourth_order_delta_sigma_modulator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Halfband_4_491_52>.
+The following registers are absorbed into counter <cur_count>: 1 register on signal <cur_count>.
+Unit <Halfband_4_491_52> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 24
+ 11x36-bit multiplier                                  : 1
+ 26x36-bit multiplier                                  : 1
+ 31x34-bit multiplier                                  : 2
+ 34x34-bit multiplier                                  : 1
+ 35x34-bit multiplier                                  : 1
+ 36x24-bit multiplier                                  : 1
+ 36x26-bit multiplier                                  : 1
+ 36x27-bit multiplier                                  : 1
+ 36x28-bit multiplier                                  : 2
+ 36x29-bit multiplier                                  : 1
+ 36x36-bit multiplier                                  : 12
+# Adders/Subtractors                                   : 25
+ 36-bit adder                                          : 4
+ 36-bit subtractor                                     : 18
+ 37-bit adder                                          : 3
+# Adder Trees                                          : 6
+ 36-bit / 2-inputs adder tree                          : 6
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Accumulators                                         : 2
+ 36-bit up accumulator                                 : 2
+# Registers                                            : 894
+ Flip-Flops                                            : 894
+# Comparators                                          : 5
+ 2-bit comparator lessequal                            : 1
+ 36-bit comparator greater                             : 4
+# Multiplexers                                         : 15
+ 34-bit 2-to-1 multiplexer                             : 1
+ 36-bit 2-to-1 multiplexer                             : 14
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <Gain_out1_1_29> in Unit <Fourth_order_delta_sigma_modulator> is equivalent to the following 6 FFs/Latches, which will be removed : <Gain_out1_1_30> <Gain_out1_1_31> <Gain_out1_1_32> <Gain_out1_1_33> <Gain_out1_1_34> <Gain_out1_1_35> 
+INFO:Xst:2261 - The FF/Latch <PipelineRegister_reg_0_14> in Unit <Eight_order_delta_sigma_modulator> is equivalent to the following 21 FFs/Latches, which will be removed : <PipelineRegister_reg_0_15> <PipelineRegister_reg_0_16> <PipelineRegister_reg_0_17> <PipelineRegister_reg_0_18> <PipelineRegister_reg_0_19> <PipelineRegister_reg_0_20> <PipelineRegister_reg_0_21> <PipelineRegister_reg_0_22> <PipelineRegister_reg_0_23> <PipelineRegister_reg_0_24> <PipelineRegister_reg_0_25> <PipelineRegister_reg_0_26> <PipelineRegister_reg_0_27> <PipelineRegister_reg_0_28> <PipelineRegister_reg_0_29> <PipelineRegister_reg_0_30> <PipelineRegister_reg_0_31> <PipelineRegister_reg_0_32> <PipelineRegister_reg_0_33> <PipelineRegister_reg_0_34> <PipelineRegister_reg_0_35> 
+INFO:Xst:2261 - The FF/Latch <PipelineRegister_reg_1_14> in Unit <Eight_order_delta_sigma_modulator> is equivalent to the following 21 FFs/Latches, which will be removed : <PipelineRegister_reg_1_15> <PipelineRegister_reg_1_16> <PipelineRegister_reg_1_17> <PipelineRegister_reg_1_18> <PipelineRegister_reg_1_19> <PipelineRegister_reg_1_20> <PipelineRegister_reg_1_21> <PipelineRegister_reg_1_22> <PipelineRegister_reg_1_23> <PipelineRegister_reg_1_24> <PipelineRegister_reg_1_25> <PipelineRegister_reg_1_26> <PipelineRegister_reg_1_27> <PipelineRegister_reg_1_28> <PipelineRegister_reg_1_29> <PipelineRegister_reg_1_30> <PipelineRegister_reg_1_31> <PipelineRegister_reg_1_32> <PipelineRegister_reg_1_33> <PipelineRegister_reg_1_34> <PipelineRegister_reg_1_35> 
+INFO:Xst:2261 - The FF/Latch <PipelineRegister_reg_2_14> in Unit <Eight_order_delta_sigma_modulator> is equivalent to the following 21 FFs/Latches, which will be removed : <PipelineRegister_reg_2_15> <PipelineRegister_reg_2_16> <PipelineRegister_reg_2_17> <PipelineRegister_reg_2_18> <PipelineRegister_reg_2_19> <PipelineRegister_reg_2_20> <PipelineRegister_reg_2_21> <PipelineRegister_reg_2_22> <PipelineRegister_reg_2_23> <PipelineRegister_reg_2_24> <PipelineRegister_reg_2_25> <PipelineRegister_reg_2_26> <PipelineRegister_reg_2_27> <PipelineRegister_reg_2_28> <PipelineRegister_reg_2_29> <PipelineRegister_reg_2_30> <PipelineRegister_reg_2_31> <PipelineRegister_reg_2_32> <PipelineRegister_reg_2_33> <PipelineRegister_reg_2_34> <PipelineRegister_reg_2_35> 
+INFO:Xst:2261 - The FF/Latch <PipelineRegister_reg_3_14> in Unit <Eight_order_delta_sigma_modulator> is equivalent to the following 21 FFs/Latches, which will be removed : <PipelineRegister_reg_3_15> <PipelineRegister_reg_3_16> <PipelineRegister_reg_3_17> <PipelineRegister_reg_3_18> <PipelineRegister_reg_3_19> <PipelineRegister_reg_3_20> <PipelineRegister_reg_3_21> <PipelineRegister_reg_3_22> <PipelineRegister_reg_3_23> <PipelineRegister_reg_3_24> <PipelineRegister_reg_3_25> <PipelineRegister_reg_3_26> <PipelineRegister_reg_3_27> <PipelineRegister_reg_3_28> <PipelineRegister_reg_3_29> <PipelineRegister_reg_3_30> <PipelineRegister_reg_3_31> <PipelineRegister_reg_3_32> <PipelineRegister_reg_3_33> <PipelineRegister_reg_3_34> <PipelineRegister_reg_3_35> 
+INFO:Xst:2261 - The FF/Latch <PipelineRegister_reg_4_14> in Unit <Eight_order_delta_sigma_modulator> is equivalent to the following 21 FFs/Latches, which will be removed : <PipelineRegister_reg_4_15> <PipelineRegister_reg_4_16> <PipelineRegister_reg_4_17> <PipelineRegister_reg_4_18> <PipelineRegister_reg_4_19> <PipelineRegister_reg_4_20> <PipelineRegister_reg_4_21> <PipelineRegister_reg_4_22> <PipelineRegister_reg_4_23> <PipelineRegister_reg_4_24> <PipelineRegister_reg_4_25> <PipelineRegister_reg_4_26> <PipelineRegister_reg_4_27> <PipelineRegister_reg_4_28> <PipelineRegister_reg_4_29> <PipelineRegister_reg_4_30> <PipelineRegister_reg_4_31> <PipelineRegister_reg_4_32> <PipelineRegister_reg_4_33> <PipelineRegister_reg_4_34> <PipelineRegister_reg_4_35> 
+INFO:Xst:1901 - Instance U1/pll_base_inst in unit U1/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <all_digital_modulator> ...
+
+Optimizing unit <Halfband_4_491_52> ...
+WARNING:Xst:1710 - FF/Latch <cur_count_1> (without init value) has a constant value of 0 in block <Halfband_4_491_52>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cur_count_1> (without init value) has a constant value of 0 in block <Halfband_4_491_52>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Fourth_order_delta_sigma_modulator> ...
+
+Optimizing unit <Eight_order_delta_sigma_modulator> ...
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_34> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_34> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_35> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_35> 
+INFO:Xst:2261 - The FF/Latch <U8/kconst_1> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/kconst_1> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_10> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_10> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_11> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_11> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_12> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_12> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_13> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_13> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_14> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_14> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_20> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_20> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_15> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_15> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_21> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_21> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_16> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_16> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_22> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_22> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_17> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_17> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_23> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_23> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_18> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_18> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_24> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_24> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_19> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_19> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_30> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_30> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_25> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_25> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_31> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_31> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_26> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_26> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_32> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_32> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_27> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_27> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_33> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_33> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_0> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_0> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_28> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_28> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_1> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_1> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_29> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_29> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_2> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_2> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_3> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_3> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_4> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_4> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_5> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_5> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_6> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_6> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_7> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_7> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_8> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_8> 
+INFO:Xst:2261 - The FF/Latch <U8/Digital_PCM_signal_1_9> in Unit <all_digital_modulator> is equivalent to the following FF/Latch, which will be removed : <U9/Digital_PCM_signal_1_9> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block all_digital_modulator, actual ratio is 3.
+FlipFlop GEN_DIGITAL_UP_CONVERTER_LBL.U7/cur_count_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <all_digital_modulator> :
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_14>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_13>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_12>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_11>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_10>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_9>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_8>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_7>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_6>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_5>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_4>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_3>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_2>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_1>.
+	Found 5-bit shift register for signal <U9/PipelineRegister_reg_4_0>.
+Unit <all_digital_modulator> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 745
+ Flip-Flops                                            : 745
+# Shift Registers                                      : 15
+ 5-bit shift register                                  : 15
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : all_digital_modulator.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 5295
+#      GND                         : 45
+#      INV                         : 26
+#      LUT1                        : 10
+#      LUT2                        : 1039
+#      LUT3                        : 798
+#      LUT4                        : 405
+#      MUXCY                       : 1476
+#      MUXCY_D                     : 45
+#      VCC                         : 13
+#      XORCY                       : 1438
+# FlipFlops/Latches                : 4017
+#      FD                          : 430
+#      FDC                         : 609
+#      FDCE                        : 155
+#      FDE                         : 2361
+#      FDR                         : 2
+#      FDRE                        : 454
+#      FDSE                        : 6
+# RAMS                             : 105
+#      RAM16X1D                    : 102
+#      RAMB16BWER                  : 2
+#      RAMB8BWER                   : 1
+# Shift Registers                  : 2341
+#      SRLC16E                     : 2337
+#      SRLC32E                     : 4
+# Clock Buffers                    : 6
+#      BUFG                        : 6
+# IO Buffers                       : 248
+#      IBUF                        : 36
+#      IBUFG                       : 2
+#      OBUF                        : 210
+# DSPs                             : 344
+#      DSP48A1                     : 344
+# Others                           : 2
+#      PLL_ADV                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx150fgg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            4017  out of  184304     2%  
+ Number of Slice LUTs:                 4823  out of  92152     5%  
+    Number used as Logic:              2278  out of  92152     2%  
+    Number used as Memory:             2545  out of  21680    11%  
+       Number used as RAM:              204
+       Number used as SRL:             2341
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   5720
+   Number with an unused Flip Flop:    1703  out of   5720    29%  
+   Number with an unused LUT:           897  out of   5720    15%  
+   Number of fully used LUT-FF pairs:  3120  out of   5720    54%  
+   Number of unique control sets:        64
+
+IO Utilization: 
+ Number of IOs:                         247
+ Number of bonded IOBs:                 246  out of    338    72%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                3  out of    268     1%  
+    Number using Block RAM only:          3
+ Number of BUFG/BUFGCTRLs:                6  out of     16    37%  
+ Number of DSP48A1s:                    344  out of    180   191% (*) 
+ Number of PLL_ADVs:                      2  out of      6    33%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                            | Load  |
+-----------------------------------+--------------------------------------------------+-------+
+U1/pll_base_inst/CLKOUT1           | NONE(GEN_DIGITAL_UP_CONVERTER_LBL.U7/cur_count_0)| 794   |
+sys_clk                            | PLL_ADV:CLKOUT0                                  | 3477  |
+sys_clk                            | PLL_ADV:CLKOUT1                                  | 1029  |
+sys_clk                            | PLL_ADV:CLKOUT2                                  | 802   |
+U1/pll_base_inst/CLKOUT0           | BUFG                                             | 587   |
+-----------------------------------+--------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 22.908ns (Maximum Frequency: 43.653MHz)
+   Minimum input arrival time before clock: 4.587ns
+   Maximum output required time after clock: 5.422ns
+   Maximum combinational path delay: 6.163ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/pll_base_inst/CLKOUT1'
+  Clock period: 22.908ns (frequency: 43.653MHz)
+  Total number of paths / destination ports: 175851630812140 / 894
+-------------------------------------------------------------------------
+Delay:               22.908ns (Levels of Logic = 46)
+  Source:            U8/Intergrator_2_16 (FF)
+  Destination:       U8/Intergrator_2_35 (FF)
+  Source Clock:      U1/pll_base_inst/CLKOUT1 rising
+  Destination Clock: U1/pll_base_inst/CLKOUT1 rising
+
+  Data Path: U8/Intergrator_2_16 to U8/Intergrator_2_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  U8/Intergrator_2_16 (U8/Intergrator_2_16)
+     DSP48A1:A16->P47     18   4.560   1.049  U8/Mmult_n0107_submult_0 (U8/Mmult_n0107_submult_0_P47_to_Mmult_n0107_submult_01)
+     DSP48A1:C30->PCOUT47    1   2.689   0.000  U8/Mmult_n0107_submult_01 (U8/Mmult_n0107_submult_01_PCOUT_to_Mmult_n0107_submult_02_PCIN_47)
+     DSP48A1:PCIN47->P47   18   2.264   1.049  U8/Mmult_n0107_submult_02 (U8/Mmult_n0107_submult_02_P47_to_Mmult_n0107_submult_03)
+     DSP48A1:C30->P1       1   2.687   0.580  U8/Mmult_n0107_submult_03 (U8/Mmult_n0107_submult_0_35)
+     LUT2:I1->O            1   0.205   0.000  U8/Mmult_n01070_Madd_lut<35> (U8/Mmult_n01070_Madd_lut<35>)
+     MUXCY:S->O            1   0.172   0.000  U8/Mmult_n01070_Madd_cy<35> (U8/Mmult_n01070_Madd_cy<35>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<36> (U8/Mmult_n01070_Madd_cy<36>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<37> (U8/Mmult_n01070_Madd_cy<37>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<38> (U8/Mmult_n01070_Madd_cy<38>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<39> (U8/Mmult_n01070_Madd_cy<39>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<40> (U8/Mmult_n01070_Madd_cy<40>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<41> (U8/Mmult_n01070_Madd_cy<41>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<42> (U8/Mmult_n01070_Madd_cy<42>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<43> (U8/Mmult_n01070_Madd_cy<43>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<44> (U8/Mmult_n01070_Madd_cy<44>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<45> (U8/Mmult_n01070_Madd_cy<45>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<46> (U8/Mmult_n01070_Madd_cy<46>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<47> (U8/Mmult_n01070_Madd_cy<47>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<48> (U8/Mmult_n01070_Madd_cy<48>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<49> (U8/Mmult_n01070_Madd_cy<49>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<50> (U8/Mmult_n01070_Madd_cy<50>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<51> (U8/Mmult_n01070_Madd_cy<51>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<52> (U8/Mmult_n01070_Madd_cy<52>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<53> (U8/Mmult_n01070_Madd_cy<53>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<54> (U8/Mmult_n01070_Madd_cy<54>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<55> (U8/Mmult_n01070_Madd_cy<55>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<56> (U8/Mmult_n01070_Madd_cy<56>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<57> (U8/Mmult_n01070_Madd_cy<57>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<58> (U8/Mmult_n01070_Madd_cy<58>)
+     MUXCY:CI->O           1   0.019   0.000  U8/Mmult_n01070_Madd_cy<59> (U8/Mmult_n01070_Madd_cy<59>)
+     MUXCY:CI->O           0   0.019   0.000  U8/Mmult_n01070_Madd_cy<60> (U8/Mmult_n01070_Madd_cy<60>)
+     XORCY:CI->O          14   0.180   0.958  U8/Mmult_n01070_Madd_xor<61> (U8/n0107<61>)
+     LUT3:I2->O            1   0.205   0.580  U8/ADDER_FOR_MULTADD_Madd329 (U8/ADDER_FOR_MULTADD_Madd329)
+     LUT4:I3->O            1   0.205   0.000  U8/ADDER_FOR_MULTADD_Madd3_lut<0>30 (U8/ADDER_FOR_MULTADD_Madd3_lut<0>30)
+     MUXCY:S->O            1   0.172   0.000  U8/ADDER_FOR_MULTADD_Madd3_cy<0>_29 (U8/ADDER_FOR_MULTADD_Madd3_cy<0>30)
+     MUXCY:CI->O           1   0.019   0.000  U8/ADDER_FOR_MULTADD_Madd3_cy<0>_30 (U8/ADDER_FOR_MULTADD_Madd3_cy<0>31)
+     XORCY:CI->O           1   0.180   0.580  U8/ADDER_FOR_MULTADD_Madd3_xor<0>_31 (U8/ADDER_FOR_MULTADD_Madd_323)
+     LUT2:I1->O            1   0.205   0.000  U8/ADDERTREE_INTERNAL_Madd1_lut<32> (U8/ADDERTREE_INTERNAL_Madd1_lut<32>)
+     MUXCY:S->O            1   0.172   0.000  U8/ADDERTREE_INTERNAL_Madd1_cy<32> (U8/ADDERTREE_INTERNAL_Madd1_cy<32>)
+     XORCY:CI->O           2   0.180   0.617  U8/ADDERTREE_INTERNAL_Madd1_xor<33> (U8/ADDERTREE_INTERNAL_Madd_331)
+     LUT2:I1->O            1   0.205   0.000  U8/Msub__n0221_lut<33> (U8/Msub__n0221_lut<33>)
+     MUXCY:S->O            1   0.172   0.000  U8/Msub__n0221_cy<33> (U8/Msub__n0221_cy<33>)
+     XORCY:CI->O           1   0.180   0.580  U8/Msub__n0221_xor<34> (U8/_n0221<34>)
+     LUT2:I1->O            1   0.205   0.000  U8/Maccum_Intergrator_2_lut<34> (U8/Maccum_Intergrator_2_lut<34>)
+     MUXCY:S->O            0   0.172   0.000  U8/Maccum_Intergrator_2_cy<34> (U8/Maccum_Intergrator_2_cy<34>)
+     XORCY:CI->O           1   0.180   0.000  U8/Maccum_Intergrator_2_xor<35> (U8/Result<35>1)
+     FDC:D                     0.102          U8/Intergrator_2_35
+    ----------------------------------------
+    Total                     22.908ns (16.233ns logic, 6.675ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sys_clk'
+  Clock period: 16.043ns (frequency: 62.331MHz)
+  Total number of paths / destination ports: 24117 / 23317
+-------------------------------------------------------------------------
+Delay:               4.011ns (Levels of Logic = 0)
+  Source:            GEN_DIGITAL_UP_CONVERTER_LBL.U5/blk00000003/blk00000027 (DSP)
+  Destination:       GEN_DIGITAL_UP_CONVERTER_LBL.U5/blk00000003/blk00000006 (DSP)
+  Source Clock:      sys_clk rising 4.0X
+  Destination Clock: sys_clk rising 4.0X
+
+  Data Path: GEN_DIGITAL_UP_CONVERTER_LBL.U5/blk00000003/blk00000027 to GEN_DIGITAL_UP_CONVERTER_LBL.U5/blk00000003/blk00000006
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48A1:CLK->P33      1   1.200   0.579  blk00000027 (sig0000004b)
+     DSP48A1:B17               2.232          blk00000006
+    ----------------------------------------
+    Total                      4.011ns (3.432ns logic, 0.579ns route)
+                                       (85.6% logic, 14.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/pll_base_inst/CLKOUT0'
+  Clock period: 4.011ns (frequency: 249.324MHz)
+  Total number of paths / destination ports: 2261 / 2012
+-------------------------------------------------------------------------
+Delay:               4.011ns (Levels of Logic = 0)
+  Source:            GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000027 (DSP)
+  Destination:       GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000006 (DSP)
+  Source Clock:      U1/pll_base_inst/CLKOUT0 rising
+  Destination Clock: U1/pll_base_inst/CLKOUT0 rising
+
+  Data Path: GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000027 to GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000006
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48A1:CLK->P33      1   1.200   0.579  blk00000027 (sig0000004b)
+     DSP48A1:B17               2.232          blk00000006
+    ----------------------------------------
+    Total                      4.011ns (3.432ns logic, 0.579ns route)
+                                       (85.6% logic, 14.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 764 / 764
+-------------------------------------------------------------------------
+Offset:              4.587ns (Levels of Logic = 2)
+  Source:            sys_rst_n (PAD)
+  Destination:       GEN_DIGITAL_UP_CONVERTER_LBL.U7/cur_count_0 (FF)
+  Destination Clock: U1/pll_base_inst/CLKOUT1 rising
+
+  Data Path: sys_rst_n to GEN_DIGITAL_UP_CONVERTER_LBL.U7/cur_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  sys_rst_n_IBUF (sys_rst_n_IBUF)
+     INV:I->O            764   0.206   2.150  sys_rst1_INV_0 (sys_rst)
+     FDCE:CLR                  0.430          GEN_DIGITAL_UP_CONVERTER_LBL.U7/delay_pipeline_0_0
+    ----------------------------------------
+    Total                      4.587ns (1.858ns logic, 2.729ns route)
+                                       (40.5% logic, 59.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
+  Total number of paths / destination ports: 68 / 34
+-------------------------------------------------------------------------
+Offset:              3.078ns (Levels of Logic = 3)
+  Source:            bypass (PAD)
+  Destination:       GEN_DIGITAL_UP_CONVERTER_LBL.U3/blk00000003/blk00000019 (FF)
+  Destination Clock: sys_clk rising
+
+  Data Path: bypass to GEN_DIGITAL_UP_CONVERTER_LBL.U3/blk00000003/blk00000019
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   1.222   1.549  bypass_IBUF (bypass_IBUF)
+     LUT3:I0->O            2   0.205   0.000  Mmux_DAC_OUT341 (DAC_OUT_9_OBUF)
+     begin scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U3:din<9>'
+     begin scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U3/blk00000003:din(9)'
+     FDE:D                     0.102          blk00000031
+    ----------------------------------------
+    Total                      3.078ns (1.529ns logic, 1.549ns route)
+                                       (49.7% logic, 50.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
+  Total number of paths / destination ports: 136 / 136
+-------------------------------------------------------------------------
+Offset:              5.422ns (Levels of Logic = 3)
+  Source:            GEN_DIGITAL_UP_CONVERTER_LBL.U2/blk00000019 (DSP)
+  Destination:       DAC_OUT<33> (PAD)
+  Source Clock:      sys_clk rising
+
+  Data Path: GEN_DIGITAL_UP_CONVERTER_LBL.U2/blk00000019 to DAC_OUT<33>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48A1:CLK->P47      9   1.200   0.830  blk00000019 (sine<25>)
+     end scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U2:sine<25>'
+     LUT3:I2->O            2   0.205   0.616  Mmux_DAC_OUT271 (DAC_OUT_33_OBUF)
+     OBUF:I->O                 2.571          DAC_OUT_33_OBUF (DAC_OUT<33>)
+    ----------------------------------------
+    Total                      5.422ns (3.976ns logic, 1.446ns route)
+                                       (73.3% logic, 26.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 34 / 34
+-------------------------------------------------------------------------
+Offset:              3.668ns (Levels of Logic = 2)
+  Source:            GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000198 (FF)
+  Destination:       DAC_OUT4<33> (PAD)
+  Source Clock:      U1/pll_base_inst/CLKOUT0 rising
+
+  Data Path: GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000198 to DAC_OUT4<33>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.447   0.650  blk00000198 (dout(33))
+     end scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003:dout(33)'
+     end scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U6:dout<33>'
+     OBUF:I->O                 2.571          DAC_OUT4_33_OBUF (DAC_OUT4<33>)
+    ----------------------------------------
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 38 / 38
+-------------------------------------------------------------------------
+Offset:              4.657ns (Levels of Logic = 1)
+  Source:            U9/Delay7_out1_35 (FF)
+  Destination:       DSM_OUT1<1> (PAD)
+  Source Clock:      U1/pll_base_inst/CLKOUT1 rising
+
+  Data Path: U9/Delay7_out1_35 to DSM_OUT1<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             64   0.447   1.639  U9/Delay7_out1_35 (U9/Delay7_out1_35)
+     OBUF:I->O                 2.571          DSM_OUT1_1_OBUF (DSM_OUT1<1>)
+    ----------------------------------------
+    Total                      4.657ns (3.018ns logic, 1.639ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 68 / 34
+-------------------------------------------------------------------------
+Delay:               6.163ns (Levels of Logic = 3)
+  Source:            bypass (PAD)
+  Destination:       DAC_OUT<33> (PAD)
+
+  Data Path: bypass to DAC_OUT<33>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   1.222   1.549  bypass_IBUF (bypass_IBUF)
+     LUT3:I0->O            2   0.205   0.616  Mmux_DAC_OUT341 (DAC_OUT_9_OBUF)
+     OBUF:I->O                 2.571          DAC_OUT_9_OBUF (DAC_OUT<9>)
+    ----------------------------------------
+    Total                      6.163ns (3.998ns logic, 2.165ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock U1/pll_base_inst/CLKOUT0
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+U1/pll_base_inst/CLKOUT0|    4.011|         |         |         |
+sys_clk                 |    1.199|         |         |         |
+------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U1/pll_base_inst/CLKOUT1
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+U1/pll_base_inst/CLKOUT0|    1.199|         |         |         |
+U1/pll_base_inst/CLKOUT1|   22.908|         |         |         |
+------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sys_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sys_clk        |    4.011|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 53.00 secs
+Total CPU time to Xst completion: 52.51 secs
+ 
+--> 
+
+Total memory usage is 440196 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   73 (   0 filtered)
+Number of infos    :   57 (   0 filtered)
+

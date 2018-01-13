@@ -1,0 +1,2237 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: fil_test_fil.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fil_test_fil.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fil_test_fil"
+Output Format                      : NGC
+Target Device                      : xc6slx45-2-csg324
+
+---- Source Options
+Top Module Name                    : fil_test_fil
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : Rebuilt
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWDPRAM.vhd" into library work
+Parsing entity <MWDPRAM>.
+Parsing architecture <rtl> of entity <mwdpram>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWPKTBuffer.vhd" into library work
+Parsing entity <MWPKTBuffer>.
+Parsing architecture <rtl> of entity <mwpktbuffer>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_dpscram.vhd" into library work
+Parsing entity <mwfil_dpscram>.
+Parsing architecture <rtl> of entity <mwfil_dpscram>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWAsyncFIFO.vhd" into library work
+Parsing entity <MWAsyncFIFO>.
+Parsing architecture <rtl> of entity <mwasyncfifo>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\fil_test.vhd" into library work
+Parsing entity <fil_test>.
+Parsing architecture <rtl> of entity <fil_test>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWUDPPKTBuilder.vhd" into library work
+Parsing entity <MWUDPPKTBuilder>.
+Parsing architecture <rtl> of entity <mwudppktbuilder>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwtxmac.vhd" into library work
+Parsing entity <mwtxmac>.
+Parsing architecture <rtl> of entity <mwtxmac>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwrxmac.vhd" into library work
+Parsing entity <mwrxmac>.
+Parsing architecture <rtl> of entity <mwrxmac>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwpingram.vhd" into library work
+Parsing entity <mwpingram>.
+Parsing architecture <rtl> of entity <mwpingram>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_udfifo.vhd" into library work
+Parsing entity <mwfil_udfifo>.
+Parsing architecture <rtl> of entity <mwfil_udfifo>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_dut2bus.vhd" into library work
+Parsing entity <mwfil_dut2bus>.
+Parsing architecture <rtl> of entity <mwfil_dut2bus>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_controller.vhd" into library work
+Parsing entity <mwfil_controller>.
+Parsing architecture <rtl> of entity <mwfil_controller>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_bus2dut.vhd" into library work
+Parsing entity <mwfil_bus2dut>.
+Parsing architecture <rtl> of entity <mwfil_bus2dut>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILUDPCRC.vhd" into library work
+Parsing entity <FILUDPCRC>.
+Parsing architecture <rtl> of entity <filudpcrc>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILPktMUX.vhd" into library work
+Parsing entity <FILPktMUX>.
+Parsing architecture <rtl> of entity <filpktmux>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILDataProc.vhd" into library work
+Parsing entity <FILDataProc>.
+Parsing architecture <rtl> of entity <fildataproc>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILCmdProc.vhd" into library work
+Parsing entity <FILCmdProc>.
+Parsing architecture <rtl> of entity <filcmdproc>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWMAC.vhd" into library work
+Parsing entity <MWMAC>.
+Parsing architecture <rtl> of entity <mwmac>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_chifcore.vhd" into library work
+Parsing entity <mwfil_chifcore>.
+Parsing architecture <rtl> of entity <mwfil_chifcore>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\fil_test_wrapper.vhd" into library work
+Parsing entity <fil_test_wrapper>.
+Parsing architecture <rtl> of entity <fil_test_wrapper>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILPktProc.vhd" into library work
+Parsing entity <FILPktProc>.
+Parsing architecture <rtl> of entity <filpktproc>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_chiftop.vhd" into library work
+Parsing entity <mwfil_chiftop>.
+Parsing architecture <rtl> of entity <mwfil_chiftop>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILCommLayer.vhd" into library work
+Parsing entity <FILCommLayer>.
+Parsing architecture <rtl> of entity <filcommlayer>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWMdioBasic.vhd" into library work
+Parsing entity <MWMdioBasic>.
+Parsing architecture <rtl> of entity <mwmdiobasic>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWClkMgr.vhd" into library work
+Parsing entity <MWClkMgr>.
+Parsing architecture <rtl> of entity <mwclkmgr>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILCore.vhd" into library work
+Parsing entity <FILCore>.
+Parsing architecture <rtl> of entity <filcore>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\fil_test_fil.vhd" into library work
+Parsing entity <fil_test_fil>.
+Parsing architecture <rtl> of entity <fil_test_fil>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <fil_test_fil> (architecture <rtl>) from library <work>.
+
+Elaborating entity <MWClkMgr> (architecture <rtl>) from library <work>.
+
+Elaborating entity <FILCore> (architecture <rtl>) from library <work>.
+
+Elaborating entity <FILCommLayer> (architecture <rtl>) from library <work>.
+
+Elaborating entity <MWMAC> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <mwrxmac> (architecture <rtl>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwrxmac.vhd" Line 1183. Case statement is complete. others clause is never selected
+
+Elaborating entity <mwtxmac> (architecture <rtl>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwtxmac.vhd" Line 396. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwtxmac.vhd" Line 819. Case statement is complete. others clause is never selected
+
+Elaborating entity <mwpingram> (architecture <rtl>) from library <work>.
+
+Elaborating entity <MWDPRAM> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <FILPktProc> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <FILUDPCRC> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <MWDPRAM> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <FILPktMUX> (architecture <rtl>) from library <work>.
+
+Elaborating entity <FILCmdProc> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <FILDataProc> (architecture <rtl>) from library <work>.
+
+Elaborating entity <MWAsyncFIFO> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <MWDPRAM> (architecture <rtl>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWAsyncFIFO.vhd" Line 244. Case statement is complete. others clause is never selected
+
+Elaborating entity <MWAsyncFIFO> (architecture <rtl>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWAsyncFIFO.vhd" Line 244. Case statement is complete. others clause is never selected
+
+Elaborating entity <MWUDPPKTBuilder> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <MWPKTBuffer> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <MWDPRAM> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <MWDPRAM> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <MWPKTBuffer> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <MWDPRAM> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <MWDPRAM> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <mwfil_chiftop> (architecture <rtl>) from library <work>.
+
+Elaborating entity <mwfil_chifcore> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <mwfil_bus2dut> (architecture <rtl>) with generics from library <work>.
+WARNING:HDLCompiler:746 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_bus2dut.vhd" Line 45: Range is empty (null range)
+WARNING:HDLCompiler:220 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_bus2dut.vhd" Line 45: Assignment ignored
+
+Elaborating entity <mwfil_udfifo> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <mwfil_dpscram> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <mwfil_controller> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <mwfil_dut2bus> (architecture <rtl>) with generics from library <work>.
+WARNING:HDLCompiler:746 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_dut2bus.vhd" Line 70: Range is empty (null range)
+WARNING:HDLCompiler:220 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_dut2bus.vhd" Line 70: Assignment ignored
+WARNING:HDLCompiler:746 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_dut2bus.vhd" Line 79: Range is empty (null range)
+WARNING:HDLCompiler:220 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_dut2bus.vhd" Line 79: Assignment ignored
+
+Elaborating entity <fil_test_wrapper> (architecture <rtl>) from library <work>.
+
+Elaborating entity <fil_test> (architecture <rtl>) from library <work>.
+
+Elaborating entity <MWMdioBasic> (architecture <rtl>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fil_test_fil>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\fil_test_fil.vhd".
+    Found 8-bit register for signal <rxd>.
+    Found 8-bit register for signal <ETH_TXD>.
+    Found 1-bit register for signal <rxerror>.
+    Found 1-bit register for signal <col>.
+    Found 1-bit register for signal <crs>.
+    Found 1-bit register for signal <ETH_TXEN>.
+    Found 1-bit register for signal <ETH_TXER>.
+    Found 1-bit register for signal <rxdvld>.
+    Summary:
+	inferred  22 D-type flip-flop(s).
+Unit <fil_test_fil> synthesized.
+
+Synthesizing Unit <MWClkMgr>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWClkMgr.vhd".
+    Summary:
+	no macro.
+Unit <MWClkMgr> synthesized.
+
+Synthesizing Unit <FILCore>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILCore.vhd".
+    Summary:
+	no macro.
+Unit <FILCore> synthesized.
+
+Synthesizing Unit <FILCommLayer>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILCommLayer.vhd".
+    Summary:
+	no macro.
+Unit <FILCommLayer> synthesized.
+
+Synthesizing Unit <MWMAC>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWMAC.vhd".
+        MWMACADDR1 = 0
+        MWMACADDR2 = 10
+        MWMACADDR3 = 53
+        MWMACADDR4 = 2
+        MWMACADDR5 = 33
+        MWMACADDR6 = 138
+        MWIPADDR1 = 192
+        MWIPADDR2 = 168
+        MWIPADDR3 = 2
+        MWIPADDR4 = 5
+        ONEUDP = 1
+        BUFFERADDRWIDTH = 12
+    Summary:
+	no macro.
+Unit <MWMAC> synthesized.
+
+Synthesizing Unit <mwrxmac>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwrxmac.vhd".
+        MWMACADDR1 = 0
+        MWMACADDR2 = 10
+        MWMACADDR3 = 53
+        MWMACADDR4 = 2
+        MWMACADDR5 = 33
+        MWMACADDR6 = 138
+        MWIPADDR1 = 192
+        MWIPADDR2 = 168
+        MWIPADDR3 = 2
+        MWIPADDR4 = 5
+        ONEUDP = 1
+    Found 1-bit register for signal <gmii_rx_dv_reg>.
+    Found 1-bit register for signal <gmii_rx_er_reg>.
+    Found 7-bit register for signal <current_state>.
+    Found 1-bit register for signal <rxaddrvalidreg>.
+    Found 1-bit register for signal <replypingreg>.
+    Found 8-bit register for signal <hostmacaddr1reg>.
+    Found 8-bit register for signal <hostmacaddr2reg>.
+    Found 8-bit register for signal <hostmacaddr3reg>.
+    Found 8-bit register for signal <hostmacaddr4reg>.
+    Found 8-bit register for signal <hostmacaddr5reg>.
+    Found 8-bit register for signal <hostmacaddr6reg>.
+    Found 8-bit register for signal <hostipaddr1reg>.
+    Found 8-bit register for signal <hostipaddr2reg>.
+    Found 8-bit register for signal <hostipaddr3reg>.
+    Found 8-bit register for signal <hostipaddr4reg>.
+    Found 32-bit register for signal <fcs>.
+    Found 8-bit register for signal <iplen1reg>.
+    Found 8-bit register for signal <iplen2reg>.
+    Found 8-bit register for signal <udplen1reg>.
+    Found 8-bit register for signal <udplen2reg>.
+    Found 1-bit register for signal <udpregupdate>.
+    Found 8-bit register for signal <udpsrcrx1reg>.
+    Found 8-bit register for signal <udpsrcrx2reg>.
+    Found 8-bit register for signal <udpdstrx1reg>.
+    Found 8-bit register for signal <udpdstrx2reg>.
+    Found 16-bit register for signal <udplencount>.
+    Found 16-bit register for signal <pinglencount>.
+    Found 16-bit register for signal <arplencount>.
+    Found 9-bit register for signal <pingaddr>.
+    Found 1-bit register for signal <pingwren>.
+    Found 8-bit register for signal <RxData>.
+    Found 1-bit register for signal <RxDataValid>.
+    Found 1-bit register for signal <RxEOP>.
+    Found 1-bit register for signal <RxCRCOK>.
+    Found 1-bit register for signal <RxCRCBad>.
+    Found 1-bit register for signal <replyarpreg>.
+    Found 8-bit register for signal <udpsrcport0_1reg>.
+    Found 8-bit register for signal <udpsrcport0_2reg>.
+    Found 8-bit register for signal <udpdstport0_1reg>.
+    Found 8-bit register for signal <udpdstport0_2reg>.
+    Found 8-bit register for signal <udpsrcport1_1reg>.
+    Found 8-bit register for signal <udpsrcport1_2reg>.
+    Found 8-bit register for signal <udpdstport1_1reg>.
+    Found 8-bit register for signal <udpdstport1_2reg>.
+    Found 8-bit register for signal <udpsrcport2_1reg>.
+    Found 8-bit register for signal <udpsrcport2_2reg>.
+    Found 8-bit register for signal <udpdstport2_1reg>.
+    Found 8-bit register for signal <udpdstport2_2reg>.
+    Found 8-bit register for signal <udpsrcport3_1reg>.
+    Found 8-bit register for signal <udpsrcport3_2reg>.
+    Found 8-bit register for signal <udpdstport3_1reg>.
+    Found 8-bit register for signal <udpdstport3_2reg>.
+    Found 2-bit register for signal <packetdstport>.
+    Found 1-bit register for signal <replypingregdelay>.
+    Found 1-bit register for signal <pingpulse1>.
+    Found 1-bit register for signal <pingpulse2>.
+    Found 1-bit register for signal <pingpulse3>.
+    Found 1-bit register for signal <pingpulse4>.
+    Found 1-bit register for signal <replyping>.
+    Found 1-bit register for signal <replyarpregdelay>.
+    Found 1-bit register for signal <arppulse1>.
+    Found 1-bit register for signal <arppulse2>.
+    Found 1-bit register for signal <arppulse3>.
+    Found 1-bit register for signal <arppulse4>.
+    Found 1-bit register for signal <replyarp>.
+    Found 8-bit register for signal <gmii_rxd_reg>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 112                                            |
+    | Transitions        | 284                                            |
+    | Inputs             | 29                                             |
+    | Outputs            | 13                                             |
+    | Clock              | rxclk (rising_edge)                            |
+    | Reset              | rxreset (positive)                             |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit adder for signal <pingaddr[8]_GND_17_o_add_104_OUT> created at line 1241.
+    Found 16-bit adder for signal <pinglencount[15]_GND_17_o_add_107_OUT> created at line 1241.
+    Found 16-bit adder for signal <udplencount[15]_GND_17_o_add_137_OUT> created at line 1241.
+    Found 16-bit subtractor for signal <GND_17_o_GND_17_o_sub_106_OUT<15:0>> created at line 753.
+    Found 16-bit subtractor for signal <GND_17_o_GND_17_o_sub_131_OUT<15:0>> created at line 906.
+    Found 16-bit subtractor for signal <GND_17_o_GND_17_o_sub_135_OUT<15:0>> created at line 909.
+    Found 16-bit subtractor for signal <GND_17_o_GND_17_o_sub_142_OUT<15:0>> created at line 1308.
+    Found 16-bit subtractor for signal <GND_17_o_GND_17_o_sub_189_OUT<15:0>> created at line 1308.
+    Found 8-bit comparator greater for signal <iplen2reg[7]_GND_17_o_LessThan_134_o> created at line 908
+    Found 8-bit comparator equal for signal <fcs_check_value[31]_gmii_rxd_reg[7]_equal_145_o> created at line 942
+    Found 8-bit comparator equal for signal <fcs_check_value[23]_gmii_rxd_reg[7]_equal_147_o> created at line 950
+    Found 8-bit comparator equal for signal <fcs_check_value[15]_gmii_rxd_reg[7]_equal_149_o> created at line 958
+    Found 8-bit comparator equal for signal <fcs_check_value[7]_gmii_rxd_reg[7]_equal_151_o> created at line 966
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred 402 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  38 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <mwrxmac> synthesized.
+
+Synthesizing Unit <mwtxmac>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwtxmac.vhd".
+        MWMACADDR1 = 0
+        MWMACADDR2 = 10
+        MWMACADDR3 = 53
+        MWMACADDR4 = 2
+        MWMACADDR5 = 33
+        MWMACADDR6 = 138
+        MWIPADDR1 = 192
+        MWIPADDR2 = 168
+        MWIPADDR3 = 2
+        MWIPADDR4 = 5
+        ONEUDP = 1
+        BUFFERADDRWIDTH = 12
+WARNING:Xst:647 - Input <txSrcPort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <rxaddrvalid_sync2>.
+    Found 1-bit register for signal <replyping_sync1>.
+    Found 1-bit register for signal <replyping_sync2>.
+    Found 1-bit register for signal <replyping_sync3>.
+    Found 1-bit register for signal <ping_pending>.
+    Found 1-bit register for signal <replyarp_sync1>.
+    Found 1-bit register for signal <replyarp_sync2>.
+    Found 1-bit register for signal <arp_pending>.
+    Found 1-bit register for signal <replyarp_sync3>.
+    Found 1-bit register for signal <gmii_col_reg>.
+    Found 1-bit register for signal <gmii_crs_reg>.
+    Found 6-bit register for signal <current_state>.
+    Found 16-bit register for signal <byte_count>.
+    Found 16-bit register for signal <udp_count>.
+    Found 1-bit register for signal <pingflag>.
+    Found 8-bit register for signal <gmii_txd>.
+    Found 1-bit register for signal <tx_en>.
+    Found 1-bit register for signal <gmii_tx_er>.
+    Found 16-bit register for signal <iptotallenreg>.
+    Found 9-bit register for signal <pingaddr>.
+    Found 1-bit register for signal <incpingflag>.
+    Found 17-bit register for signal <hdrchecksum>.
+    Found 32-bit register for signal <fcs>.
+    Found 1-bit register for signal <dataTxFlag>.
+    Found 1-bit register for signal <arpflag>.
+    Found 1-bit register for signal <arp_clear>.
+    Found 1-bit register for signal <ping_clear>.
+    Found 400-bit register for signal <EthHeader>.
+    Found 4-bit register for signal <ipAddrCnt>.
+    Found 5-bit register for signal <arpCnt>.
+    Found 4-bit register for signal <macSrcDstCnt>.
+    Found 5-bit register for signal <pingCnt>.
+    Found 1-bit register for signal <rxaddrvalid_sync1>.
+    Found finite state machine <FSM_1> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 43                                             |
+    | Transitions        | 160                                            |
+    | Inputs             | 16                                             |
+    | Outputs            | 11                                             |
+    | Clock              | txclk (rising_edge)                            |
+    | Reset              | txreset (positive)                             |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <byte_count[15]_GND_18_o_add_27_OUT> created at line 1241.
+    Found 16-bit adder for signal <byte_count[15]_GND_18_o_add_28_OUT> created at line 1241.
+    Found 17-bit adder for signal <n2770> created at line 523.
+    Found 17-bit adder for signal <GND_18_o_GND_18_o_add_30_OUT> created at line 523.
+    Found 17-bit adder for signal <n2776> created at line 532.
+    Found 17-bit adder for signal <GND_18_o_GND_18_o_add_32_OUT> created at line 532.
+    Found 17-bit adder for signal <n2782> created at line 541.
+    Found 17-bit adder for signal <GND_18_o_GND_18_o_add_34_OUT> created at line 541.
+    Found 17-bit adder for signal <GND_18_o_GND_18_o_add_35_OUT> created at line 549.
+    Found 4-bit adder for signal <macSrcDstCnt[3]_GND_18_o_add_37_OUT> created at line 1241.
+    Found 9-bit adder for signal <pingaddr[8]_GND_18_o_add_53_OUT> created at line 1241.
+    Found 5-bit adder for signal <pingCnt[4]_GND_18_o_add_58_OUT> created at line 1241.
+    Found 8-bit adder for signal <pingrddata[7]_GND_18_o_add_71_OUT> created at line 1241.
+    Found 8-bit adder for signal <pingrddata[7]_GND_18_o_add_75_OUT> created at line 642.
+    Found 9-bit adder for signal <pingaddr[8]_GND_18_o_add_77_OUT> created at line 1241.
+    Found 4-bit adder for signal <ipAddrCnt[3]_GND_18_o_add_87_OUT> created at line 1241.
+    Found 16-bit adder for signal <iptotallenreg[15]_GND_18_o_add_116_OUT> created at line 1241.
+    Found 5-bit adder for signal <arpCnt[4]_GND_18_o_add_120_OUT> created at line 1241.
+    Found 9-bit subtractor for signal <GND_18_o_GND_18_o_sub_52_OUT<8:0>> created at line 1308.
+    Found 16-bit subtractor for signal <GND_18_o_GND_18_o_sub_65_OUT<15:0>> created at line 1308.
+    Found 16-bit subtractor for signal <GND_18_o_GND_18_o_sub_80_OUT<15:0>> created at line 1308.
+    Found 16-bit comparator lessequal for signal <n0065> created at line 477
+    Found 4-bit comparator greater for signal <macSrcDstCnt[3]_PWR_14_o_LessThan_37_o> created at line 571
+    Found 5-bit comparator greater for signal <pingCnt[4]_PWR_14_o_LessThan_58_o> created at line 607
+    Found 4-bit comparator greater for signal <ipAddrCnt[3]_PWR_14_o_LessThan_87_o> created at line 714
+    Found 4-bit comparator lessequal for signal <n1579> created at line 720
+    Found 16-bit comparator greater for signal <n2163> created at line 747
+    Found 16-bit comparator greater for signal <iptotallenreg[15]_GND_18_o_LessThan_98_o> created at line 753
+    Found 5-bit comparator greater for signal <arpCnt[4]_PWR_14_o_LessThan_120_o> created at line 808
+    Summary:
+	inferred  15 Adder/Subtractor(s).
+	inferred 552 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred 105 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <mwtxmac> synthesized.
+
+Synthesizing Unit <mwpingram>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwpingram.vhd".
+    Summary:
+	no macro.
+Unit <mwpingram> synthesized.
+
+Synthesizing Unit <MWDPRAM_1>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWDPRAM.vhd".
+        DATAWIDTH = 8
+        ADDRWIDTH = 9
+    Found 512x8-bit dual-port RAM <Mram_memory> for signal <memory>.
+    Found 8-bit register for signal <rd_doutB>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <MWDPRAM_1> synthesized.
+
+Synthesizing Unit <FILPktProc>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILPktProc.vhd".
+        VERSION = "0000001000000000"
+WARNING:Xst:647 - Input <RxDstPort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <FILPktProc> synthesized.
+
+Synthesizing Unit <FILUDPCRC>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILUDPCRC.vhd".
+        BUFFERADDRWIDTH = 11
+    Found 2-bit register for signal <wrState>.
+    Found 11-bit register for signal <wrAddr>.
+    Found 11-bit register for signal <wrAddrFirst>.
+    Found 11-bit register for signal <wrAddrLast>.
+    Found 11-bit register for signal <rdAddr>.
+    Found 1-bit register for signal <rdDataVld>.
+    Found 1-bit register for signal <dataVldIn_d>.
+    Found finite state machine <FSM_2> for signal <wrState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | wr_idle                                        |
+    | Power Up State     | wr_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit adder for signal <wrAddr[10]_GND_24_o_add_4_OUT> created at line 117.
+    Found 11-bit adder for signal <rdAddr[10]_GND_24_o_add_26_OUT> created at line 150.
+    Found 11-bit 3-to-1 multiplexer for signal <wrState[1]_X_17_o_wide_mux_13_OUT> created at line 108.
+    Found 11-bit comparator equal for signal <empty> created at line 136
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  46 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <FILUDPCRC> synthesized.
+
+Synthesizing Unit <MWDPRAM_2>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWDPRAM.vhd".
+        DATAWIDTH = 9
+        ADDRWIDTH = 11
+    Found 2048x9-bit dual-port RAM <Mram_memory> for signal <memory>.
+    Found 9-bit register for signal <rd_doutB>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   9 D-type flip-flop(s).
+Unit <MWDPRAM_2> synthesized.
+
+Synthesizing Unit <FILPktMUX>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILPktMUX.vhd".
+    Found 1-bit register for signal <dataVldOut>.
+    Found 1-bit register for signal <dataEOPOut>.
+    Found 8-bit register for signal <cmdOut>.
+    Found 1-bit register for signal <cmdVldOut>.
+    Found 1-bit register for signal <cmdEOPOut>.
+    Found 2-bit register for signal <state>.
+    Found 8-bit register for signal <dataOut>.
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit 3-to-1 multiplexer for signal <state[1]_X_19_o_wide_mux_9_OUT> created at line 53.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_X_19_o_Mux_10_o> created at line 53.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_X_19_o_Mux_11_o> created at line 53.
+    Found 8-bit 3-to-1 multiplexer for signal <state[1]_X_19_o_wide_mux_12_OUT> created at line 53.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_X_19_o_Mux_13_o> created at line 53.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_X_19_o_Mux_14_o> created at line 53.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <FILPktMUX> synthesized.
+
+Synthesizing Unit <FILCmdProc>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILCmdProc.vhd".
+        VERSION = "0000001000000000"
+    Found 1-bit register for signal <cmdVldReg>.
+    Found 1-bit register for signal <cmd_state>.
+    Found 8-bit register for signal <status>.
+    Found 1-bit register for signal <statusVld>.
+    Found 1-bit register for signal <statusEOP>.
+    Found 4-bit register for signal <status_state>.
+    Found 4-bit register for signal <get_ver_reg>.
+    Found 16-bit register for signal <dut_rst_reg>.
+    Found 16-bit register for signal <fpga_rst_reg>.
+    Found 1-bit register for signal <get_ver_s1>.
+    Found 1-bit register for signal <get_ver_s2>.
+    Found 1-bit register for signal <get_ver_s3>.
+    Found 1-bit register for signal <dutrst_s>.
+    Found 1-bit register for signal <dutrst>.
+    Found 1-bit register for signal <rxrst_s>.
+    Found 1-bit register for signal <rxrst_int>.
+    Found 1-bit register for signal <txrst_s>.
+    Found 1-bit register for signal <txrst_int>.
+    Found 8-bit register for signal <cmdReg>.
+    Found finite state machine <FSM_4> for signal <status_state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 13                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 8                                              |
+    | Clock              | txclk (rising_edge)                            |
+    | Reset              | txrst_int (positive)                           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | status_idle                                    |
+    | Power Up State     | status_idle                                    |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  65 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <FILCmdProc> synthesized.
+
+Synthesizing Unit <FILDataProc>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILDataProc.vhd".
+WARNING:Xst:647 - Input <rxrst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <txrst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILDataProc.vhd" line 101: Output port <fifo_full> of the instance <u_rxFIFO> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\FILDataProc.vhd" line 215: Output port <fifo_full> of the instance <u_txFIFO> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <dut_dinvld>.
+    Found 16-bit register for signal <simcycle>.
+    Found 8-bit register for signal <simcycle_low>.
+    Found 1-bit register for signal <rxfifo_dout_rdy>.
+    Found 16-bit register for signal <tx_dlen>.
+    Found 8-bit register for signal <tx_dlen_low>.
+    Found 1-bit register for signal <tx_dlen_rdy>.
+    Found 3-bit register for signal <rx_state>.
+    Found 1-bit register for signal <skip_RX_HEADER_1>.
+    Found 1-bit register for signal <tx_done>.
+    Found 9-bit register for signal <txfifo_din>.
+    Found 1-bit register for signal <txfifo_din_vld>.
+    Found 16-bit register for signal <tx_dlen_actual>.
+    Found 16-bit register for signal <tx_cnt>.
+    Found 1-bit register for signal <dut_doutrdy>.
+    Found 2-bit register for signal <tx_state>.
+    Found 8-bit register for signal <dut_dout_reg>.
+    Found 1-bit register for signal <dut_doutvld_reg>.
+    Found 8-bit register for signal <dut_din>.
+    Found finite state machine <FSM_5> for signal <rx_state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | dutclk (rising_edge)                           |
+    | Reset              | dutrst (positive)                              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | rx_idle                                        |
+    | Power Up State     | rx_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_6> for signal <tx_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | dutclk (rising_edge)                           |
+    | Reset              | dutrst (positive)                              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | tx_idle                                        |
+    | Power Up State     | tx_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <tx_cnt[15]_GND_28_o_add_52_OUT> created at line 286.
+    Found 16-bit subtractor for signal <GND_28_o_GND_28_o_sub_43_OUT<15:0>> created at line 257.
+    Found 16-bit subtractor for signal <GND_28_o_GND_28_o_sub_51_OUT<15:0>> created at line 278.
+    Found 16-bit comparator equal for signal <tx_cnt[15]_GND_28_o_equal_52_o> created at line 278
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 113 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  24 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <FILDataProc> synthesized.
+
+Synthesizing Unit <MWAsyncFIFO_1>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWAsyncFIFO.vhd".
+        DATA_WIDTH = 9
+        ADDR_WIDTH = 12
+    Found 1-bit register for signal <rst_clkin_sync2>.
+    Found 1-bit register for signal <rst_clkout_sync1>.
+    Found 1-bit register for signal <rst_clkout_sync2>.
+    Found 13-bit register for signal <rd_addr_gray_sync1>.
+    Found 13-bit register for signal <rd_addr_gray_sync2>.
+    Found 13-bit register for signal <wr_addr_gray_sync2>.
+    Found 13-bit register for signal <wr_addr_gray_sync1>.
+    Found 13-bit register for signal <wr_addr_bin>.
+    Found 13-bit register for signal <wr_addr_gray>.
+    Found 1-bit register for signal <full>.
+    Found 13-bit register for signal <rd_addr_bin>.
+    Found 13-bit register for signal <rd_addr_gray>.
+    Found 1-bit register for signal <empty>.
+    Found 1-bit register for signal <dvld>.
+    Found 1-bit register for signal <rst_clkin_sync1>.
+    Found 13-bit adder for signal <wr_addr_bin[12]_GND_29_o_add_12_OUT> created at line 157.
+    Found 13-bit adder for signal <rd_addr_bin[12]_GND_29_o_add_22_OUT> created at line 191.
+    Found 13-bit comparator equal for signal <full_temp> created at line 174
+    Found 13-bit comparator equal for signal <empty_temp> created at line 208
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 111 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <MWAsyncFIFO_1> synthesized.
+
+Synthesizing Unit <MWDPRAM_3>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWDPRAM.vhd".
+        DATAWIDTH = 9
+        ADDRWIDTH = 12
+    Found 4096x9-bit dual-port RAM <Mram_memory> for signal <memory>.
+    Found 9-bit register for signal <rd_doutB>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   9 D-type flip-flop(s).
+Unit <MWDPRAM_3> synthesized.
+
+Synthesizing Unit <MWAsyncFIFO_2>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWAsyncFIFO.vhd".
+        DATA_WIDTH = 9
+        ADDR_WIDTH = 11
+    Found 1-bit register for signal <rst_clkin_sync2>.
+    Found 1-bit register for signal <rst_clkout_sync1>.
+    Found 1-bit register for signal <rst_clkout_sync2>.
+    Found 12-bit register for signal <rd_addr_gray_sync1>.
+    Found 12-bit register for signal <rd_addr_gray_sync2>.
+    Found 12-bit register for signal <wr_addr_gray_sync2>.
+    Found 12-bit register for signal <wr_addr_gray_sync1>.
+    Found 12-bit register for signal <wr_addr_bin>.
+    Found 12-bit register for signal <wr_addr_gray>.
+    Found 1-bit register for signal <full>.
+    Found 12-bit register for signal <rd_addr_bin>.
+    Found 12-bit register for signal <rd_addr_gray>.
+    Found 1-bit register for signal <empty>.
+    Found 1-bit register for signal <dvld>.
+    Found 1-bit register for signal <rst_clkin_sync1>.
+    Found 12-bit adder for signal <wr_addr_bin[11]_GND_31_o_add_12_OUT> created at line 157.
+    Found 12-bit adder for signal <rd_addr_bin[11]_GND_31_o_add_22_OUT> created at line 191.
+    Found 12-bit comparator equal for signal <full_temp> created at line 174
+    Found 12-bit comparator equal for signal <empty_temp> created at line 208
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 103 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <MWAsyncFIFO_2> synthesized.
+
+Synthesizing Unit <MWUDPPKTBuilder>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWUDPPKTBuilder.vhd".
+        DATA_BUF_WIDTH = 11
+        DATA_PKTINFO_BUF_WIDTH = 2
+        STATUS_BUF_WIDTH = 4
+        STATUS_PKTINFO_BUF_WIDTH = 2
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWUDPPKTBuilder.vhd" line 101: Output port <PKTPort> of the instance <u_DATA_BUF> is unconnected or connected to loadless signal.
+    Found 8-bit register for signal <pktData>.
+    Found 1-bit register for signal <pktDataVld>.
+    Found 13-bit register for signal <pktLen>.
+    Found 2-bit register for signal <pktPort>.
+    Found 16-bit register for signal <seqNumber>.
+    Found 4-bit register for signal <waitCycle>.
+    Found 40-bit register for signal <dataHeaderReg>.
+    Found 1-bit register for signal <txRequest>.
+    Found 1-bit register for signal <statusPKTEn>.
+    Found 1-bit register for signal <statusPKTLoad>.
+    Found 1-bit register for signal <dataPKTEn>.
+    Found 1-bit register for signal <dataPKTLoad>.
+    Found 2-bit register for signal <thisPKTPort>.
+    Found 13-bit register for signal <thisPKTLen>.
+    Found 8-bit register for signal <txReady_d>.
+    Found 3-bit register for signal <pktState>.
+    Found finite state machine <FSM_7> for signal <pktState>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 12-bit adder for signal <dataPKTLen[11]_GND_32_o_add_6_OUT> created at line 1241.
+    Found 16-bit adder for signal <seqNumber[15]_GND_32_o_add_7_OUT> created at line 1241.
+    Found 4-bit adder for signal <waitCycle[3]_GND_32_o_add_31_OUT> created at line 1241.
+    Found 4-bit comparator lessequal for signal <n0030> created at line 267
+    Found 4-bit comparator lessequal for signal <n0032> created at line 267
+    WARNING:Xst:2404 -  FFs/Latches <clk_en_d<0:0>> (without init value) have a constant value of 1 in block <MWUDPPKTBuilder>.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 112 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  23 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <MWUDPPKTBuilder> synthesized.
+
+Synthesizing Unit <MWPKTBuffer_1>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWPKTBuffer.vhd".
+        DATA_BUF_WIDTH = 11
+        PKTINFO_BUF_WIDTH = 2
+    Found 12-bit register for signal <rdAddr>.
+    Found 1-bit register for signal <dataVldOut>.
+    Found 12-bit register for signal <payloadLen>.
+    Found 3-bit register for signal <pktInfo_wrAddr>.
+    Found 3-bit register for signal <pktInfo_rdAddr>.
+    Found 12-bit register for signal <wrAddr>.
+    Found 12-bit adder for signal <wrAddr[11]_GND_33_o_add_0_OUT> created at line 1241.
+    Found 12-bit adder for signal <rdAddr[11]_GND_33_o_add_4_OUT> created at line 1241.
+    Found 12-bit adder for signal <GND_33_o_wrAddr[11]_add_11_OUT> created at line 125.
+    Found 12-bit adder for signal <pktInfo_wrData<11:0>> created at line 1241.
+    Found 3-bit adder for signal <pktInfo_wrAddr[2]_GND_33_o_add_20_OUT> created at line 1241.
+    Found 3-bit adder for signal <pktInfo_rdAddr[2]_GND_33_o_add_24_OUT> created at line 1241.
+    Found 12-bit subtractor for signal <GND_33_o_GND_33_o_sub_10_OUT<11:0>> created at line 127.
+    Found 12-bit subtractor for signal <n0082> created at line 0.
+    Found 12-bit comparator not equal for signal <empty> created at line 123
+    Found 12-bit comparator greater for signal <bufferReady> created at line 128
+    Found 3-bit comparator not equal for signal <pktInfo_wrAddr[2]_pktInfo_rdAddr[2]_equal_29_o> created at line 195
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <MWPKTBuffer_1> synthesized.
+
+Synthesizing Unit <MWDPRAM_4>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWDPRAM.vhd".
+        DATAWIDTH = 8
+        ADDRWIDTH = 11
+    Found 2048x8-bit dual-port RAM <Mram_memory> for signal <memory>.
+    Found 8-bit register for signal <rd_doutB>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <MWDPRAM_4> synthesized.
+
+Synthesizing Unit <MWDPRAM_5>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWDPRAM.vhd".
+        DATAWIDTH = 14
+        ADDRWIDTH = 2
+    Found 4x14-bit dual-port RAM <Mram_memory> for signal <memory>.
+    Found 14-bit register for signal <rd_doutB>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  14 D-type flip-flop(s).
+Unit <MWDPRAM_5> synthesized.
+
+Synthesizing Unit <MWPKTBuffer_2>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWPKTBuffer.vhd".
+        DATA_BUF_WIDTH = 4
+        PKTINFO_BUF_WIDTH = 2
+    Found 5-bit register for signal <rdAddr>.
+    Found 1-bit register for signal <dataVldOut>.
+    Found 5-bit register for signal <payloadLen>.
+    Found 3-bit register for signal <pktInfo_wrAddr>.
+    Found 3-bit register for signal <pktInfo_rdAddr>.
+    Found 5-bit register for signal <wrAddr>.
+    Found 5-bit adder for signal <wrAddr[4]_GND_38_o_add_0_OUT> created at line 1241.
+    Found 5-bit adder for signal <rdAddr[4]_GND_38_o_add_4_OUT> created at line 1241.
+    Found 5-bit adder for signal <GND_38_o_wrAddr[4]_add_11_OUT> created at line 125.
+    Found 5-bit adder for signal <pktInfo_wrData<4:0>> created at line 1241.
+    Found 3-bit adder for signal <pktInfo_wrAddr[2]_GND_38_o_add_20_OUT> created at line 1241.
+    Found 3-bit adder for signal <pktInfo_rdAddr[2]_GND_38_o_add_24_OUT> created at line 1241.
+    Found 5-bit subtractor for signal <GND_38_o_GND_38_o_sub_10_OUT<4:0>> created at line 127.
+    Found 5-bit subtractor for signal <n0082> created at line 0.
+    Found 5-bit comparator not equal for signal <empty> created at line 123
+    Found 5-bit comparator greater for signal <bufferReady> created at line 128
+    Found 3-bit comparator not equal for signal <pktInfo_wrAddr[2]_pktInfo_rdAddr[2]_equal_29_o> created at line 195
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <MWPKTBuffer_2> synthesized.
+
+Synthesizing Unit <MWDPRAM_6>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWDPRAM.vhd".
+        DATAWIDTH = 8
+        ADDRWIDTH = 4
+    Found 16x8-bit dual-port RAM <Mram_memory> for signal <memory>.
+    Found 8-bit register for signal <rd_doutB>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <MWDPRAM_6> synthesized.
+
+Synthesizing Unit <MWDPRAM_7>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWDPRAM.vhd".
+        DATAWIDTH = 7
+        ADDRWIDTH = 2
+    Found 4x7-bit dual-port RAM <Mram_memory> for signal <memory>.
+    Found 7-bit register for signal <rd_doutB>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   7 D-type flip-flop(s).
+Unit <MWDPRAM_7> synthesized.
+
+Synthesizing Unit <mwfil_chiftop>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_chiftop.vhd".
+    Summary:
+	no macro.
+Unit <mwfil_chiftop> synthesized.
+
+Synthesizing Unit <mwfil_chifcore>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_chifcore.vhd".
+        INWORD = 1
+        OUTWORD = 1
+        WORDSIZE = 8
+        HASENABLE = 1
+    Summary:
+	no macro.
+Unit <mwfil_chifcore> synthesized.
+
+Synthesizing Unit <mwfil_bus2dut>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_bus2dut.vhd".
+        WORDSIZE = 8
+        OUTWORD = 1
+    Found 10-bit register for signal <counter>.
+    Found 10-bit adder for signal <counter_inc> created at line 51.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <mwfil_bus2dut> synthesized.
+
+Synthesizing Unit <mwfil_udfifo>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_udfifo.vhd".
+        fifo_depth = 16
+        fifo_uword = 4
+        fifo_width = 8
+    Found 4-bit register for signal <rd_addr>.
+    Found 1-bit register for signal <empty_tmp>.
+    Found 1-bit register for signal <full_tmp>.
+    Found 1-bit register for signal <empty_tmp_d1>.
+    Found 1-bit register for signal <rdreq_d1>.
+    Found 8-bit register for signal <reg_out>.
+    Found 1-bit register for signal <sclr_d1>.
+    Found 4-bit register for signal <wr_addr>.
+    Found 4-bit adder for signal <wr_addr[3]_GND_46_o_add_5_OUT> created at line 89.
+    Found 4-bit adder for signal <rd_addr[3]_GND_46_o_add_7_OUT> created at line 95.
+    Found 4-bit subtractor for signal <usedw_tmp> created at line 54.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <mwfil_udfifo> synthesized.
+
+Synthesizing Unit <mwfil_dpscram>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_dpscram.vhd".
+        DATA = 8
+        ADDR = 4
+    Found 16x8-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 8-bit register for signal <rd_dout>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <mwfil_dpscram> synthesized.
+
+Synthesizing Unit <mwfil_controller>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_controller.vhd".
+        HASENABLE = 1
+    Found 16-bit register for signal <simrem>.
+    Found 1-bit register for signal <dut_enable_int>.
+    Found 16-bit subtractor for signal <GND_48_o_GND_48_o_sub_3_OUT<15:0>> created at line 53.
+    Found 16-bit comparator greater for signal <zeros16[15]_simrem[15]_LessThan_2_o> created at line 53
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <mwfil_controller> synthesized.
+
+Synthesizing Unit <mwfil_dut2bus>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\mwfil_dut2bus.vhd".
+        WORDSIZE = 8
+        OUTWORD = 1
+    Found 8-bit register for signal <dout>.
+    Found 1-bit register for signal <d2b_fifo_valid>.
+    Found 1-bit register for signal <dout_valid>.
+    Found 8-bit register for signal <shiftreg>.
+    Found 2-bit register for signal <remword>.
+    Found 3-bit subtractor for signal <GND_49_o_GND_49_o_sub_3_OUT> created at line 53.
+    Found 2-bit comparator lessequal for signal <n0005> created at line 53
+    Found 2-bit comparator greater for signal <GND_49_o_remword[1]_LessThan_7_o> created at line 75
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <mwfil_dut2bus> synthesized.
+
+Synthesizing Unit <fil_test_wrapper>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\fil_test_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <fil_test_wrapper> synthesized.
+
+Synthesizing Unit <fil_test>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\fil_test.vhd".
+    Found 8-bit register for signal <dataout>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <fil_test> synthesized.
+
+Synthesizing Unit <MWMdioBasic>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\filsrc\MWMdioBasic.vhd".
+    Found 1-bit tristate buffer for signal <ETH_MDIO> created at line 33
+    Summary:
+	inferred   1 Tristate(s).
+Unit <MWMdioBasic> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 10
+ 16x8-bit dual-port RAM                                : 3
+ 2048x8-bit dual-port RAM                              : 1
+ 2048x9-bit dual-port RAM                              : 2
+ 4096x9-bit dual-port RAM                              : 1
+ 4x14-bit dual-port RAM                                : 1
+ 4x7-bit dual-port RAM                                 : 1
+ 512x8-bit dual-port RAM                               : 1
+# Adders/Subtractors                                   : 56
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 2
+ 12-bit adder                                          : 6
+ 12-bit addsub                                         : 1
+ 12-bit subtractor                                     : 1
+ 13-bit adder                                          : 2
+ 16-bit adder                                          : 5
+ 16-bit addsub                                         : 1
+ 16-bit subtractor                                     : 8
+ 17-bit adder                                          : 2
+ 3-bit adder                                           : 4
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 7
+ 4-bit subtractor                                      : 2
+ 5-bit adder                                           : 5
+ 5-bit addsub                                          : 1
+ 5-bit subtractor                                      : 1
+ 8-bit adder                                           : 2
+ 9-bit adder                                           : 3
+ 9-bit subtractor                                      : 1
+# Registers                                            : 244
+ 1-bit register                                        : 111
+ 10-bit register                                       : 1
+ 11-bit register                                       : 4
+ 12-bit register                                       : 11
+ 13-bit register                                       : 10
+ 14-bit register                                       : 1
+ 16-bit register                                       : 14
+ 17-bit register                                       : 1
+ 2-bit register                                        : 4
+ 3-bit register                                        : 4
+ 32-bit register                                       : 2
+ 4-bit register                                        : 8
+ 40-bit register                                       : 1
+ 400-bit register                                      : 1
+ 5-bit register                                        : 5
+ 7-bit register                                        : 1
+ 8-bit register                                        : 59
+ 9-bit register                                        : 6
+# Comparators                                          : 30
+ 11-bit comparator equal                               : 1
+ 12-bit comparator equal                               : 2
+ 12-bit comparator greater                             : 1
+ 12-bit comparator not equal                           : 1
+ 13-bit comparator equal                               : 2
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 3
+ 16-bit comparator lessequal                           : 1
+ 2-bit comparator greater                              : 1
+ 2-bit comparator lessequal                            : 1
+ 3-bit comparator not equal                            : 2
+ 4-bit comparator greater                              : 2
+ 4-bit comparator lessequal                            : 3
+ 5-bit comparator greater                              : 3
+ 5-bit comparator not equal                            : 1
+ 8-bit comparator equal                                : 4
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 238
+ 1-bit 2-to-1 multiplexer                              : 51
+ 1-bit 3-to-1 multiplexer                              : 4
+ 10-bit 2-to-1 multiplexer                             : 1
+ 11-bit 2-to-1 multiplexer                             : 4
+ 11-bit 3-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 5
+ 13-bit 2-to-1 multiplexer                             : 6
+ 16-bit 2-to-1 multiplexer                             : 27
+ 17-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 4
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 34
+ 4-bit 2-to-1 multiplexer                              : 4
+ 40-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 51
+ 8-bit 3-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 26
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# FSMs                                                 : 8
+# Xors                                                 : 604
+ 1-bit xor2                                            : 299
+ 1-bit xor3                                            : 218
+ 1-bit xor4                                            : 78
+ 1-bit xor5                                            : 5
+ 11-bit xor2                                           : 2
+ 12-bit xor2                                           : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <wr_addr_bin_12> in Unit <u_rxFIFO> is equivalent to the following FF/Latch, which will be removed : <wr_addr_gray_12> 
+INFO:Xst:2261 - The FF/Latch <rd_addr_bin_12> in Unit <u_rxFIFO> is equivalent to the following FF/Latch, which will be removed : <rd_addr_gray_12> 
+INFO:Xst:2261 - The FF/Latch <rd_addr_bin_11> in Unit <u_txFIFO> is equivalent to the following FF/Latch, which will be removed : <rd_addr_gray_11> 
+INFO:Xst:2261 - The FF/Latch <wr_addr_bin_11> in Unit <u_txFIFO> is equivalent to the following FF/Latch, which will be removed : <wr_addr_gray_11> 
+INFO:Xst:2261 - The FF/Latch <status_0> in Unit <u_FILCmdProc> is equivalent to the following 5 FFs/Latches, which will be removed : <status_2> <status_3> <status_4> <status_5> <status_7> 
+WARNING:Xst:1710 - FF/Latch <status_0> (without init value) has a constant value of 0 in block <u_FILCmdProc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gmii_tx_er> (without init value) has a constant value of 0 in block <u_mwtxmac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ETH_TXER> (without init value) has a constant value of 0 in block <fil_test_fil>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <rd_doutB_12> of sequential type is unconnected in block <u_PKTINFO>.
+WARNING:Xst:2677 - Node <rd_doutB_13> of sequential type is unconnected in block <u_PKTINFO>.
+WARNING:Xst:2677 - Node <rd_doutB_5> of sequential type is unconnected in block <u_PKTINFO>.
+WARNING:Xst:2677 - Node <rd_doutB_6> of sequential type is unconnected in block <u_PKTINFO>.
+WARNING:Xst:2677 - Node <txReady_d_2> of sequential type is unconnected in block <u_MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <txReady_d_3> of sequential type is unconnected in block <u_MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <txReady_d_4> of sequential type is unconnected in block <u_MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <txReady_d_5> of sequential type is unconnected in block <u_MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <txReady_d_6> of sequential type is unconnected in block <u_MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <txReady_d_7> of sequential type is unconnected in block <u_MWUDPPKTBuilder>.
+WARNING:Xst:2404 -  FFs/Latches <status<7:7>> (without init value) have a constant value of 0 in block <FILCmdProc>.
+
+Synthesizing (advanced) Unit <FILUDPCRC>.
+The following registers are absorbed into counter <rdAddr>: 1 register on signal <rdAddr>.
+Unit <FILUDPCRC> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MWAsyncFIFO_1>.
+The following registers are absorbed into counter <wr_addr_bin>: 1 register on signal <wr_addr_bin>.
+The following registers are absorbed into counter <rd_addr_bin>: 1 register on signal <rd_addr_bin>.
+Unit <MWAsyncFIFO_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MWAsyncFIFO_2>.
+The following registers are absorbed into counter <wr_addr_bin>: 1 register on signal <wr_addr_bin>.
+The following registers are absorbed into counter <rd_addr_bin>: 1 register on signal <rd_addr_bin>.
+Unit <MWAsyncFIFO_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MWDPRAM_1>.
+INFO:Xst:3226 - The RAM <Mram_memory> will be implemented as a BLOCK RAM, absorbing the following register(s): <rd_doutB>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clkA>          | rise     |
+    |     weA            | connected to signal <wr_enA>        | high     |
+    |     addrA          | connected to signal <wr_addrA>      |          |
+    |     diA            | connected to signal <wr_dinA>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clkB>          | rise     |
+    |     addrB          | connected to signal <rd_addrB>      |          |
+    |     doB            | connected to signal <rd_doutB>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <MWDPRAM_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MWDPRAM_2>.
+INFO:Xst:3226 - The RAM <Mram_memory> will be implemented as a BLOCK RAM, absorbing the following register(s): <rd_doutB>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 9-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clkA>          | rise     |
+    |     weA            | connected to signal <wr_enA_0>      | high     |
+    |     addrA          | connected to signal <wr_addrA>      |          |
+    |     diA            | connected to signal <wr_dinA>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 9-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clkB>          | rise     |
+    |     enB            | connected to signal <enbB>          | high     |
+    |     addrB          | connected to signal <rd_addrB>      |          |
+    |     doB            | connected to signal <rd_doutB>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <MWDPRAM_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MWDPRAM_3>.
+INFO:Xst:3226 - The RAM <Mram_memory> will be implemented as a BLOCK RAM, absorbing the following register(s): <rd_doutB>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 9-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clkA>          | rise     |
+    |     weA            | connected to signal <wr_enA_0>      | high     |
+    |     addrA          | connected to signal <wr_addrA>      |          |
+    |     diA            | connected to signal <wr_dinA>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4096-word x 9-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clkB>          | rise     |
+    |     addrB          | connected to signal <rd_addrB>      |          |
+    |     doB            | connected to signal <rd_doutB>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <MWDPRAM_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MWDPRAM_4>.
+INFO:Xst:3226 - The RAM <Mram_memory> will be implemented as a BLOCK RAM, absorbing the following register(s): <rd_doutB>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clkA>          | rise     |
+    |     weA            | connected to signal <wr_enA>        | high     |
+    |     addrA          | connected to signal <wr_addrA>      |          |
+    |     diA            | connected to signal <wr_dinA>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clkB>          | rise     |
+    |     addrB          | connected to signal <rd_addrB>      |          |
+    |     doB            | connected to signal <rd_doutB>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <MWDPRAM_4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MWDPRAM_5>.
+INFO:Xst:3231 - The small RAM <Mram_memory> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 14-bit                     |          |
+    |     clkA           | connected to signal <clkA>          | rise     |
+    |     weA            | connected to signal <VCC>           | high     |
+    |     addrA          | connected to signal <wr_addrA>      |          |
+    |     diA            | connected to signal <wr_dinA>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4-word x 14-bit                     |          |
+    |     addrB          | connected to signal <rd_addrB>      |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <MWDPRAM_5> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MWDPRAM_6>.
+INFO:Xst:3231 - The small RAM <Mram_memory> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     clkA           | connected to signal <clkA>          | rise     |
+    |     weA            | connected to signal <wr_enA>        | high     |
+    |     addrA          | connected to signal <wr_addrA>      |          |
+    |     diA            | connected to signal <wr_dinA>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     addrB          | connected to signal <rd_addrB>      |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <MWDPRAM_6> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MWDPRAM_7>.
+INFO:Xst:3231 - The small RAM <Mram_memory> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 7-bit                      |          |
+    |     clkA           | connected to signal <clkA>          | rise     |
+    |     weA            | connected to signal <VCC>           | high     |
+    |     addrA          | connected to signal <wr_addrA>      |          |
+    |     diA            | connected to signal <wr_dinA>       |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4-word x 7-bit                      |          |
+    |     addrB          | connected to signal <rd_addrB>      |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <MWDPRAM_7> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MWPKTBuffer_1>.
+The following registers are absorbed into counter <rdAddr>: 1 register on signal <rdAddr>.
+The following registers are absorbed into counter <pktInfo_wrAddr>: 1 register on signal <pktInfo_wrAddr>.
+The following registers are absorbed into counter <pktInfo_rdAddr>: 1 register on signal <pktInfo_rdAddr>.
+The following registers are absorbed into counter <wrAddr>: 1 register on signal <wrAddr>.
+Unit <MWPKTBuffer_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MWPKTBuffer_2>.
+The following registers are absorbed into counter <rdAddr>: 1 register on signal <rdAddr>.
+The following registers are absorbed into counter <pktInfo_wrAddr>: 1 register on signal <pktInfo_wrAddr>.
+The following registers are absorbed into counter <pktInfo_rdAddr>: 1 register on signal <pktInfo_rdAddr>.
+The following registers are absorbed into counter <wrAddr>: 1 register on signal <wrAddr>.
+Unit <MWPKTBuffer_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MWUDPPKTBuilder>.
+The following registers are absorbed into counter <seqNumber>: 1 register on signal <seqNumber>.
+Unit <MWUDPPKTBuilder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mwfil_dpscram>.
+INFO:Xst:3231 - The small RAM <Mram_mem> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <wr_addr>       |          |
+    |     diA            | connected to signal <wr_din>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     addrB          | connected to signal <rd_addr>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <mwfil_dpscram> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mwfil_udfifo>.
+The following registers are absorbed into counter <rd_addr>: 1 register on signal <rd_addr>.
+The following registers are absorbed into counter <wr_addr>: 1 register on signal <wr_addr>.
+Unit <mwfil_udfifo> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mwtxmac>.
+The following registers are absorbed into counter <ipAddrCnt>: 1 register on signal <ipAddrCnt>.
+The following registers are absorbed into counter <arpCnt>: 1 register on signal <arpCnt>.
+The following registers are absorbed into counter <macSrcDstCnt>: 1 register on signal <macSrcDstCnt>.
+The following registers are absorbed into counter <pingCnt>: 1 register on signal <pingCnt>.
+Unit <mwtxmac> synthesized (advanced).
+WARNING:Xst:2677 - Node <txReady_d_2> of sequential type is unconnected in block <MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <txReady_d_3> of sequential type is unconnected in block <MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <txReady_d_4> of sequential type is unconnected in block <MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <txReady_d_5> of sequential type is unconnected in block <MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <txReady_d_6> of sequential type is unconnected in block <MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <txReady_d_7> of sequential type is unconnected in block <MWUDPPKTBuilder>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 10
+ 16x8-bit dual-port distributed RAM                    : 3
+ 2048x8-bit dual-port block RAM                        : 1
+ 2048x9-bit dual-port block RAM                        : 2
+ 4096x9-bit dual-port block RAM                        : 1
+ 4x14-bit dual-port distributed RAM                    : 1
+ 4x7-bit dual-port distributed RAM                     : 1
+ 512x8-bit dual-port block RAM                         : 1
+# Adders/Subtractors                                   : 38
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 12-bit adder                                          : 4
+ 12-bit addsub                                         : 1
+ 12-bit subtractor                                     : 1
+ 13-bit adder                                          : 2
+ 16-bit adder                                          : 4
+ 16-bit addsub                                         : 1
+ 16-bit subtractor                                     : 8
+ 17-bit adder                                          : 2
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 2
+ 5-bit adder                                           : 1
+ 5-bit addsub                                          : 1
+ 5-bit subtractor                                      : 1
+ 8-bit adder                                           : 2
+ 9-bit adder                                           : 3
+ 9-bit subtractor                                      : 1
+# Counters                                             : 22
+ 11-bit up counter                                     : 1
+ 12-bit up counter                                     : 4
+ 13-bit up counter                                     : 2
+ 16-bit up counter                                     : 1
+ 3-bit up counter                                      : 4
+ 4-bit up counter                                      : 6
+ 5-bit up counter                                      : 4
+# Registers                                            : 1589
+ Flip-Flops                                            : 1589
+# Comparators                                          : 30
+ 11-bit comparator equal                               : 1
+ 12-bit comparator equal                               : 2
+ 12-bit comparator greater                             : 1
+ 12-bit comparator not equal                           : 1
+ 13-bit comparator equal                               : 2
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 3
+ 16-bit comparator lessequal                           : 1
+ 2-bit comparator greater                              : 1
+ 2-bit comparator lessequal                            : 1
+ 3-bit comparator not equal                            : 2
+ 4-bit comparator greater                              : 2
+ 4-bit comparator lessequal                            : 3
+ 5-bit comparator greater                              : 3
+ 5-bit comparator not equal                            : 1
+ 8-bit comparator equal                                : 4
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 247
+ 1-bit 2-to-1 multiplexer                              : 66
+ 1-bit 3-to-1 multiplexer                              : 4
+ 10-bit 2-to-1 multiplexer                             : 1
+ 11-bit 2-to-1 multiplexer                             : 4
+ 11-bit 3-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 5
+ 13-bit 2-to-1 multiplexer                             : 5
+ 16-bit 2-to-1 multiplexer                             : 27
+ 17-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 3
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 34
+ 4-bit 2-to-1 multiplexer                              : 2
+ 40-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 51
+ 8-bit 3-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 26
+# FSMs                                                 : 8
+# Xors                                                 : 604
+ 1-bit xor2                                            : 299
+ 1-bit xor3                                            : 218
+ 1-bit xor4                                            : 78
+ 1-bit xor5                                            : 5
+ 11-bit xor2                                           : 2
+ 12-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <status_0> (without init value) has a constant value of 0 in block <FILCmdProc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <status_2> (without init value) has a constant value of 0 in block <FILCmdProc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <status_3> (without init value) has a constant value of 0 in block <FILCmdProc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <status_4> (without init value) has a constant value of 0 in block <FILCmdProc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <status_5> (without init value) has a constant value of 0 in block <FILCmdProc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <gmii_tx_er> (without init value) has a constant value of 0 in block <mwtxmac>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <udpdstport0_2reg_0> in Unit <mwrxmac> is equivalent to the following 4 FFs/Latches, which will be removed : <udpdstport1_2reg_0> <udpdstport2_2reg_0> <udpdstport3_2reg_0> <packetdstport_0> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_1reg_3> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_1reg_3> <udpsrcport2_1reg_3> <udpsrcport3_1reg_3> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_2reg_7> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_2reg_7> <udpsrcport2_2reg_7> <udpsrcport3_2reg_7> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_2reg_5> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_2reg_5> <udpdstport2_2reg_5> <udpdstport3_2reg_5> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_1reg_4> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_1reg_4> <udpdstport2_1reg_4> <udpdstport3_1reg_4> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_2reg_1> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_2reg_1> <udpsrcport2_2reg_1> <udpsrcport3_2reg_1> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_1reg_2> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_1reg_2> <udpsrcport2_1reg_2> <udpsrcport3_1reg_2> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_2reg_6> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_2reg_6> <udpsrcport2_2reg_6> <udpsrcport3_2reg_6> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_2reg_4> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_2reg_4> <udpdstport2_2reg_4> <udpdstport3_2reg_4> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_1reg_3> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_1reg_3> <udpdstport2_1reg_3> <udpdstport3_1reg_3> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_2reg_0> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_2reg_0> <udpsrcport2_2reg_0> <udpsrcport3_2reg_0> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_1reg_7> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_1reg_7> <udpsrcport2_1reg_7> <udpsrcport3_1reg_7> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_1reg_1> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_1reg_1> <udpsrcport2_1reg_1> <udpsrcport3_1reg_1> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_2reg_5> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_2reg_5> <udpsrcport2_2reg_5> <udpsrcport3_2reg_5> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_2reg_3> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_2reg_3> <udpdstport2_2reg_3> <udpdstport3_2reg_3> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_1reg_2> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_1reg_2> <udpdstport2_1reg_2> <udpdstport3_1reg_2> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_1reg_6> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_1reg_6> <udpsrcport2_1reg_6> <udpsrcport3_1reg_6> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_1reg_7> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_1reg_7> <udpdstport2_1reg_7> <udpdstport3_1reg_7> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_1reg_0> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_1reg_0> <udpsrcport2_1reg_0> <udpsrcport3_1reg_0> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_2reg_4> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_2reg_4> <udpsrcport2_2reg_4> <udpsrcport3_2reg_4> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_2reg_2> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_2reg_2> <udpdstport2_2reg_2> <udpdstport3_2reg_2> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_1reg_1> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_1reg_1> <udpdstport2_1reg_1> <udpdstport3_1reg_1> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_1reg_5> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_1reg_5> <udpsrcport2_1reg_5> <udpsrcport3_1reg_5> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_2reg_7> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_2reg_7> <udpdstport2_2reg_7> <udpdstport3_2reg_7> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_1reg_6> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_1reg_6> <udpdstport2_1reg_6> <udpdstport3_1reg_6> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_2reg_3> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_2reg_3> <udpsrcport2_2reg_3> <udpsrcport3_2reg_3> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_2reg_1> in Unit <mwrxmac> is equivalent to the following 4 FFs/Latches, which will be removed : <udpdstport1_2reg_1> <udpdstport2_2reg_1> <udpdstport3_2reg_1> <packetdstport_1> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_1reg_0> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_1reg_0> <udpdstport2_1reg_0> <udpdstport3_1reg_0> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_1reg_4> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_1reg_4> <udpsrcport2_1reg_4> <udpsrcport3_1reg_4> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_2reg_6> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_2reg_6> <udpdstport2_2reg_6> <udpdstport3_2reg_6> 
+INFO:Xst:2261 - The FF/Latch <udpdstport0_1reg_5> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpdstport1_1reg_5> <udpdstport2_1reg_5> <udpdstport3_1reg_5> 
+INFO:Xst:2261 - The FF/Latch <udpsrcport0_2reg_2> in Unit <mwrxmac> is equivalent to the following 3 FFs/Latches, which will be removed : <udpsrcport1_2reg_2> <udpsrcport2_2reg_2> <udpsrcport3_2reg_2> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_FILCore/u_FILCommLayer/u_FILPktProc/u_FILUDPCRC/FSM_2> on signal <wrState[1:2]> with user encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ wr_idle     | 00
+ wr_data     | 01
+ wr_checkcrc | 10
+-------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_FILCore/u_FILCommLayer/u_FILPktProc/u_FILDataProc/FSM_5> on signal <rx_state[1:3]> with user encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ rx_idle     | 000
+ rx_header_1 | 001
+ rx_header_2 | 010
+ rx_header_3 | 011
+ rx_header_4 | 100
+ rx_header_5 | 101
+ rx_data     | 110
+ rx_eop      | 111
+-------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_FILCore/u_FILCommLayer/u_FILPktProc/u_FILDataProc/FSM_6> on signal <tx_state[1:2]> with gray encoding.
+---------------------
+ State   | Encoding
+---------------------
+ tx_idle | 00
+ tx_data | 01
+ tx_eop  | 11
+---------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_FILCore/u_FILCommLayer/u_FILPktProc/u_FILPktMUX/FSM_3> on signal <state[1:3]> with one-hot encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ idle          | 001
+ cmd_wait_eop  | 100
+ data_wait_eop | 010
+---------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_FILCore/u_FILCommLayer/u_FILPktProc/u_FILCmdProc/FSM_4> on signal <status_state[1:4]> with user encoding.
+-----------------------------
+ State           | Encoding
+-----------------------------
+ status_idle     | 0000
+ status_wait_rdy | 0001
+ status_byte_1   | 0010
+ status_byte_2   | 0011
+ status_byte_3   | 0100
+ status_byte_4   | 0101
+ status_byte_5   | 0110
+ status_byte_6   | 0111
+ status_byte_7   | 1000
+ status_byte_8   | 1001
+-----------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/FSM_7> on signal <pktState[1:3]> with user encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ idle             | 000
+ pkt_ready        | 001
+ status_mode      | 010
+ status_pkt       | 011
+ data_mode        | 100
+ data_pkt_header  | 101
+ data_pkt_payload | 110
+------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_FILCore/u_FILCommLayer/u_MWMAC/u_mwrxmac/FSM_0> on signal <current_state[1:112]> with one-hot encoding.
+---------------------------------------------------------------------------------------------------------------------------------------
+ State             | Encoding
+---------------------------------------------------------------------------------------------------------------------------------------
+ idle              | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+ flush_packet      | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010
+ preamble          | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000
+ dstmac1           | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100
+ dstmac2           | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000
+ dstmac3           | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+ dstmac4           | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000
+ dstmac5           | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000
+ dstmac6           | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000
+ dstmacbroadcast2  | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000
+ dstmacbroadcast3  | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000
+ dstmacbroadcast4  | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000
+ dstmacbroadcast5  | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000
+ dstmacbroadcast6  | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000
+ srcmac1           | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000
+ srcmac2           | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000
+ srcmac3           | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000
+ srcmac4           | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000
+ srcmac5           | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000
+ srcmac6           | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000
+ ethertype1        | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000
+ ethertype2        | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000
+ iphdr1            | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000
+ iphdr2            | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000
+ iptotal_len1      | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000
+ iptotal_len2      | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000
+ ipid1             | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000
+ ipid2             | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000
+ iphdr3            | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000
+ iphdr4            | 0000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000
+ ipttl             | 0000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000
+ ipprotocol        | 0000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000
+ iphdrchecksum1    | 0000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000
+ iphdrchecksum2    | 0000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000
+ srcip1            | 0000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000
+ srcip2            | 0000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000
+ srcip3            | 0000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000
+ srcip4            | 0000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000
+ dstip1            | 0000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000
+ dstip2            | 0000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000
+ dstip3            | 0000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000
+ dstip4            | 0000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000
+ udpsrc1           | 0000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000
+ udpsrc2           | 0000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000
+ udpdst1           | 0000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000
+ udpdst2           | 0000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000
+ udplen1           | 0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000
+ udplen2           | 0000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000
+ udpchecksum1      | 0000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000
+ udpchecksum2      | 0000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000
+ udpdata           | 0000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000
+ ippadding         | 0000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000
+ ipfcs1            | 0000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000
+ ipfcs2            | 0000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000
+ ipfcs3            | 0000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000
+ ipfcs4            | 0000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000
+ pinghdrchecksum1  | 0000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000
+ pinghdrchecksum2  | 0000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000
+ pingsrcip1        | 0000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000
+ pingsrcip2        | 0000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000
+ pingsrcip3        | 0000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000
+ pingsrcip4        | 0000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000
+ pingdstip1        | 0000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000
+ pingdstip2        | 0000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000
+ pingdstip3        | 0000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000
+ pingdstip4        | 0000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000
+ pingicmptype      | 0000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000
+ pingicmpcode      | 0000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000
+ pingicmpchecksum1 | 0000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000
+ pingicmpchecksum2 | 0000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000
+ pingicmpid1       | 0000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000
+ pingicmpid2       | 0000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000
+ pingicmpseq1      | 0000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000
+ pingicmpseq2      | 0000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000
+ pingdata          | 0000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000
+ pingfcs1          | 0000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000
+ pingfcs2          | 0000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000
+ pingfcs3          | 0000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000
+ pingfcs4          | 0000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_htype1        | 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000
+ arp_htype2        | 0000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_ptype1        | 0000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_ptype2        | 0000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_hlen          | 0000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_plen          | 0000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_oper1         | 0000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_oper2         | 0000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_sha1          | 0000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_sha2          | 0000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_sha3          | 0000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_sha4          | 0000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_sha5          | 0000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_sha6          | 0000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_spa1          | 0000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_spa2          | 0000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_spa3          | 0000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_spa4          | 0000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_tha1          | 0000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_tha2          | 0000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_tha3          | 0000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_tha4          | 0000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_tha5          | 0000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_tha6          | 0000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_tpa1          | 0000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_tpa2          | 0000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_tpa3          | 0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arp_tpa4          | 0000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arppadding        | 0000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arpfcs1           | 0001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arpfcs2           | 0010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arpfcs3           | 0100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ arpfcs4           | 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+---------------------------------------------------------------------------------------------------------------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_FILCore/u_FILCommLayer/u_MWMAC/u_mwtxmac/FSM_1> on signal <current_state[1:6]> with user encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ idle              | 000000
+ cooldown          | 000001
+ udp_pending       | 000010
+ preamble1         | 000011
+ preamble2         | 000100
+ preamble3         | 000101
+ preamble4         | 000110
+ preamble5         | 000111
+ preamble6         | 001000
+ preamble7         | 001001
+ preamble8         | 001010
+ macsrcdst         | 001011
+ ethertype2        | 001100
+ iphdr1            | 001101
+ iphdr2            | 001110
+ iptotal_len1      | 001111
+ iptotal_len2      | 010000
+ ipid1             | 010001
+ ipid2             | 010010
+ iphdr3            | 010011
+ iphdr4            | 010100
+ ipttl             | 010101
+ ipprotocol        | 010110
+ iphdrchecksum1    | 010111
+ iphdrchecksum2    | 011000
+ ipaddr            | 011001
+ udplen1           | 011010
+ udplen2           | 011011
+ udpchecksum1      | 011100
+ udpchecksum2      | 011101
+ udpdata           | 011110
+ ippadding         | 011111
+ ipfcs1            | 100000
+ ipfcs2            | 100001
+ ipfcs3            | 100010
+ ipfcs4            | 100011
+ ping_pkt          | 100100
+ pingicmp1         | 100101
+ pingicmp2         | 100110
+ pingicmpchecksum1 | 100111
+ pingicmpchecksum2 | 101000
+ pingicmpdata      | 101001
+ arp_pkt           | 101010
+-------------------------------
+WARNING:Xst:1710 - FF/Latch <pktLen_12> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <thisPKTLen_12> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_15> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_14> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_13> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_12> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_11> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_10> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_9> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_8> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_7> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_6> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_5> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_4> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_3> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_2> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_1> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataHeaderReg_0> (without init value) has a constant value of 0 in block <MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <FILCore> ...
+
+Optimizing unit <FILCommLayer> ...
+
+Optimizing unit <FILPktProc> ...
+
+Optimizing unit <MWDPRAM_4> ...
+
+Optimizing unit <MWDPRAM_5> ...
+
+Optimizing unit <MWDPRAM_6> ...
+
+Optimizing unit <MWDPRAM_7> ...
+
+Optimizing unit <MWMAC> ...
+
+Optimizing unit <mwpingram> ...
+
+Optimizing unit <MWDPRAM_1> ...
+
+Optimizing unit <mwfil_chiftop> ...
+
+Optimizing unit <mwfil_dpscram> ...
+
+Optimizing unit <fil_test_wrapper> ...
+
+Optimizing unit <fil_test> ...
+
+Optimizing unit <fil_test_fil> ...
+
+Optimizing unit <MWClkMgr> ...
+
+Optimizing unit <FILUDPCRC> ...
+
+Optimizing unit <MWDPRAM_2> ...
+
+Optimizing unit <FILDataProc> ...
+INFO:Xst:2261 - The FF/Latch <tx_state_FSM_FFd1> in Unit <FILDataProc> is equivalent to the following FF/Latch, which will be removed : <txfifo_din_8> 
+
+Optimizing unit <MWAsyncFIFO_1> ...
+
+Optimizing unit <MWDPRAM_3> ...
+
+Optimizing unit <MWAsyncFIFO_2> ...
+
+Optimizing unit <FILPktMUX> ...
+
+Optimizing unit <FILCmdProc> ...
+
+Optimizing unit <MWUDPPKTBuilder> ...
+
+Optimizing unit <MWPKTBuffer_1> ...
+
+Optimizing unit <MWPKTBuffer_2> ...
+
+Optimizing unit <mwrxmac> ...
+
+Optimizing unit <mwtxmac> ...
+
+Optimizing unit <mwfil_chifcore> ...
+
+Optimizing unit <mwfil_bus2dut> ...
+
+Optimizing unit <mwfil_controller> ...
+
+Optimizing unit <mwfil_udfifo> ...
+
+Optimizing unit <mwfil_dut2bus> ...
+WARNING:Xst:1293 - FF/Latch <remword_1> has a constant value of 0 in block <mwfil_dut2bus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <remword_1> has a constant value of 0 in block <mwfil_dut2bus>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <MWMdioBasic> ...
+WARNING:Xst:1710 - FF/Latch <ETH_TXER> (without init value) has a constant value of 0 in block <fil_test_fil>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <thisPKTPort_0> of sequential type is unconnected in block <u_MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <thisPKTPort_1> of sequential type is unconnected in block <u_MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <pktPort_0> of sequential type is unconnected in block <u_MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <pktPort_1> of sequential type is unconnected in block <u_MWUDPPKTBuilder>.
+WARNING:Xst:2677 - Node <rd_doutB_12> of sequential type is unconnected in block <u_PKTINFO>.
+WARNING:Xst:2677 - Node <rd_doutB_13> of sequential type is unconnected in block <u_PKTINFO>.
+WARNING:Xst:2677 - Node <Mram_memory31> of sequential type is unconnected in block <u_PKTINFO>.
+WARNING:Xst:2677 - Node <Mram_memory32> of sequential type is unconnected in block <u_PKTINFO>.
+WARNING:Xst:2677 - Node <rd_doutB_5> of sequential type is unconnected in block <u_PKTINFO>.
+WARNING:Xst:2677 - Node <rd_doutB_6> of sequential type is unconnected in block <u_PKTINFO>.
+WARNING:Xst:2677 - Node <Mram_memory2> of sequential type is unconnected in block <u_PKTINFO>.
+WARNING:Xst:1710 - FF/Latch <waitCycle_3> (without init value) has a constant value of 0 in block <u_MWUDPPKTBuilder>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <txfifo_din_8> in Unit <u_FILDataProc> is equivalent to the following FF/Latch, which will be removed : <tx_state_FSM_FFd1> 
+INFO:Xst:2261 - The FF/Latch <wr_addr_gray_12> in Unit <u_rxFIFO> is equivalent to the following FF/Latch, which will be removed : <wr_addr_bin_12> 
+INFO:Xst:2261 - The FF/Latch <rd_addr_gray_12> in Unit <u_rxFIFO> is equivalent to the following FF/Latch, which will be removed : <rd_addr_bin_12> 
+INFO:Xst:2261 - The FF/Latch <wr_addr_gray_11> in Unit <u_txFIFO> is equivalent to the following FF/Latch, which will be removed : <wr_addr_bin_11> 
+INFO:Xst:2261 - The FF/Latch <rd_addr_gray_11> in Unit <u_txFIFO> is equivalent to the following FF/Latch, which will be removed : <rd_addr_bin_11> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fil_test_fil, actual ratio is 0.
+FlipFlop u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF/rdAddr_11 has been replicated 2 time(s)
+FlipFlop u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF/wrAddr_11 has been replicated 2 time(s)
+FlipFlop u_FILCore/u_FILCommLayer/u_MWMAC/u_mwtxmac/current_state_FSM_FFd4 has been replicated 1 time(s)
+FlipFlop u_FILCore/u_FILCommLayer/u_MWMAC/u_mwtxmac/current_state_FSM_FFd5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <u_FILCmdProc> :
+	Found 2-bit shift register for signal <rxrst_int>.
+	Found 2-bit shift register for signal <txrst_int>.
+	Found 2-bit shift register for signal <get_ver_s2>.
+Unit <u_FILCmdProc> processed.
+
+Processing Unit <u_rxFIFO> :
+	Found 2-bit shift register for signal <rst_clkin_sync2>.
+	Found 2-bit shift register for signal <rst_clkout_sync2>.
+Unit <u_rxFIFO> processed.
+
+Processing Unit <u_txFIFO> :
+	Found 2-bit shift register for signal <rst_clkin_sync2>.
+	Found 2-bit shift register for signal <rst_clkout_sync2>.
+Unit <u_txFIFO> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1735
+ Flip-Flops                                            : 1735
+# Shift Registers                                      : 7
+ 2-bit shift register                                  : 7
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : fil_test_fil.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3764
+#      GND                         : 24
+#      INV                         : 119
+#      LUT1                        : 209
+#      LUT2                        : 221
+#      LUT3                        : 348
+#      LUT4                        : 315
+#      LUT5                        : 482
+#      LUT6                        : 1185
+#      MUXCY                       : 403
+#      MUXF7                       : 24
+#      VCC                         : 19
+#      XORCY                       : 415
+# FlipFlops/Latches                : 1743
+#      FD                          : 59
+#      FDC                         : 21
+#      FDE                         : 39
+#      FDR                         : 911
+#      FDRE                        : 639
+#      FDS                         : 9
+#      FDSE                        : 64
+#      ODDR2                       : 1
+# RAMS                             : 19
+#      RAM16X1D                    : 6
+#      RAM32M                      : 6
+#      RAMB16BWER                  : 5
+#      RAMB8BWER                   : 2
+# Shift Registers                  : 7
+#      SRLC16E                     : 7
+# Clock Buffers                    : 5
+#      BUFG                        : 4
+#      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 13
+#      IBUFG                       : 1
+#      OBUF                        : 13
+#      OBUFT                       : 1
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1741  out of  54576     3%  
+ Number of Slice LUTs:                 2922  out of  27288    10%  
+    Number used as Logic:              2879  out of  27288    10%  
+    Number used as Memory:               43  out of   6408     0%  
+       Number used as RAM:               36
+       Number used as SRL:                7
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3502
+   Number with an unused Flip Flop:    1761  out of   3502    50%  
+   Number with an unused LUT:           580  out of   3502    16%  
+   Number of fully used LUT-FF pairs:  1161  out of   3502    33%  
+   Number of unique control sets:       115
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    218    13%  
+    IOB Flip Flops/Latches:               2
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                6  out of    116     5%  
+    Number using Block RAM only:          6
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+ETH_RXCLK                          | BUFGP                  | 606   |
+sysclk                             | DCM_SP:CLKFX           | 822   |
+sysclk                             | DCM_SP:CLKFX180        | 1     |
+sysclk                             | DCM_SP:CLKDV           | 346   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 12.519ns (Maximum Frequency: 79.880MHz)
+   Minimum input arrival time before clock: 2.083ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sysclk'
+  Clock period: 12.519ns (frequency: 79.880MHz)
+  Total number of paths / destination ports: 136535 / 2823
+-------------------------------------------------------------------------
+Delay:               10.015ns (Levels of Logic = 13)
+  Source:            u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF/wrAddr_11_1 (FF)
+  Destination:       u_FILCore/u_FILCommLayer/u_FILPktProc/u_FILDataProc/u_txFIFO/empty (FF)
+  Source Clock:      sysclk rising 1.3X
+  Destination Clock: sysclk rising 1.3X
+
+  Data Path: u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF/wrAddr_11_1 to u_FILCore/u_FILCommLayer/u_FILPktProc/u_FILDataProc/u_txFIFO/empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            11   0.525   1.147  wrAddr_11_1 (wrAddr_11_1)
+     LUT3:I1->O            1   0.250   0.000  Mmux_dataLen_B_rs_lut<0> (Mmux_dataLen_B_rs_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mmux_dataLen_B_rs_cy<0> (Mmux_dataLen_B_rs_cy<0>)
+     XORCY:CI->O           1   0.206   0.682  Mmux_dataLen_B_rs_xor<1> (Mmux_dataLen_rs_B<1>)
+     LUT4:I3->O            1   0.254   0.000  Mmux_dataLen_rs_lut<1> (Mmux_dataLen_rs_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  Mmux_dataLen_rs_cy<1> (Mmux_dataLen_rs_cy<1>)
+     XORCY:CI->O           1   0.206   1.112  Mmux_dataLen_rs_xor<2> (dataLen<2>)
+     LUT5:I0->O            1   0.254   0.682  bufferReady1_SW0 (N01)
+     LUT6:I5->O           18   0.254   1.235  bufferReady1 (bufferReady)
+     end scope: 'u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF:bufferReady'
+     end scope: 'u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder:dataReady'
+     begin scope: 'u_FILCore/u_FILCommLayer/u_FILPktProc/u_FILDataProc:txrdy'
+     begin scope: 'u_FILCore/u_FILCommLayer/u_FILPktProc/u_FILDataProc/u_txFIFO:data_out_en'
+     LUT6:I5->O            2   0.254   0.834  Mxor_rd_addr_gray_next<10:0>_4_xo<0>1 (rd_addr_gray_next<4>)
+     LUT4:I2->O            1   0.250   1.112  empty_temp125 (empty_temp124)
+     LUT6:I1->O            1   0.254   0.000  empty_temp127 (empty_temp)
+     FDS:D                     0.074          empty
+    ----------------------------------------
+    Total                     10.015ns (3.211ns logic, 6.804ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ETH_RXCLK'
+  Clock period: 9.805ns (frequency: 101.990MHz)
+  Total number of paths / destination ports: 229618 / 1534
+-------------------------------------------------------------------------
+Delay:               9.805ns (Levels of Logic = 7)
+  Source:            u_FILCore/u_FILCommLayer/u_MWMAC/u_mwrxmac/current_state_FSM_FFd105 (FF)
+  Destination:       u_FILCore/u_FILCommLayer/u_MWMAC/u_mwrxmac/hostmacaddr1reg_0 (FF)
+  Source Clock:      ETH_RXCLK rising
+  Destination Clock: ETH_RXCLK rising
+
+  Data Path: u_FILCore/u_FILCommLayer/u_MWMAC/u_mwrxmac/current_state_FSM_FFd105 to u_FILCore/u_FILCommLayer/u_MWMAC/u_mwrxmac/hostmacaddr1reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.525   1.032  current_state_FSM_FFd105 (current_state_FSM_FFd105)
+     LUT3:I0->O            1   0.235   0.682  current_state__n2378_inv141 (current_state__n2378_inv14)
+     LUT6:I5->O            2   0.254   0.726  current_state__n2832_inv11131 (current_state__n2832_inv1113)
+     LUT6:I5->O            2   0.254   0.726  current_state_Mmux__n2169_rs_AS12 (current_state_Mmux__n2169_rs_AS12)
+     LUT4:I3->O            1   0.254   0.682  current_state_current_state<1>_SW0 (N96)
+     LUT6:I5->O           36   0.254   1.587  current_state_current_state<1> (current_state<1>)
+     LUT3:I2->O            5   0.254   0.841  _n1302<1>1 (_n1302)
+     LUT6:I5->O            8   0.254   0.943  current_state__n1607_inv1 (_n1607_inv)
+     FDRE:CE                   0.302          hostmacaddr6reg_0
+    ----------------------------------------
+    Total                      9.805ns (2.586ns logic, 7.219ns route)
+                                       (26.4% logic, 73.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ETH_RXCLK'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              2.083ns (Levels of Logic = 1)
+  Source:            ETH_RXD<0> (PAD)
+  Destination:       rxd_0 (FF)
+  Destination Clock: ETH_RXCLK rising
+
+  Data Path: ETH_RXD<0> to rxd_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  ETH_RXD_0_IBUF (ETH_RXD_0_IBUF)
+     FDC:D                     0.074          rxd_0
+    ----------------------------------------
+    Total                      2.083ns (1.402ns logic, 0.681ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sysclk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            ETH_TXD_7 (FF)
+  Destination:       ETH_TXD<7> (PAD)
+  Source Clock:      sysclk rising 1.3X
+
+  Data Path: ETH_TXD_7 to ETH_TXD<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.525   0.681  ETH_TXD_7 (ETH_TXD_7)
+     OBUF:I->O                 2.912          ETH_TXD_7_OBUF (ETH_TXD<7>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ETH_RXCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ETH_RXCLK      |    9.805|         |         |         |
+sysclk         |    2.944|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sysclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ETH_RXCLK      |    4.638|         |         |         |
+sysclk         |   10.015|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 52.00 secs
+Total CPU time to Xst completion: 51.58 secs
+ 
+--> 
+
+Total memory usage is 366276 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   70 (   0 filtered)
+Number of infos    :   55 (   0 filtered)
+

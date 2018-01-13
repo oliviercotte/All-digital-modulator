@@ -1,0 +1,39 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Dec 29 18:40:55 2017
+
+drc -z fil_test_fil.ncd fil_test_fil.pcf
+
+WARNING:PhysDesignRules:367 - The signal
+   <u_FILCore/u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/M
+   ram_mem1_RAMD_D1_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_FILCore/u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/Mram_mem1_RAM
+   D_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF/u_PKTINFO
+   /Mram_memory2_RAMD_D1_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF/u_PKTINFO
+   /Mram_memory1_RAMD_D1_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_STATUS_BUF/u_PKTIN
+   FO/Mram_memory1_RAMD_D1_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_STATUS_BUF/u_MWDPR
+   AM/Mram_memory1_RAMD_D1_O> is incomplete. The signal does not drive any load
+   pins in the design.
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp u_ClockManager/u_dcm,
+   consult the device Data Sheet.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+DRC detected 0 errors and 7 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="746" delta="new" >"C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl" Line 1469: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="new" >"C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl" Line 1470: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="new" >"C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl" Line 1471: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" Line 299: Assignment to <arg fmt="%s" index="1">modulator_input</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" Line 300: Assignment to <arg fmt="%s" index="1">modulator_input_slv</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">204</arg>: Output port &lt;<arg fmt="%s" index="3">CLKFBOUT_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">237</arg>: Output port &lt;<arg fmt="%s" index="3">rfd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">237</arg>: Output port &lt;<arg fmt="%s" index="3">rdy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">246</arg>: Output port &lt;<arg fmt="%s" index="3">rfd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">246</arg>: Output port &lt;<arg fmt="%s" index="3">rdy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">255</arg>: Output port &lt;<arg fmt="%s" index="3">rfd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U5</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">255</arg>: Output port &lt;<arg fmt="%s" index="3">rdy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U5</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">264</arg>: Output port &lt;<arg fmt="%s" index="3">rfd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">264</arg>: Output port &lt;<arg fmt="%s" index="3">rdy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">273</arg>: Output port &lt;<arg fmt="%s" index="3">ce_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U7</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">blk00000158</arg> in unit <arg fmt="%s" index="2">blk00000158</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">blk00000159</arg> in unit <arg fmt="%s" index="2">blk00000159</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">blk0000015a</arg> in unit <arg fmt="%s" index="2">blk0000015a</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">blk0000015b</arg> in unit <arg fmt="%s" index="2">blk0000015b</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">blk0000015c</arg> in unit <arg fmt="%s" index="2">blk0000015c</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">blk0000015d</arg> in unit <arg fmt="%s" index="2">blk0000015d</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cur_count_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Halfband_4_491_52</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cur_count_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Halfband_4_491_52</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

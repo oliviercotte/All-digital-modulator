@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FPGABoard Version="1.0">
+   <BoardName>Digilent Atlys Board</BoardName>
+   <FPGA Device="xc6slx45" Family="Spartan6" JTAGChainPosition="1" Package="csg324" Speed="-3" Vendor="Xilinx">
+      <Interface>
+         <Type>Clock</Type>
+         <Parameter ID="ClockType">Single-Ended</Parameter>
+         <Parameter ID="Frequency">100</Parameter>
+         <Signal>
+            <SignalName>Clock</SignalName>
+            <Description>Clock</Description>
+            <Direction>in</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>L15</FPGAPin>
+            <IOStandard/>
+         </Signal>
+      </Interface>
+      <Interface>
+         <Type>Gigabit Ethernet - GMII</Type>
+         <Parameter ID="GenerateMDIOModule">Yes</Parameter>
+         <Parameter ID="PhyAddr">0</Parameter>
+         <Signal>
+            <SignalName>ETH_COL</SignalName>
+            <Description>Collision detect</Description>
+            <Direction>in</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>C17</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>ETH_CRS</SignalName>
+            <Description>Carrier sense</Description>
+            <Direction>in</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>C18</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>ETH_GTXCLK</SignalName>
+            <Description>Clock signal for gigabit TX signals</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>L12</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>ETH_MDC</SignalName>
+            <Description>Management interface clock</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>F16</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>ETH_MDIO</SignalName>
+            <Description>Management interface I/O bidirectional pin</Description>
+            <Direction>inout</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>N17</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>ETH_RESET_n</SignalName>
+            <Description>PHY reset signal</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>G13</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>ETH_RXCLK</SignalName>
+            <Description>Received clock signal</Description>
+            <Direction>in</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>K15</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>ETH_RXD</SignalName>
+            <Description>Received data</Description>
+            <Direction>in</Direction>
+            <BitWidth>8</BitWidth>
+            <FPGAPin>G16,H14,E16,F15,F14,E18,D18,D17</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>ETH_RXDV</SignalName>
+            <Description>Signifies data received is valid</Description>
+            <Direction>in</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>F17</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>ETH_RXER</SignalName>
+            <Description>Signifies data received has errors</Description>
+            <Direction>in</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>F18</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>ETH_TXD</SignalName>
+            <Description>Data to be transmitted</Description>
+            <Direction>out</Direction>
+            <BitWidth>8</BitWidth>
+            <FPGAPin>H16,H13,K14,K13,J13,G14,H12,K12</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>ETH_TXEN</SignalName>
+            <Description>Transmitter enable</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>H15</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>ETH_TXER</SignalName>
+            <Description>Transmitter error</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>G18</FPGAPin>
+            <IOStandard/>
+         </Signal>
+      </Interface>
+      <Interface>
+         <Type>Reset</Type>
+         <Parameter ID="ActiveLevel">Active-Low</Parameter>
+         <Signal>
+            <SignalName>Reset</SignalName>
+            <Description>Reset</Description>
+            <Direction>in</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>T15</FPGAPin>
+            <IOStandard/>
+         </Signal>
+      </Interface>
+      <Interface>
+         <Type>User-defined I/O interface</Type>
+         <Signal>
+            <SignalName>LEDS</SignalName>
+            <Description>LEDs</Description>
+            <Direction>out</Direction>
+            <BitWidth>8</BitWidth>
+            <FPGAPin>U18,M14,N14,L14,M13,D4,P16,N12</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>PUSHBUTTONS</SignalName>
+            <Description>Push Buttons N-E-S-W-C</Description>
+            <Direction>in</Direction>
+            <BitWidth>5</BitWidth>
+            <FPGAPin>N4,F6,P3,P4,F5</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>SLIDESWITCHES</SignalName>
+            <Description>Slide Switches</Description>
+            <Direction>in</Direction>
+            <BitWidth>8</BitWidth>
+            <FPGAPin>A10,D14,C14,P15,P12,R5,T5,E4</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>USB_UART_RX</SignalName>
+            <Description>USB UART Rx</Description>
+            <Direction>in</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>A16</FPGAPin>
+            <IOStandard/>
+         </Signal>
+         <Signal>
+            <SignalName>USB_UART_TX</SignalName>
+            <Description>USB UART Tx</Description>
+            <Direction>out</Direction>
+            <BitWidth>1</BitWidth>
+            <FPGAPin>B16</FPGAPin>
+            <IOStandard/>
+         </Signal>
+      </Interface>
+   </FPGA>
+</FPGABoard>

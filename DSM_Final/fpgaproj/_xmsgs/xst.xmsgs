@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="old" >"C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT_topatlys_clock_module.vhd" Line 36: &lt;<arg fmt="%s" index="1">ibufg</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="old" >"C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT_topatlys_clock_module.vhd" Line 42: &lt;<arg fmt="%s" index="1">dcm_sp</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="old" >"C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT_topatlys_clock_module.vhd" Line 52: &lt;<arg fmt="%s" index="1">bufg</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT_topatlys.vhd</arg>&quot; line <arg fmt="%s" index="2">81</arg>: Output port &lt;<arg fmt="%s" index="3">ce_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_DUT</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="453" delta="old" >Model &apos;<arg fmt="%s" index="1">DCM_SP</arg>&apos; has different characteristics in destination library, some ports are missing:
+<arg fmt="%s" index="2">CLK2X180 CLK2X CLKFX CLK180 CLK270 CLKFX180 CLKDV PSDONE CLK90 STATUS7 STATUS6 STATUS5 STATUS4 STATUS3 STATUS2 STATUS1 STATUS0 PSCLK PSINCDEC DSSEN </arg>
+</msg>
+
+</messages>
+

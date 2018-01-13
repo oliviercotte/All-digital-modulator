@@ -1,0 +1,208 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml all_digital_modulator.twx all_digital_modulator.ncd -o
+all_digital_modulator.twr all_digital_modulator.pcf
+
+Design file:              all_digital_modulator.ncd
+Physical constraint file: all_digital_modulator.pcf
+Device,package,speed:     xc6slx45,fgg484,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock sys_clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+DAC_IN<0>   |   27.946(R)|      SLOW  |   -3.965(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<1>   |   26.659(R)|      SLOW  |   -4.328(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<2>   |   27.322(R)|      SLOW  |   -4.667(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<3>   |   25.977(R)|      SLOW  |   -4.826(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<4>   |   28.244(R)|      SLOW  |   -4.253(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<5>   |   25.468(R)|      SLOW  |   -4.108(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<6>   |   25.855(R)|      SLOW  |   -3.728(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<7>   |   27.908(R)|      SLOW  |   -4.041(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<8>   |   25.327(R)|      SLOW  |   -3.857(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<9>   |   28.483(R)|      SLOW  |   -5.211(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<10>  |   23.757(R)|      SLOW  |   -4.365(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<11>  |   22.893(R)|      SLOW  |   -4.078(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<12>  |   25.047(R)|      SLOW  |   -4.036(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<13>  |   23.885(R)|      SLOW  |   -4.179(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<14>  |   24.957(R)|      SLOW  |   -4.228(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<15>  |   25.533(R)|      SLOW  |   -4.936(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<16>  |   23.803(R)|      SLOW  |   -4.754(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<17>  |   23.947(R)|      SLOW  |   -4.773(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<18>  |   25.151(R)|      SLOW  |   -4.238(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<19>  |   25.438(R)|      SLOW  |   -4.349(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<20>  |   25.950(R)|      SLOW  |   -4.458(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<21>  |   23.950(R)|      SLOW  |   -4.565(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<22>  |   24.113(R)|      SLOW  |   -4.261(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<23>  |   22.903(R)|      SLOW  |   -4.306(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<24>  |   28.591(R)|      SLOW  |   -5.964(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<25>  |   27.623(R)|      SLOW  |   -5.332(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<26>  |   27.942(R)|      SLOW  |   -6.495(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<27>  |   26.497(R)|      SLOW  |   -5.980(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<28>  |   19.588(R)|      SLOW  |   -5.665(R)|      FAST  |clkout4           |   0.000|
+DAC_IN<29>  |   14.083(R)|      SLOW  |   -3.838(R)|      FAST  |clkout4           |   0.000|
+bypass      |   30.966(R)|      SLOW  |   -5.611(R)|      FAST  |clkout4           |   0.000|
+sys_rst_n   |   11.754(R)|      SLOW  |   -3.143(R)|      FAST  |clkout4           |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock sys_clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+DAC_OUT1<33>|        15.888(R)|      SLOW  |         7.650(R)|      FAST  |clkout4           |   0.000|
+DAC_OUT1<34>|        16.093(R)|      SLOW  |         7.765(R)|      FAST  |clkout4           |   0.000|
+DAC_OUT1<35>|        15.993(R)|      SLOW  |         7.664(R)|      FAST  |clkout4           |   0.000|
+DAC_OUT2<33>|        13.620(R)|      SLOW  |         7.704(R)|      FAST  |clkout4           |   0.000|
+DAC_OUT2<34>|        13.434(R)|      SLOW  |         7.597(R)|      FAST  |clkout4           |   0.000|
+DAC_OUT2<35>|        13.290(R)|      SLOW  |         7.520(R)|      FAST  |clkout4           |   0.000|
+DAC_OUT3<33>|        11.662(R)|      SLOW  |         6.571(R)|      FAST  |clkout4           |   0.000|
+DAC_OUT3<34>|        11.313(R)|      SLOW  |         6.357(R)|      FAST  |clkout4           |   0.000|
+DAC_OUT3<35>|        11.288(R)|      SLOW  |         6.337(R)|      FAST  |clkout4           |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock sys_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sys_clk        |   23.519|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+DAC_IN<0>      |DAC_OUT1<33>   |   19.279|
+DAC_IN<0>      |DAC_OUT1<34>   |   19.484|
+DAC_IN<0>      |DAC_OUT1<35>   |   19.384|
+DAC_IN<1>      |DAC_OUT1<33>   |   19.520|
+DAC_IN<1>      |DAC_OUT1<34>   |   19.725|
+DAC_IN<1>      |DAC_OUT1<35>   |   19.625|
+DAC_IN<2>      |DAC_OUT1<33>   |   19.626|
+DAC_IN<2>      |DAC_OUT1<34>   |   19.831|
+DAC_IN<2>      |DAC_OUT1<35>   |   19.731|
+DAC_IN<3>      |DAC_OUT1<33>   |   19.284|
+DAC_IN<3>      |DAC_OUT1<34>   |   19.489|
+DAC_IN<3>      |DAC_OUT1<35>   |   19.389|
+DAC_IN<4>      |DAC_OUT1<33>   |   20.037|
+DAC_IN<4>      |DAC_OUT1<34>   |   20.242|
+DAC_IN<4>      |DAC_OUT1<35>   |   20.142|
+DAC_IN<5>      |DAC_OUT1<33>   |   20.061|
+DAC_IN<5>      |DAC_OUT1<34>   |   20.266|
+DAC_IN<5>      |DAC_OUT1<35>   |   20.166|
+DAC_IN<6>      |DAC_OUT1<33>   |   19.137|
+DAC_IN<6>      |DAC_OUT1<34>   |   19.342|
+DAC_IN<6>      |DAC_OUT1<35>   |   19.242|
+DAC_IN<7>      |DAC_OUT1<33>   |   19.359|
+DAC_IN<7>      |DAC_OUT1<34>   |   19.564|
+DAC_IN<7>      |DAC_OUT1<35>   |   19.464|
+DAC_IN<8>      |DAC_OUT1<33>   |   19.658|
+DAC_IN<8>      |DAC_OUT1<34>   |   19.863|
+DAC_IN<8>      |DAC_OUT1<35>   |   19.763|
+DAC_IN<9>      |DAC_OUT1<33>   |   19.880|
+DAC_IN<9>      |DAC_OUT1<34>   |   20.085|
+DAC_IN<9>      |DAC_OUT1<35>   |   19.985|
+DAC_IN<10>     |DAC_OUT1<33>   |   19.754|
+DAC_IN<10>     |DAC_OUT1<34>   |   19.959|
+DAC_IN<10>     |DAC_OUT1<35>   |   19.859|
+DAC_IN<11>     |DAC_OUT1<33>   |   18.062|
+DAC_IN<11>     |DAC_OUT1<34>   |   18.267|
+DAC_IN<11>     |DAC_OUT1<35>   |   18.167|
+DAC_IN<12>     |DAC_OUT1<33>   |   19.674|
+DAC_IN<12>     |DAC_OUT1<34>   |   19.879|
+DAC_IN<12>     |DAC_OUT1<35>   |   19.779|
+DAC_IN<13>     |DAC_OUT1<33>   |   19.057|
+DAC_IN<13>     |DAC_OUT1<34>   |   19.262|
+DAC_IN<13>     |DAC_OUT1<35>   |   19.162|
+DAC_IN<14>     |DAC_OUT1<33>   |   19.122|
+DAC_IN<14>     |DAC_OUT1<34>   |   19.327|
+DAC_IN<14>     |DAC_OUT1<35>   |   19.227|
+DAC_IN<15>     |DAC_OUT1<33>   |   19.753|
+DAC_IN<15>     |DAC_OUT1<34>   |   19.958|
+DAC_IN<15>     |DAC_OUT1<35>   |   19.858|
+DAC_IN<16>     |DAC_OUT1<33>   |   20.197|
+DAC_IN<16>     |DAC_OUT1<34>   |   20.402|
+DAC_IN<16>     |DAC_OUT1<35>   |   20.302|
+DAC_IN<17>     |DAC_OUT1<33>   |   19.989|
+DAC_IN<17>     |DAC_OUT1<34>   |   20.194|
+DAC_IN<17>     |DAC_OUT1<35>   |   20.094|
+DAC_IN<18>     |DAC_OUT1<33>   |   19.465|
+DAC_IN<18>     |DAC_OUT1<34>   |   19.670|
+DAC_IN<18>     |DAC_OUT1<35>   |   19.570|
+DAC_IN<19>     |DAC_OUT1<33>   |   20.070|
+DAC_IN<19>     |DAC_OUT1<34>   |   20.275|
+DAC_IN<19>     |DAC_OUT1<35>   |   20.175|
+DAC_IN<20>     |DAC_OUT1<33>   |   19.961|
+DAC_IN<20>     |DAC_OUT1<34>   |   20.166|
+DAC_IN<20>     |DAC_OUT1<35>   |   20.066|
+DAC_IN<21>     |DAC_OUT1<33>   |   19.846|
+DAC_IN<21>     |DAC_OUT1<34>   |   20.051|
+DAC_IN<21>     |DAC_OUT1<35>   |   19.951|
+DAC_IN<22>     |DAC_OUT1<33>   |   19.382|
+DAC_IN<22>     |DAC_OUT1<34>   |   19.587|
+DAC_IN<22>     |DAC_OUT1<35>   |   19.487|
+DAC_IN<23>     |DAC_OUT1<33>   |   21.081|
+DAC_IN<23>     |DAC_OUT1<34>   |   21.286|
+DAC_IN<23>     |DAC_OUT1<35>   |   21.186|
+DAC_IN<24>     |DAC_OUT1<33>   |   21.905|
+DAC_IN<24>     |DAC_OUT1<34>   |   22.110|
+DAC_IN<24>     |DAC_OUT1<35>   |   22.010|
+DAC_IN<25>     |DAC_OUT1<33>   |   20.700|
+DAC_IN<25>     |DAC_OUT1<34>   |   20.905|
+DAC_IN<25>     |DAC_OUT1<35>   |   20.805|
+DAC_IN<26>     |DAC_OUT1<33>   |   20.794|
+DAC_IN<26>     |DAC_OUT1<34>   |   20.999|
+DAC_IN<26>     |DAC_OUT1<35>   |   20.899|
+DAC_IN<27>     |DAC_OUT1<33>   |   20.049|
+DAC_IN<27>     |DAC_OUT1<34>   |   20.254|
+DAC_IN<27>     |DAC_OUT1<35>   |   20.154|
+DAC_IN<28>     |DAC_OUT1<33>   |   18.653|
+DAC_IN<28>     |DAC_OUT1<34>   |   18.858|
+DAC_IN<28>     |DAC_OUT1<35>   |   18.758|
+DAC_IN<29>     |DAC_OUT1<33>   |   15.894|
+DAC_IN<29>     |DAC_OUT1<34>   |   16.099|
+DAC_IN<29>     |DAC_OUT1<35>   |   15.999|
+bypass         |DAC_OUT1<33>   |   23.072|
+bypass         |DAC_OUT1<34>   |   23.277|
+bypass         |DAC_OUT1<35>   |   23.177|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 28 04:33:11 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 327 MB
+
+
+

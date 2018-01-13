@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/DUT_topatlys.xst" -ofn "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/DUT_topatlys.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hdl_prj/hdlsrc/turnkey_test_model/DUT_topatlys.ucf -p xc6slx45-csg324-2 DUT_topatlys.ngc DUT_topatlys.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DUT_topatlys_map.ncd DUT_topatlys.ngd DUT_topatlys.pcf 
+par -w -intstyle ise -ol high -mt off DUT_topatlys_map.ncd DUT_topatlys.ncd DUT_topatlys.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml DUT_topatlys.twx DUT_topatlys.ncd -o DUT_topatlys.twr DUT_topatlys.pcf 
+bitgen -intstyle ise -f DUT_topatlys.ut DUT_topatlys.ncd 
+xst -intstyle ise -ifn "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/DUT_topatlys.xst" -ofn "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/DUT_topatlys.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hdl_prj/hdlsrc/turnkey_test_model/DUT_topatlys.ucf -p xc6slx45-csg324-2 DUT_topatlys.ngc DUT_topatlys.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DUT_topatlys_map.ncd DUT_topatlys.ngd DUT_topatlys.pcf 
+par -w -intstyle ise -ol high -mt off DUT_topatlys_map.ncd DUT_topatlys.ncd DUT_topatlys.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml DUT_topatlys.twx DUT_topatlys.ncd -o DUT_topatlys.twr DUT_topatlys.pcf 
+bitgen -intstyle ise -f DUT_topatlys.ut DUT_topatlys.ncd 

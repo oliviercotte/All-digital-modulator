@@ -1,0 +1,64 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc
+C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/filsrc/fil_test_fil.ucf -p
+xc6slx45-csg324-2 fil_test_fil.ngc fil_test_fil.ngd
+
+Reading NGO file
+"C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/fpgaproj/fil_test_fil.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/filsrc/fil_test_fil.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'sysclk', used in period specification
+   'TS_sysclk', was traced into DCM_SP instance u_ClockManager/u_dcm. The
+   following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_u_ClockManager_dcmclk125 = PERIOD
+   "u_ClockManager_dcmclk125" TS_sysclk / 1.25 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'sysclk', used in period specification
+   'TS_sysclk', was traced into DCM_SP instance u_ClockManager/u_dcm. The
+   following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLKFX180: <TIMESPEC TS_u_ClockManager_dcmclk125_180 = PERIOD
+   "u_ClockManager_dcmclk125_180" TS_sysclk / 1.25 PHASE 4 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'sysclk', used in period specification
+   'TS_sysclk', was traced into DCM_SP instance u_ClockManager/u_dcm. The
+   following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLKDV: <TIMESPEC TS_u_ClockManager_CLKDV = PERIOD "u_ClockManager_CLKDV"
+   TS_sysclk * 4 HIGH 50%>
+
+Done...
+
+INFO:NgdBuild:1222 - Setting CLKIN_PERIOD attribute associated with DCM instance
+   u_ClockManager/u_dcm to 10.000000 ns based on the period specification
+   (<TIMESPEC "TS_sysclk" = PERIOD "sysclk" 10 ns HIGH 50%;>
+   [C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/filsrc/fil_test_fil.ucf(40)]).
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 200632 kilobytes
+
+Writing NGD file "fil_test_fil.ngd" ...
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "fil_test_fil.bld"...

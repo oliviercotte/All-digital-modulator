@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/fpgaproj/fil_test_fil.xst" -ofn "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/fpgaproj/fil_test_fil.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/filsrc/fil_test_fil.ucf -p xc6slx45-csg324-2 fil_test_fil.ngc fil_test_fil.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt on -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fil_test_fil_map.ncd fil_test_fil.ngd fil_test_fil.pcf 
+par -w -intstyle ise -ol high -mt off fil_test_fil_map.ncd fil_test_fil.ncd fil_test_fil.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml fil_test_fil.twx fil_test_fil.ncd -o fil_test_fil.twr fil_test_fil.pcf 
+bitgen -intstyle ise -f fil_test_fil.ut fil_test_fil.ncd 

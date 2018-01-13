@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+  <IPInstance name="dds_compiler_v4_0_0">
+    <FileSets>
+      <FileSet generator="apply_current_project_options_generator">
+        <File name="./apply_current_project_options_generator.xlog" type="ignore" timestamp="Tue Jan 09 12:30:02 GMT 2018" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="model_parameter_resolution_generator">
+        <File name="./model_parameter_resolution_generator.xlog" type="ignore" timestamp="Tue Jan 09 12:30:02 GMT 2018" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="ip_xco_generator">
+        <File name="./dds_compiler_v4_0_0.xco" type="xco" timestamp="Tue Jan 09 12:29:01 GMT 2018" checksum="0xC4B5B688"></File>
+      </FileSet>
+      <FileSet generator="associated_files_generator">
+        <File name="./associated_files_generator.xlog" type="ignore" timestamp="Tue Jan 09 12:30:02 GMT 2018" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="ngc_netlist_generator">
+        <File name="./dds_compiler_v4_0_0.ngc" type="ngc" timestamp="Tue Jan 09 12:29:54 GMT 2018" checksum="0xEFB0860C"></File>
+      </FileSet>
+      <FileSet generator="obfuscate_netlist_generator">
+        <File name="./dds_compiler_v4_0_0.ngc" type="ngc" timestamp="Tue Jan 09 12:29:55 GMT 2018" checksum="0x0E90CD92"></File>
+      </FileSet>
+      <FileSet generator="padded_implementation_netlist_generator">
+        <File name="./padded_implementation_netlist_generator.xlog" type="ignore" timestamp="Tue Jan 09 12:30:02 GMT 2018" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="instantiation_template_generator">
+        <File name="./dds_compiler_v4_0_0.vho" type="vho" timestamp="Tue Jan 09 12:29:55 GMT 2018" checksum="0xFE72FFC2"></File>
+      </FileSet>
+      <FileSet generator="rtl_simulation_model_generator">
+        <File name="./dds_compiler_v4_0_0.vhd" type="vhdl" timestamp="Tue Jan 09 12:29:55 GMT 2018" checksum="0x4B70E960"></File>
+      </FileSet>
+      <FileSet generator="synthesis_instantiation_wrapper_generator">
+        <File name="./synthesis_instantiation_wrapper_generator.xlog" type="ignore" timestamp="Tue Jan 09 12:30:02 GMT 2018" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="all_documents_generator">
+        <File name="./dds_compiler_v4_0_0/doc/dds_compiler_v4_0_vinfo.html" type="ignore" timestamp="Tue Jan 09 12:29:56 GMT 2018" checksum="0x390C1C36"></File>
+        <File name="./dds_compiler_v4_0_0/doc/dds_ds558.pdf" type="ignore" timestamp="Tue Jan 09 12:29:56 GMT 2018" checksum="0xB3728AB4"></File>
+      </FileSet>
+      <FileSet generator="asy_generator">
+        <File name="./dds_compiler_v4_0_0.asy" type="asy" timestamp="Tue Jan 09 12:29:59 GMT 2018" checksum="0x9C63176F"></File>
+      </FileSet>
+      <FileSet generator="xmdf_generator">
+        <File name="./dds_compiler_v4_0_0_xmdf.tcl" type="tclXmdf" timestamp="Tue Jan 09 12:29:59 GMT 2018" checksum="0x5E2D5A12"></File>
+      </FileSet>
+      <FileSet generator="ise_generator">
+        <File name="./dds_compiler_v4_0_0.gise" type="ignore" timestamp="Tue Jan 09 12:30:02 GMT 2018" checksum="0xF34E52FF"></File>
+        <File name="./dds_compiler_v4_0_0.xise" type="ignore" timestamp="Tue Jan 09 12:30:02 GMT 2018" checksum="0x814353F7"></File>
+      </FileSet>
+      <FileSet generator="deliver_readme_generator">
+        <File name="./dds_compiler_v4_0_0_readme.txt" type="ignore" timestamp="Tue Jan 09 12:30:02 GMT 2018" checksum="0x1F30C61D"></File>
+      </FileSet>
+      <FileSet generator="flist_generator">
+        <File name="./dds_compiler_v4_0_0_flist.txt" type="ignore" timestamp="Tue Jan 09 12:30:02 GMT 2018" checksum="0x1DE7F734"></File>
+      </FileSet>
+    </FileSets>
+  </IPInstance>
+</BillOfMaterials>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="8">
+	<Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc6slx150fgg484-3" LaunchPart="xc6slx150fgg484-3" ConstrsSet="constrs_1" Description="Timing Performance with IOB Packing" Dir="$PRUNDIR/synth_1" LaunchTime="1515500669">
+		<File Type="XST-NGC" Name="all_digital_modulator.ngc"/>
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+		<File Type="XST-SRP" Name="all_digital_modulator.srp"/>
+		<File Type="PA-XST" Name="all_digital_modulator.xst"/>
+		<File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+		<File Type="PA-XSTPRJ" Name="all_digital_modulator.prj"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+	</Run>
+	<Run Id="synth_2" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z045ffg900-3" LaunchPart="xc7z045ffg900-3" ConstrsSet="constrs_1" Description="Timing Performance with IOB Packing" State="current" Dir="$PRUNDIR/synth_2" LaunchTime="1515501013">
+		<File Type="XST-NGC" Name="all_digital_modulator.ngc"/>
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_2/synth_2.psg"/>
+		<File Type="XST-SRP" Name="all_digital_modulator.srp"/>
+		<File Type="PA-XST" Name="all_digital_modulator.xst"/>
+		<File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_2/sources.xml"/>
+		<File Type="PA-XSTPRJ" Name="all_digital_modulator.prj"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_2/constrs_in.xml"/>
+	</Run>
+	<Run Id="impl_1" Type="Ft2:EntireDesign" SynthRun="synth_1" Part="xc6slx150fgg484-3" LaunchPart="xc6slx150fgg484-3" ConstrsSet="constrs_1" Description="MAP Timing Driven Global Optimization for Speed Logic Optimization Retiming Register Duplication High Effort Normal Extra Effort, PAR High Effort" Dir="$PRUNDIR/impl_1" LaunchTime="1515500713">
+		<File Type="MAP-PSR" Name="all_digital_modulator.psr"/>
+		<File Type="PA-EDIF" Name="all_digital_modulator.edf"/>
+		<File Type="PAR-NCD" Name="all_digital_modulator_routed.ncd"/>
+		<File Type="PA-UCF" Name="all_digital_modulator.ucf"/>
+		<File Type="PAR-PAD" Name="all_digital_modulator_routed_pad.txt"/>
+		<File Type="PAR-PAR" Name="all_digital_modulator_routed.par"/>
+		<File Type="PAR-UNR" Name="all_digital_modulator_routed.unroutes"/>
+		<File Type="BG-BIT" Name="all_digital_modulator.bit"/>
+		<File Type="BG-DRC" Name="all_digital_modulator.drc"/>
+		<File Type="PA-CONSTRSDIR" Name=".constrs"/>
+		<File Type="BG-BGN" Name="all_digital_modulator.bgn"/>
+		<File Type="TRCE-TWR" Name="all_digital_modulator.twr"/>
+		<File Type="TRCE-TWX" Name="all_digital_modulator.twx"/>
+		<File Type="XDL-XDL" Name="all_digital_modulator_routed.xdl"/>
+		<File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+		<File Type="WBT-LOG" Name="webtalk.log"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+		<File Type="NGDB-NGD" Name="all_digital_modulator.ngd"/>
+		<File Type="NGDB-BLD" Name="all_digital_modulator.bld"/>
+		<File Type="MAP-NCD" Name="all_digital_modulator.ncd"/>
+		<File Type="MAP-PCF" Name="all_digital_modulator.pcf"/>
+		<File Type="MAP-MRP" Name="all_digital_modulator.mrp"/>
+		<File Type="MAP-MAP" Name="all_digital_modulator.map"/>
+	</Run>
+	<Run Id="impl_2" Type="Ft2:EntireDesign" SynthRun="synth_2" Part="xc7z045ffg900-3" LaunchPart="xc7z045ffg900-3" ConstrsSet="constrs_1" Description="MAP Timing Driven Global Optimization for Speed Logic Optimization Retiming Register Duplication High Effort Normal Extra Effort, PAR High Effort" State="current" Dir="$PRUNDIR/impl_2" LaunchTime="1515501053">
+		<File Type="MAP-PSR" Name="all_digital_modulator.psr"/>
+		<File Type="PA-EDIF" Name="all_digital_modulator.edf"/>
+		<File Type="PAR-NCD" Name="all_digital_modulator_routed.ncd"/>
+		<File Type="PA-UCF" Name="all_digital_modulator.ucf"/>
+		<File Type="PAR-PAD" Name="all_digital_modulator_routed_pad.txt"/>
+		<File Type="PAR-PAR" Name="all_digital_modulator_routed.par"/>
+		<File Type="PAR-UNR" Name="all_digital_modulator_routed.unroutes"/>
+		<File Type="BG-BIT" Name="all_digital_modulator.bit"/>
+		<File Type="BG-DRC" Name="all_digital_modulator.drc"/>
+		<File Type="PA-CONSTRSDIR" Name=".constrs"/>
+		<File Type="BG-BGN" Name="all_digital_modulator.bgn"/>
+		<File Type="TRCE-TWR" Name="all_digital_modulator.twr"/>
+		<File Type="TRCE-TWX" Name="all_digital_modulator.twx"/>
+		<File Type="XDL-XDL" Name="all_digital_modulator_routed.xdl"/>
+		<File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+		<File Type="WBT-LOG" Name="webtalk.log"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_2/constrs_in.xml"/>
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_2/impl_2.psg"/>
+		<File Type="NGDB-NGD" Name="all_digital_modulator.ngd"/>
+		<File Type="NGDB-BLD" Name="all_digital_modulator.bld"/>
+		<File Type="MAP-NCD" Name="all_digital_modulator.ncd"/>
+		<File Type="MAP-PCF" Name="all_digital_modulator.pcf"/>
+		<File Type="MAP-MRP" Name="all_digital_modulator.mrp"/>
+		<File Type="MAP-MAP" Name="all_digital_modulator.map"/>
+	</Run>
+</Runs>
+

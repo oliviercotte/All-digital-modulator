@@ -1,0 +1,411 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: DUT_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DUT_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DUT_top"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : DUT_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\hdl_prj\hdlsrc\turnkey_test_model\DUT_top_clock_module.vhd" into library work
+Parsing entity <DUT_top_clock_module>.
+Parsing architecture <rtl> of entity <dut_top_clock_module>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\hdl_prj\hdlsrc\turnkey_test_model\DUT.vhd" into library work
+Parsing entity <DUT>.
+Parsing architecture <rtl> of entity <dut>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\hdl_prj\hdlsrc\turnkey_test_model\DUT_top.vhd" into library work
+Parsing entity <DUT_top>.
+Parsing architecture <rtl> of entity <dut_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <DUT_top> (architecture <rtl>) from library <work>.
+
+Elaborating entity <DUT_top_clock_module> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:89 - "C:\Newcomputer\DSM_Final\DSM_Final\hdl_prj\hdlsrc\turnkey_test_model\DUT_top_clock_module.vhd" Line 36: <ibufg> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Newcomputer\DSM_Final\DSM_Final\hdl_prj\hdlsrc\turnkey_test_model\DUT_top_clock_module.vhd" Line 42: <dcm_sp> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Newcomputer\DSM_Final\DSM_Final\hdl_prj\hdlsrc\turnkey_test_model\DUT_top_clock_module.vhd" Line 52: <bufg> remains a black-box since it has no binding entity.
+
+Elaborating entity <DUT> (architecture <rtl>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <DUT_top>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\hdl_prj\hdlsrc\turnkey_test_model\DUT_top.vhd".
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\hdl_prj\hdlsrc\turnkey_test_model\DUT_top.vhd" line 81: Output port <ce_out> of the instance <u_DUT> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <DUT_top> synthesized.
+
+Synthesizing Unit <DUT_top_clock_module>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\hdl_prj\hdlsrc\turnkey_test_model\DUT_top_clock_module.vhd".
+    Summary:
+	no macro.
+Unit <DUT_top_clock_module> synthesized.
+
+Synthesizing Unit <DUT>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\hdl_prj\hdlsrc\turnkey_test_model\DUT.vhd".
+    Found 32-bit register for signal <Counter_Free_Running_out1>.
+    Found 32-bit adder for signal <Counter_Free_Running_out1[31]_GND_7_o_add_0_OUT> created at line 70.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <DUT> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:453 - Model 'DCM_SP' has different characteristics in destination library, some ports are missing:
+   CLK2X180 CLK2X CLKFX CLK180 CLK270 CLKFX180 CLKDV PSDONE CLK90 STATUS7 STATUS6 STATUS5 STATUS4 STATUS3 STATUS2 STATUS1 STATUS0 PSCLK PSINCDEC DSSEN 
+
+Synthesizing (advanced) Unit <DUT>.
+The following registers are absorbed into counter <Counter_Free_Running_out1>: 1 register on signal <Counter_Free_Running_out1>.
+Unit <DUT> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <u_DUT/Counter_Free_Running_out1_25> of sequential type is unconnected in block <DUT_top>.
+WARNING:Xst:2677 - Node <u_DUT/Counter_Free_Running_out1_26> of sequential type is unconnected in block <DUT_top>.
+WARNING:Xst:2677 - Node <u_DUT/Counter_Free_Running_out1_27> of sequential type is unconnected in block <DUT_top>.
+WARNING:Xst:2677 - Node <u_DUT/Counter_Free_Running_out1_28> of sequential type is unconnected in block <DUT_top>.
+WARNING:Xst:2677 - Node <u_DUT/Counter_Free_Running_out1_29> of sequential type is unconnected in block <DUT_top>.
+WARNING:Xst:2677 - Node <u_DUT/Counter_Free_Running_out1_30> of sequential type is unconnected in block <DUT_top>.
+WARNING:Xst:2677 - Node <u_DUT/Counter_Free_Running_out1_31> of sequential type is unconnected in block <DUT_top>.
+
+Optimizing unit <DUT_top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DUT_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : DUT_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 78
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 24
+#      MUXCY                       : 24
+#      VCC                         : 1
+#      XORCY                       : 25
+# FlipFlops/Latches                : 25
+#      FDC                         : 25
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 3
+#      IBUF                        : 1
+#      IBUFG                       : 1
+#      OBUF                        : 1
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              25  out of  54576     0%  
+ Number of Slice LUTs:                   27  out of  27288     0%  
+    Number used as Logic:                27  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     27
+   Number with an unused Flip Flop:       2  out of     27     7%  
+   Number with an unused LUT:             0  out of     27     0%  
+   Number of fully used LUT-FF pairs:    25  out of     27    92%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    218     1%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLKIN                              | DCM_SP:CLK0            | 25    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.123ns (Maximum Frequency: 471.065MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKIN'
+  Clock period: 2.123ns (frequency: 471.065MHz)
+  Total number of paths / destination ports: 325 / 25
+-------------------------------------------------------------------------
+Delay:               2.123ns (Levels of Logic = 26)
+  Source:            u_DUT/Counter_Free_Running_out1_0 (FF)
+  Destination:       u_DUT/Counter_Free_Running_out1_24 (FF)
+  Source Clock:      CLKIN rising
+  Destination Clock: CLKIN rising
+
+  Data Path: u_DUT/Counter_Free_Running_out1_0 to u_DUT/Counter_Free_Running_out1_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.447   0.579  u_DUT/Counter_Free_Running_out1_0 (u_DUT/Counter_Free_Running_out1_0)
+     INV:I->O              1   0.206   0.000  u_DUT/Mcount_Counter_Free_Running_out1_lut<0>_INV_0 (u_DUT/Mcount_Counter_Free_Running_out1_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<0> (u_DUT/Mcount_Counter_Free_Running_out1_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<1> (u_DUT/Mcount_Counter_Free_Running_out1_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<2> (u_DUT/Mcount_Counter_Free_Running_out1_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<3> (u_DUT/Mcount_Counter_Free_Running_out1_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<4> (u_DUT/Mcount_Counter_Free_Running_out1_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<5> (u_DUT/Mcount_Counter_Free_Running_out1_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<6> (u_DUT/Mcount_Counter_Free_Running_out1_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<7> (u_DUT/Mcount_Counter_Free_Running_out1_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<8> (u_DUT/Mcount_Counter_Free_Running_out1_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<9> (u_DUT/Mcount_Counter_Free_Running_out1_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<10> (u_DUT/Mcount_Counter_Free_Running_out1_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<11> (u_DUT/Mcount_Counter_Free_Running_out1_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<12> (u_DUT/Mcount_Counter_Free_Running_out1_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<13> (u_DUT/Mcount_Counter_Free_Running_out1_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<14> (u_DUT/Mcount_Counter_Free_Running_out1_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<15> (u_DUT/Mcount_Counter_Free_Running_out1_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<16> (u_DUT/Mcount_Counter_Free_Running_out1_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<17> (u_DUT/Mcount_Counter_Free_Running_out1_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<18> (u_DUT/Mcount_Counter_Free_Running_out1_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<19> (u_DUT/Mcount_Counter_Free_Running_out1_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<20> (u_DUT/Mcount_Counter_Free_Running_out1_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<21> (u_DUT/Mcount_Counter_Free_Running_out1_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<22> (u_DUT/Mcount_Counter_Free_Running_out1_cy<22>)
+     MUXCY:CI->O           0   0.019   0.000  u_DUT/Mcount_Counter_Free_Running_out1_cy<23> (u_DUT/Mcount_Counter_Free_Running_out1_cy<23>)
+     XORCY:CI->O           1   0.180   0.000  u_DUT/Mcount_Counter_Free_Running_out1_xor<24> (Result<24>)
+     FDC:D                     0.102          u_DUT/Counter_Free_Running_out1_24
+    ----------------------------------------
+    Total                      2.123ns (1.544ns logic, 0.579ns route)
+                                       (72.7% logic, 27.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKIN'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            u_DUT/Counter_Free_Running_out1_24 (FF)
+  Destination:       USB_UART_TX (PAD)
+  Source Clock:      CLKIN rising
+
+  Data Path: u_DUT/Counter_Free_Running_out1_24 to USB_UART_TX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.616  u_DUT/Counter_Free_Running_out1_24 (u_DUT/Counter_Free_Running_out1_24)
+     OBUF:I->O                 2.571          USB_UART_TX_OBUF (USB_UART_TX)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLKIN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLKIN          |    2.123|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.26 secs
+ 
+--> 
+
+Total memory usage is 289908 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

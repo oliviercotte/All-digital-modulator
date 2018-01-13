@@ -1,0 +1,32 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Dec 29 22:30:43 2017
+
+drc -z all_digital_modulator_fil.ncd all_digital_modulator_fil.pcf
+
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp u_ClockManager/u_dcm,
+   consult the device Data Sheet.
+WARNING:PhysDesignRules:367 - The signal
+   <u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF/u_PKTINFO
+   /Mram_memory2_RAMD_D1_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF/u_PKTINFO
+   /Mram_memory1_RAMD_D1_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_STATUS_BUF/u_MWDPR
+   AM/Mram_memory1_RAMD_D1_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_STATUS_BUF/u_PKTIN
+   FO/Mram_memory1_RAMD_D1_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+DRC detected 0 errors and 5 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

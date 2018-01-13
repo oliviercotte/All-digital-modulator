@@ -1,0 +1,66 @@
+    ____  ____
+   /   /\/   /
+  /___/  \  /    VENDOR      : Xilinx Inc.
+  \   \   \/     VERSION     : 14.7 (P.20131013)
+   \   \         APPLICATION : C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\compxlib.exe
+   /   /         CONTENTS    : Compilation Log
+  /___/   /\     FILENAME    : compxlib.log
+  \   \  /  \    
+   \___\/\___\
+
+Release 14.7 - C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\compxlib.exe 14.7 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Processing command line ...
+Library Source Paths => 'C:/Xilinx/14.7/ISE_DS/ISE'
+Current Working Directory => 'C:\Newcomputer\DSM_Final\DSM_Final'
+Compilation Mode = FAST
+Execute Mode = ON
+Scheduling library installation & compilation for architectures: zynq
+
+Scheduling library installation & compilation for libraries: simprim unisim xilinxcorelib
+
+Signature:-
+------------------------------------------------------------------------------
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\compxlib.exe -s mti_pe -l vhdl -p C:/Modeltech_pe_edu_10.4a/win32pe_edu -arch zynq -lib unisim -lib simprim -lib xilinxcorelib -intstyle ise 
+------------------------------------------------------------------------------
+
+Setting up the simulator 'mti_pe' for compilation ...
+The executable path is set to 'C:/Modeltech_pe_edu_10.4a/win32pe_edu' ...
+Setting up the source libraries for simulator 'mti_pe' ...
+
+
+
+Compiling Xilinx HDL Libraries for 'mti_pe' simulator
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+Language => 'vhdl'
+The modelsim.ini file not found, create it.
+Output directory => 'C:\Xilinx\14.7\ISE_DS\ISE'
+
+
+Library verilog.secureip will not be compiled, because precompiled info is up to date.
+compxlib[verilog.secureip]: 0 error(s), 1 warning(s), 25.00 % complete
+
+
+
+Library vhdl.unisim:vhdl.unimacro will not be compiled, because precompiled info is up to date.
+
+Library vhdl.unisim:vhdl.secureip_vhdl_unisim will not be compiled, because precompiled info is up to date.
+
+Library vhdl.unisim will not be compiled, because precompiled info is up to date.
+compxlib[vhdl.unisim]: 0 error(s), 4 warning(s), 50.00 % complete
+
+
+
+Library vhdl.simprim:vhdl.secureip_vhdl_simprim will not be compiled, because precompiled info is up to date.
+
+Library vhdl.simprim will not be compiled, because precompiled info is up to date.
+compxlib[vhdl.simprim]: 0 error(s), 3 warning(s), 75.00 % complete
+
+
+
+Library vhdl.xilinxcorelib will not be compiled, because precompiled info is up to date.
+compxlib[vhdl.xilinxcorelib]: 0 error(s), 358 warning(s), 100.00 % complete
+
+
+Setup file 'C:\Xilinx\14.7\ISE_DS\ISE\verilog\mti_pe\10.4a\nt/modelsim.ini' exists, no copying from 'modelsim.ini' ...

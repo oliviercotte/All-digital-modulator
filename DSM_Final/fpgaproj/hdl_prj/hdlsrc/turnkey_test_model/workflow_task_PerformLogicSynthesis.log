@@ -1,0 +1,169 @@
+Task "Perform Logic Synthesis" successful.
+Generated logfile: 
+### Open existing Xilinx ISE 14.7 project C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\DUT_topatlys_ise.xise
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/hdl_prj/hdlsrc/turnkey_test_mode
+   l/DUT.vhd" into library work
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/hdl_prj/hdlsrc/turnkey_test_mode
+   l/DUT_topatlys.vhd" into library work
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/hdl_prj/hdlsrc/turnkey_test_mode
+   l/DUT_topatlys_clock_module.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+### Running Synthesis in Xilinx ISE 14.7 ...
+Qt: Untested Windows version 6.2 detected!
+
+Started : "Synthesize - XST".
+Running xst...
+Command Line: xst -intstyle ise -ifn "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/DUT_topatlys.xst" -ofn "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/DUT_topatlys.syr"
+Reading design: DUT_topatlys.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT_topatlys_clock_module.vhd" into library work
+Parsing entity <DUT_topatlys_clock_module>.
+Parsing architecture <rtl> of entity <dut_topatlys_clock_module>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT.vhd" into library work
+Parsing entity <DUT>.
+Parsing architecture <rtl> of entity <dut>.
+Parsing VHDL file "C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT_topatlys.vhd" into library work
+Parsing entity <DUT_topatlys>.
+Parsing architecture <rtl> of entity <dut_topatlys>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <DUT_topatlys> (architecture <rtl>) from library <work>.
+
+Elaborating entity <DUT_topatlys_clock_module> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:89 - "C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT_topatlys_clock_module.vhd" Line 36: <ibufg> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT_topatlys_clock_module.vhd" Line 42: <dcm_sp> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT_topatlys_clock_module.vhd" Line 52: <bufg> remains a black-box since it has no binding entity.
+
+Elaborating entity <DUT> (architecture <rtl>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <DUT_topatlys>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT_topatlys.vhd".
+INFO:Xst:3210 - "C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT_topatlys.vhd" line 81: Output port <ce_out> of the instance <u_DUT> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <DUT_topatlys> synthesized.
+
+Synthesizing Unit <DUT_topatlys_clock_module>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT_topatlys_clock_module.vhd".
+    Summary:
+	no macro.
+Unit <DUT_topatlys_clock_module> synthesized.
+
+Synthesizing Unit <DUT>.
+    Related source file is "C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\hdl_prj\hdlsrc\turnkey_test_model\DUT.vhd".
+    Found 32-bit register for signal <Counter_Free_Running_out1>.
+    Found 32-bit adder for signal <Counter_Free_Running_out1[31]_GND_7_o_add_0_OUT> created at line 70.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <DUT> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                 INFO:TclTasksC:1850 - process run : Synthesize - XST is done.
+         *
+=========================================================================
+
+WARNING:Xst:453 - Model 'DCM_SP' has different characteristics in destination library, some ports are missing:
+   CLK2X180 CLK2X CLKFX CLK180 CLK270 CLKFX180 CLKDV PSDONE CLK90 STATUS7 STATUS6 STATUS5 STATUS4 STATUS3 STATUS2 STATUS1 STATUS0 PSCLK PSINCDEC DSSEN 
+
+Synthesizing (advanced) Unit <DUT>.
+The following registers are absorbed into counter <Counter_Free_Running_out1>: 1 register on signal <Counter_Free_Running_out1>.
+Unit <DUT> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <DUT_topatlys> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DUT_topatlys, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLKIN                              | DCM_SP:CLK0            | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.654ns (Maximum Frequency: 376.861MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+=========================================================================
+
+Process "Synthesize - XST" completed successfully
+### Synthesis Complete.
+### Close Xilinx ISE 14.7 project.
+
+Elapsed time is 15.5821 seconds.

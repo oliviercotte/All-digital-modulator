@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">u_FILCore/u_mwfil_chiftop/u_dut/u_all_digital_modulator/U0/PLL_ADV_INST</arg>&apos; of type <arg fmt="%s" index="2">PLL_ADV</arg> has been changed from &apos;<arg fmt="%s" index="3">VIRTEX5</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sysclk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sysclk</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">u_dcm</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_u_ClockManager_dcmclk125 = PERIOD &quot;u_ClockManager_dcmclk125&quot; TS_sysclk / 1.25 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sysclk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sysclk</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">u_dcm</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLKFX180</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_u_ClockManager_dcmclk125_180 = PERIOD &quot;u_ClockManager_dcmclk125_180&quot; TS_sysclk / 1.25 PHASE 4 ns HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sysclk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sysclk</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">u_dcm</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLKDV</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_u_ClockManager_CLKDV = PERIOD &quot;u_ClockManager_CLKDV&quot; TS_sysclk * 2 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="NgdBuild" num="1222" delta="new" >Setting <arg fmt="%s" index="1">CLKIN_PERIOD</arg> attribute associated with <arg fmt="%s" index="2">DCM</arg> instance <arg fmt="%s" index="3">u_dcm</arg> to <arg fmt="%s" index="4">10.000000</arg> ns based on the period specification (<arg fmt="%s" index="5">&lt;TIMESPEC &quot;TS_sysclk&quot; = PERIOD &quot;sysclk&quot; 10 ns HIGH 50%;&gt; [C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator_fil/filsrc/all_digital_modulator_fil.ucf(40)]</arg>).
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N4</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_FILCommLayer/mac_txsrcport&lt;1&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_FILCommLayer/mac_txsrcport&lt;0&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF/PKTPort&lt;1&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF/PKTPort&lt;0&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_STATUS_BUF/PKTPort&lt;1&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_STATUS_BUF/PKTPort&lt;0&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;63&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;62&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;61&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;60&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;59&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;58&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;57&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;56&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;55&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;54&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;53&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;52&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;51&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;50&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;49&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;48&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;47&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;46&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;45&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;44&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;43&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;42&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;41&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;40&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;7&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;6&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;5&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;4&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;3&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;2&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/dut_din&lt;1&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="new" >clock net <arg fmt="%s" index="1">u_FILCore/u_mwfil_chiftop/u_dut/u_all_digital_modulator/U1/CLK_OUT1</arg> with clock driver <arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/u_dut/u_all_digital_modulator/U1/clkout1_buf</arg> drives no clock pins
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="new" >clock net <arg fmt="%s" index="1">u_FILCore/u_mwfil_chiftop/u_dut/u_all_digital_modulator/U1/CLK_OUT2</arg> with clock driver <arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/u_dut/u_all_digital_modulator/U1/clkout2_buf</arg> drives no clock pins
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="new" >clock net <arg fmt="%s" index="1">u_FILCore/u_mwfil_chiftop/u_dut/u_all_digital_modulator/U1/CLK_OUT3</arg> with clock driver <arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/u_dut/u_all_digital_modulator/U1/clkout3_buf</arg> drives no clock pins
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="new" >clock net <arg fmt="%s" index="1">u_FILCore/u_mwfil_chiftop/u_dut/u_all_digital_modulator/U1/CLK_OUT4</arg> with clock driver <arg fmt="%s" index="2">u_FILCore/u_mwfil_chiftop/u_dut/u_all_digital_modulator/U1/clkout4_buf</arg> drives no clock pins
+</msg>
+
+</messages>
+

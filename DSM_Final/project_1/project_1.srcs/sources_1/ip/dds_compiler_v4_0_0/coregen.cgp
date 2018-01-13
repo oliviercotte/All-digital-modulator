@@ -1,0 +1,22 @@
+# Date: Tue Jan 09 12:30:02 2018
+
+SET addpads = false
+SET asysymbol = true
+SET busformat = BusFormatAngleBracketNotRipped
+SET createndf = false
+SET designentry = VHDL
+SET device = xc7z045
+SET devicefamily = zynq
+SET flowvendor = Other
+SET formalverification = false
+SET foundationsym = false
+SET implementationfiletype = Ngc
+SET package = ffg900
+SET removerpms = false
+SET simulationfiles = Behavioral
+SET speedgrade = -3
+SET verilogsim = false
+SET vhdlsim = true
+SET workingdirectory = .\tmp\
+
+# CRC: 806c048c

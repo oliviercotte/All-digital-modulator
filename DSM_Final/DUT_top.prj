@@ -1,0 +1,3 @@
+vhdl work "hdl_prj/hdlsrc/turnkey_test_model/DUT_top_clock_module.vhd"
+vhdl work "hdl_prj/hdlsrc/turnkey_test_model/DUT.vhd"
+vhdl work "hdl_prj/hdlsrc/turnkey_test_model/DUT_top.vhd"

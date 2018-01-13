@@ -1,0 +1,52 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Dec 29 04:05:56 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "USB_UART_TX" LOCATE = SITE "B16" LEVEL 1;
+COMP "CLKIN" LOCATE = SITE "L15" LEVEL 1;
+COMP "RESETIN" LOCATE = SITE "T15" LEVEL 1;
+PIN SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1> = BEL
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1" PINNAME O;
+PIN u_DUT_top_clock_module_inst/u_DCM_SP_pins<1> = BEL
+        "u_DUT_top_clock_module_inst/u_DCM_SP" PINNAME CLKFB;
+TIMEGRP u_DUT_top_clock_module_inst_dcm_out = BEL
+        "u_DUT/Counter_Free_Running_out1_0" BEL
+        "u_DUT/Counter_Free_Running_out1_1" BEL
+        "u_DUT/Counter_Free_Running_out1_2" BEL
+        "u_DUT/Counter_Free_Running_out1_3" BEL
+        "u_DUT/Counter_Free_Running_out1_4" BEL
+        "u_DUT/Counter_Free_Running_out1_5" BEL
+        "u_DUT/Counter_Free_Running_out1_6" BEL
+        "u_DUT/Counter_Free_Running_out1_7" BEL
+        "u_DUT/Counter_Free_Running_out1_8" BEL
+        "u_DUT/Counter_Free_Running_out1_9" BEL
+        "u_DUT/Counter_Free_Running_out1_10" BEL
+        "u_DUT/Counter_Free_Running_out1_11" BEL
+        "u_DUT/Counter_Free_Running_out1_12" BEL
+        "u_DUT/Counter_Free_Running_out1_13" BEL
+        "u_DUT/Counter_Free_Running_out1_14" BEL
+        "u_DUT/Counter_Free_Running_out1_15" BEL
+        "u_DUT/Counter_Free_Running_out1_16" BEL
+        "u_DUT/Counter_Free_Running_out1_17" BEL
+        "u_DUT/Counter_Free_Running_out1_18" BEL
+        "u_DUT/Counter_Free_Running_out1_19" BEL
+        "u_DUT/Counter_Free_Running_out1_20" BEL
+        "u_DUT/Counter_Free_Running_out1_21" BEL
+        "u_DUT/Counter_Free_Running_out1_22" BEL
+        "u_DUT/Counter_Free_Running_out1_23" BEL
+        "u_DUT/Counter_Free_Running_out1_24" BEL
+        "u_DUT_top_clock_module_inst/u_BUFG" PIN
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1>" PIN
+        "u_DUT_top_clock_module_inst/u_DCM_SP_pins<1>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN u_DUT_top_clock_module_inst/u_DCM_SP_pins<2> = BEL
+        "u_DUT_top_clock_module_inst/u_DCM_SP" PINNAME CLKIN;
+TIMEGRP TN_CLKIN = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "u_DUT_top_clock_module_inst/u_DCM_SP_pins<2>";
+TS_FPGA_CLK = PERIOD TIMEGRP "TN_CLKIN" 100 MHz HIGH 50%;
+TS_u_DUT_top_clock_module_inst_dcm_out = PERIOD TIMEGRP
+        "u_DUT_top_clock_module_inst_dcm_out" TS_FPGA_CLK HIGH 50%;
+SCHEMATIC END;
+

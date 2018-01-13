@@ -1,0 +1,13 @@
+# Output products list for <dds_compiler_v4_0_0>
+dds_compiler_v4_0_0.asy
+dds_compiler_v4_0_0.gise
+dds_compiler_v4_0_0.ngc
+dds_compiler_v4_0_0.vhd
+dds_compiler_v4_0_0.vho
+dds_compiler_v4_0_0.xco
+dds_compiler_v4_0_0.xise
+dds_compiler_v4_0_0\doc\dds_compiler_v4_0_vinfo.html
+dds_compiler_v4_0_0\doc\dds_ds558.pdf
+dds_compiler_v4_0_0_flist.txt
+dds_compiler_v4_0_0_readme.txt
+dds_compiler_v4_0_0_xmdf.tcl

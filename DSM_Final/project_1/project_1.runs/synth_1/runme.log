@@ -1,0 +1,272 @@
+
+*** Running xst
+    with args -ifn "all_digital_modulator.xst" -ofn "all_digital_modulator.srp" -intstyle ise
+
+Reading design: all_digital_modulator.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_3_245_76.vhd" into library work
+Parsing entity <Halfband_3_245_76>.
+Parsing architecture <Halfband_3_245_76_a> of entity <halfband_3_245_76>.
+Parsing VHDL file "c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_2_122_88.vhd" into library work
+Parsing entity <Halfband_2_122_88>.
+Parsing architecture <Halfband_2_122_88_a> of entity <halfband_2_122_88>.
+Parsing VHDL file "c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_1_61_44.vhd" into library work
+Parsing entity <Halfband_1_61_44>.
+Parsing architecture <Halfband_1_61_44_a> of entity <halfband_1_61_44>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/Eight_Order_Delta_Sigma_Modulator_pkg.vhd" into library work
+Parsing package <Eight_order_delta_sigma_modulator_pkg>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/Fourth_order_delta_sigma_modulator_pkg.vhd" into library work
+Parsing package <Fourth_order_delta_sigma_modulator_pkg>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/fixed_float_types_c.vhdl" into library work
+Parsing package <fixed_float_types>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl" into library work
+Parsing package <fixed_pkg>.
+Parsing package body <fixed_pkg>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/float_pkg_c.vhdl" into library work
+Parsing package <float_pkg>.
+Parsing package body <float_pkg>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/cordic_types.vhd" into library work
+Parsing package <cordic_types>.
+Parsing package body <cordic_types>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/pll_clock.vhd" into library work
+Parsing entity <PLL_CLOCK>.
+Parsing architecture <BEHAVIORAL> of entity <pll_clock>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/Halfband_4_491_52.vhd" into library work
+Parsing entity <Halfband_4_491_52>.
+Parsing architecture <rtl> of entity <halfband_4_491_52>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/Channel_Filter.vhd" into library work
+Parsing entity <Channel_Filter>.
+Parsing architecture <Channel_Filter_a> of entity <channel_filter>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" into library work
+Parsing entity <all_digital_modulator>.
+Parsing architecture <Behavioral> of entity <all_digital_modulator>.
+Parsing VHDL file "c:/Newcomputer/DSM_Final/DSM_Final/project_1/project_1.srcs/sources_1/ip/clk_wiz_v3_6_0/clk_wiz_v3_6_0.vhd" into library work
+Parsing entity <clk_wiz_v3_6_0>.
+Parsing architecture <xilinx> of entity <clk_wiz_v3_6_0>.
+Parsing VHDL file "c:/Newcomputer/DSM_Final/DSM_Final/project_1/project_1.srcs/sources_1/ip/dds_compiler_v4_0_0/dds_compiler_v4_0_0.vhd" into library work
+Parsing entity <dds_compiler_v4_0_0>.
+Parsing architecture <dds_compiler_v4_0_0_a> of entity <dds_compiler_v4_0_0>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:746 - "C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl" Line 1469: Range is empty (null range)
+WARNING:HDLCompiler:746 - "C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl" Line 1470: Range is empty (null range)
+WARNING:HDLCompiler:746 - "C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl" Line 1471: Range is empty (null range)
+
+Elaborating entity <all_digital_modulator> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <PLL_CLOCK> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <clk_wiz_v3_6_0> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <dds_compiler_v4_0_0> (architecture <dds_compiler_v4_0_0_a>) from library <work>.
+
+Elaborating entity <Channel_Filter> (architecture <Channel_Filter_a>) from library <work>.
+
+Elaborating entity <Halfband_1_61_44> (architecture <Halfband_1_61_44_a>) from library <work>.
+
+Elaborating entity <Halfband_2_122_88> (architecture <Halfband_2_122_88_a>) from library <work>.
+
+Elaborating entity <Halfband_3_245_76> (architecture <Halfband_3_245_76_a>) from library <work>.
+
+Elaborating entity <Halfband_4_491_52> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" Line 299: Assignment to modulator_input ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" Line 300: Assignment to modulator_input_slv ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <all_digital_modulator>.
+    Related source file is "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd".
+        GEN_DIGITAL_UP_CONVERTER_EN = true
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 204: Output port <CLKFBOUT_OUT> of the instance <U0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 237: Output port <rfd> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 237: Output port <rdy> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 246: Output port <rfd> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 246: Output port <rdy> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 255: Output port <rfd> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 255: Output port <rdy> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 264: Output port <rfd> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 264: Output port <rdy> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 273: Output port <ce_out> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U7> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <all_digital_modulator> synthesized.
+
+Synthesizing Unit <PLL_CLOCK>.
+    Related source file is "C:/Newcomputer/DSM_Final/DSM_Final/pll_clock.vhd".
+    Summary:
+	no macro.
+Unit <PLL_CLOCK> synthesized.
+
+Synthesizing Unit <clk_wiz_v3_6_0>.
+    Related source file is "c:/Newcomputer/DSM_Final/DSM_Final/project_1/project_1.srcs/sources_1/ip/clk_wiz_v3_6_0/clk_wiz_v3_6_0.vhd".
+    Summary:
+	no macro.
+Unit <clk_wiz_v3_6_0> synthesized.
+
+Synthesizing Unit <Halfband_4_491_52>.
+    Related source file is "C:/Newcomputer/DSM_Final/DSM_Final/Halfband_4_491_52.vhd".
+    Found 34-bit register for signal <delay_pipeline<0>>.
+    Found 34-bit register for signal <delay_pipeline<1>>.
+    Found 34-bit register for signal <delay_pipeline<2>>.
+    Found 34-bit register for signal <delay_pipeline<3>>.
+    Found 36-bit register for signal <sumdelay_pipeline1<0>>.
+    Found 36-bit register for signal <sumdelay_pipeline1<1>>.
+    Found 36-bit register for signal <output_register>.
+    Found 2-bit register for signal <cur_count>.
+    Found 2-bit adder for signal <cur_count[1]_GND_20_o_add_1_OUT> created at line 123.
+    Found 37-bit adder for signal <add_temp> created at line 173.
+    Found 37-bit adder for signal <add_temp_1> created at line 178.
+    Found 37-bit adder for signal <add_temp_2> created at line 194.
+    Found 34x35-bit multiplier for signal <mul_temp> created at line 147.
+    Found 34x35-bit multiplier for signal <mul_temp_1> created at line 154.
+    Found 34x35-bit multiplier for signal <mul_temp_2> created at line 161.
+    Found 34x35-bit multiplier for signal <mul_temp_3> created at line 168.
+    Found 2-bit comparator lessequal for signal <n0000> created at line 120
+    Summary:
+	inferred   4 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 246 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  15 Multiplexer(s).
+Unit <Halfband_4_491_52> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 35x34-bit multiplier                                  : 4
+# Adders/Subtractors                                   : 4
+ 2-bit adder                                           : 1
+ 37-bit adder                                          : 3
+# Registers                                            : 8
+ 2-bit register                                        : 1
+ 34-bit register                                       : 4
+ 36-bit register                                       : 3
+# Comparators                                          : 1
+ 2-bit comparator lessequal                            : 1
+# Multiplexers                                         : 16
+ 2-bit 2-to-1 multiplexer                              : 1
+ 34-bit 2-to-1 multiplexer                             : 1
+ 36-bit 2-to-1 multiplexer                             : 14
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Channel_Filter.ngc>.
+Reading core <c:/Newcomputer/DSM_Final/DSM_Final/project_1/project_1.srcs/sources_1/ip/dds_compiler_v4_0_0/dds_compiler_v4_0_0.ngc>.
+Reading core <c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_1_61_44.ngc>.
+Reading core <c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_2_122_88.ngc>.
+Reading core <c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_3_245_76.ngc>.
+Loading core <Channel_Filter> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U3>.
+Loading core <dds_compiler_v4_0_0> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U2>.
+Loading core <Halfband_1_61_44> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U4>.
+Loading core <Halfband_2_122_88> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U5>.
+Loading core <Halfband_3_245_76> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U6>.
+
+Synthesizing (advanced) Unit <Halfband_4_491_52>.
+The following registers are absorbed into counter <cur_count>: 1 register on signal <cur_count>.
+Unit <Halfband_4_491_52> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 31x34-bit multiplier                                  : 2
+ 34x34-bit multiplier                                  : 1
+ 35x34-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 37-bit adder                                          : 3
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 244
+ Flip-Flops                                            : 244
+# Comparators                                          : 1
+ 2-bit comparator lessequal                            : 1
+# Multiplexers                                         : 15
+ 34-bit 2-to-1 multiplexer                             : 1
+ 36-bit 2-to-1 multiplexer                             : 14
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance U1/pll_base_inst in unit U1/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <all_digital_modulator> ...
+
+Optimizing unit <Halfband_4_491_52> ...
+WARNING:Xst:1710 - FF/Latch <cur_count_1> (without init value) has a constant value of 0 in block <Halfband_4_491_52>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cur_count_1> (without init value) has a constant value of 0 in block <Halfband_4_491_52>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block all_digital_modulator, actual ratio is 1.
+FlipFlop GEN_DIGITAL_UP_CONVERTER_LBL.U7/cur_count_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 246
+ Flip-Flops                                            : 246
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                            | Load  |
+-----------------------------------+--------------------------------------------------+-------+
+sys_clk                            | PLL_ADV:CLKOUT0                                  | 3477  |
+sys_clk                            | PLL_ADV:CLKOUT1                                  | 1029  |
+sys_clk                            | PLL_ADV:CLKOUT2                                  | 802   |
+U1/pll_base_inst/CLKOUT0           | BUFG                                             | 587   |
+U1/pll_base_inst/CLKOUT1           | NONE(GEN_DIGITAL_UP_CONVERTER_LBL.U7/cur_count_0)| 246   |
+-----------------------------------+--------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 20.757ns (Maximum Frequency: 48.176MHz)
+   Minimum input arrival time before clock: 4.501ns
+   Maximum output required time after clock: 5.422ns
+   Maximum combinational path delay: 6.163ns
+
+=========================================================================

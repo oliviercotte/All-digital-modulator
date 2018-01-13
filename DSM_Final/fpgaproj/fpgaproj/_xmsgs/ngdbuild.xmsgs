@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sysclk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sysclk</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">u_ClockManager/u_dcm</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_u_ClockManager_dcmclk125 = PERIOD &quot;u_ClockManager_dcmclk125&quot; TS_sysclk / 1.25 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sysclk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sysclk</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">u_ClockManager/u_dcm</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLKFX180</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_u_ClockManager_dcmclk125_180 = PERIOD &quot;u_ClockManager_dcmclk125_180&quot; TS_sysclk / 1.25 PHASE 4 ns HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sysclk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sysclk</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">u_ClockManager/u_dcm</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLKDV</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_u_ClockManager_CLKDV = PERIOD &quot;u_ClockManager_CLKDV&quot; TS_sysclk * 4 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="NgdBuild" num="1222" delta="new" >Setting <arg fmt="%s" index="1">CLKIN_PERIOD</arg> attribute associated with <arg fmt="%s" index="2">DCM</arg> instance <arg fmt="%s" index="3">u_ClockManager/u_dcm</arg> to <arg fmt="%s" index="4">10.000000</arg> ns based on the period specification (<arg fmt="%s" index="5">&lt;TIMESPEC &quot;TS_sysclk&quot; = PERIOD &quot;sysclk&quot; 10 ns HIGH 50%;&gt; [C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/filsrc/fil_test_fil.ucf(40)]</arg>).
+</msg>
+
+</messages>
+

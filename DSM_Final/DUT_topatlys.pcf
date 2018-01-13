@@ -1,0 +1,66 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 28 22:02:31 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CLKIN" LOCATE = SITE "L15" LEVEL 1;
+COMP "LEDs<0>" LOCATE = SITE "U18" LEVEL 1;
+COMP "LEDs<1>" LOCATE = SITE "M14" LEVEL 1;
+COMP "LEDs<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "RESETIN_n" LOCATE = SITE "T15" LEVEL 1;
+COMP "LEDs<3>" LOCATE = SITE "L14" LEVEL 1;
+COMP "LEDs<4>" LOCATE = SITE "M13" LEVEL 1;
+COMP "LEDs<5>" LOCATE = SITE "D4" LEVEL 1;
+COMP "LEDs<6>" LOCATE = SITE "P16" LEVEL 1;
+COMP "LEDs<7>" LOCATE = SITE "N12" LEVEL 1;
+PIN SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1> = BEL
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1" PINNAME O;
+PIN u_DUT_topatlys_clock_module_inst/u_DCM_SP_pins<1> = BEL
+        "u_DUT_topatlys_clock_module_inst/u_DCM_SP" PINNAME CLKFB;
+TIMEGRP u_DUT_topatlys_clock_module_inst_dcm_out = BEL
+        "u_DUT/Counter_Free_Running_out1_0" BEL
+        "u_DUT/Counter_Free_Running_out1_1" BEL
+        "u_DUT/Counter_Free_Running_out1_2" BEL
+        "u_DUT/Counter_Free_Running_out1_3" BEL
+        "u_DUT/Counter_Free_Running_out1_4" BEL
+        "u_DUT/Counter_Free_Running_out1_5" BEL
+        "u_DUT/Counter_Free_Running_out1_6" BEL
+        "u_DUT/Counter_Free_Running_out1_7" BEL
+        "u_DUT/Counter_Free_Running_out1_8" BEL
+        "u_DUT/Counter_Free_Running_out1_9" BEL
+        "u_DUT/Counter_Free_Running_out1_10" BEL
+        "u_DUT/Counter_Free_Running_out1_11" BEL
+        "u_DUT/Counter_Free_Running_out1_12" BEL
+        "u_DUT/Counter_Free_Running_out1_13" BEL
+        "u_DUT/Counter_Free_Running_out1_14" BEL
+        "u_DUT/Counter_Free_Running_out1_15" BEL
+        "u_DUT/Counter_Free_Running_out1_16" BEL
+        "u_DUT/Counter_Free_Running_out1_17" BEL
+        "u_DUT/Counter_Free_Running_out1_18" BEL
+        "u_DUT/Counter_Free_Running_out1_19" BEL
+        "u_DUT/Counter_Free_Running_out1_20" BEL
+        "u_DUT/Counter_Free_Running_out1_21" BEL
+        "u_DUT/Counter_Free_Running_out1_22" BEL
+        "u_DUT/Counter_Free_Running_out1_23" BEL
+        "u_DUT/Counter_Free_Running_out1_24" BEL
+        "u_DUT/Counter_Free_Running_out1_25" BEL
+        "u_DUT/Counter_Free_Running_out1_26" BEL
+        "u_DUT/Counter_Free_Running_out1_27" BEL
+        "u_DUT/Counter_Free_Running_out1_28" BEL
+        "u_DUT/Counter_Free_Running_out1_29" BEL
+        "u_DUT/Counter_Free_Running_out1_30" BEL
+        "u_DUT/Counter_Free_Running_out1_31" BEL
+        "u_DUT_topatlys_clock_module_inst/u_BUFG" PIN
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1>" PIN
+        "u_DUT_topatlys_clock_module_inst/u_DCM_SP_pins<1>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN u_DUT_topatlys_clock_module_inst/u_DCM_SP_pins<2> = BEL
+        "u_DUT_topatlys_clock_module_inst/u_DCM_SP" PINNAME CLKIN;
+TIMEGRP TN_CLKIN = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "u_DUT_topatlys_clock_module_inst/u_DCM_SP_pins<2>";
+TS_FPGA_CLK = PERIOD TIMEGRP "TN_CLKIN" 100 MHz HIGH 50%;
+TS_u_DUT_topatlys_clock_module_inst_dcm_out = PERIOD TIMEGRP
+        "u_DUT_topatlys_clock_module_inst_dcm_out" TS_FPGA_CLK HIGH 50%;
+SCHEMATIC END;
+

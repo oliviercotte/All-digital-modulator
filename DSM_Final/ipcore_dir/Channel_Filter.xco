@@ -1,0 +1,102 @@
+##############################################################
+#
+# Xilinx Core Generator version 14.7
+# Date: Tue Jan 09 12:45:47 2018
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+#  Generated from component: xilinx.com:ip:fir_compiler:5.0
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = false
+SET asysymbol = true
+SET busformat = BusFormatAngleBracketNotRipped
+SET createndf = false
+SET designentry = VHDL
+SET device = xc6slx150
+SET devicefamily = spartan6
+SET flowvendor = Other
+SET formalverification = false
+SET foundationsym = false
+SET implementationfiletype = Ngc
+SET package = fgg484
+SET removerpms = false
+SET simulationfiles = Behavioral
+SET speedgrade = -3
+SET verilogsim = false
+SET vhdlsim = true
+# END Project Options
+# BEGIN Select
+SELECT FIR_Compiler family Xilinx,_Inc. 5.0
+# END Select
+# BEGIN Parameters
+CSET allow_rounding_approximation=false
+CSET bestprecision=true
+CSET chan_in_adv=0
+CSET clock_frequency=30.72
+CSET coefficient_buffer_type=Automatic
+CSET coefficient_file=no_coe_file_loaded
+CSET coefficient_fractional_bits=34
+CSET coefficient_reload=false
+CSET coefficient_sets=1
+CSET coefficient_sign=Signed
+CSET coefficient_structure=Symmetric
+CSET coefficient_width=35
+CSET coefficientsource=Vector
+CSET coefficientvector=0.00103618081606307,0.000787064362325032,-0.00210845676182291,0.00205476767087706,-1.52302213798916e-07,-0.00201729972211136,0.00136698934834239,0.00157701641530010,-0.00312587810253041,0.000658360120470995,0.00335944889930964,-0.00361519053095370,-0.00116668785317079,0.00543048540161966,-0.00305479831025068,-0.00412921770924214,0.00711917054590167,-0.000819600689639841,-0.00796718877437299,0.00750948079761556,0.00350322745479436,-0.0119425688133858,0.00551374219896641,0.00995769150875962,-0.0148284163128522,1.98679149678825e-05,0.0181031428168476,-0.0149170350025964,-0.0100881849596217,0.0270137073146525,-0.00981173691827018,-0.0264475527367219,0.0354309680402205,0.00498125653062366,-0.0540378283889116,0.0420079849709375,0.0462158729929712,-0.124863950583062,0.0456183169857670,0.526727939790531,0.526727939790531,0.0456183169857670,-0.124863950583062,0.0462158729929712,0.0420079849709375,-0.0540378283889116,0.00498125653062366,0.0354309680402205,-0.0264475527367219,-0.00981173691827018,0.0270137073146525,-0.0100881849596217,-0.0149170350025964,0.0181031428168476,1.98679149678825e-05,-0.0148284163128522,0.00995769150875962,0.00551374219896641,-0.0119425688133858,0.00350322745479436,0.00750948079761556,-0.00796718877437299,-0.000819600689639841,0.00711917054590167,-0.00412921770924214,-0.00305479831025068,0.00543048540161966,-0.00116668785317079,-0.00361519053095370,0.00335944889930964,0.000658360120470995,-0.00312587810253041,0.00157701641530010,0.00136698934834239,-0.00201729972211136,-1.52302213798916e-07,0.00205476767087706,-0.00210845676182291,0.000787064362325032,0.00103618081606307
+CSET columnconfig=40
+CSET component_name=Channel_Filter
+CSET data_buffer_type=Automatic
+CSET data_fractional_bits=32
+CSET data_sign=Signed
+CSET data_width=34
+CSET decimation_rate=1
+CSET displayreloadorder=false
+CSET filter_architecture=Systolic_Multiply_Accumulate
+CSET filter_selection=1
+CSET filter_type=Single_Rate
+CSET gui_behaviour=Coregen
+CSET hardwareoversamplingrate=1
+CSET has_ce=false
+CSET has_data_valid=false
+CSET has_nd=false
+CSET has_sclr=false
+CSET input_buffer_type=Automatic
+CSET inter_column_pipe_length=4
+CSET interpolation_rate=1
+CSET multi_column_support=Disabled
+CSET number_channels=1
+CSET number_paths=1
+CSET optimization_goal=Area
+CSET output_buffer_type=Automatic
+CSET output_rounding_mode=Truncate_LSBs
+CSET output_width=34
+CSET passband_max=0.5
+CSET passband_min=0.0
+CSET preference_for_other_storage=Automatic
+CSET quantization=Quantize_Only
+CSET rate_change_type=Integer
+CSET ratespecification=Frequency_Specification
+CSET registered_output=true
+CSET sample_frequency=30.72
+CSET sampleperiod=1
+CSET sclr_deterministic=false
+CSET stopband_max=1.0
+CSET stopband_min=0.5
+CSET usechan_in_adv=false
+CSET zero_pack_factor=1
+# END Parameters
+# BEGIN Extra information
+MISC pkg_timestamp=2013-10-13T18:46:09Z
+# END Extra information
+GENERATE
+# CRC: aa5efe6d

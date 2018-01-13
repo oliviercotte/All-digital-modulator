@@ -1,0 +1,21 @@
+# Output products list for <Halfband_3_245_76>
+Halfband_3_245_76.asy
+Halfband_3_245_76.gise
+Halfband_3_245_76.mif
+Halfband_3_245_76.mif_0
+Halfband_3_245_76.mif_1
+Halfband_3_245_76.ngc
+Halfband_3_245_76.sym
+Halfband_3_245_76.vhd
+Halfband_3_245_76.vho
+Halfband_3_245_76.xco
+Halfband_3_245_76.xise
+Halfband_3_245_76COEFF_auto0_0.mif
+Halfband_3_245_76COEFF_auto1_0.mif
+Halfband_3_245_76COEFF_auto_HALFBAND_CENTRE0.mif
+Halfband_3_245_76COEFF_auto_HALFBAND_CENTRE1.mif
+Halfband_3_245_76_flist.txt
+Halfband_3_245_76_readme.txt
+Halfband_3_245_76_xmdf.tcl
+Halfband_3_245_76filt_decode_rom.mif
+_xmsgs\pn_parser.xmsgs

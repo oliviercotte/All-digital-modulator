@@ -1,0 +1,23 @@
+# Output products list for <Halfband_2_122_88>
+Halfband_2_122_88.asy
+Halfband_2_122_88.gise
+Halfband_2_122_88.mif
+Halfband_2_122_88.mif_0
+Halfband_2_122_88.mif_1
+Halfband_2_122_88.ngc
+Halfband_2_122_88.sym
+Halfband_2_122_88.vhd
+Halfband_2_122_88.vho
+Halfband_2_122_88.xco
+Halfband_2_122_88.xise
+Halfband_2_122_88COEFF_auto0_0.mif
+Halfband_2_122_88COEFF_auto0_1.mif
+Halfband_2_122_88COEFF_auto1_0.mif
+Halfband_2_122_88COEFF_auto1_1.mif
+Halfband_2_122_88COEFF_auto_HALFBAND_CENTRE0.mif
+Halfband_2_122_88COEFF_auto_HALFBAND_CENTRE1.mif
+Halfband_2_122_88_flist.txt
+Halfband_2_122_88_readme.txt
+Halfband_2_122_88_xmdf.tcl
+Halfband_2_122_88filt_decode_rom.mif
+_xmsgs\pn_parser.xmsgs

@@ -1,0 +1,734 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: all_digital_modulator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "all_digital_modulator.prj"
+
+---- Target Parameters
+Target Device                      : xc7z045ffg900-3
+Output File Name                   : "all_digital_modulator.ngc"
+
+---- Source Options
+Top Module Name                    : all_digital_modulator
+Automatic Register Balancing       : yes
+
+---- Target Options
+Pack IO Registers into IOBs        : true
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 2
+Netlist Hierarchy                  : rebuilt
+
+---- Other Options
+Cores Search Directories           : {c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir c:/Newcomputer/DSM_Final/DSM_Final/project_1/project_1.srcs/sources_1/ip/dds_compiler_v4_0_0}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_3_245_76.vhd" into library work
+Parsing entity <Halfband_3_245_76>.
+Parsing architecture <Halfband_3_245_76_a> of entity <halfband_3_245_76>.
+Parsing VHDL file "c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_2_122_88.vhd" into library work
+Parsing entity <Halfband_2_122_88>.
+Parsing architecture <Halfband_2_122_88_a> of entity <halfband_2_122_88>.
+Parsing VHDL file "c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_1_61_44.vhd" into library work
+Parsing entity <Halfband_1_61_44>.
+Parsing architecture <Halfband_1_61_44_a> of entity <halfband_1_61_44>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/Eight_Order_Delta_Sigma_Modulator_pkg.vhd" into library work
+Parsing package <Eight_order_delta_sigma_modulator_pkg>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/Fourth_order_delta_sigma_modulator_pkg.vhd" into library work
+Parsing package <Fourth_order_delta_sigma_modulator_pkg>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/fixed_float_types_c.vhdl" into library work
+Parsing package <fixed_float_types>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl" into library work
+Parsing package <fixed_pkg>.
+Parsing package body <fixed_pkg>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/float_pkg_c.vhdl" into library work
+Parsing package <float_pkg>.
+Parsing package body <float_pkg>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/cordic_types.vhd" into library work
+Parsing package <cordic_types>.
+Parsing package body <cordic_types>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/pll_clock.vhd" into library work
+Parsing entity <PLL_CLOCK>.
+Parsing architecture <BEHAVIORAL> of entity <pll_clock>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/Halfband_4_491_52.vhd" into library work
+Parsing entity <Halfband_4_491_52>.
+Parsing architecture <rtl> of entity <halfband_4_491_52>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/Channel_Filter.vhd" into library work
+Parsing entity <Channel_Filter>.
+Parsing architecture <Channel_Filter_a> of entity <channel_filter>.
+Parsing VHDL file "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" into library work
+Parsing entity <all_digital_modulator>.
+Parsing architecture <Behavioral> of entity <all_digital_modulator>.
+Parsing VHDL file "c:/Newcomputer/DSM_Final/DSM_Final/project_1/project_1.srcs/sources_1/ip/clk_wiz_v3_6_0/clk_wiz_v3_6_0.vhd" into library work
+Parsing entity <clk_wiz_v3_6_0>.
+Parsing architecture <xilinx> of entity <clk_wiz_v3_6_0>.
+Parsing VHDL file "c:/Newcomputer/DSM_Final/DSM_Final/project_1/project_1.srcs/sources_1/ip/dds_compiler_v4_0_0/dds_compiler_v4_0_0.vhd" into library work
+Parsing entity <dds_compiler_v4_0_0>.
+Parsing architecture <dds_compiler_v4_0_0_a> of entity <dds_compiler_v4_0_0>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:746 - "C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl" Line 1469: Range is empty (null range)
+WARNING:HDLCompiler:746 - "C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl" Line 1470: Range is empty (null range)
+WARNING:HDLCompiler:746 - "C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl" Line 1471: Range is empty (null range)
+
+Elaborating entity <all_digital_modulator> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <PLL_CLOCK> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <clk_wiz_v3_6_0> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <dds_compiler_v4_0_0> (architecture <dds_compiler_v4_0_0_a>) from library <work>.
+
+Elaborating entity <Channel_Filter> (architecture <Channel_Filter_a>) from library <work>.
+
+Elaborating entity <Halfband_1_61_44> (architecture <Halfband_1_61_44_a>) from library <work>.
+
+Elaborating entity <Halfband_2_122_88> (architecture <Halfband_2_122_88_a>) from library <work>.
+
+Elaborating entity <Halfband_3_245_76> (architecture <Halfband_3_245_76_a>) from library <work>.
+
+Elaborating entity <Halfband_4_491_52> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" Line 299: Assignment to modulator_input ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" Line 300: Assignment to modulator_input_slv ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <all_digital_modulator>.
+    Related source file is "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd".
+        GEN_DIGITAL_UP_CONVERTER_EN = true
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 204: Output port <CLKFBOUT_OUT> of the instance <U0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 237: Output port <rfd> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 237: Output port <rdy> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 246: Output port <rfd> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 246: Output port <rdy> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 255: Output port <rfd> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 255: Output port <rdy> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 264: Output port <rfd> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 264: Output port <rdy> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd" line 273: Output port <ce_out> of the instance <GEN_DIGITAL_UP_CONVERTER_LBL.U7> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <all_digital_modulator> synthesized.
+
+Synthesizing Unit <PLL_CLOCK>.
+    Related source file is "C:/Newcomputer/DSM_Final/DSM_Final/pll_clock.vhd".
+    Summary:
+	no macro.
+Unit <PLL_CLOCK> synthesized.
+
+Synthesizing Unit <clk_wiz_v3_6_0>.
+    Related source file is "c:/Newcomputer/DSM_Final/DSM_Final/project_1/project_1.srcs/sources_1/ip/clk_wiz_v3_6_0/clk_wiz_v3_6_0.vhd".
+    Summary:
+	no macro.
+Unit <clk_wiz_v3_6_0> synthesized.
+
+Synthesizing Unit <Halfband_4_491_52>.
+    Related source file is "C:/Newcomputer/DSM_Final/DSM_Final/Halfband_4_491_52.vhd".
+    Found 34-bit register for signal <delay_pipeline<0>>.
+    Found 34-bit register for signal <delay_pipeline<1>>.
+    Found 34-bit register for signal <delay_pipeline<2>>.
+    Found 34-bit register for signal <delay_pipeline<3>>.
+    Found 36-bit register for signal <sumdelay_pipeline1<0>>.
+    Found 36-bit register for signal <sumdelay_pipeline1<1>>.
+    Found 36-bit register for signal <output_register>.
+    Found 2-bit register for signal <cur_count>.
+    Found 2-bit adder for signal <cur_count[1]_GND_51_o_add_1_OUT> created at line 123.
+    Found 37-bit adder for signal <add_temp> created at line 173.
+    Found 37-bit adder for signal <add_temp_1> created at line 178.
+    Found 37-bit adder for signal <add_temp_2> created at line 194.
+    Found 34x35-bit multiplier for signal <mul_temp> created at line 147.
+    Found 34x35-bit multiplier for signal <mul_temp_1> created at line 154.
+    Found 34x35-bit multiplier for signal <mul_temp_2> created at line 161.
+    Found 34x35-bit multiplier for signal <mul_temp_3> created at line 168.
+    Found 2-bit comparator lessequal for signal <n0000> created at line 120
+    Summary:
+	inferred   4 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 246 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  15 Multiplexer(s).
+Unit <Halfband_4_491_52> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 35x34-bit multiplier                                  : 4
+# Adders/Subtractors                                   : 4
+ 2-bit adder                                           : 1
+ 37-bit adder                                          : 3
+# Registers                                            : 8
+ 2-bit register                                        : 1
+ 34-bit register                                       : 4
+ 36-bit register                                       : 3
+# Comparators                                          : 1
+ 2-bit comparator lessequal                            : 1
+# Multiplexers                                         : 16
+ 2-bit 2-to-1 multiplexer                              : 1
+ 34-bit 2-to-1 multiplexer                             : 1
+ 36-bit 2-to-1 multiplexer                             : 14
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Channel_Filter.ngc>.
+Reading core <c:/Newcomputer/DSM_Final/DSM_Final/project_1/project_1.srcs/sources_1/ip/dds_compiler_v4_0_0/dds_compiler_v4_0_0.ngc>.
+Reading core <c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_1_61_44.ngc>.
+Reading core <c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_2_122_88.ngc>.
+Reading core <c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_3_245_76.ngc>.
+Loading core <Channel_Filter> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U3>.
+Loading core <dds_compiler_v4_0_0> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U2>.
+Loading core <Halfband_1_61_44> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U4>.
+Loading core <Halfband_2_122_88> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U5>.
+Loading core <Halfband_3_245_76> for timing and area information for instance <GEN_DIGITAL_UP_CONVERTER_LBL.U6>.
+INFO:Xst:1901 - Instance blk00000158 in unit blk00000158 of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk00000159 in unit blk00000159 of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk0000015a in unit blk0000015a of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk0000015b in unit blk0000015b of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk0000015c in unit blk0000015c of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk0000015d in unit blk0000015d of type DSP48E has been replaced by DSP48E1
+
+Synthesizing (advanced) Unit <Halfband_4_491_52>.
+The following registers are absorbed into counter <cur_count>: 1 register on signal <cur_count>.
+Unit <Halfband_4_491_52> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 31x34-bit multiplier                                  : 2
+ 34x34-bit multiplier                                  : 1
+ 35x34-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 37-bit adder                                          : 3
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 244
+ Flip-Flops                                            : 244
+# Comparators                                          : 1
+ 2-bit comparator lessequal                            : 1
+# Multiplexers                                         : 15
+ 34-bit 2-to-1 multiplexer                             : 1
+ 36-bit 2-to-1 multiplexer                             : 14
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <all_digital_modulator> ...
+
+Optimizing unit <Halfband_4_491_52> ...
+WARNING:Xst:1710 - FF/Latch <cur_count_1> (without init value) has a constant value of 0 in block <Halfband_4_491_52>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <cur_count_1> (without init value) has a constant value of 0 in block <Halfband_4_491_52>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block all_digital_modulator, actual ratio is 0.
+FlipFlop GEN_DIGITAL_UP_CONVERTER_LBL.U7/cur_count_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 246
+ Flip-Flops                                            : 246
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : all_digital_modulator.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 911
+#      GND                         : 53
+#      INV                         : 25
+#      LUT1                        : 10
+#      LUT2                        : 134
+#      LUT3                        : 308
+#      LUT4                        : 41
+#      MUXCY                       : 130
+#      MUXCY_D                     : 45
+#      VCC                         : 15
+#      XORCY                       : 150
+# FlipFlops/Latches                : 3524
+#      FD                          : 506
+#      FDC                         : 110
+#      FDCE                        : 136
+#      FDE                         : 2310
+#      FDR                         : 2
+#      FDRE                        : 454
+#      FDSE                        : 6
+# RAMS                             : 104
+#      RAM16X1D                    : 102
+#      RAMB16                      : 1
+#      RAMB36E1                    : 1
+# Shift Registers                  : 2274
+#      SRLC16E                     : 2270
+#      SRLC32E                     : 4
+# Clock Buffers                    : 6
+#      BUFG                        : 6
+# IO Buffers                       : 244
+#      IBUF                        : 36
+#      IBUFG                       : 2
+#      OBUF                        : 206
+# DSPs                             : 22
+#      DSP48E1                     : 22
+# Others                           : 222
+#      DSP48A1                     : 220
+#      MMCME2_ADV                  : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z045ffg900-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            3488  out of  437200     0%  
+ Number of Slice LUTs:                 2996  out of  218600     1%  
+    Number used as Logic:               518  out of  218600     0%  
+    Number used as Memory:             2478  out of  70400     3%  
+       Number used as RAM:              204
+       Number used as SRL:             2274
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3771
+   Number with an unused Flip Flop:     283  out of   3771     7%  
+   Number with an unused LUT:           775  out of   3771    20%  
+   Number of fully used LUT-FF pairs:  2713  out of   3771    71%  
+   Number of unique control sets:        62
+
+IO Utilization: 
+ Number of IOs:                         243
+ Number of bonded IOBs:                 242  out of    362    66%  
+    IOB Flip Flops/Latches:              36
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of    545     0%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                6  out of     32    18%  
+ Number of DSP48E1s:                    242  out of    900    26%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------+--------------------------------------------------+-------+
+Clock Signal                               | Clock buffer(FF name)                            | Load  |
+-------------------------------------------+--------------------------------------------------+-------+
+sys_clk                                    | PLL_ADV:CLKOUT0                                  | 3301  |
+GEN_DIGITAL_UP_CONVERTER_LBL.U2/sig00000002| NONE(GEN_DIGITAL_UP_CONVERTER_LBL.U2/blk00000142)| 1     |
+sys_clk                                    | PLL_ADV:CLKOUT1                                  | 1006  |
+sys_clk                                    | PLL_ADV:CLKOUT2                                  | 783   |
+U1/clkout0                                 | BUFG                                             | 572   |
+U1/CLK_OUT2                                | NONE(GEN_DIGITAL_UP_CONVERTER_LBL.U7/cur_count_0)| 246   |
+-------------------------------------------+--------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------------------------------------------+--------------------------------------------------+-------+
+Control Signal                                                                            | Buffer(FF name)                                  | Load  |
+------------------------------------------------------------------------------------------+--------------------------------------------------+-------+
+GEN_DIGITAL_UP_CONVERTER_LBL.U2/sig00000001(GEN_DIGITAL_UP_CONVERTER_LBL.U2/blk00000001:P)| NONE(GEN_DIGITAL_UP_CONVERTER_LBL.U2/blk00000142)| 124   |
+GEN_DIGITAL_UP_CONVERTER_LBL.U2/sig00000002(GEN_DIGITAL_UP_CONVERTER_LBL.U2/blk00000002:G)| NONE(GEN_DIGITAL_UP_CONVERTER_LBL.U2/blk00000143)| 74    |
+------------------------------------------------------------------------------------------+--------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 9.314ns (Maximum Frequency: 107.361MHz)
+   Minimum input arrival time before clock: 1.006ns
+   Maximum output required time after clock: 0.982ns
+   Maximum combinational path delay: 0.862ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sys_clk'
+  Clock period: 4.702ns (frequency: 212.656MHz)
+  Total number of paths / destination ports: 7140 / 6374
+-------------------------------------------------------------------------
+Delay:               1.176ns (Levels of Logic = 4)
+  Source:            GEN_DIGITAL_UP_CONVERTER_LBL.U5/blk00000003/blk00000271 (FF)
+  Destination:       GEN_DIGITAL_UP_CONVERTER_LBL.U5/blk00000003/blk00000038 (FF)
+  Source Clock:      sys_clk rising 4.0X
+  Destination Clock: sys_clk rising 4.0X
+
+  Data Path: GEN_DIGITAL_UP_CONVERTER_LBL.U5/blk00000003/blk00000271 to GEN_DIGITAL_UP_CONVERTER_LBL.U5/blk00000003/blk00000038
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q             104   0.232   0.397  blk00000271 (sig0000012d)
+     INV:I->O              1   0.053   0.000  blk00000281 (sig00000151)
+     MUXCY_D:S->O          1   0.230   0.000  blk00000020 (sig00000152)
+     MUXCY_D:CI->O         1   0.013   0.000  blk00000021 (sig00000155)
+     XORCY:CI->O           1   0.251   0.000  blk00000023 (sig00000156)
+     FDRE:D                   -0.001          blk00000038
+    ----------------------------------------
+    Total                      1.176ns (0.778ns logic, 0.397ns route)
+                                       (66.2% logic, 33.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/clkout0'
+  Clock period: 1.176ns (frequency: 850.624MHz)
+  Total number of paths / destination ports: 1017 / 768
+-------------------------------------------------------------------------
+Delay:               1.176ns (Levels of Logic = 4)
+  Source:            GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk000001ce (FF)
+  Destination:       GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000038 (FF)
+  Source Clock:      U1/clkout0 rising
+  Destination Clock: U1/clkout0 rising
+
+  Data Path: GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk000001ce to GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000038
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q             104   0.232   0.397  blk000001ce (sig0000012d)
+     INV:I->O              1   0.053   0.000  blk000001dd (sig00000151)
+     MUXCY_D:S->O          1   0.230   0.000  blk00000020 (sig00000152)
+     MUXCY_D:CI->O         1   0.013   0.000  blk00000021 (sig00000155)
+     XORCY:CI->O           1   0.251   0.000  blk00000023 (sig00000156)
+     FDRE:D                   -0.001          blk00000038
+    ----------------------------------------
+    Total                      1.176ns (0.778ns logic, 0.397ns route)
+                                       (66.2% logic, 33.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/CLK_OUT2'
+  Clock period: 9.314ns (frequency: 107.361MHz)
+  Total number of paths / destination ports: 65530695581 / 348
+-------------------------------------------------------------------------
+Delay:               9.314ns (Levels of Logic = 43)
+  Source:            GEN_DIGITAL_UP_CONVERTER_LBL.U7/cur_count_0_1 (FF)
+  Destination:       GEN_DIGITAL_UP_CONVERTER_LBL.U7/sumdelay_pipeline1_1_34 (FF)
+  Source Clock:      U1/CLK_OUT2 rising
+  Destination Clock: U1/CLK_OUT2 rising
+
+  Data Path: GEN_DIGITAL_UP_CONVERTER_LBL.U7/cur_count_0_1 to GEN_DIGITAL_UP_CONVERTER_LBL.U7/sumdelay_pipeline1_1_34
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.232   0.279  cur_count_0_1 (cur_count_0_1)
+     INV:I->O            134   0.053   0.402  Mcount_cur_count1_INV_0 (Mcount_cur_count)
+     DSP48E1:B0->PCOUT47    1   2.838   0.000  Mmult_mul_temp_2 (Mmult_mul_temp_2_PCOUT_to_Mmult_mul_temp_21_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  Mmult_mul_temp_21 (Mmult_mul_temp_21_PCOUT_to_Mmult_mul_temp_22_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  Mmult_mul_temp_22 (Mmult_mul_temp_22_PCOUT_to_Mmult_mul_temp_23_PCIN_47)
+     DSP48E1:PCIN47->P34   37   1.107   0.451  Mmult_mul_temp_23 (mul_temp_2<68>)
+     LUT4:I2->O            1   0.043   0.000  Madd_add_temp_1_lut<0> (Madd_add_temp_1_lut<0>)
+     MUXCY:S->O            1   0.230   0.000  Madd_add_temp_1_cy<0> (Madd_add_temp_1_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<1> (Madd_add_temp_1_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<2> (Madd_add_temp_1_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<3> (Madd_add_temp_1_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<4> (Madd_add_temp_1_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<5> (Madd_add_temp_1_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<6> (Madd_add_temp_1_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<7> (Madd_add_temp_1_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<8> (Madd_add_temp_1_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<9> (Madd_add_temp_1_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<10> (Madd_add_temp_1_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<11> (Madd_add_temp_1_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<12> (Madd_add_temp_1_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<13> (Madd_add_temp_1_cy<13>)
+     MUXCY:CI->O           1   0.013   0.000  Madd_add_temp_1_cy<14> (Madd_add_temp_1_cy<14>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<15> (Madd_add_temp_1_cy<15>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<16> (Madd_add_temp_1_cy<16>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<17> (Madd_add_temp_1_cy<17>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<18> (Madd_add_temp_1_cy<18>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<19> (Madd_add_temp_1_cy<19>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<20> (Madd_add_temp_1_cy<20>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<21> (Madd_add_temp_1_cy<21>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<22> (Madd_add_temp_1_cy<22>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<23> (Madd_add_temp_1_cy<23>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<24> (Madd_add_temp_1_cy<24>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<25> (Madd_add_temp_1_cy<25>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<26> (Madd_add_temp_1_cy<26>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<27> (Madd_add_temp_1_cy<27>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<28> (Madd_add_temp_1_cy<28>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<29> (Madd_add_temp_1_cy<29>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<30> (Madd_add_temp_1_cy<30>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<31> (Madd_add_temp_1_cy<31>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<32> (Madd_add_temp_1_cy<32>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<33> (Madd_add_temp_1_cy<33>)
+     MUXCY:CI->O           1   0.012   0.000  Madd_add_temp_1_cy<34> (Madd_add_temp_1_cy<34>)
+     XORCY:CI->O          35   0.251   0.451  Madd_add_temp_1_xor<35> (add_temp_1<35>)
+     LUT3:I1->O            1   0.043   0.000  Mmux_sumvector1<1>29 (sumvector1<1><10>)
+     FDC:D                    -0.001          sumdelay_pipeline1_1_10
+    ----------------------------------------
+    Total                      9.314ns (7.732ns logic, 1.582ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
+  Total number of paths / destination ports: 405 / 371
+-------------------------------------------------------------------------
+Offset:              0.578ns (Levels of Logic = 3)
+  Source:            bypass (PAD)
+  Destination:       GEN_DIGITAL_UP_CONVERTER_LBL.U3/blk00000003/blk00000019 (FF)
+  Destination Clock: sys_clk rising
+
+  Data Path: bypass to GEN_DIGITAL_UP_CONVERTER_LBL.U3/blk00000003/blk00000019
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   0.000   0.535  bypass_IBUF (bypass_IBUF)
+     LUT3:I0->O            2   0.043   0.000  Mmux_DAC_OUT341 (DAC_OUT_9_OBUF)
+     begin scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U3:din<9>'
+     begin scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U3/blk00000003:din(9)'
+     FDE:D                    -0.001          blk00000031
+    ----------------------------------------
+    Total                      0.578ns (0.043ns logic, 0.535ns route)
+                                       (7.4% logic, 92.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/clkout0'
+  Total number of paths / destination ports: 109 / 109
+-------------------------------------------------------------------------
+Offset:              0.374ns (Levels of Logic = 1)
+  Source:            GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000008:P<3> (PAD)
+  Destination:       GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000131/blk00000155 (RAM)
+  Destination Clock: U1/clkout0 rising
+
+  Data Path: GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000008:P<3> to GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000131/blk00000155
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    DSP48A1:P<3>           1   0.000   0.000  blk00000008 (sig0000012a)
+     begin scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000131:DA_IN<2>'
+     RAM16X1D:D                0.095          blk00000155
+    ----------------------------------------
+    Total                      0.374ns (0.374ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/CLK_OUT2'
+  Total number of paths / destination ports: 246 / 246
+-------------------------------------------------------------------------
+Offset:              1.006ns (Levels of Logic = 3)
+  Source:            sys_rst_n (PAD)
+  Destination:       GEN_DIGITAL_UP_CONVERTER_LBL.U7/cur_count_0 (FF)
+  Destination Clock: U1/CLK_OUT2 rising
+
+  Data Path: sys_rst_n to GEN_DIGITAL_UP_CONVERTER_LBL.U7/cur_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.279  sys_rst_n_IBUF (sys_rst_n_IBUF)
+     INV:I->O            246   0.053   0.419  sys_rst1_INV_0 (sys_rst)
+     begin scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U7:reset'
+     FDCE:CLR                  0.255          delay_pipeline_0_0
+    ----------------------------------------
+    Total                      1.006ns (0.308ns logic, 0.698ns route)
+                                       (30.6% logic, 69.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
+  Total number of paths / destination ports: 6990 / 6990
+-------------------------------------------------------------------------
+Offset:              0.982ns (Levels of Logic = 3)
+  Source:            GEN_DIGITAL_UP_CONVERTER_LBL.U2/blk0000015a/blk0000015a (DSP)
+  Destination:       DAC_OUT<33> (PAD)
+  Source Clock:      sys_clk rising
+
+  Data Path: GEN_DIGITAL_UP_CONVERTER_LBL.U2/blk0000015a/blk0000015a to DAC_OUT<33>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48E1:CLK->P47      9   0.329   0.326  blk0000015a (P47)
+     end scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U2/blk0000015a:P47'
+     end scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U2:sine<25>'
+     LUT3:I2->O            2   0.043   0.283  Mmux_DAC_OUT271 (DAC_OUT_33_OBUF)
+     OBUF:I->O                 0.000          DAC_OUT_33_OBUF (DAC_OUT<33>)
+    ----------------------------------------
+    Total                      0.982ns (0.372ns logic, 0.610ns route)
+                                       (37.9% logic, 62.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/clkout0'
+  Total number of paths / destination ports: 416 / 416
+-------------------------------------------------------------------------
+Offset:              0.521ns (Levels of Logic = 2)
+  Source:            GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000198 (FF)
+  Destination:       DAC_OUT4<33> (PAD)
+  Source Clock:      U1/clkout0 rising
+
+  Data Path: GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000198 to DAC_OUT4<33>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.232   0.289  blk00000198 (dout(33))
+     end scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003:dout(33)'
+     end scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U6:dout<33>'
+     OBUF:I->O                 0.000          DAC_OUT4_33_OBUF (DAC_OUT4<33>)
+    ----------------------------------------
+    Total                      0.521ns (0.232ns logic, 0.289ns route)
+                                       (44.5% logic, 55.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/CLK_OUT2'
+  Total number of paths / destination ports: 36 / 36
+-------------------------------------------------------------------------
+Offset:              0.511ns (Levels of Logic = 2)
+  Source:            GEN_DIGITAL_UP_CONVERTER_LBL.U7/output_register_35 (FF)
+  Destination:       DAC_OUT5<35> (PAD)
+  Source Clock:      U1/CLK_OUT2 rising
+
+  Data Path: GEN_DIGITAL_UP_CONVERTER_LBL.U7/output_register_35 to DAC_OUT5<35>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.232   0.279  output_register_35 (output_register_35)
+     end scope: 'GEN_DIGITAL_UP_CONVERTER_LBL.U7:filter_out<35>'
+     OBUF:I->O                 0.000          DAC_OUT5_35_OBUF (DAC_OUT5<35>)
+    ----------------------------------------
+    Total                      0.511ns (0.232ns logic, 0.279ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 10574 / 10540
+-------------------------------------------------------------------------
+Delay:               0.862ns (Levels of Logic = 3)
+  Source:            bypass (PAD)
+  Destination:       DAC_OUT<33> (PAD)
+
+  Data Path: bypass to DAC_OUT<33>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   0.000   0.535  bypass_IBUF (bypass_IBUF)
+     LUT3:I0->O            2   0.043   0.283  Mmux_DAC_OUT341 (DAC_OUT_9_OBUF)
+     OBUF:I->O                 0.000          DAC_OUT_9_OBUF (DAC_OUT<9>)
+    ----------------------------------------
+    Total                      0.862ns (0.043ns logic, 0.819ns route)
+                                       (5.0% logic, 95.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock U1/CLK_OUT2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/CLK_OUT2    |    9.314|         |         |         |
+U1/clkout0     |    0.521|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U1/clkout0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/clkout0     |    1.176|         |         |         |
+sys_clk        |    0.521|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sys_clk
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+GEN_DIGITAL_UP_CONVERTER_LBL.U2/sig00000002|    0.914|         |         |         |
+sys_clk                                    |    2.499|         |         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.85 secs
+ 
+--> 
+
+Total memory usage is 446644 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

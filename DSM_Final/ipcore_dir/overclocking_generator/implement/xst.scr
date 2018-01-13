@@ -1,0 +1,9 @@
+run
+-ifmt MIXED
+-top overclocking_generator_exdes
+-p xc6slx45-csg324-3
+-ifn xst.prj
+-ofn overclocking_generator_exdes
+-keep_hierarchy soft 
+-equivalent_register_removal no 
+-max_fanout 65535

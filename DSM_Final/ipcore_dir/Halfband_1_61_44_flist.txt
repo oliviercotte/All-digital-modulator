@@ -1,0 +1,25 @@
+# Output products list for <Halfband_1_61_44>
+Halfband_1_61_44.asy
+Halfband_1_61_44.gise
+Halfband_1_61_44.mif
+Halfband_1_61_44.mif_0
+Halfband_1_61_44.mif_1
+Halfband_1_61_44.ngc
+Halfband_1_61_44.sym
+Halfband_1_61_44.vhd
+Halfband_1_61_44.vho
+Halfband_1_61_44.xco
+Halfband_1_61_44.xise
+Halfband_1_61_44COEFF_auto0_0.mif
+Halfband_1_61_44COEFF_auto0_1.mif
+Halfband_1_61_44COEFF_auto0_2.mif
+Halfband_1_61_44COEFF_auto1_0.mif
+Halfband_1_61_44COEFF_auto1_1.mif
+Halfband_1_61_44COEFF_auto1_2.mif
+Halfband_1_61_44COEFF_auto_HALFBAND_CENTRE0.mif
+Halfband_1_61_44COEFF_auto_HALFBAND_CENTRE1.mif
+Halfband_1_61_44_flist.txt
+Halfband_1_61_44_readme.txt
+Halfband_1_61_44_xmdf.tcl
+Halfband_1_61_44filt_decode_rom.mif
+_xmsgs\pn_parser.xmsgs

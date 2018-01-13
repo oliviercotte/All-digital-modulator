@@ -1,0 +1,18 @@
+Release 14.7 - par P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Dec 29 18:40:34 2017
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 6 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF/u_PKTINFO/Mram_memory1_RAMD_D1_O
+   u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_DATA_BUF/u_PKTINFO/Mram_memory2_RAMD_D1_O
+   u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_STATUS_BUF/u_MWDPRAM/Mram_memory1_RAMD_D1_O
+   u_FILCore/u_FILCommLayer/u_FILPktProc/u_MWUDPPKTBuilder/u_STATUS_BUF/u_PKTINFO/Mram_memory1_RAMD_D1_O
+   u_FILCore/u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/Mram_mem1_RAMD_D1_O
+   u_FILCore/u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/Mram_mem1_RAMD_D1_O
+
+

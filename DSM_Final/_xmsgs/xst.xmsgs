@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"C:\Newcomputer\DSM_Final\DSM_Final\fixed_pkg_c.vhdl" Line 1469: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"C:\Newcomputer\DSM_Final\DSM_Final\fixed_pkg_c.vhdl" Line 1470: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"C:\Newcomputer\DSM_Final\DSM_Final\fixed_pkg_c.vhdl" Line 1471: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd" Line 300: Assignment to <arg fmt="%s" index="1">modulator_input</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">205</arg>: Output port &lt;<arg fmt="%s" index="3">CLKFBOUT_OUT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">238</arg>: Output port &lt;<arg fmt="%s" index="3">rfd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">238</arg>: Output port &lt;<arg fmt="%s" index="3">rdy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">247</arg>: Output port &lt;<arg fmt="%s" index="3">rfd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">247</arg>: Output port &lt;<arg fmt="%s" index="3">rdy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">256</arg>: Output port &lt;<arg fmt="%s" index="3">rfd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U5</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">256</arg>: Output port &lt;<arg fmt="%s" index="3">rdy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U5</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">265</arg>: Output port &lt;<arg fmt="%s" index="3">rfd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">265</arg>: Output port &lt;<arg fmt="%s" index="3">rdy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">274</arg>: Output port &lt;<arg fmt="%s" index="3">ce_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">GEN_DIGITAL_UP_CONVERTER_LBL.U7</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">304</arg>: Output port &lt;<arg fmt="%s" index="3">ce_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U8</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator.vhd</arg>&quot; line <arg fmt="%s" index="2">315</arg>: Output port &lt;<arg fmt="%s" index="3">ce_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U9</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">kconst_1</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">25</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">kconst_1</arg>&lt;<arg fmt="%d" index="2">23</arg>:<arg fmt="%d" index="3">23</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">kconst_1</arg>&lt;<arg fmt="%d" index="2">21</arg>:<arg fmt="%d" index="3">20</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">kconst_1</arg>&lt;<arg fmt="%d" index="2">17</arg>:<arg fmt="%d" index="3">16</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">kconst_1</arg>&lt;<arg fmt="%d" index="2">14</arg>:<arg fmt="%d" index="3">14</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">kconst_1</arg>&lt;<arg fmt="%d" index="2">2</arg>:<arg fmt="%d" index="3">2</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch3_reg&lt;0&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch1_reg&lt;0&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch_reg&lt;0&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch3_reg&lt;1&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch2_reg&lt;0&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch2_reg&lt;1&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch1_reg&lt;1&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch_reg&lt;1&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Fourth_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch6_reg&lt;0&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch4_reg&lt;0&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">kconst_1</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">10</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">kconst_1</arg>&lt;<arg fmt="%d" index="2">8</arg>:<arg fmt="%d" index="3">8</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">kconst_1</arg>&lt;<arg fmt="%d" index="2">7</arg>:<arg fmt="%d" index="3">3</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">kconst_1</arg>&lt;<arg fmt="%d" index="2">1</arg>:<arg fmt="%d" index="3">1</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch3_reg&lt;0&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch5_reg&lt;0&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch6_reg&lt;1&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch1_reg&lt;0&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch7_reg&lt;0&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch7_reg&lt;1&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch7_reg&lt;2&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch7_reg&lt;3&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch7_reg&lt;4&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch7_reg&lt;5&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch6_reg&lt;2&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch6_reg&lt;3&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch6_reg&lt;4&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch6_reg&lt;5&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch5_reg&lt;1&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch5_reg&lt;2&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch5_reg&lt;3&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch5_reg&lt;4&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch5_reg&lt;5&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch4_reg&lt;1&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch4_reg&lt;2&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch4_reg&lt;3&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch4_reg&lt;4&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch4_reg&lt;5&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch3_reg&lt;1&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch3_reg&lt;2&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch3_reg&lt;3&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch3_reg&lt;4&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch3_reg&lt;5&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch2_reg&lt;0&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch2_reg&lt;1&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch2_reg&lt;2&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch2_reg&lt;3&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch2_reg&lt;4&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch2_reg&lt;5&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch1_reg&lt;1&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch1_reg&lt;2&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch1_reg&lt;3&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch1_reg&lt;4&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch1_reg&lt;5&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch_reg&lt;0&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch_reg&lt;1&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch_reg&lt;2&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch_reg&lt;3&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch_reg&lt;4&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">delayMatch_reg&lt;5&gt;</arg>&lt;<arg fmt="%d" index="2">35</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">Eight_order_delta_sigma_modulator</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Gain_out1_1_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Fourth_order_delta_sigma_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Gain_out1_1_30&gt; &lt;Gain_out1_1_31&gt; &lt;Gain_out1_1_32&gt; &lt;Gain_out1_1_33&gt; &lt;Gain_out1_1_34&gt; &lt;Gain_out1_1_35&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">PipelineRegister_reg_0_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Eight_order_delta_sigma_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">21 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;PipelineRegister_reg_0_15&gt; &lt;PipelineRegister_reg_0_16&gt; &lt;PipelineRegister_reg_0_17&gt; &lt;PipelineRegister_reg_0_18&gt; &lt;PipelineRegister_reg_0_19&gt; &lt;PipelineRegister_reg_0_20&gt; &lt;PipelineRegister_reg_0_21&gt; &lt;PipelineRegister_reg_0_22&gt; &lt;PipelineRegister_reg_0_23&gt; &lt;PipelineRegister_reg_0_24&gt; &lt;PipelineRegister_reg_0_25&gt; &lt;PipelineRegister_reg_0_26&gt; &lt;PipelineRegister_reg_0_27&gt; &lt;PipelineRegister_reg_0_28&gt; &lt;PipelineRegister_reg_0_29&gt; &lt;PipelineRegister_reg_0_30&gt; &lt;PipelineRegister_reg_0_31&gt; &lt;PipelineRegister_reg_0_32&gt; &lt;PipelineRegister_reg_0_33&gt; &lt;PipelineRegister_reg_0_34&gt; &lt;PipelineRegister_reg_0_35&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">PipelineRegister_reg_1_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Eight_order_delta_sigma_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">21 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;PipelineRegister_reg_1_15&gt; &lt;PipelineRegister_reg_1_16&gt; &lt;PipelineRegister_reg_1_17&gt; &lt;PipelineRegister_reg_1_18&gt; &lt;PipelineRegister_reg_1_19&gt; &lt;PipelineRegister_reg_1_20&gt; &lt;PipelineRegister_reg_1_21&gt; &lt;PipelineRegister_reg_1_22&gt; &lt;PipelineRegister_reg_1_23&gt; &lt;PipelineRegister_reg_1_24&gt; &lt;PipelineRegister_reg_1_25&gt; &lt;PipelineRegister_reg_1_26&gt; &lt;PipelineRegister_reg_1_27&gt; &lt;PipelineRegister_reg_1_28&gt; &lt;PipelineRegister_reg_1_29&gt; &lt;PipelineRegister_reg_1_30&gt; &lt;PipelineRegister_reg_1_31&gt; &lt;PipelineRegister_reg_1_32&gt; &lt;PipelineRegister_reg_1_33&gt; &lt;PipelineRegister_reg_1_34&gt; &lt;PipelineRegister_reg_1_35&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">PipelineRegister_reg_2_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Eight_order_delta_sigma_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">21 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;PipelineRegister_reg_2_15&gt; &lt;PipelineRegister_reg_2_16&gt; &lt;PipelineRegister_reg_2_17&gt; &lt;PipelineRegister_reg_2_18&gt; &lt;PipelineRegister_reg_2_19&gt; &lt;PipelineRegister_reg_2_20&gt; &lt;PipelineRegister_reg_2_21&gt; &lt;PipelineRegister_reg_2_22&gt; &lt;PipelineRegister_reg_2_23&gt; &lt;PipelineRegister_reg_2_24&gt; &lt;PipelineRegister_reg_2_25&gt; &lt;PipelineRegister_reg_2_26&gt; &lt;PipelineRegister_reg_2_27&gt; &lt;PipelineRegister_reg_2_28&gt; &lt;PipelineRegister_reg_2_29&gt; &lt;PipelineRegister_reg_2_30&gt; &lt;PipelineRegister_reg_2_31&gt; &lt;PipelineRegister_reg_2_32&gt; &lt;PipelineRegister_reg_2_33&gt; &lt;PipelineRegister_reg_2_34&gt; &lt;PipelineRegister_reg_2_35&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">PipelineRegister_reg_3_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Eight_order_delta_sigma_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">21 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;PipelineRegister_reg_3_15&gt; &lt;PipelineRegister_reg_3_16&gt; &lt;PipelineRegister_reg_3_17&gt; &lt;PipelineRegister_reg_3_18&gt; &lt;PipelineRegister_reg_3_19&gt; &lt;PipelineRegister_reg_3_20&gt; &lt;PipelineRegister_reg_3_21&gt; &lt;PipelineRegister_reg_3_22&gt; &lt;PipelineRegister_reg_3_23&gt; &lt;PipelineRegister_reg_3_24&gt; &lt;PipelineRegister_reg_3_25&gt; &lt;PipelineRegister_reg_3_26&gt; &lt;PipelineRegister_reg_3_27&gt; &lt;PipelineRegister_reg_3_28&gt; &lt;PipelineRegister_reg_3_29&gt; &lt;PipelineRegister_reg_3_30&gt; &lt;PipelineRegister_reg_3_31&gt; &lt;PipelineRegister_reg_3_32&gt; &lt;PipelineRegister_reg_3_33&gt; &lt;PipelineRegister_reg_3_34&gt; &lt;PipelineRegister_reg_3_35&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">PipelineRegister_reg_4_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Eight_order_delta_sigma_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">21 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;PipelineRegister_reg_4_15&gt; &lt;PipelineRegister_reg_4_16&gt; &lt;PipelineRegister_reg_4_17&gt; &lt;PipelineRegister_reg_4_18&gt; &lt;PipelineRegister_reg_4_19&gt; &lt;PipelineRegister_reg_4_20&gt; &lt;PipelineRegister_reg_4_21&gt; &lt;PipelineRegister_reg_4_22&gt; &lt;PipelineRegister_reg_4_23&gt; &lt;PipelineRegister_reg_4_24&gt; &lt;PipelineRegister_reg_4_25&gt; &lt;PipelineRegister_reg_4_26&gt; &lt;PipelineRegister_reg_4_27&gt; &lt;PipelineRegister_reg_4_28&gt; &lt;PipelineRegister_reg_4_29&gt; &lt;PipelineRegister_reg_4_30&gt; &lt;PipelineRegister_reg_4_31&gt; &lt;PipelineRegister_reg_4_32&gt; &lt;PipelineRegister_reg_4_33&gt; &lt;PipelineRegister_reg_4_34&gt; &lt;PipelineRegister_reg_4_35&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">U1/pll_base_inst</arg> in unit <arg fmt="%s" index="2">U1/pll_base_inst</arg> of type <arg fmt="%s" index="3">PLL_BASE</arg> has been replaced by <arg fmt="%s" index="4">PLL_ADV</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cur_count_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Halfband_4_491_52</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cur_count_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Halfband_4_491_52</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_34</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_34&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_35</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_35&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/kconst_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/kconst_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_20&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_22&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_18&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_24</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_24&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_19&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_30</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_30&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_25&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_31&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_26</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_26&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_32</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_32&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_27&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_33</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_33&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_28</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_28&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_29&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U8/Digital_PCM_signal_1_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">all_digital_modulator</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U9/Digital_PCM_signal_1_9&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1336" delta="new" > (*) More than 100% of Device resources are used
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>

@@ -1,0 +1,87 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -p xc6slx150fgg484-3 -dd _ngo -uc all_digital_modulator.ucf
+all_digital_modulator.edf
+
+Executing edif2ngd -quiet "all_digital_modulator.edf"
+"_ngo\all_digital_modulator.ngo"
+Release 14.7 - edif2ngd P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading NGO file
+"C:/Newcomputer/DSM_Final/DSM_Final/project_1/project_1.runs/impl_1/_ngo/all_dig
+ital_modulator.ngo" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "all_digital_modulator.ucf" ...
+WARNING:NgdBuild - The value of SIM_DEVICE on instance 'U0/PLL_ADV_INST' of type
+   PLL_ADV has been changed from 'VIRTEX5' to 'SPARTAN6' to correct
+   post-ngdbuild and timing simulation for this primitive.  In order for
+   functional simulation to be correct, the value of SIM_DEVICE should be
+   changed in this same manner in the source netlist or constraint file.
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk00000035' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk0000003d' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'GEN_DIGITAL_UP_CONVERTER_LBL.U6/blk00000003/blk0000003e' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'GEN_DIGITAL_UP_CONVERTER_LBL.U3/blk00000003/blk00000012' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'GEN_DIGITAL_UP_CONVERTER_LBL.U3/blk00000003/blk00000013' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'GEN_DIGITAL_UP_CONVERTER_LBL.U3/blk00000003/blk00000014' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'GEN_DIGITAL_UP_CONVERTER_LBL.U4/blk00000003/blk00000035' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'GEN_DIGITAL_UP_CONVERTER_LBL.U4/blk00000003/blk0000003c' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'GEN_DIGITAL_UP_CONVERTER_LBL.U4/blk00000003/blk0000003d' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'GEN_DIGITAL_UP_CONVERTER_LBL.U5/blk00000003/blk00000035' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'GEN_DIGITAL_UP_CONVERTER_LBL.U5/blk00000003/blk0000003e' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'GEN_DIGITAL_UP_CONVERTER_LBL.U5/blk00000003/blk0000003f' has unconnected
+   output pin
+ERROR:NgdBuild:462 - input pad net 'sys_clk' drives multiple buffers:
+     pin I on block U0/CLKIN1_IBUFG_INST with type IBUFG,
+     pin I on block U1/clkin1_buf with type IBUFG
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     1
+  Number of warnings:  13
+
+Total memory usage is 213904 kilobytes
+
+Total REAL time to NGDBUILD completion:  25 sec
+Total CPU time to NGDBUILD completion:   8 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "all_digital_modulator.bld"...

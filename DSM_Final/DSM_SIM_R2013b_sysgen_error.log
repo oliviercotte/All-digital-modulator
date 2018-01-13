@@ -1,0 +1,22 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator                        C:/Xilinx/14.7/ISE_DS/ISE/sysgen
+Matlab 8.2.0.701 (R2013b)               C:/Program Files/MATLAB/R2013b
+ISE                                     C:/Xilinx/14.7/ISE_DS/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Illegal Period, This blocks attempts to set period that i...
+     Block: 'DSM_SIM_R2013b/Gateway In'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'DSM_SIM_R2013b/Gateway In'
+
+Details:
+Illegal Period, This blocks attempts to set period that is a
+non-integer multiple of the system rate
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------

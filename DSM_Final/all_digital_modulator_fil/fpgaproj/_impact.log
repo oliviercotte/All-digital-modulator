@@ -1,0 +1,244 @@
+iMPACT Version: 14.7
+
+iMPACT log file Started on Fri Dec 29 15:04:22 2017
+
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: 'C:\Xilinx\\auto_project.ipf' already exists.
+Original project has been renamed to 'C:\Xilinx\\auto_project_1.ipf'.
+Project: C:\Xilinx\\auto_project.ipf created.
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "Atlys", SN:210178559783
+INFO:iMPACT - Digilent Plugin: User Name: Atlys
+INFO:iMPACT - Digilent Plugin: Product Name: Atlys
+INFO:iMPACT - Digilent Plugin: Serial Number: 210178559783
+INFO:iMPACT - Digilent Plugin: Product ID: 00C0010C
+INFO:iMPACT - Digilent Plugin: Firmware Version: 030A
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 2017-12-29 3:04:25 PM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx45, Version : 4
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.7/ISE_DS/ISE/spartan6/data/xc6slx45.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx45 successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file"C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator_fil/fpgaproj/all_digital_modulator_fil.bit"
+'1': Loading file'C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator_fil/fpgaproj/all_digital_modulator_fil.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc6slx45 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 2017-12-29 3:04:45 PM
+// *** BATCH CMD : ReadIdcode -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': IDCODE is '01000100000000001000000010010011'
+'1': IDCODE is '44008093' (in hex).
+'1': : Manufacturer's ID = Xilinx xc6slx45, Version : 4
+INFO:iMPACT - Current time: 2017-12-29 3:04:47 PM
+// *** BATCH CMD : ReadUsercode -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Usercode is 'ffffffff'
+INFO:iMPACT - Current time: 2017-12-29 3:04:49 PM
+// *** BATCH CMD : ReadStatusRegister -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Reading bootsts register contents...
+[0] VALID_0 - ERROR OR END OF STARTUP (EOS) DETECTED                       :        1
+[1] FALLBACK_0 - FALLBACK RECONFIGURATION ATTEMPT DETECTED                 :        0
+[2] RESERVED                                                               :        0
+[3] WTO_ERROR_0 - WATCHDOG TIME OUT ERROR                                  :        0
+[4] ID_ERROR_0 - FPGA DEVICE IDCODE ERROR                                  :        0
+[5] CRC_ERROR_0 - CYCLIC REDUNDANCY CHECK (CRC) ERROR                      :        0
+[6] VALID_1 - ERROR OR END OF STARTUP (EOS) DETECTED                       :        0
+[7] FALLBACK_1 - FALLBACK RECONFIGURATION ATTEMPT DETECTED                 :        0
+[8] RESERVED                                                               :        0
+[9] WTO_ERROR_1 - WATCHDOG TIME OUT ERROR                                  :        0
+[10] ID_ERROR_1 - FPGA DEVICE IDCODE ERROR                                 :        0
+[11] CRC_ERROR_1 - CYCLIC REDUNDANCY CHECK (CRC) ERROR                     :        0
+[12] STRIKE CNT - STRIKE COUNT FOR FALLBACK ATTEMPTS                       :        0
+[13] STRIKE_CNT - STRIKE COUNT FOR FALLBACK ATTEMPTS                       :        0
+[14] STRIKE_CNT - STRIKE COUNT FOR FALLBACK ATTEMPTS                       :        0
+[15] STRIKE_CNT - STRIKE COUNT FOR FALLBACK ATTEMPTS                       :        0
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT - SVF file 'default.svf' will be generated in 'C:\Xilinx\' using   preset options listed below.
+INFO:iMPACT - Any pre-selected programming properties will not alter this   output.
+INFO:iMPACT - Current time: 2017-12-29 3:04:52 PM
+// *** BATCH CMD : expresssvf -p 1 -program -verify -file"C:\Xilinx\default.svf" 
+One step SVF/XSVF operation will close any existing cable connections.
+ Please reconnect your cable after the completion of the one-step operation.
+
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+INFO:iMPACT - XSVF file 'default.xsvf'  will be generated in 'C:\Xilinx\' using   preset options listed below.
+INFO:iMPACT - Any pre-selected programming properties will not alter this   output.
+INFO:iMPACT - Current time: 2017-12-29 3:05:03 PM
+// *** BATCH CMD : expressxsvf -p 1 -program -verify -file"C:\Xilinx\default.xsvf" 
+One step SVF/XSVF operation will close any existing cable connections.
+ Please reconnect your cable after the completion of the one-step operation.
+
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "Atlys", SN:210178559783
+INFO:iMPACT - Digilent Plugin: User Name: Atlys
+INFO:iMPACT - Digilent Plugin: Product Name: Atlys
+INFO:iMPACT - Digilent Plugin: Serial Number: 210178559783
+INFO:iMPACT - Digilent Plugin: Product ID: 00C0010C
+INFO:iMPACT - Digilent Plugin: Firmware Version: 030A
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
+INFO:iMPACT - Current time: 2017-12-29 3:05:10 PM
+// *** BATCH CMD : readdna -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': DNA = '10101010101010101010101010101010101'
+INFO:iMPACT - Current time: 2017-12-29 3:05:20 PM
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        0
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        0
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0001 1100 1010 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      8 sec.
+// *** BATCH CMD : assignFile -p 1 -file"C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/fil_test_fil2.bit"
+'1': Loading file'C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/fil_test_fil2.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc6slx45 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 2017-12-29 6:42:09 PM
+The selected cable is being used by another application.
+ Please retry the current operation.
+INFO:iMPACT - Current time: 2017-12-29 6:42:17 PM
+The selected cable is being used by another application.
+ Please retry the current operation.
+// *** BATCH CMD : assignFile -p 1 -file"C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator_fil/fpgaproj/all_digital_modulator_fil.bit"
+'1': Loading file'C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator_fil/fpgaproj/all_digital_modulator_fil.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc6slx45 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 2017-12-29 6:42:49 PM
+The selected cable is being used by another application.
+ Please retry the current operation.
+INFO:iMPACT - Current time: 2017-12-29 6:43:12 PM
+The selected cable is being used by another application.
+ Please retry the current operation.
+INFO:iMPACT - Current time: 2017-12-29 6:43:27 PM
+The selected cable is being used by another application.
+ Please retry the current operation.
+INFO:iMPACT - Current time: 2017-12-29 6:43:30 PM
+The selected cable is being used by another application.
+ Please retry the current operation.
+Project: 'C:\Xilinx\\auto_project.ipf' created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file "C:\Xilinx\\auto_project.ipf"
+// *** BATCH CMD : setMode -bs
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at   C:\Xilinx\webtalk.log for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff

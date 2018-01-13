@@ -1,0 +1,2 @@
+vhdl work ../../overclocking_generator.vhd
+vhdl work ../example_design/overclocking_generator_exdes.vhd

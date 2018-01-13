@@ -1,0 +1,54 @@
+## PART ##
+CONFIG PART = xc6slx45-csg324-2;
+
+## IO PIN MAP##
+NET "sysclk"         LOC = "L15";
+NET "ETH_COL"    LOC = "C17";
+NET "ETH_CRS"    LOC = "C18";
+NET "ETH_GTXCLK"    LOC = "L12";
+NET "ETH_MDC"    LOC = "F16";
+NET "ETH_MDIO"    LOC = "N17";
+NET "ETH_RESET_n"    LOC = "G13";
+NET "ETH_RXCLK"    LOC = "K15";
+NET "ETH_RXD[0]"    LOC = "G16";
+NET "ETH_RXD[1]"    LOC = "H14";
+NET "ETH_RXD[2]"    LOC = "E16";
+NET "ETH_RXD[3]"    LOC = "F15";
+NET "ETH_RXD[4]"    LOC = "F14";
+NET "ETH_RXD[5]"    LOC = "E18";
+NET "ETH_RXD[6]"    LOC = "D18";
+NET "ETH_RXD[7]"    LOC = "D17";
+NET "ETH_RXDV"    LOC = "F17";
+NET "ETH_RXER"    LOC = "F18";
+NET "ETH_TXD[0]"    LOC = "H16";
+NET "ETH_TXD[1]"    LOC = "H13";
+NET "ETH_TXD[2]"    LOC = "K14";
+NET "ETH_TXD[3]"    LOC = "K13";
+NET "ETH_TXD[4]"    LOC = "J13";
+NET "ETH_TXD[5]"    LOC = "G14";
+NET "ETH_TXD[6]"    LOC = "H12";
+NET "ETH_TXD[7]"    LOC = "K12";
+NET "ETH_TXEN"    LOC = "H15";
+NET "ETH_TXER"    LOC = "G18";
+NET "sysrst"        LOC = "T15";
+
+
+## Clocking ##
+NET "ETH_RXCLK" TNM_NET = "ETH_RXCLK";
+TIMESPEC "TS_ETH_RXCLK" = PERIOD "ETH_RXCLK" 8 ns HIGH 50%;
+NET "sysclk" TNM_NET = "sysclk";
+TIMESPEC "TS_sysclk" = PERIOD "sysclk" 10 ns HIGH 50%;
+
+
+
+## Locking DCM location ## 
+INST u_ClockManager/u_dcm LOC = DCM_X0Y2;
+
+
+## False Path ## 
+TIMESPEC TS_RXCLK_DUTCLK = FROM "ETH_RXCLK" TO "u_ClockManager_CLKDV" TIG;
+TIMESPEC TS_DUTCLK_RXCLK = FROM "u_ClockManager_CLKDV" TO "ETH_RXCLK" TIG;
+TIMESPEC TS_DUTCLK_TXCLK = FROM "u_ClockManager_CLKDV" TO "u_ClockManager_dcmclk125" TIG;
+TIMESPEC TS_TXCLK_DUTCLK = FROM "u_ClockManager_dcmclk125" TO "u_ClockManager_CLKDV" TIG;
+TIMESPEC TS_TXCLK_RXCLK  = FROM "u_ClockManager_dcmclk125" TO "ETH_RXCLK" TIG;
+TIMESPEC TS_RXCLK_TXCLK  = FROM "ETH_RXCLK" TO "u_ClockManager_dcmclk125" TIG;

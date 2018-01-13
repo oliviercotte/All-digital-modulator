@@ -1,0 +1,12 @@
+set -loop_iteration_limit 1000
+run
+-ifn all_digital_modulator.prj
+-top all_digital_modulator
+-p xc7z045ffg900-3
+-ofn all_digital_modulator.ngc
+-sd {c:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir c:/Newcomputer/DSM_Final/DSM_Final/project_1/project_1.srcs/sources_1/ip/dds_compiler_v4_0_0}
+-opt_mode speed
+-opt_level 2
+-register_balancing yes
+-iob true
+-netlist_hierarchy rebuilt

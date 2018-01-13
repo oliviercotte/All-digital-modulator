@@ -1,0 +1,211 @@
+Task "Map" successful.
+Generated logfile: 
+### Open existing Xilinx ISE 14.7 project C:\Newcomputer\DSM_Final\DSM_Final\fpgaproj\DUT_topatlys_ise.xise
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/hdl_prj/hdlsrc/turnkey_test_mode
+   l/DUT.vhd" into library work
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/hdl_prj/hdlsrc/turnkey_test_mode
+   l/DUT_topatlys.vhd" into library work
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/hdl_prj/hdlsrc/turnkey_test_mode
+   l/DUT_topatlys_clock_module.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+### Running Map in Xilinx ISE 14.7 ...
+Qt: Untested Windows version 6.2 detected!
+INFO:TclTasksC:1850 - process run : Translate is done.
+
+Started : "Translate".
+Running ngdbuild...
+Command Line: ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hdl_prj/hdlsrc/turnkey_test_model/DUT_topatlys.ucf -p xc6slx45-csg324-2 DUT_topatlys.ngc DUT_topatlys.ngd
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc
+hdl_prj/hdlsrc/turnkey_test_model/DUT_topatlys.ucf -p xc6slx45-csg324-2
+DUT_topatlys.ngc DUT_topatlys.ngd
+
+Reading NGO file "C:/Newcomputer/DSM_Final/DSM_Final/fpgaproj/DUT_topatlys.ngc"
+...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"hdl_prj/hdlsrc/turnkey_test_model/DUT_topatlys.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "DUT_topatlys.ngd" ...
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+Writing NGDBUILD log file "DUT_topatlys.bld"...
+
+NGDBUILD done.
+
+Process "Translate" completed successfully
+
+Started : "Map".
+Running map...
+Command Line: map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DUT_topatlys_map.ncd DUT_topatlys.ngd DUT_topatlys.pcf
+Using target part "6slx45csg324-2".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 4 secs 
+Total CPU  time at the beginning of Placer: 4 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:92217ea1) REAL time: 5 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:92217ea1) REAL time: 5 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:92217ea1) REAL time: 5 secs 
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+(Checksum:34aed749) REAL time: 5 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:34aed749) REAL time: 5 secs 
+
+Phase 6.30  Global Clock Region Assignment
+Phase 6.30  Global Clock Region Assignment (Checksum:34aed749) REAL time: 5 secs 
+
+Phase 7.3  Local Placement Optimization
+Phase 7.3  Local Placement Optimization (Checksum:34aed749) REAL time: 5 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:34aed749) REAL time: 5 secs 
+
+Phase 9.8  Global Placement
+..
+..
+Phase 9.8  Global Placement (Checksum:db0477e6) REAL time: 5 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:db0477e6) REAL time: 5 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:92420016) REAL time: 5 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:92420016) REAL time: 5 secs 
+
+Phase 13.34  Placement Validation
+Phase 13.34  Placement Validation (Checksum:92420016) REAL time: 6 secs 
+
+Total REAL time to Placer completion: 6 secs 
+Total CPU  time to Placer completion: 5 secs 
+Running post-placement packing...
+Writing output files...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                    32 out of  54,576    1%
+    Number used as Flip Flops:                  32
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                         33 out of  27,288    1%
+    Number used as logic:                       32 out of  27,288    1%
+      Number using O6 output only:               1
+      Number using O5 output only:              30
+      Number using O5 and O6:                    1
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   6,408    0%
+    Number used exclusively as route-thrus:      1
+      Number with same-slice register load:      0
+      Number with same-slice carry load:         1
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                     9 out of   6,822    1%
+  Number of MUXCYs used:                        32 out of  13,644    1%
+  Number of LUT Flip Flop pairs used:           33
+    Number with an unused Flip Flop:             1 out of      33    3%
+    Number with an unused LUT:                   0 out of      33    0%
+    Number of fully used LUT-FF pairs:          32 out of      33   96%
+    Number of unique control sets:               1
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  54,576    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set iINFO:TclTasksC:1850 - process run : Map is done.
+s a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        10 out of     218    4%
+    Number of LOCed IOBs:                       10 out of      10  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of     116    0%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
+    Number used as BUFIO2FBs:                    1
+    Number used as BUFIO2FB_2CLKs:               0
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     1 out of       8   12%
+    Number used as DCMs:                         1
+    Number used as DCM_CLKGENs:                  0
+  Number of ILOGIC2/ISERDES2s:                   0 out of     376    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     376    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     376    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      58    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       4    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                1.85
+
+Peak Memory Usage:  380 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion:   6 secs 
+
+Mapping completed.
+See MAP report file "DUT_topatlys_map.mrp" for details.
+
+Process "Map" completed successfully
+### Map Complete.
+### Close Xilinx ISE 14.7 project.
+
+Elapsed time is 23.112 seconds.

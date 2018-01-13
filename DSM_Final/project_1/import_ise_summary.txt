@@ -1,0 +1,574 @@
+*******************************************************************************
+*
+*                      IMPORT XISE SUMMARY REPORT
+*
+*                       (import_ise_summary.txt)
+*
+*  PLEASE READ THIS REPORT TO GET THE DETAILED INFORMATION ON THE DATA THAT
+*  WAS PARSED FROM THE ISE PROJECT AND IMPORTED INTO THE CURRENT PROJECT.
+*
+*
+* The report is divided into following three sections:-
+*
+* Section (1) - ISE PROJECT INFORMATION
+*
+*  This section provides the details of the ISE project that was imported
+*
+* Section (2) - EXCEPTIONS
+*
+*  This section summarizes the ISE project data that was either not imported or
+*  not mapped into the current project
+*
+* Section (3) - MAPPED DATA
+*
+*  This section summarizes the PlanAhead project information that was imported
+*  from the ISE project data
+*
+*******************************************************************************
+
+Section (1) - ISE PROJECT INFORMATION
+-------------------------------------
+
+The following items describes the information about the ISE project that was imported:-
+
+Project Name    = DSM_Final
+Project File    = C:/Newcomputer/DSM_Final/DSM_Final/DSM_Final.xise
+Project Version = 14.7
+Device Family   = Spartan6
+Part Name       = xc6slx150-3-fgg484
+
+
+Section (2) - EXCEPTIONS
+------------------------
+
+The following sub-sections describes the list of items that were NOT mapped from the
+XISE file contents into the current project:-
+
+Section (2.1) - Missing Sources
+-------------------------------
+None
+
+
+Section (2.2) - Unknown Sources
+-------------------------------
+None
+
+
+Section (2.3) - IP Import Issues
+--------------------------------
+None
+
+
+Section (2.4) - Unknown Properties
+----------------------------------
+
+The following ISE properties were not mapped into the current project:-
+
+
+<ISE Property Name>                                              <ISE Property Value>
+"AES Initial Vector spartan6"                                    ''
+"AES Key (Hex String) spartan6"                                  ''
+"Allow SelectMAP Pins to Persist"                                'false'
+"Analysis Effort Level"                                          'Standard'
+"Asynchronous To Synchronous"                                    'false'
+"Automatically Insert glbl Module in the Netlist"                'true'
+"Automatically Run Generate Target PROM/ACE File"                'false'
+"BRAM Utilization Ratio"                                         '100'
+"Bring Out Global Set/Reset Net as a Port"                       'false'
+"Bring Out Global Tristate Net as a Port"                        'false'
+"Bus Delimiter"                                                  '<>'
+"Case"                                                           'Maintain'
+"Case Implementation Style"                                      'None'
+"Change Device Speed To"                                         '-3'
+"Change Device Speed To Post Trace"                              '-3'
+"Configuration Clk (Configuration Pins)"                         'Pull Up'
+"Configuration Name"                                             'Default'
+"Configuration Pin Done"                                         'Pull Up'
+"Configuration Pin HSWAPEN"                                      'Pull Up'
+"Configuration Pin M0"                                           'Pull Up'
+"Configuration Pin M1"                                           'Pull Up'
+"Configuration Pin M2"                                           'Pull Up'
+"Configuration Pin Program"                                      'Pull Up'
+"Configuration Rate spartan6"                                    '2'
+"Correlate Output to Input Design"                               'false'
+"Create Binary Configuration File"                               'false'
+"Create IEEE 1532 Configuration File spartan6"                   'false'
+"Create ReadBack Data Files"                                     'false'
+"Cross Clock Analysis"                                           'false'
+"Custom Do File Behavioral"                                      'testbench - Copy.do'
+"DSP Utilization Ratio"                                          '100'
+"Data Flow window"                                               'false'
+"Delay Values To Be Read from SDF ModelSim"                      'Setup Time'
+"Device Speed Grade/Select ABS Minimum"                          '-3'
+"Disable Detailed Package Model Insertion"                       'false'
+"Do Not Escape Signal and Instance Names in Netlist"             'false'
+"Done (Output Events)"                                           'Default (4)'
+"Drive Awake Pin During Suspend/Wake Sequence spartan6"          'false'
+"Drive Done Pin High"                                            'false'
+"Enable BitStream Compression"                                   'false'
+"Enable Cyclic Redundancy Checking (CRC) spartan6"               'true'
+"Enable Debugging of Serial Mode BitStream"                      'false'
+"Enable External Master Clock spartan6"                          'false'
+"Enable Internal Done Pipe"                                      'true'
+"Enable Message Filtering"                                       'false'
+"Enable Multi-Pin Wake-Up Suspend Mode spartan6"                 'false'
+"Enable Outputs (Output Events)"                                 'Default (5)'
+"Enable Suspend/Wake Global Set/Reset spartan6"                  'false'
+"Encrypt Bitstream spartan6"                                     'false'
+"Encrypt Key Select spartan6"                                    'BBRAM'
+"Equivalent Register Removal"                                    'true'
+"Essential Bits"                                                 'false'
+"Evaluation Development Board"                                   'None Specified'
+"FPGA Start-Up Clock"                                            'CCLK'
+"FSM Style"                                                      'LUT'
+"Flatten Output Netlist"                                         'false'
+"Functional Model Target Language ArchWiz"                       'VHDL'
+"Functional Model Target Language Coregen"                       'VHDL'
+"Functional Model Target Language Schematic"                     'VHDL'
+"GTS Cycle During Suspend/Wakeup Sequence spartan6"              '4'
+"GWE Cycle During Suspend/Wakeup Sequence spartan6"              '5'
+"Generate Asynchronous Delay Report"                             'false'
+"Generate Clock Region Report"                                   'false'
+"Generate Constraints Interaction Report"                        'false'
+"Generate Constraints Interaction Report Post Trace"             'false'
+"Generate Datasheet Section"                                     'true'
+"Generate Detailed MAP Report"                                   'false'
+"Generate Multiple Hierarchical Netlist Files"                   'false'
+"Generate Post-Place & Route Power Report"                       'false'
+"Generate Post-Place & Route Simulation Model"                   'false'
+"Generate RTL Schematic"                                         'Yes'
+"Generate Testbench File"                                        'false'
+"Generate Timegroups Section"                                    'false'
+"Generate Timegroups Section Post Trace"                         'false'
+"Generate Verbose Library Compilation Messages"                  'true'
+"Global Optimization Goal"                                       'AllClockNets'
+"Global Optimization map spartan6"                               'Off'
+"Global Set/Reset Port Name"                                     'GSR_PORT'
+"Global Tristate Port Name"                                      'GTS_PORT'
+"Hierarchy Separator"                                            '/'
+"Ignore Pre-Compiled Library Warning Check"                      'false'
+"Ignore User Timing Constraints Map"                             'false'
+"Ignore Version Check"                                           'true'
+"Include 'uselib Directive in Verilog File"                      'false'
+"Include SIMPRIM Models in Verilog File"                         'false'
+"Include UNISIM Models in Verilog File"                          'false'
+"Include sdf_annotate task in Verilog File"                      'true'
+"Insert Buffers to Prevent Pulse Swallowing"                     'true'
+"JTAG Pin TCK"                                                   'Pull Up'
+"JTAG Pin TDI"                                                   'Pull Up'
+"JTAG Pin TDO"                                                   'Pull Up'
+"JTAG Pin TMS"                                                   'Pull Up'
+"Keep Hierarchy"                                                 'No'
+"Last Unlock Status"                                             'false'
+"Library for Verilog Sources"                                    ''
+"List window"                                                    'false'
+"Log All Signals In Behavioral Simulation"                       'false'
+"Log All Signals In Post-Map Simulation"                         'false'
+"Log All Signals In Post-Par Simulation"                         'false'
+"Log All Signals In Post-Translate Simulation"                   'false'
+"Mask Pins for Multi-Pin Wake-Up Suspend Mode spartan6"          '0x00'
+"Max Fanout"                                                     '100000'
+"Maximum Compression"                                            'false'
+"Maximum Number of Lines in Report"                              '1000'
+"Maximum Signal Name Length"                                     '20'
+"ModelSim Post-Map UUT Instance Name"                            'UUT'
+"ModelSim Post-Par UUT Instance Name"                            'UUT'
+"Move First Flip-Flop Stage"                                     'true'
+"Move Last Flip-Flop Stage"                                      'true'
+"MultiBoot: Insert IPROG CMD in the Bitfile spartan6"            'Enable'
+"MultiBoot: Next Configuration Mode spartan6"                    '001'
+"MultiBoot: Starting Address for Golden Configuration spartan6"  '0x00000000'
+"MultiBoot: Starting Address for Next Configuration spartan6"    '0x00000000'
+"MultiBoot: Use New Mode for Next Configuration spartan6"        'true'
+"MultiBoot: User-Defined Register for Failsafe Scheme spartan6"  '0x0000'
+"Netlist Translation Type"                                       'Timestamp'
+"Number of Paths in Error/Verbose Report"                        '3'
+"Optimize Instantiated Primitives"                               'false'
+"Other Bitgen Command Line Options spartan6"                     ''
+"Other VCOM Command Line Options"                                ''
+"Other VLOG Command Line Options"                                ''
+"Other VSIM Command Line Options"                                ''
+"Other XPWR Command Line Options"                                ''
+"Output Extended Identifiers"                                    'false'
+"Output File Name"                                               'all_digital_modulator'
+"Perform Advanced Analysis"                                      'false'
+"Perform Advanced Analysis Post Trace"                           'false'
+"Place And Route Mode"                                           'Normal Place and Route'
+"Place MultiBoot Settings into Bitstream spartan6"               'false'
+"Port to be used"                                                'Auto - default'
+"Post Map Simulation Model Name"                                 'all_digital_modulator_map.vhd'
+"Post Place & Route Simulation Model Name"                       'all_digital_modulator_timesim.vhd'
+"Post Synthesis Simulation Model Name"                           'all_digital_modulator_synthesis.vhd'
+"Post Translate Simulation Model Name"                           'all_digital_modulator_translate.vhd'
+"Process window"                                                 'false'
+"Produce Verbose Report"                                         'false'
+"RAM Extraction"                                                 'true'
+"ROM Extraction"                                                 'true'
+"ROM Style"                                                      'Auto'
+"Read Cores"                                                     'true'
+"Reduce Control Sets"                                            'Auto'
+"Regenerate Core"                                                'Under Current Project Setting'
+"Register Duplication Xst"                                       'true'
+"Release Write Enable (Output Events)"                           'Default (6)'
+"Rename Design Instance in Testbench File to"                    'UUT'
+"Rename Top Level Architecture To"                               'Structure'
+"Rename Top Level Entity to"                                     'all_digital_modulator'
+"Report Paths by Endpoint"                                       '3'
+"Report Paths by Endpoint Post Trace"                            '3'
+"Report Type"                                                    'Verbose Report'
+"Report Type Post Trace"                                         'Verbose Report'
+"Reset On Configuration Pulse Width"                             '100'
+"Retry Configuration if CRC Error Occurs spartan6"               'false'
+"Revision Select"                                                '00'
+"Revision Select Tristate"                                       'Disable'
+"Safe Implementation"                                            'No'
+"Security"                                                       'Enable Readback and Reconfiguration'
+"Set SPI Configuration Bus Width spartan6"                       '1'
+"Setup External Master Clock Division spartan6"                  '1'
+"Shift Register Extraction"                                      'true'
+"Shift Register Minimum Size spartan6"                           '2'
+"Show All Models"                                                'false'
+"Signal window"                                                  'true'
+"Simulation Resolution"                                          'Default (1 ps)'
+"Simulation Run Time Modelsim"                                   '20us'
+"Slice Utilization Ratio"                                        '100'
+"Source window"                                                  'false'
+"Specify Top Level Instance Names"                               ''
+"Structure window"                                               'true'
+"Top-Level Module Name in Output Netlist"                        ''
+"Tristate On Configuration Pulse Width"                          '0'
+"Unused IOB Pins"                                                'Pull Down'
+"Use Automatic Do File"                                          'true'
+"Use Clock Enable"                                               'Auto'
+"Use Configuration Name"                                         'false'
+"Use Custom Do File Behavioral"                                  'false'
+"Use Custom Do File Map"                                         'false'
+"Use Custom Do File Par"                                         'false'
+"Use Custom Do File Translate"                                   'false'
+"Use DSP Block spartan6"                                         'Auto'
+"Use Explicit Declarations Only"                                 'true'
+"Use Smart Guide"                                                'false'
+"Use Synchronous Reset"                                          'Auto'
+"Use Synchronous Set"                                            'Auto'
+"Use Synthesis Constraints File"                                 'true'
+"UserID Code (8 Digit Hexadecimal)"                              '0xFFFFFFFF'
+"VCCAUX Voltage Level spartan6"                                  '2.5V'
+"VHDL Source Analysis Standard"                                  'VHDL-93'
+"VHDL Syntax"                                                    '93'
+"Variables window"                                               'false'
+"Wait for DCM and PLL Lock (Output Events) spartan6"             'Default (NoWait)'
+"Wakeup Clock spartan6"                                          'Startup Clock'
+"Watchdog Timer Value spartan6"                                  '0xFFFF'
+"Wave window"                                                    'true'
+"Write Timing Constraints"                                       'false'
+
+
+Section (3) - MAPPED DATA
+-------------------------
+
+The following sub-sections describes the list of items that were imported from the
+ISE properties and sources and mapped into the current project:-
+
+Section (3.1) - Target Device
+-----------------------------
+
+Default Part = xc6slx150fgg484-3
+Family       = spartan6lx
+Package      = fgg484
+Speed Grade  = -3
+
+
+Section (3.2) - Filesets
+------------------------
+
+<sources_1>
+FILESET_TYPE   = DesignSrcs
+TOP            = all_digital_modulator
+DESIGN_MODE    = RTL
+VERILOG_DIR    = 
+VERILOG_DEFINE = 
+VHDL_GENERICS  = 
+
+File(s):-
+NAME      = Clock_Generator_2.xco
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Clock_Generator_2.xco
+FILE_TYPE = IP
+LIBRARY   = work
+
+NAME      = Channel_Filter.xco
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Channel_Filter.xco
+FILE_TYPE = IP
+LIBRARY   = work
+
+NAME      = Halfband_3_245_76.xco
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_3_245_76.xco
+FILE_TYPE = IP
+LIBRARY   = work
+
+NAME      = Halfband_2_122_88.xco
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_2_122_88.xco
+FILE_TYPE = IP
+LIBRARY   = work
+
+NAME      = Halfband_1_61_44.xco
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_1_61_44.xco
+FILE_TYPE = IP
+LIBRARY   = work
+
+NAME      = dds.xco
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/dds.xco
+FILE_TYPE = IP
+LIBRARY   = work
+
+NAME      = Clock_Generator_1.xco
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Clock_Generator_1.xco
+FILE_TYPE = IP
+LIBRARY   = work
+
+NAME      = New_Channel_Filter.xco
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/New_Channel_Filter.xco
+FILE_TYPE = IP
+LIBRARY   = work
+
+NAME      = Quantizer.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/Quantizer.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = Eight_Order_Delta_Sigma_Modulator_pkg.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/Eight_Order_Delta_Sigma_Modulator_pkg.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = Fourth_order_delta_sigma_modulator_pkg.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/Fourth_order_delta_sigma_modulator_pkg.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = Fourth_order_delta_sigma_modulator.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/Fourth_order_delta_sigma_modulator.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = DSM_MOD8_HDL.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/DSM_MOD8_HDL.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = float_pkg_c.vhdl
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/float_pkg_c.vhdl
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = Sign.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/Sign.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = MATLAB_Function.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/MATLAB_Function.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = Eight_order_delta_sigma_modulator.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/Eight_order_delta_sigma_modulator.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = Second_order_delta_sigma_modulator.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/Second_order_delta_sigma_modulator.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = fixed_float_types_c.vhdl
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/fixed_float_types_c.vhdl
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = fixed_pkg_c.vhdl
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = cordic_types.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/cordic_types.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = phase_accumulator.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/phase_accumulator.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = phase_generator.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/phase_generator.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = cordic_core.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/cordic_core.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = trigonometric_fct_generator.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/trigonometric_fct_generator.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = ddfs_ctrl.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/ddfs_ctrl.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = top_level_ddfs.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/top_level_ddfs.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = pll_clock.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/pll_clock.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = Halfband_4_491_52.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/Halfband_4_491_52.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = Channel_Filter.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/Channel_Filter.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+NAME      = all_digital_modulator.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+
+<constrs_1>
+FILESET_TYPE   = Constrs
+
+Note: During the import operation, any constraint file(s) that are found in the ISE project will be added to the current PlanAhead project.
+      However, please note that none of these files will be automatically marked as a "Target Constraint File". To set a constraint file
+      as target, select the file in the GUI "Sources" window, right-click on this file and then select "Set Target UCF". Alternatively,
+      the target constraint file can be set using the "set_property target_constrs_file <filename> <fileset>" Tcl command.
+
+File(s):-
+None
+
+<sim_1>
+FILESET_TYPE   = SimulationSrcs
+
+File(s):-
+NAME      = testbench.vhd
+FILE PATH = C:/Newcomputer/DSM_Final/DSM_Final/testbench.vhd
+FILE_TYPE = VHDL
+LIBRARY   = work
+
+
+Section (3.3) - Design Runs(s)
+------------------------------
+
+<synth_1>
+FLOW      = XST 14
+PART      = xc6slx150fgg484-3
+SRCSET    = sources_1
+CONSTRSET = constrs_1
+STRATEGY  = PlanAhead Defaults
+
+Options:-
+                                                                                               
+<ISE Property Name>                <Step>  <Option>                      <ISE Property Value>  <PlanAhead Mapped Value>
+"Automatic BRAM Packing"           xst     -auto_bram_packing            'false'               'no'
+"Equivalent Register Removal Map"  xst     -equivalent_register_removal  'true'                'yes'
+"Equivalent Register Removal XST"  xst     -equivalent_register_removal  'true'                'yes'
+"FSM Encoding Algorithm"           xst     -fsm_encoding                 'Auto'                'auto'
+"LUT Combining Xst"                xst     -lc                           'Auto'                'auto'
+"Netlist Hierarchy"                xst     -netlist_hierarchy            'As Optimized'        'as_optimized'
+"Number of Clock Buffers"          xst     -bufg                         '16'                  '16'
+"Optimization Effort spartan6"     xst     -opt_level                    'High'                '2'
+"Optimization Goal"                xst     -opt_mode                     'Speed'               'speed'
+"Pack I/O Registers into IOBs"     xst     -iob                          'Auto'                'auto'
+"Power Reduction Xst"              xst     -power                        'false'               'no'
+"RAM Style"                        xst     -ram_style                    'Auto'                'auto'
+"Register Balancing"               xst     -register_balancing           'No'                  'no'
+"Resource Sharing"                 xst     -resource_sharing             'true'                'yes'
+
+
+<impl_1>
+FLOW      = ISE 14
+PART      = xc6slx150fgg484-3
+SRCSET    = sources_1
+CONSTRSET = constrs_1
+STRATEGY  = ISE Defaults
+
+Options:-
+                                                                                                                
+<ISE Property Name>                                     <Step>    <Option>                <ISE Property Value>  <PlanAhead Mapped Value>
+"Allow Unexpanded Blocks"                               ngdbuild  -u                      'false'               'false'
+"Allow Unmatched LOC Constraints"                       ngdbuild  -aul                    'false'               'false'
+"Allow Unmatched Timing Group Constraints"              ngdbuild  -aut                    'false'               'false'
+"Create I/O Pads from Ports"                            ngdbuild  -a                      'false'               'false'
+"Use LOC Constraints"                                   ngdbuild  -r                      'true'                'false'
+                                                                                                                
+<ISE Property Name>                                     <Step>    <Option>                <ISE Property Value>  <PlanAhead Mapped Value>
+"Allow Logic Optimization Across Hierarchy"             map       -ignore_keep_hierarchy  'false'               'false'
+"Combinatorial Logic Optimization"                      map       -logic_opt              'false'               'off'
+"Enable Multi-Threading"                                map       -mt                     'Off'                 'off'
+"Extra Cost Tables Map"                                 map       -xt                     '0'                   '0'
+"Global Optimization map"                               map       -global_opt             'Off'                 'off'
+"LUT Combining Map"                                     map       -lc                     'Off'                 'off'
+"Pack I/O Registers/Latches into IOBs"                  map       -pr                     'Off'                 '<none>'
+"Perform Timing-Driven Packing and Placement"           map       -timing                 'false'               'false'
+"Placer Effort Level Map"                               map       -ol                     'High'                'high'
+"Placer Extra Effort Map"                               map       -xe                     'None'                '<none>'
+"Power Reduction Map spartan6"                          map       -power                  'Off'                 'off'
+"Register Duplication Map"                              map       -register_duplication   'Off'                 'false'
+"Register Ordering spartan6"                            map       -r                      '4'                   '4'
+"Starting Placer Cost Table (1-100) Map spartan6"       map       -t                      '1'                   '1'
+"Trim Unconnected Signals"                              map       -u                      'true'                'false'
+"Use RLOC Constraints"                                  map       -ir                     'Yes'                 'off'
+                                                                                                                
+<ISE Property Name>                                     <Step>    <Option>                <ISE Property Value>  <PlanAhead Mapped Value>
+"Enable Multi-Threading par spartan6"                   par       -mt                     'Off'                 'off'
+"Extra Effort (Highest PAR level only)"                 par       -xe                     'None'                '<none>'
+"Ignore User Timing Constraints Par"                    par       -x                      'false'               'false'
+"Place & Route Effort Level (Overall)"                  par       -ol                     'High'                'high'
+"Power Reduction Par"                                   par       -power                  'false'               'off'
+                                                                                                                
+<ISE Property Name>                                     <Step>    <Option>                <ISE Property Value>  <PlanAhead Mapped Value>
+"Generate Datasheet Section Post Trace"                 trce      -nodatasheet            'true'                'true'
+"Number of Paths in Error/Verbose Report Post Trace"    trce      -v                      '3'                   '3'
+"Report Fastest Path(s) in Each Constraint"             trce      -fastpaths              'true'                'true'
+"Report Fastest Path(s) in Each Constraint Post Trace"  trce      -fastpaths              'true'                'true'
+                                                                                                                
+<ISE Property Name>                                     <Step>    <Option>                <ISE Property Value>  <PlanAhead Mapped Value>
+"Create ASCII Configuration File"                       bitgen    -b                      'false'               'false'
+"Create Bit File"                                       bitgen    -j                      'true'                'false'
+"Create Logic Allocation File"                          bitgen    -l                      'false'               'false'
+"Create Mask File"                                      bitgen    -m                      'false'               'false'
+"Run Design Rules Checker (DRC)"                        bitgen    -d                      'true'                'false'
+
+
+<sim_1>
+TOP  = testbench
+SOURCE_SET  = sources_1
+
+Options:-
+                                                                                                            
+<ISE Property Name>                                   <Step>  <Option>                <ISE Property Value>  <PlanAhead Mapped Value>
+"Generate Architecture Only (No Entity Declaration)"  netgen  ng.gen_arch_only        'false'               'false'
+"Other NETGEN Command Line Options"                   netgen  ng.more_netgen_options  ''                    ''
+"Rename Top Level Module To"                          netgen  ng.rename_top           ''                    ''
+"Retain Hierarchy"                                    netgen  ng.retain_hierarchy     'true'                'true'
+"Simulation Model Target"                             netgen  ng.output_hdl_format    'VHDL'                'VHDL'
+                                                                                                            
+<ISE Property Name>                                   <Step>  <Option>                <ISE Property Value>  <PlanAhead Mapped Value>
+"Compile for HDL Debugging"                           isim    fuse.nodebug            'true'                'true'
+"Delay Values To Be Read from SDF"                    isim    isim.sdf_delay          'Setup Time'          'sdfmax'
+"ISim UUT Instance Name"                              isim    unit_under_test         'UUT'                 'UUT'
+"Incremental Compilation"                             isim    fuse.incremental        'true'                'true'
+"Load glbl"                                           isim    fuse.load_glbl          'true'                'true'
+"Simulation Run Time ISim"                            isim    runtime                 '1000 ns'             '1000 ns'
+"Value Range Check"                                   isim    fuse.range_check        'false'               'false'

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator_fil\fpgaproj\all_digital_modulator_fil.ncd
+OUTFILE=C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator_fil\fpgaproj\all_digital_modulator_fil.bit
+FAMILY=Spartan6
+PART=xc6slx45-2csg324
+WORKINGDIR=C:\Newcomputer\DSM_Final\DSM_Final\all_digital_modulator_fil\fpgaproj
+LICENSE=WebPack
+USER_INFO=__0_0_0

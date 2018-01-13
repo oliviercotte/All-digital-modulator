@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Strategy Version="1" Minor="2">
+	<StratHandle Name="MapGlobalOptLogicOptRetimingDupParHigh" Flow="ISE14">
+		<Desc>MAP Timing Driven Global Optimization for Speed Logic Optimization Retiming Register Duplication High Effort Normal Extra Effort, PAR High Effort</Desc>
+	</StratHandle>
+	<Step Id="ngdbuild">
+	</Step>
+	<Step Id="map">
+		<Option Id="RegDupBool">1</Option>
+		<Option Id="RetimingBool">0</Option>
+		<Option Id="TimingBool">1</Option>
+		<Option Id="ExtraEffEnum">0</Option>
+		<Option Id="EffortLvl11Enum">1</Option>
+		<Option Id="GlobalOptEnum">1</Option>
+		<Option Id="LogicOptBool">0</Option>
+		<Option Id="MTBool">0</Option>
+	</Step>
+	<Step Id="par">
+		<Option Id="MultiThreadEnum">5</Option>
+		<Option Id="OverallEff11Enum">1</Option>
+	</Step>
+	<Step Id="trce">
+	</Step>
+	<Step Id="xdl">
+	</Step>
+	<Step Id="bitgen">
+	</Step>
+</Strategy>
+

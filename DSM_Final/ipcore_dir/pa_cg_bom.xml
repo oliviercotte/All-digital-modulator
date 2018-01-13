@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="Halfband_1_61_44">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="Halfband_1_61_44.asy" type="asy" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44.mif" type="ignore" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44.mif_0" type="ignore" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44.mif_1" type="ignore" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44.ngc" type="ngc" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44.sym" type="asy" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44.vhd" type="vhdl" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44.vho" type="vho" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44.xco" type="xco" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44COEFF_auto0_0.mif" type="ignore" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44COEFF_auto0_1.mif" type="ignore" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44COEFF_auto0_2.mif" type="ignore" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44COEFF_auto1_0.mif" type="ignore" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44COEFF_auto1_1.mif" type="ignore" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44COEFF_auto1_2.mif" type="ignore" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44COEFF_auto_HALFBAND_CENTRE0.mif" type="ignore" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44COEFF_auto_HALFBAND_CENTRE1.mif" type="ignore" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44_xmdf.tcl" type="ignore" timestamp="0" checksum="0">
+				</File>
+				<File name="Halfband_1_61_44filt_decode_rom.mif" type="ignore" timestamp="0" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+
