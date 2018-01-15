@@ -1,0 +1,599 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: DSM_MOD8_HDL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DSM_MOD8_HDL.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DSM_MOD8_HDL"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : DSM_MOD8_HDL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\FIL\JTAG\hdl_prj\hdlsrc\DSM_MOD8_HDL\Sign.vhd" into library work
+Parsing entity <Sign>.
+Parsing architecture <rtl> of entity <sign>.
+Parsing VHDL file "C:\FIL\JTAG\hdl_prj\hdlsrc\DSM_MOD8_HDL\Quantizer.vhd" into library work
+Parsing entity <Quantizer>.
+Parsing architecture <rtl> of entity <quantizer>.
+Parsing VHDL file "C:\FIL\JTAG\hdl_prj\hdlsrc\DSM_MOD8_HDL\DSM_MOD8_HDL.vhd" into library work
+Parsing entity <DSM_MOD8_HDL>.
+Parsing architecture <rtl> of entity <dsm_mod8_hdl>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <DSM_MOD8_HDL> (architecture <rtl>) from library <work>.
+
+Elaborating entity <Quantizer> (architecture <rtl>) from library <work>.
+
+Elaborating entity <Sign> (architecture <rtl>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <DSM_MOD8_HDL>.
+    Related source file is "C:\FIL\JTAG\hdl_prj\hdlsrc\DSM_MOD8_HDL\DSM_MOD8_HDL.vhd".
+    Found 46-bit register for signal <Delay4_out1>.
+    Found 46-bit register for signal <Delay2_out1>.
+    Found 46-bit register for signal <Delay_out1>.
+    Found 46-bit register for signal <Delay1_out1>.
+    Found 46-bit register for signal <Delay3_out1>.
+    Found 46-bit register for signal <Delay5_out1>.
+    Found 46-bit register for signal <Delay7_out1>.
+    Found 46-bit register for signal <Delay6_out1>.
+    Found 46-bit adder for signal <Sum3_out1> created at line 295.
+    Found 46-bit adder for signal <Sum5_out1> created at line 321.
+    Found 46-bit adder for signal <Sum7_out1> created at line 330.
+    Found 46-bit adder for signal <Sum9_out1> created at line 356.
+    Found 46-bit adder for signal <Sum11_out1> created at line 365.
+    Found 46-bit adder for signal <Sum15_out1> created at line 391.
+    Found 46-bit adder for signal <Sum13_out1> created at line 400.
+    Found 46-bit subtractor for signal <Sum_op_stage2> created at line 116.
+    Found 46-bit subtractor for signal <Gain14_cast<85:40>> created at line 118.
+    Found 46-bit adder for signal <Sum1_out1> created at line 108.
+    Found 46-bit subtractor for signal <Gain13_cast<85:40>> created at line 123.
+    Found 46-bit subtractor for signal <_n0330> created at line 145.
+    Found 46-bit subtractor for signal <Gain16_cast<85:40>> created at line 145.
+    Found 46-bit subtractor for signal <Gain21_cast<85:40>> created at line 149.
+    Found 46-bit subtractor for signal <_n0333> created at line 158.
+    Found 46-bit subtractor for signal <Gain22_cast<85:40>> created at line 158.
+    Found 46-bit subtractor for signal <_n0335> created at line 132.
+    Found 46-bit subtractor for signal <Gain12_cast<85:40>> created at line 132.
+    Found 46-bit subtractor for signal <Gain11_cast<85:40>> created at line 136.
+    Found 46-bit subtractor for signal <Gain27_cast<85:40>> created at line 162.
+    Found 19x46-bit multiplier for signal <n0095> created at line 196.
+    Found 46x46-bit multiplier for signal <Gain25_mul_temp> created at line 201.
+    Found 46x46-bit multiplier for signal <Gain23_mul_temp> created at line 216.
+    Found 46x46-bit multiplier for signal <Gain19_mul_temp> created at line 219.
+    Found 46x46-bit multiplier for signal <Gain17_mul_temp> created at line 234.
+    Found 46x46-bit multiplier for signal <Gain4_mul_temp> created at line 237.
+    Found 46x46-bit multiplier for signal <Gain3_mul_temp> created at line 252.
+    Found 46x46-bit multiplier for signal <Gain2_mul_temp> created at line 255.
+    Found 46x46-bit multiplier for signal <Gain1_mul_temp> created at line 272.
+    Found 32x46-bit multiplier for signal <n0124> created at line 275.
+    Found 35x46-bit multiplier for signal <n0137> created at line 309.
+    Found 36x46-bit multiplier for signal <n0150> created at line 344.
+    Found 37x46-bit multiplier for signal <n0163> created at line 379.
+    Summary:
+	inferred  13 Multiplier(s).
+	inferred  20 Adder/Subtractor(s).
+	inferred 368 D-type flip-flop(s).
+Unit <DSM_MOD8_HDL> synthesized.
+
+Synthesizing Unit <Quantizer>.
+    Related source file is "C:\FIL\JTAG\hdl_prj\hdlsrc\DSM_MOD8_HDL\Quantizer.vhd".
+    Found 46-bit comparator greater for signal <GND_5_o_u_signed[45]_LessThan_2_o> created at line 39
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Quantizer> synthesized.
+
+Synthesizing Unit <Sign>.
+    Related source file is "C:\FIL\JTAG\hdl_prj\hdlsrc\DSM_MOD8_HDL\Sign.vhd".
+    Found 46-bit comparator greater for signal <GND_6_o_u_signed[45]_LessThan_2_o> created at line 39
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Sign> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 13
+ 46x19-bit multiplier                                  : 1
+ 46x32-bit multiplier                                  : 1
+ 46x35-bit multiplier                                  : 1
+ 46x36-bit multiplier                                  : 1
+ 46x37-bit multiplier                                  : 1
+ 46x46-bit multiplier                                  : 8
+# Adders/Subtractors                                   : 20
+ 46-bit adder                                          : 8
+ 46-bit subtractor                                     : 12
+# Registers                                            : 8
+ 46-bit register                                       : 8
+# Comparators                                          : 2
+ 46-bit comparator greater                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <DSM_MOD8_HDL>.
+The following registers are absorbed into accumulator <Delay4_out1>: 1 register on signal <Delay4_out1>.
+The following registers are absorbed into accumulator <Delay3_out1>: 1 register on signal <Delay3_out1>.
+The following registers are absorbed into accumulator <Delay2_out1>: 1 register on signal <Delay2_out1>.
+The following registers are absorbed into accumulator <Delay1_out1>: 1 register on signal <Delay1_out1>.
+The following registers are absorbed into accumulator <Delay_out1>: 1 register on signal <Delay_out1>.
+The following registers are absorbed into accumulator <Delay7_out1>: 1 register on signal <Delay7_out1>.
+The following registers are absorbed into accumulator <Delay6_out1>: 1 register on signal <Delay6_out1>.
+The following registers are absorbed into accumulator <Delay5_out1>: 1 register on signal <Delay5_out1>.
+Unit <DSM_MOD8_HDL> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 13
+ 46x19-bit multiplier                                  : 1
+ 46x32-bit multiplier                                  : 1
+ 46x35-bit multiplier                                  : 1
+ 46x36-bit multiplier                                  : 1
+ 46x37-bit multiplier                                  : 1
+ 46x46-bit multiplier                                  : 8
+# Adders/Subtractors                                   : 16
+ 46-bit adder                                          : 4
+ 46-bit subtractor                                     : 12
+# Accumulators                                         : 8
+ 46-bit up accumulator                                 : 8
+# Comparators                                          : 2
+ 46-bit comparator greater                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <DSM_MOD8_HDL> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DSM_MOD8_HDL, actual ratio is 11.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 368
+ Flip-Flops                                            : 368
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : DSM_MOD8_HDL.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 7430
+#      GND                         : 1
+#      INV                         : 91
+#      LUT1                        : 193
+#      LUT2                        : 1752
+#      LUT3                        : 370
+#      LUT4                        : 366
+#      MUXCY                       : 2394
+#      VCC                         : 1
+#      XORCY                       : 2262
+# FlipFlops/Latches                : 368
+#      FDCE                        : 368
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 51
+#      IBUF                        : 48
+#      OBUF                        : 3
+# DSPs                             : 36
+#      DSP48A1                     : 36
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             368  out of  54576     0%  
+ Number of Slice LUTs:                 2772  out of  27288    10%  
+    Number used as Logic:              2772  out of  27288    10%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2772
+   Number with an unused Flip Flop:    2404  out of   2772    86%  
+   Number with an unused LUT:             0  out of   2772     0%  
+   Number of fully used LUT-FF pairs:   368  out of   2772    13%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          52
+ Number of bonded IOBs:                  52  out of    218    23%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                     36  out of     58    62%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 368   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 23.749ns (Maximum Frequency: 42.108MHz)
+   Minimum input arrival time before clock: 12.562ns
+   Maximum output required time after clock: 5.093ns
+   Maximum combinational path delay: 5.869ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 23.749ns (frequency: 42.108MHz)
+  Total number of paths / destination ports: 373825769106302 / 368
+-------------------------------------------------------------------------
+Delay:               23.749ns (Levels of Logic = 30)
+  Source:            Delay5_out1_16 (FF)
+  Destination:       Delay5_out1_45 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Delay5_out1_16 to Delay5_out1_45
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.447   0.744  Delay5_out1_16 (Delay5_out1_16)
+     DSP48A1:A16->P47     18   4.560   1.049  Mmult_n0150_submult_0 (Mmult_n0150_submult_0_P47_to_Mmult_n0150_submult_01)
+     DSP48A1:C30->PCOUT47    1   2.689   0.000  Mmult_n0150_submult_01 (Mmult_n0150_submult_01_PCOUT_to_Mmult_n0150_submult_02_PCIN_47)
+     DSP48A1:PCIN47->P47   18   2.264   1.049  Mmult_n0150_submult_02 (Mmult_n0150_submult_02_P47_to_Mmult_n0150_submult_03)
+     DSP48A1:C30->P35     13   2.687   0.933  Mmult_n0150_submult_03 (Mmult_n0150_submult_0_69)
+     LUT2:I1->O            1   0.205   0.000  Mmult_n01500_Madd_lut<69> (Mmult_n01500_Madd_lut<69>)
+     MUXCY:S->O            1   0.172   0.000  Mmult_n01500_Madd_cy<69> (Mmult_n01500_Madd_cy<69>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n01500_Madd_cy<70> (Mmult_n01500_Madd_cy<70>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n01500_Madd_cy<71> (Mmult_n01500_Madd_cy<71>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n01500_Madd_cy<72> (Mmult_n01500_Madd_cy<72>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n01500_Madd_cy<73> (Mmult_n01500_Madd_cy<73>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n01500_Madd_cy<74> (Mmult_n01500_Madd_cy<74>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n01500_Madd_cy<75> (Mmult_n01500_Madd_cy<75>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n01500_Madd_cy<76> (Mmult_n01500_Madd_cy<76>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n01500_Madd_cy<77> (Mmult_n01500_Madd_cy<77>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n01500_Madd_cy<78> (Mmult_n01500_Madd_cy<78>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n01500_Madd_cy<79> (Mmult_n01500_Madd_cy<79>)
+     XORCY:CI->O           1   0.180   0.580  Mmult_n01500_Madd_xor<80> (Mmult_n01500_Madd_80)
+     LUT2:I1->O            1   0.205   0.000  Mmult_n01502_Madd_lut<80> (Mmult_n01502_Madd_lut<80>)
+     MUXCY:S->O            0   0.172   0.000  Mmult_n01502_Madd_cy<80> (Mmult_n01502_Madd_cy<80>)
+     XORCY:CI->O          10   0.180   0.857  Mmult_n01502_Madd_xor<81> (n0150<81>)
+     LUT3:I2->O            1   0.205   0.580  Msub_Gain16_cast<85:40>41 (Msub_Gain16_cast<85:40>41)
+     LUT4:I3->O            1   0.205   0.000  Msub_Gain16_cast<85:40>_lut<0>42 (Msub_Gain16_cast<85:40>_lut<0>42)
+     MUXCY:S->O            1   0.172   0.000  Msub_Gain16_cast<85:40>_cy<0>_41 (Msub_Gain16_cast<85:40>_cy<0>42)
+     XORCY:CI->O           3   0.180   0.879  Msub_Gain16_cast<85:40>_xor<0>_42 (Gain16_cast<83>)
+     LUT3:I0->O            1   0.205   0.580  Msub_Gain21_cast<85:40>43 (Msub_Gain21_cast<85:40>43)
+     LUT4:I3->O            1   0.205   0.000  Msub_Gain21_cast<85:40>_lut<0>44 (Msub_Gain21_cast<85:40>_lut<0>44)
+     MUXCY:S->O            0   0.172   0.000  Msub_Gain21_cast<85:40>_cy<0>_43 (Msub_Gain21_cast<85:40>_cy<0>44)
+     XORCY:CI->O           1   0.180   0.580  Msub_Gain21_cast<85:40>_xor<0>_44 (Gain21_cast<85>)
+     LUT2:I1->O            0   0.205   0.000  Maccum_Delay5_out1_lut<45> (Maccum_Delay5_out1_lut<45>)
+     XORCY:LI->O           1   0.136   0.000  Maccum_Delay5_out1_xor<45> (Result<45>5)
+     FDCE:D                    0.102          Delay5_out1_45
+    ----------------------------------------
+    Total                     23.749ns (15.918ns logic, 7.831ns route)
+                                       (67.0% logic, 33.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 204702968164 / 828
+-------------------------------------------------------------------------
+Offset:              12.562ns (Levels of Logic = 87)
+  Source:            In1<6> (PAD)
+  Destination:       Delay1_out1_45 (FF)
+  Destination Clock: clk rising
+
+  Data Path: In1<6> to Delay1_out1_45
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   0.849  In1_6_IBUF (In1_6_IBUF)
+     LUT2:I0->O            1   0.203   0.000  Mmult_n0095_Madd2_lut<6> (Mmult_n0095_Madd2_lut<6>)
+     MUXCY:S->O            1   0.172   0.000  Mmult_n0095_Madd2_cy<6> (Mmult_n0095_Madd2_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<7> (Mmult_n0095_Madd2_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<8> (Mmult_n0095_Madd2_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<9> (Mmult_n0095_Madd2_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<10> (Mmult_n0095_Madd2_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<11> (Mmult_n0095_Madd2_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<12> (Mmult_n0095_Madd2_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<13> (Mmult_n0095_Madd2_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<14> (Mmult_n0095_Madd2_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<15> (Mmult_n0095_Madd2_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<16> (Mmult_n0095_Madd2_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<17> (Mmult_n0095_Madd2_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<18> (Mmult_n0095_Madd2_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<19> (Mmult_n0095_Madd2_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<20> (Mmult_n0095_Madd2_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<21> (Mmult_n0095_Madd2_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<22> (Mmult_n0095_Madd2_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<23> (Mmult_n0095_Madd2_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<24> (Mmult_n0095_Madd2_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<25> (Mmult_n0095_Madd2_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<26> (Mmult_n0095_Madd2_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<27> (Mmult_n0095_Madd2_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<28> (Mmult_n0095_Madd2_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<29> (Mmult_n0095_Madd2_cy<29>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<30> (Mmult_n0095_Madd2_cy<30>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<31> (Mmult_n0095_Madd2_cy<31>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<32> (Mmult_n0095_Madd2_cy<32>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<33> (Mmult_n0095_Madd2_cy<33>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<34> (Mmult_n0095_Madd2_cy<34>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<35> (Mmult_n0095_Madd2_cy<35>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<36> (Mmult_n0095_Madd2_cy<36>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<37> (Mmult_n0095_Madd2_cy<37>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<38> (Mmult_n0095_Madd2_cy<38>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<39> (Mmult_n0095_Madd2_cy<39>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<40> (Mmult_n0095_Madd2_cy<40>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<41> (Mmult_n0095_Madd2_cy<41>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<42> (Mmult_n0095_Madd2_cy<42>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<43> (Mmult_n0095_Madd2_cy<43>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<44> (Mmult_n0095_Madd2_cy<44>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<45> (Mmult_n0095_Madd2_cy<45>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<46> (Mmult_n0095_Madd2_cy<46>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<47> (Mmult_n0095_Madd2_cy<47>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<48> (Mmult_n0095_Madd2_cy<48>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd2_cy<49> (Mmult_n0095_Madd2_cy<49>)
+     MUXCY:CI->O           1   0.213   0.684  Mmult_n0095_Madd2_cy<50> (Mmult_n0095_Madd2_cy<50>)
+     LUT2:I0->O            1   0.203   0.000  Mmult_n0095_Madd3_lut<54> (Mmult_n0095_Madd3_lut<54>)
+     MUXCY:S->O            1   0.172   0.000  Mmult_n0095_Madd3_cy<54> (Mmult_n0095_Madd3_cy<54>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd3_cy<55> (Mmult_n0095_Madd3_cy<55>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd3_cy<56> (Mmult_n0095_Madd3_cy<56>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd3_cy<57> (Mmult_n0095_Madd3_cy<57>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd3_cy<58> (Mmult_n0095_Madd3_cy<58>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd3_cy<59> (Mmult_n0095_Madd3_cy<59>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd3_cy<60> (Mmult_n0095_Madd3_cy<60>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_n0095_Madd3_cy<61> (Mmult_n0095_Madd3_cy<61>)
+     MUXCY:CI->O           1   0.213   0.580  Mmult_n0095_Madd3_cy<62> (Mmult_n0095_Madd3_cy<62>)
+     LUT2:I1->O            1   0.205   0.000  Mmult_n0095_Madd5_lut<63> (Mmult_n0095_Madd5_lut<63>)
+     MUXCY:S->O            0   0.172   0.000  Mmult_n0095_Madd5_cy<63> (Mmult_n0095_Madd5_cy<63>)
+     XORCY:CI->O          44   0.180   1.567  Mmult_n0095_Madd5_xor<64> (n0095<64>)
+     LUT3:I1->O            1   0.203   0.580  Msub_Gain14_cast<85:40>24 (Msub_Gain14_cast<85:40>24)
+     LUT4:I3->O            1   0.205   0.000  Msub_Gain14_cast<85:40>_lut<0>25 (Msub_Gain14_cast<85:40>_lut<0>25)
+     MUXCY:S->O            1   0.172   0.000  Msub_Gain14_cast<85:40>_cy<0>_24 (Msub_Gain14_cast<85:40>_cy<0>25)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_25 (Msub_Gain14_cast<85:40>_cy<0>26)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_26 (Msub_Gain14_cast<85:40>_cy<0>27)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_27 (Msub_Gain14_cast<85:40>_cy<0>28)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_28 (Msub_Gain14_cast<85:40>_cy<0>29)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_29 (Msub_Gain14_cast<85:40>_cy<0>30)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_30 (Msub_Gain14_cast<85:40>_cy<0>31)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_31 (Msub_Gain14_cast<85:40>_cy<0>32)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_32 (Msub_Gain14_cast<85:40>_cy<0>33)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_33 (Msub_Gain14_cast<85:40>_cy<0>34)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_34 (Msub_Gain14_cast<85:40>_cy<0>35)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_35 (Msub_Gain14_cast<85:40>_cy<0>36)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_36 (Msub_Gain14_cast<85:40>_cy<0>37)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_37 (Msub_Gain14_cast<85:40>_cy<0>38)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_38 (Msub_Gain14_cast<85:40>_cy<0>39)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_39 (Msub_Gain14_cast<85:40>_cy<0>40)
+     MUXCY:CI->O           1   0.019   0.000  Msub_Gain14_cast<85:40>_cy<0>_40 (Msub_Gain14_cast<85:40>_cy<0>41)
+     XORCY:CI->O           3   0.180   0.755  Msub_Gain14_cast<85:40>_xor<0>_41 (Gain14_cast<82>)
+     LUT3:I1->O            1   0.203   0.580  Msub_Gain13_cast<85:40>42 (Msub_Gain13_cast<85:40>42)
+     LUT4:I3->O            1   0.205   0.000  Msub_Gain13_cast<85:40>_lut<0>43 (Msub_Gain13_cast<85:40>_lut<0>43)
+     MUXCY:S->O            1   0.172   0.000  Msub_Gain13_cast<85:40>_cy<0>_42 (Msub_Gain13_cast<85:40>_cy<0>43)
+     XORCY:CI->O           1   0.180   0.580  Msub_Gain13_cast<85:40>_xor<0>_43 (Gain13_cast<84>)
+     LUT2:I1->O            1   0.205   0.000  Maccum_Delay1_out1_lut<44> (Maccum_Delay1_out1_lut<44>)
+     MUXCY:S->O            0   0.172   0.000  Maccum_Delay1_out1_cy<44> (Maccum_Delay1_out1_cy<44>)
+     XORCY:CI->O           1   0.180   0.000  Maccum_Delay1_out1_xor<45> (Result<45>4)
+     FDCE:D                    0.102          Delay1_out1_45
+    ----------------------------------------
+    Total                     12.562ns (6.388ns logic, 6.174ns route)
+                                       (50.9% logic, 49.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.093ns (Levels of Logic = 1)
+  Source:            Delay7_out1_45 (FF)
+  Destination:       Out1<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Delay7_out1_45 to Out1<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q           349   0.447   2.075  Delay7_out1_45 (Delay7_out1_45)
+     OBUF:I->O                 2.571          Out1_1_OBUF (Out1<1>)
+    ----------------------------------------
+    Total                      5.093ns (3.018ns logic, 2.075ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.869ns (Levels of Logic = 2)
+  Source:            clk_enable (PAD)
+  Destination:       ce_out (PAD)
+
+  Data Path: clk_enable to ce_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           369   1.222   2.076  clk_enable_IBUF (ce_out_OBUF)
+     OBUF:I->O                 2.571          ce_out_OBUF (ce_out)
+    ----------------------------------------
+    Total                      5.869ns (3.793ns logic, 2.076ns route)
+                                       (64.6% logic, 35.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   23.749|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.41 secs
+ 
+--> 
+
+Total memory usage is 300652 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

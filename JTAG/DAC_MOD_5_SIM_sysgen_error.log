@@ -1,0 +1,28 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator                        C:/Xilinx/14.7/ISE_DS/ISE/sysgen
+Matlab 8.2.0.701 (R2013b)               C:/Program Files/MATLAB/R2013b
+ISE                                     C:/Xilinx/14.7/ISE_DS/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Fatal Internal Error
+     Block: 'DAC_MOD_5_SIM/AddSub23'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'DAC_MOD_5_SIM/AddSub23'
+
+Details:
+An internal error occurred in the Xilinx Blockset Library.
+
+Please report this error to Xilinx (http://support.xilinx.com),
+in as much detail as possible. You may also find immediate help
+in the Answers Database and other online resources at http://support.xilinx.com.
+
+Since it is possible that this internal error resulted from an
+unhandled usage error in your design, we advise you to carefully
+check the usage of the block reporting the internal error. If
+errors persist, we recommend that you restart MATLAB.
+--------------------------------------------------------------------------------

@@ -1,0 +1,3 @@
+LIBRARY DSM_MOD8_HDL_sfun.mexw64
+EXPORTS
+mexFunction

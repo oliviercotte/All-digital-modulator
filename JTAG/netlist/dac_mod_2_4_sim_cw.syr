@@ -1,0 +1,780 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+Reading constraint file C:/FIL/JTAG/netlist/dac_mod_2_4_sim_cw.xcf.
+XCF parsing done.
+Reading design: dac_mod_2_4_sim_cw.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "dac_mod_2_4_sim_cw.prj"
+Synthesis Constraint File          : "C:/FIL/JTAG/netlist/dac_mod_2_4_sim_cw.xcf"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "dac_mod_2_4_sim_cw"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : dac_mod_2_4_sim_cw
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : NO
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : ()
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" into library work
+Parsing entity <addsb_11_0_378a84205e17796b>.
+Parsing architecture <addsb_11_0_378a84205e17796b_a> of entity <addsb_11_0_378a84205e17796b>.
+Parsing package <conv_pkg>.
+Parsing package body <conv_pkg>.
+Parsing entity <srl17e>.
+Parsing architecture <structural> of entity <srl17e>.
+Parsing entity <synth_reg>.
+Parsing architecture <structural> of entity <synth_reg>.
+Parsing entity <synth_reg_reg>.
+Parsing architecture <behav> of entity <synth_reg_reg>.
+Parsing entity <single_reg_w_init>.
+Parsing architecture <structural> of entity <single_reg_w_init>.
+Parsing entity <synth_reg_w_init>.
+Parsing architecture <structural> of entity <synth_reg_w_init>.
+Parsing entity <accum_04e257417a>.
+Parsing architecture <behavior> of entity <accum_04e257417a>.
+Parsing entity <xladdsub_DAC_MOD_2_4_SIM>.
+Parsing architecture <behavior> of entity <xladdsub_dac_mod_2_4_sim>.
+Parsing entity <convert_func_call>.
+Parsing architecture <behavior> of entity <convert_func_call>.
+Parsing entity <xlconvert>.
+Parsing architecture <behavior> of entity <xlconvert>.
+Parsing entity <sgn_5729cb6742>.
+Parsing architecture <behavior> of entity <sgn_5729cb6742>.
+Parsing entity <cmult_5366eedcb1>.
+Parsing architecture <behavior> of entity <cmult_5366eedcb1>.
+Parsing entity <cmult_984dbdc60f>.
+Parsing architecture <behavior> of entity <cmult_984dbdc60f>.
+Parsing entity <cmult_8757d3c3c3>.
+Parsing architecture <behavior> of entity <cmult_8757d3c3c3>.
+Parsing entity <cmult_5c16b169b3>.
+Parsing architecture <behavior> of entity <cmult_5c16b169b3>.
+Parsing entity <cmult_4b202ec4b4>.
+Parsing architecture <behavior> of entity <cmult_4b202ec4b4>.
+Parsing entity <cmult_63865064aa>.
+Parsing architecture <behavior> of entity <cmult_63865064aa>.
+Parsing entity <cmult_ba5a24d4d7>.
+Parsing architecture <behavior> of entity <cmult_ba5a24d4d7>.
+Parsing entity <cmult_9e4326cf46>.
+Parsing architecture <behavior> of entity <cmult_9e4326cf46>.
+Parsing entity <cmult_5cb576254f>.
+Parsing architecture <behavior> of entity <cmult_5cb576254f>.
+Parsing entity <dac_mod_2_4_sim>.
+Parsing architecture <structural> of entity <dac_mod_2_4_sim>.
+Parsing VHDL file "C:\FIL\JTAG\netlist\dac_mod_2_4_sim_cw.vhd" into library work
+Parsing entity <xlclockdriver>.
+Parsing architecture <behavior> of entity <xlclockdriver>.
+Parsing entity <default_clock_driver_DAC_MOD_2_4_SIM>.
+Parsing architecture <structural> of entity <default_clock_driver_dac_mod_2_4_sim>.
+Parsing entity <dac_mod_2_4_sim_cw>.
+Parsing architecture <structural> of entity <dac_mod_2_4_sim_cw>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <dac_mod_2_4_sim_cw> (architecture <structural>) from library <work>.
+
+Elaborating entity <dac_mod_2_4_sim> (architecture <structural>) from library <work>.
+
+Elaborating entity <cmult_5366eedcb1> (architecture <behavior>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2408: Assignment to op_mem_71_20_back ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2400: Net <op_mem_71_20_front_din[45]> does not have a driver.
+
+Elaborating entity <cmult_984dbdc60f> (architecture <behavior>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2454: Assignment to op_mem_71_20_back ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2446: Net <op_mem_71_20_front_din[45]> does not have a driver.
+
+Elaborating entity <cmult_8757d3c3c3> (architecture <behavior>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2500: Assignment to op_mem_71_20_back ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2492: Net <op_mem_71_20_front_din[45]> does not have a driver.
+
+Elaborating entity <cmult_5c16b169b3> (architecture <behavior>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2546: Assignment to op_mem_71_20_back ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2538: Net <op_mem_71_20_front_din[45]> does not have a driver.
+
+Elaborating entity <cmult_4b202ec4b4> (architecture <behavior>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2592: Assignment to op_mem_71_20_back ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2584: Net <op_mem_71_20_front_din[45]> does not have a driver.
+
+Elaborating entity <cmult_63865064aa> (architecture <behavior>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2638: Assignment to op_mem_71_20_back ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2630: Net <op_mem_71_20_front_din[45]> does not have a driver.
+
+Elaborating entity <accum_04e257417a> (architecture <behavior>) from library <work>.
+
+Elaborating entity <xladdsub_DAC_MOD_2_4_SIM> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <addsb_11_0_378a84205e17796b> (architecture <addsb_11_0_378a84205e17796b_a>) from library <work>.
+
+Elaborating entity <xlconvert> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <convert_func_call> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <cmult_ba5a24d4d7> (architecture <behavior>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2684: Assignment to op_mem_71_20_back ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2676: Net <op_mem_71_20_front_din[45]> does not have a driver.
+
+Elaborating entity <cmult_9e4326cf46> (architecture <behavior>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2730: Assignment to op_mem_71_20_back ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2722: Net <op_mem_71_20_front_din[45]> does not have a driver.
+
+Elaborating entity <cmult_5cb576254f> (architecture <behavior>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2776: Assignment to op_mem_71_20_back ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 2768: Net <op_mem_71_20_front_din[45]> does not have a driver.
+
+Elaborating entity <sgn_5729cb6742> (architecture <behavior>) from library <work>.
+
+Elaborating entity <default_clock_driver_DAC_MOD_2_4_SIM> (architecture <structural>) from library <work>.
+
+Elaborating entity <xlclockdriver> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <synth_reg_w_init> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <single_reg_w_init> (architecture <structural>) with generics from library <work>.
+WARNING:HDLCompiler:89 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" Line 1829: <fdre> remains a black-box since it has no binding entity.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <dac_mod_2_4_sim_cw>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim_cw.vhd".
+    Set property "syn_black_box = true" for instance <persistentdff_inst>.
+    Set property "syn_noprune = true" for instance <persistentdff_inst>.
+    Set property "optimize_primitives = false" for instance <persistentdff_inst>.
+    Set property "dont_touch = true" for instance <persistentdff_inst>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_1_sg_x0>.
+    Set property "syn_keep = true" for signal <persistentdff_inst_q>.
+    Set property "KEEP = TRUE" for signal <persistentdff_inst_q>.
+WARNING:Xst:37 - Detected unknown constraint/property "preserve_signal". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <dac_mod_2_4_sim_cw> synthesized.
+
+Synthesizing Unit <dac_mod_2_4_sim>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+INFO:Xst:3210 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" line 2963: Output port <c_out> of the instance <addsub> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" line 2995: Output port <c_out> of the instance <addsub1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" line 3027: Output port <c_out> of the instance <addsub2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" line 3059: Output port <c_out> of the instance <addsub3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" line 3091: Output port <c_out> of the instance <addsub4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" line 3123: Output port <c_out> of the instance <addsub5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" line 3155: Output port <c_out> of the instance <addsub6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" line 3187: Output port <c_out> of the instance <addsub7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd" line 3219: Output port <c_out> of the instance <addsub8> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <dac_mod_2_4_sim> synthesized.
+
+Synthesizing Unit <cmult_5366eedcb1>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <op_mem_71_20_front_din> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 46x39-bit multiplier for signal <n0013[84:0]> created at line 2419.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <cmult_5366eedcb1> synthesized.
+
+Synthesizing Unit <cmult_984dbdc60f>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <op_mem_71_20_front_din> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 46x41-bit multiplier for signal <n0013[86:0]> created at line 2465.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <cmult_984dbdc60f> synthesized.
+
+Synthesizing Unit <cmult_8757d3c3c3>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <op_mem_71_20_front_din> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 46x34-bit multiplier for signal <n0013[79:0]> created at line 2511.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <cmult_8757d3c3c3> synthesized.
+
+Synthesizing Unit <cmult_5c16b169b3>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <op_mem_71_20_front_din> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 46x37-bit multiplier for signal <n0013[82:0]> created at line 2557.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <cmult_5c16b169b3> synthesized.
+
+Synthesizing Unit <cmult_4b202ec4b4>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <op_mem_71_20_front_din> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 46x39-bit multiplier for signal <n0013[84:0]> created at line 2603.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <cmult_4b202ec4b4> synthesized.
+
+Synthesizing Unit <cmult_63865064aa>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <op_mem_71_20_front_din> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 46x41-bit multiplier for signal <n0013[86:0]> created at line 2649.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <cmult_63865064aa> synthesized.
+
+Synthesizing Unit <accum_04e257417a>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 46-bit register for signal <accum_reg_41_23>.
+    Found 46-bit adder for signal <accum_reg_41_23[45]_b_17_24[45]_add_1_OUT> created at line 1967.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  46 D-type flip-flop(s).
+Unit <accum_04e257417a> synthesized.
+
+Synthesizing Unit <xladdsub_DAC_MOD_2_4_SIM>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+        core_name0 = "addsb_11_0_378a84205e17796b"
+        a_width = 46
+        a_bin_pt = 40
+        a_arith = 2
+        c_in_width = 16
+        c_in_bin_pt = 4
+        c_in_arith = 1
+        c_out_width = 16
+        c_out_bin_pt = 4
+        c_out_arith = 1
+        b_width = 46
+        b_bin_pt = 40
+        b_arith = 2
+        s_width = 46
+        s_bin_pt = 40
+        s_arith = 2
+        rst_width = 1
+        rst_bin_pt = 0
+        rst_arith = 1
+        en_width = 1
+        en_bin_pt = 0
+        en_arith = 1
+        full_s_width = 47
+        full_s_arith = 2
+        mode = 1
+        extra_registers = 0
+        latency = 0
+        quantization = 1
+        overflow = 1
+        c_latency = 0
+        c_output_width = 47
+        c_has_c_in = 0
+        c_has_c_out = 0
+WARNING:Xst:647 - Input <c_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <xladdsub_DAC_MOD_2_4_SIM> synthesized.
+
+Synthesizing Unit <xlconvert>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+        din_width = 2
+        din_bin_pt = 0
+        din_arith = 2
+        dout_width = 46
+        dout_bin_pt = 40
+        dout_arith = 2
+        en_width = 1
+        en_bin_pt = 0
+        en_arith = 1
+        bool_conversion = 0
+        latency = 0
+        quantization = 1
+        overflow = 1
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <xlconvert> synthesized.
+
+Synthesizing Unit <convert_func_call>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+        din_width = 2
+        din_bin_pt = 0
+        din_arith = 2
+        dout_width = 46
+        dout_bin_pt = 40
+        dout_arith = 2
+        quantization = 1
+        overflow = 1
+    Summary:
+	no macro.
+Unit <convert_func_call> synthesized.
+
+Synthesizing Unit <cmult_ba5a24d4d7>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <op_mem_71_20_front_din> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 46x35-bit multiplier for signal <n0013[80:0]> created at line 2695.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <cmult_ba5a24d4d7> synthesized.
+
+Synthesizing Unit <cmult_9e4326cf46>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <op_mem_71_20_front_din> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 46x34-bit multiplier for signal <n0013[79:0]> created at line 2741.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <cmult_9e4326cf46> synthesized.
+
+Synthesizing Unit <cmult_5cb576254f>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <op_mem_71_20_front_din> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 46x36-bit multiplier for signal <n0013[81:0]> created at line 2787.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <cmult_5cb576254f> synthesized.
+
+Synthesizing Unit <sgn_5729cb6742>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <sgn_5729cb6742> synthesized.
+
+Synthesizing Unit <default_clock_driver_DAC_MOD_2_4_SIM>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim_cw.vhd".
+    Set property "syn_noprune = true".
+    Set property "optimize_primitives = false".
+    Set property "dont_touch = true".
+INFO:Xst:3210 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim_cw.vhd" line 378: Output port <clr> of the instance <xlclockdriver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\FIL\JTAG\netlist\dac_mod_2_4_sim_cw.vhd" line 378: Output port <ce_logic> of the instance <xlclockdriver> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <default_clock_driver_DAC_MOD_2_4_SIM> synthesized.
+
+Synthesizing Unit <xlclockdriver>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim_cw.vhd".
+        period = 1
+        log_2_period = 1
+        pipeline_regs = 5
+        use_bufg = 0
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec_logic>.
+    Summary:
+	no macro.
+Unit <xlclockdriver> synthesized.
+
+Synthesizing Unit <synth_reg_w_init>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+        width = 1
+        init_index = 0
+        init_value = "0000"
+        latency = 1
+    Summary:
+	no macro.
+Unit <synth_reg_w_init> synthesized.
+
+Synthesizing Unit <single_reg_w_init>.
+    Related source file is "C:\FIL\JTAG\netlist\dac_mod_2_4_sim.vhd".
+        width = 1
+        init_index = 0
+        init_value = "0000"
+    Set property "syn_black_box = true" for instance <fd_prim_array[0].bit_is_0.fdre_comp>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Summary:
+	no macro.
+Unit <single_reg_w_init> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 11
+ 46x34-bit multiplier                                  : 3
+ 46x35-bit multiplier                                  : 1
+ 46x36-bit multiplier                                  : 1
+ 46x37-bit multiplier                                  : 1
+ 46x39-bit multiplier                                  : 3
+ 46x41-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 6
+ 46-bit adder                                          : 6
+# Registers                                            : 6
+ 46-bit register                                       : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <accum_04e257417a>.
+The following registers are absorbed into accumulator <accum_reg_41_23>: 1 register on signal <accum_reg_41_23>.
+Unit <accum_04e257417a> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 11
+ 46x34-bit multiplier                                  : 3
+ 46x35-bit multiplier                                  : 1
+ 46x36-bit multiplier                                  : 1
+ 46x37-bit multiplier                                  : 1
+ 46x39-bit multiplier                                  : 3
+ 46x41-bit multiplier                                  : 2
+# Accumulators                                         : 6
+ 46-bit up accumulator                                 : 6
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <dac_mod_2_4_sim_cw> ...
+
+Optimizing unit <dac_mod_2_4_sim> ...
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_dac_mod_2_4_sim_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <dac_mod_2_4_sim_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_dac_mod_2_4_sim_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <dac_mod_2_4_sim_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_dac_mod_2_4_sim_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <dac_mod_2_4_sim_cw>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_dac_mod_2_4_sim_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <dac_mod_2_4_sim_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_dac_mod_2_4_sim_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <dac_mod_2_4_sim_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_dac_mod_2_4_sim_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <dac_mod_2_4_sim_cw>. This FF/Latch will be trimmed during the optimization process.
+Annotating constraints using XCF file 'C:/FIL/JTAG/netlist/dac_mod_2_4_sim_cw.xcf'
+XCF parsing done.
+WARNING:Xst:2173 - Found black boxes on which forward tracing can not be performed on edge 'clk':
+ persistentdff_inst
+WARNING:Xst:2174 - These might be cores which have not been read
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block dac_mod_2_4_sim_cw, actual ratio is 2.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_dac_mod_2_4_sim_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <dac_mod_2_4_sim_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_dac_mod_2_4_sim_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <dac_mod_2_4_sim_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_dac_mod_2_4_sim_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <dac_mod_2_4_sim_cw>. This FF/Latch will be trimmed during the optimization process.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 277
+ Flip-Flops                                            : 277
+
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_dac_mod_2_4_sim_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <dac_mod_2_4_sim_cw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <default_clock_driver_dac_mod_2_4_sim_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp> (without init value) has a constant value of 0 in block <dac_mod_2_4_sim_cw>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : dac_mod_2_4_sim_cw.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2267
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 2
+#      LUT2                        : 755
+#      LUT3                        : 4
+#      LUT4                        : 1
+#      LUT5                        : 4
+#      LUT6                        : 4
+#      MUXCY                       : 756
+#      VCC                         : 1
+#      XORCY                       : 733
+# FlipFlops/Latches                : 277
+#      FDE                         : 276
+#      FDRE                        : 1
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 51
+#      IBUF                        : 47
+#      OBUF                        : 4
+# DSPs                             : 42
+#      DSP48A1                     : 42
+# Others                           : 11
+#      addsb_11_0_378a84205e17796b : 9
+#      TIMESPEC                    : 1
+#      xlpersistentdff             : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             277  out of  54576     0%  
+ Number of Slice LUTs:                  776  out of  27288     2%  
+    Number used as Logic:               776  out of  27288     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    777
+   Number with an unused Flip Flop:     500  out of    777    64%  
+   Number with an unused LUT:             1  out of    777     0%  
+   Number of fully used LUT-FF pairs:   276  out of    777    35%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          52
+ Number of bonded IOBs:                  51  out of    218    23%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                     42  out of     58    72%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | IBUF+BUFG              | 277   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.626ns (Maximum Frequency: 380.872MHz)
+   Minimum input arrival time before clock: 2.177ns
+   Maximum output required time after clock: 18.347ns
+   Maximum combinational path delay: 19.346ns
+
+=========================================================================
+Timing constraint: TS_clk_c9be000e = PERIOD TIMEGRP "clk_c9be000e" 2.035 nS HIGH 1.017 nS
+WARNING:Xst:2245 - Timing constraint is not met.
+  Clock period: 2.626ns (frequency: 380.872MHz)
+  Total number of paths / destination ports: 12696 / 276
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  -0.591ns
+  Source:               dac_mod_2_4_sim_x0/accumulator5/accum_reg_41_23_0 (FF)
+  Destination:          dac_mod_2_4_sim_x0/accumulator5/accum_reg_41_23_45 (FF)
+  Data Path Delay:      2.626ns (Levels of Logic = 47)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 2.035ns
+
+  Data Path: dac_mod_2_4_sim_x0/accumulator5/accum_reg_41_23_0 (FF) to dac_mod_2_4_sim_x0/accumulator5/accum_reg_41_23_45 (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.447   0.684  dac_mod_2_4_sim_x0/accumulator5/accum_reg_41_23_0 (dac_mod_2_4_sim_x0/accumulator5/accum_reg_41_23_0)
+     LUT2:I1->O            1   0.205   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_lut(0) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_lut(0))
+     MUXCY:S->O            1   0.172   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(0) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(0))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(1) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(1))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(2) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(2))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(3) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(3))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(4) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(4))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(5) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(5))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(6) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(6))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(7) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(7))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(8) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(8))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(9) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(9))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(10) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(10))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(11) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(11))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(12) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(12))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(13) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(13))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(14) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(14))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(15) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(15))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(16) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(16))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(17) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(17))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(18) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(18))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(19) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(19))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(20) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(20))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(21) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(21))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(22) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(22))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(23) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(23))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(24) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(24))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(25) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(25))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(26) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(26))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(27) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(27))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(28) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(28))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(29) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(29))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(30) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(30))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(31) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(31))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(32) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(32))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(33) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(33))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(34) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(34))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(35) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(35))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(36) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(36))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(37) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(37))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(38) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(38))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(39) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(39))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(40) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(40))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(41) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(41))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(42) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(42))
+     MUXCY:CI->O           1   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(43) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(43))
+     MUXCY:CI->O           0   0.019   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(44) (dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_cy(44))
+     XORCY:CI->O           1   0.180   0.000  dac_mod_2_4_sim_x0/accumulator5/Maccum_accum_reg_41_23_xor(45) (dac_mod_2_4_sim_x0/Result(45)5)
+     FDE:D                     0.102          dac_mod_2_4_sim_x0/accumulator5/accum_reg_41_23_45
+    ----------------------------------------
+    Total                      2.626ns (1.942ns logic, 0.684ns route)
+                                       (74.0% logic, 26.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.626|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.88 secs
+ 
+--> 
+
+Total memory usage is 329156 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   68 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

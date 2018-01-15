@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\FIL\JTAG\netlist\dac_mod_2_4_sim_cw.ncd
+OUTFILE=C:\FIL\JTAG\netlist\dac_mod_2_4_sim_cw.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\FIL\JTAG\netlist
+LICENSE=WebPack
+USER_INFO=__0_0_0

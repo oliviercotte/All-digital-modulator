@@ -1,0 +1,2131 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -a -s 3
+-n 3 -fastpaths -xml DSM_MOD8_HDL_preroute.twx DSM_MOD8_HDL_map.ncd -o
+DSM_MOD8_HDL_preroute.twr DSM_MOD8_HDL.pcf
+
+Design file:              DSM_MOD8_HDL_map.ncd
+Physical constraint file: DSM_MOD8_HDL.pcf
+Device,package,speed:     xc6slx45,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2700 - Timing constraints ignored because advanced analysis with 
+   offsets was specified.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: Default period analysis for net "clk_BUFGP" 
+
+ 373865743268958 paths analyzed, 2680 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is  24.851ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Delay5_out1_45 (SLICE_X26Y54.CIN), 7898057074471 paths
+--------------------------------------------------------------------------------
+Delay (setup path):     24.851ns (data path - clock path skew + uncertainty)
+  Source:               Delay5_out1_16 (FF)
+  Destination:          Delay5_out1_45 (FF)
+  Data Path Delay:      24.816ns (Levels of Logic = 16)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising
+  Destination Clock:    clk_BUFGP rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Delay5_out1_16 to Delay5_out1_45
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y47.AQ      Tcko                  0.447   Delay5_out1<19>
+                                                       Delay5_out1_16
+    DSP48_X0Y9.A16       net (fanout=6)     e  1.580   Delay5_out1<16>
+    DSP48_X0Y9.P47       Tdspdo_A_P            3.346   Mmult_n0150_submult_0
+                                                       Mmult_n0150_submult_0
+    DSP48_X0Y10.C36      net (fanout=18)    e  0.910   Mmult_n0150_submult_0_P47_to_Mmult_n0150_submult_01
+    DSP48_X0Y10.PCOUT0   Tdspdo_C_PCOUT        2.689   Mmult_n0150_submult_01
+                                                       Mmult_n0150_submult_01
+    DSP48_X0Y11.PCIN0    net (fanout=1)     e  0.002   Mmult_n0150_submult_01_PCOUT_to_Mmult_n0150_submult_02_PCIN_0
+    DSP48_X0Y11.P47      Tdspdo_PCIN_P         2.264   Mmult_n0150_submult_02
+                                                       Mmult_n0150_submult_02
+    DSP48_X0Y12.C36      net (fanout=18)    e  0.883   Mmult_n0150_submult_02_P47_to_Mmult_n0150_submult_03
+    DSP48_X0Y12.P34      Tdspdo_C_P            2.687   Mmult_n0150_submult_03
+                                                       Mmult_n0150_submult_03
+    SLICE_X22Y60.A6      net (fanout=1)     e  1.865   Mmult_n0150_submult_0_68
+    SLICE_X22Y60.COUT    Topcya                0.379   Mmult_n01500_Madd_cy<71>
+                                                       Mmult_n01500_Madd_lut<68>
+                                                       Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.BMUX    Tcinb                 0.292   Mmult_n01500_Madd_cy<75>
+                                                       Mmult_n01500_Madd_cy<75>
+    SLICE_X20Y60.D6      net (fanout=2)     e  0.493   Mmult_n01500_Madd_73
+    SLICE_X20Y60.COUT    Topcyd                0.260   Mmult_n01502_Madd_cy<73>
+                                                       Mmult_n01502_Madd_lut<73>
+                                                       Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.AMUX    Tcina                 0.177   Mmult_n01502_Madd_cy<77>
+                                                       Mmult_n01502_Madd_cy<77>
+    SLICE_X24Y59.C4      net (fanout=1)     e  0.929   n0150<74>
+    SLICE_X24Y59.CMUX    Tilo                  0.251   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.D5      net (fanout=2)     e  0.400   Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.COUT    Topcyd                0.260   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>_lut<0>35
+                                                       Msub_Gain16_cast<85:40>_cy<0>_34
+    SLICE_X24Y60.CIN     net (fanout=1)     e  0.003   Msub_Gain16_cast<85:40>_cy<0>35
+    SLICE_X24Y60.AQ      Tito_logic            0.581   Gain16_cast<79>
+                                                       Msub_Gain16_cast<85:40>_cy<0>_38
+                                                       Gain16_cast<76>_rt
+    SLICE_X22Y56.A2      net (fanout=2)     e  0.988   Gain16_cast<76>
+    SLICE_X22Y56.AMUX    Tilo                  0.261   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.B5      net (fanout=2)     e  0.382   Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.COUT    Topcyb                0.380   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>_lut<0>37
+                                                       Msub_Gain21_cast<85:40>_cy<0>_38
+    SLICE_X22Y57.CIN     net (fanout=1)     e  0.003   Msub_Gain21_cast<85:40>_cy<0>39
+    SLICE_X22Y57.BQ      Tito_logic            0.701   Gain21_cast<83>
+                                                       Msub_Gain21_cast<85:40>_cy<0>_42
+                                                       Gain21_cast<81>_rt
+    SLICE_X26Y53.B6      net (fanout=1)     e  0.710   Gain21_cast<81>
+    SLICE_X26Y53.COUT    Topcyb                0.380   Delay5_out1<43>
+                                                       Maccum_Delay5_out1_lut<41>
+                                                       Maccum_Delay5_out1_cy<43>
+    SLICE_X26Y54.CIN     net (fanout=1)     e  0.003   Maccum_Delay5_out1_cy<43>
+    SLICE_X26Y54.CLK     Tcinck                0.304   Delay5_out1<45>
+                                                       Maccum_Delay5_out1_xor<45>
+                                                       Delay5_out1_45
+    -------------------------------------------------  ---------------------------
+    Total                                     24.816ns (15.659ns logic, 9.157ns route)
+                                                       (63.1% logic, 36.9% route)
+
+--------------------------------------------------------------------------------
+Delay (setup path):     24.851ns (data path - clock path skew + uncertainty)
+  Source:               Delay5_out1_16 (FF)
+  Destination:          Delay5_out1_45 (FF)
+  Data Path Delay:      24.816ns (Levels of Logic = 16)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising
+  Destination Clock:    clk_BUFGP rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Delay5_out1_16 to Delay5_out1_45
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y47.AQ      Tcko                  0.447   Delay5_out1<19>
+                                                       Delay5_out1_16
+    DSP48_X0Y9.A16       net (fanout=6)     e  1.580   Delay5_out1<16>
+    DSP48_X0Y9.P47       Tdspdo_A_P            3.346   Mmult_n0150_submult_0
+                                                       Mmult_n0150_submult_0
+    DSP48_X0Y10.C36      net (fanout=18)    e  0.910   Mmult_n0150_submult_0_P47_to_Mmult_n0150_submult_01
+    DSP48_X0Y10.PCOUT9   Tdspdo_C_PCOUT        2.689   Mmult_n0150_submult_01
+                                                       Mmult_n0150_submult_01
+    DSP48_X0Y11.PCIN9    net (fanout=1)     e  0.002   Mmult_n0150_submult_01_PCOUT_to_Mmult_n0150_submult_02_PCIN_9
+    DSP48_X0Y11.P47      Tdspdo_PCIN_P         2.264   Mmult_n0150_submult_02
+                                                       Mmult_n0150_submult_02
+    DSP48_X0Y12.C36      net (fanout=18)    e  0.883   Mmult_n0150_submult_02_P47_to_Mmult_n0150_submult_03
+    DSP48_X0Y12.P34      Tdspdo_C_P            2.687   Mmult_n0150_submult_03
+                                                       Mmult_n0150_submult_03
+    SLICE_X22Y60.A6      net (fanout=1)     e  1.865   Mmult_n0150_submult_0_68
+    SLICE_X22Y60.COUT    Topcya                0.379   Mmult_n01500_Madd_cy<71>
+                                                       Mmult_n01500_Madd_lut<68>
+                                                       Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.BMUX    Tcinb                 0.292   Mmult_n01500_Madd_cy<75>
+                                                       Mmult_n01500_Madd_cy<75>
+    SLICE_X20Y60.D6      net (fanout=2)     e  0.493   Mmult_n01500_Madd_73
+    SLICE_X20Y60.COUT    Topcyd                0.260   Mmult_n01502_Madd_cy<73>
+                                                       Mmult_n01502_Madd_lut<73>
+                                                       Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.AMUX    Tcina                 0.177   Mmult_n01502_Madd_cy<77>
+                                                       Mmult_n01502_Madd_cy<77>
+    SLICE_X24Y59.C4      net (fanout=1)     e  0.929   n0150<74>
+    SLICE_X24Y59.CMUX    Tilo                  0.251   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.D5      net (fanout=2)     e  0.400   Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.COUT    Topcyd                0.260   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>_lut<0>35
+                                                       Msub_Gain16_cast<85:40>_cy<0>_34
+    SLICE_X24Y60.CIN     net (fanout=1)     e  0.003   Msub_Gain16_cast<85:40>_cy<0>35
+    SLICE_X24Y60.AQ      Tito_logic            0.581   Gain16_cast<79>
+                                                       Msub_Gain16_cast<85:40>_cy<0>_38
+                                                       Gain16_cast<76>_rt
+    SLICE_X22Y56.A2      net (fanout=2)     e  0.988   Gain16_cast<76>
+    SLICE_X22Y56.AMUX    Tilo                  0.261   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.B5      net (fanout=2)     e  0.382   Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.COUT    Topcyb                0.380   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>_lut<0>37
+                                                       Msub_Gain21_cast<85:40>_cy<0>_38
+    SLICE_X22Y57.CIN     net (fanout=1)     e  0.003   Msub_Gain21_cast<85:40>_cy<0>39
+    SLICE_X22Y57.BQ      Tito_logic            0.701   Gain21_cast<83>
+                                                       Msub_Gain21_cast<85:40>_cy<0>_42
+                                                       Gain21_cast<81>_rt
+    SLICE_X26Y53.B6      net (fanout=1)     e  0.710   Gain21_cast<81>
+    SLICE_X26Y53.COUT    Topcyb                0.380   Delay5_out1<43>
+                                                       Maccum_Delay5_out1_lut<41>
+                                                       Maccum_Delay5_out1_cy<43>
+    SLICE_X26Y54.CIN     net (fanout=1)     e  0.003   Maccum_Delay5_out1_cy<43>
+    SLICE_X26Y54.CLK     Tcinck                0.304   Delay5_out1<45>
+                                                       Maccum_Delay5_out1_xor<45>
+                                                       Delay5_out1_45
+    -------------------------------------------------  ---------------------------
+    Total                                     24.816ns (15.659ns logic, 9.157ns route)
+                                                       (63.1% logic, 36.9% route)
+
+--------------------------------------------------------------------------------
+Delay (setup path):     24.851ns (data path - clock path skew + uncertainty)
+  Source:               Delay5_out1_16 (FF)
+  Destination:          Delay5_out1_45 (FF)
+  Data Path Delay:      24.816ns (Levels of Logic = 16)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising
+  Destination Clock:    clk_BUFGP rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Delay5_out1_16 to Delay5_out1_45
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y47.AQ      Tcko                  0.447   Delay5_out1<19>
+                                                       Delay5_out1_16
+    DSP48_X0Y9.A16       net (fanout=6)     e  1.580   Delay5_out1<16>
+    DSP48_X0Y9.P47       Tdspdo_A_P            3.346   Mmult_n0150_submult_0
+                                                       Mmult_n0150_submult_0
+    DSP48_X0Y10.C36      net (fanout=18)    e  0.910   Mmult_n0150_submult_0_P47_to_Mmult_n0150_submult_01
+    DSP48_X0Y10.PCOUT1   Tdspdo_C_PCOUT        2.689   Mmult_n0150_submult_01
+                                                       Mmult_n0150_submult_01
+    DSP48_X0Y11.PCIN1    net (fanout=1)     e  0.002   Mmult_n0150_submult_01_PCOUT_to_Mmult_n0150_submult_02_PCIN_1
+    DSP48_X0Y11.P47      Tdspdo_PCIN_P         2.264   Mmult_n0150_submult_02
+                                                       Mmult_n0150_submult_02
+    DSP48_X0Y12.C36      net (fanout=18)    e  0.883   Mmult_n0150_submult_02_P47_to_Mmult_n0150_submult_03
+    DSP48_X0Y12.P34      Tdspdo_C_P            2.687   Mmult_n0150_submult_03
+                                                       Mmult_n0150_submult_03
+    SLICE_X22Y60.A6      net (fanout=1)     e  1.865   Mmult_n0150_submult_0_68
+    SLICE_X22Y60.COUT    Topcya                0.379   Mmult_n01500_Madd_cy<71>
+                                                       Mmult_n01500_Madd_lut<68>
+                                                       Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.BMUX    Tcinb                 0.292   Mmult_n01500_Madd_cy<75>
+                                                       Mmult_n01500_Madd_cy<75>
+    SLICE_X20Y60.D6      net (fanout=2)     e  0.493   Mmult_n01500_Madd_73
+    SLICE_X20Y60.COUT    Topcyd                0.260   Mmult_n01502_Madd_cy<73>
+                                                       Mmult_n01502_Madd_lut<73>
+                                                       Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.AMUX    Tcina                 0.177   Mmult_n01502_Madd_cy<77>
+                                                       Mmult_n01502_Madd_cy<77>
+    SLICE_X24Y59.C4      net (fanout=1)     e  0.929   n0150<74>
+    SLICE_X24Y59.CMUX    Tilo                  0.251   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.D5      net (fanout=2)     e  0.400   Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.COUT    Topcyd                0.260   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>_lut<0>35
+                                                       Msub_Gain16_cast<85:40>_cy<0>_34
+    SLICE_X24Y60.CIN     net (fanout=1)     e  0.003   Msub_Gain16_cast<85:40>_cy<0>35
+    SLICE_X24Y60.AQ      Tito_logic            0.581   Gain16_cast<79>
+                                                       Msub_Gain16_cast<85:40>_cy<0>_38
+                                                       Gain16_cast<76>_rt
+    SLICE_X22Y56.A2      net (fanout=2)     e  0.988   Gain16_cast<76>
+    SLICE_X22Y56.AMUX    Tilo                  0.261   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.B5      net (fanout=2)     e  0.382   Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.COUT    Topcyb                0.380   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>_lut<0>37
+                                                       Msub_Gain21_cast<85:40>_cy<0>_38
+    SLICE_X22Y57.CIN     net (fanout=1)     e  0.003   Msub_Gain21_cast<85:40>_cy<0>39
+    SLICE_X22Y57.BQ      Tito_logic            0.701   Gain21_cast<83>
+                                                       Msub_Gain21_cast<85:40>_cy<0>_42
+                                                       Gain21_cast<81>_rt
+    SLICE_X26Y53.B6      net (fanout=1)     e  0.710   Gain21_cast<81>
+    SLICE_X26Y53.COUT    Topcyb                0.380   Delay5_out1<43>
+                                                       Maccum_Delay5_out1_lut<41>
+                                                       Maccum_Delay5_out1_cy<43>
+    SLICE_X26Y54.CIN     net (fanout=1)     e  0.003   Maccum_Delay5_out1_cy<43>
+    SLICE_X26Y54.CLK     Tcinck                0.304   Delay5_out1<45>
+                                                       Maccum_Delay5_out1_xor<45>
+                                                       Delay5_out1_45
+    -------------------------------------------------  ---------------------------
+    Total                                     24.816ns (15.659ns logic, 9.157ns route)
+                                                       (63.1% logic, 36.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Delay5_out1_44 (SLICE_X26Y54.CIN), 7898057074471 paths
+--------------------------------------------------------------------------------
+Delay (setup path):     24.761ns (data path - clock path skew + uncertainty)
+  Source:               Delay5_out1_16 (FF)
+  Destination:          Delay5_out1_44 (FF)
+  Data Path Delay:      24.726ns (Levels of Logic = 16)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising
+  Destination Clock:    clk_BUFGP rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Delay5_out1_16 to Delay5_out1_44
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y47.AQ      Tcko                  0.447   Delay5_out1<19>
+                                                       Delay5_out1_16
+    DSP48_X0Y9.A16       net (fanout=6)     e  1.580   Delay5_out1<16>
+    DSP48_X0Y9.P47       Tdspdo_A_P            3.346   Mmult_n0150_submult_0
+                                                       Mmult_n0150_submult_0
+    DSP48_X0Y10.C36      net (fanout=18)    e  0.910   Mmult_n0150_submult_0_P47_to_Mmult_n0150_submult_01
+    DSP48_X0Y10.PCOUT0   Tdspdo_C_PCOUT        2.689   Mmult_n0150_submult_01
+                                                       Mmult_n0150_submult_01
+    DSP48_X0Y11.PCIN0    net (fanout=1)     e  0.002   Mmult_n0150_submult_01_PCOUT_to_Mmult_n0150_submult_02_PCIN_0
+    DSP48_X0Y11.P47      Tdspdo_PCIN_P         2.264   Mmult_n0150_submult_02
+                                                       Mmult_n0150_submult_02
+    DSP48_X0Y12.C36      net (fanout=18)    e  0.883   Mmult_n0150_submult_02_P47_to_Mmult_n0150_submult_03
+    DSP48_X0Y12.P34      Tdspdo_C_P            2.687   Mmult_n0150_submult_03
+                                                       Mmult_n0150_submult_03
+    SLICE_X22Y60.A6      net (fanout=1)     e  1.865   Mmult_n0150_submult_0_68
+    SLICE_X22Y60.COUT    Topcya                0.379   Mmult_n01500_Madd_cy<71>
+                                                       Mmult_n01500_Madd_lut<68>
+                                                       Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.BMUX    Tcinb                 0.292   Mmult_n01500_Madd_cy<75>
+                                                       Mmult_n01500_Madd_cy<75>
+    SLICE_X20Y60.D6      net (fanout=2)     e  0.493   Mmult_n01500_Madd_73
+    SLICE_X20Y60.COUT    Topcyd                0.260   Mmult_n01502_Madd_cy<73>
+                                                       Mmult_n01502_Madd_lut<73>
+                                                       Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.AMUX    Tcina                 0.177   Mmult_n01502_Madd_cy<77>
+                                                       Mmult_n01502_Madd_cy<77>
+    SLICE_X24Y59.C4      net (fanout=1)     e  0.929   n0150<74>
+    SLICE_X24Y59.CMUX    Tilo                  0.251   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.D5      net (fanout=2)     e  0.400   Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.COUT    Topcyd                0.260   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>_lut<0>35
+                                                       Msub_Gain16_cast<85:40>_cy<0>_34
+    SLICE_X24Y60.CIN     net (fanout=1)     e  0.003   Msub_Gain16_cast<85:40>_cy<0>35
+    SLICE_X24Y60.AQ      Tito_logic            0.581   Gain16_cast<79>
+                                                       Msub_Gain16_cast<85:40>_cy<0>_38
+                                                       Gain16_cast<76>_rt
+    SLICE_X22Y56.A2      net (fanout=2)     e  0.988   Gain16_cast<76>
+    SLICE_X22Y56.AMUX    Tilo                  0.261   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.B5      net (fanout=2)     e  0.382   Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.COUT    Topcyb                0.380   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>_lut<0>37
+                                                       Msub_Gain21_cast<85:40>_cy<0>_38
+    SLICE_X22Y57.CIN     net (fanout=1)     e  0.003   Msub_Gain21_cast<85:40>_cy<0>39
+    SLICE_X22Y57.BQ      Tito_logic            0.701   Gain21_cast<83>
+                                                       Msub_Gain21_cast<85:40>_cy<0>_42
+                                                       Gain21_cast<81>_rt
+    SLICE_X26Y53.B6      net (fanout=1)     e  0.710   Gain21_cast<81>
+    SLICE_X26Y53.COUT    Topcyb                0.380   Delay5_out1<43>
+                                                       Maccum_Delay5_out1_lut<41>
+                                                       Maccum_Delay5_out1_cy<43>
+    SLICE_X26Y54.CIN     net (fanout=1)     e  0.003   Maccum_Delay5_out1_cy<43>
+    SLICE_X26Y54.CLK     Tcinck                0.214   Delay5_out1<45>
+                                                       Maccum_Delay5_out1_xor<45>
+                                                       Delay5_out1_44
+    -------------------------------------------------  ---------------------------
+    Total                                     24.726ns (15.569ns logic, 9.157ns route)
+                                                       (63.0% logic, 37.0% route)
+
+--------------------------------------------------------------------------------
+Delay (setup path):     24.761ns (data path - clock path skew + uncertainty)
+  Source:               Delay5_out1_16 (FF)
+  Destination:          Delay5_out1_44 (FF)
+  Data Path Delay:      24.726ns (Levels of Logic = 16)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising
+  Destination Clock:    clk_BUFGP rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Delay5_out1_16 to Delay5_out1_44
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y47.AQ      Tcko                  0.447   Delay5_out1<19>
+                                                       Delay5_out1_16
+    DSP48_X0Y9.A16       net (fanout=6)     e  1.580   Delay5_out1<16>
+    DSP48_X0Y9.P47       Tdspdo_A_P            3.346   Mmult_n0150_submult_0
+                                                       Mmult_n0150_submult_0
+    DSP48_X0Y10.C36      net (fanout=18)    e  0.910   Mmult_n0150_submult_0_P47_to_Mmult_n0150_submult_01
+    DSP48_X0Y10.PCOUT9   Tdspdo_C_PCOUT        2.689   Mmult_n0150_submult_01
+                                                       Mmult_n0150_submult_01
+    DSP48_X0Y11.PCIN9    net (fanout=1)     e  0.002   Mmult_n0150_submult_01_PCOUT_to_Mmult_n0150_submult_02_PCIN_9
+    DSP48_X0Y11.P47      Tdspdo_PCIN_P         2.264   Mmult_n0150_submult_02
+                                                       Mmult_n0150_submult_02
+    DSP48_X0Y12.C36      net (fanout=18)    e  0.883   Mmult_n0150_submult_02_P47_to_Mmult_n0150_submult_03
+    DSP48_X0Y12.P34      Tdspdo_C_P            2.687   Mmult_n0150_submult_03
+                                                       Mmult_n0150_submult_03
+    SLICE_X22Y60.A6      net (fanout=1)     e  1.865   Mmult_n0150_submult_0_68
+    SLICE_X22Y60.COUT    Topcya                0.379   Mmult_n01500_Madd_cy<71>
+                                                       Mmult_n01500_Madd_lut<68>
+                                                       Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.BMUX    Tcinb                 0.292   Mmult_n01500_Madd_cy<75>
+                                                       Mmult_n01500_Madd_cy<75>
+    SLICE_X20Y60.D6      net (fanout=2)     e  0.493   Mmult_n01500_Madd_73
+    SLICE_X20Y60.COUT    Topcyd                0.260   Mmult_n01502_Madd_cy<73>
+                                                       Mmult_n01502_Madd_lut<73>
+                                                       Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.AMUX    Tcina                 0.177   Mmult_n01502_Madd_cy<77>
+                                                       Mmult_n01502_Madd_cy<77>
+    SLICE_X24Y59.C4      net (fanout=1)     e  0.929   n0150<74>
+    SLICE_X24Y59.CMUX    Tilo                  0.251   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.D5      net (fanout=2)     e  0.400   Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.COUT    Topcyd                0.260   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>_lut<0>35
+                                                       Msub_Gain16_cast<85:40>_cy<0>_34
+    SLICE_X24Y60.CIN     net (fanout=1)     e  0.003   Msub_Gain16_cast<85:40>_cy<0>35
+    SLICE_X24Y60.AQ      Tito_logic            0.581   Gain16_cast<79>
+                                                       Msub_Gain16_cast<85:40>_cy<0>_38
+                                                       Gain16_cast<76>_rt
+    SLICE_X22Y56.A2      net (fanout=2)     e  0.988   Gain16_cast<76>
+    SLICE_X22Y56.AMUX    Tilo                  0.261   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.B5      net (fanout=2)     e  0.382   Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.COUT    Topcyb                0.380   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>_lut<0>37
+                                                       Msub_Gain21_cast<85:40>_cy<0>_38
+    SLICE_X22Y57.CIN     net (fanout=1)     e  0.003   Msub_Gain21_cast<85:40>_cy<0>39
+    SLICE_X22Y57.BQ      Tito_logic            0.701   Gain21_cast<83>
+                                                       Msub_Gain21_cast<85:40>_cy<0>_42
+                                                       Gain21_cast<81>_rt
+    SLICE_X26Y53.B6      net (fanout=1)     e  0.710   Gain21_cast<81>
+    SLICE_X26Y53.COUT    Topcyb                0.380   Delay5_out1<43>
+                                                       Maccum_Delay5_out1_lut<41>
+                                                       Maccum_Delay5_out1_cy<43>
+    SLICE_X26Y54.CIN     net (fanout=1)     e  0.003   Maccum_Delay5_out1_cy<43>
+    SLICE_X26Y54.CLK     Tcinck                0.214   Delay5_out1<45>
+                                                       Maccum_Delay5_out1_xor<45>
+                                                       Delay5_out1_44
+    -------------------------------------------------  ---------------------------
+    Total                                     24.726ns (15.569ns logic, 9.157ns route)
+                                                       (63.0% logic, 37.0% route)
+
+--------------------------------------------------------------------------------
+Delay (setup path):     24.761ns (data path - clock path skew + uncertainty)
+  Source:               Delay5_out1_16 (FF)
+  Destination:          Delay5_out1_44 (FF)
+  Data Path Delay:      24.726ns (Levels of Logic = 16)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising
+  Destination Clock:    clk_BUFGP rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Delay5_out1_16 to Delay5_out1_44
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y47.AQ      Tcko                  0.447   Delay5_out1<19>
+                                                       Delay5_out1_16
+    DSP48_X0Y9.A16       net (fanout=6)     e  1.580   Delay5_out1<16>
+    DSP48_X0Y9.P47       Tdspdo_A_P            3.346   Mmult_n0150_submult_0
+                                                       Mmult_n0150_submult_0
+    DSP48_X0Y10.C36      net (fanout=18)    e  0.910   Mmult_n0150_submult_0_P47_to_Mmult_n0150_submult_01
+    DSP48_X0Y10.PCOUT1   Tdspdo_C_PCOUT        2.689   Mmult_n0150_submult_01
+                                                       Mmult_n0150_submult_01
+    DSP48_X0Y11.PCIN1    net (fanout=1)     e  0.002   Mmult_n0150_submult_01_PCOUT_to_Mmult_n0150_submult_02_PCIN_1
+    DSP48_X0Y11.P47      Tdspdo_PCIN_P         2.264   Mmult_n0150_submult_02
+                                                       Mmult_n0150_submult_02
+    DSP48_X0Y12.C36      net (fanout=18)    e  0.883   Mmult_n0150_submult_02_P47_to_Mmult_n0150_submult_03
+    DSP48_X0Y12.P34      Tdspdo_C_P            2.687   Mmult_n0150_submult_03
+                                                       Mmult_n0150_submult_03
+    SLICE_X22Y60.A6      net (fanout=1)     e  1.865   Mmult_n0150_submult_0_68
+    SLICE_X22Y60.COUT    Topcya                0.379   Mmult_n01500_Madd_cy<71>
+                                                       Mmult_n01500_Madd_lut<68>
+                                                       Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.BMUX    Tcinb                 0.292   Mmult_n01500_Madd_cy<75>
+                                                       Mmult_n01500_Madd_cy<75>
+    SLICE_X20Y60.D6      net (fanout=2)     e  0.493   Mmult_n01500_Madd_73
+    SLICE_X20Y60.COUT    Topcyd                0.260   Mmult_n01502_Madd_cy<73>
+                                                       Mmult_n01502_Madd_lut<73>
+                                                       Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.AMUX    Tcina                 0.177   Mmult_n01502_Madd_cy<77>
+                                                       Mmult_n01502_Madd_cy<77>
+    SLICE_X24Y59.C4      net (fanout=1)     e  0.929   n0150<74>
+    SLICE_X24Y59.CMUX    Tilo                  0.251   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.D5      net (fanout=2)     e  0.400   Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.COUT    Topcyd                0.260   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>_lut<0>35
+                                                       Msub_Gain16_cast<85:40>_cy<0>_34
+    SLICE_X24Y60.CIN     net (fanout=1)     e  0.003   Msub_Gain16_cast<85:40>_cy<0>35
+    SLICE_X24Y60.AQ      Tito_logic            0.581   Gain16_cast<79>
+                                                       Msub_Gain16_cast<85:40>_cy<0>_38
+                                                       Gain16_cast<76>_rt
+    SLICE_X22Y56.A2      net (fanout=2)     e  0.988   Gain16_cast<76>
+    SLICE_X22Y56.AMUX    Tilo                  0.261   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.B5      net (fanout=2)     e  0.382   Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.COUT    Topcyb                0.380   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>_lut<0>37
+                                                       Msub_Gain21_cast<85:40>_cy<0>_38
+    SLICE_X22Y57.CIN     net (fanout=1)     e  0.003   Msub_Gain21_cast<85:40>_cy<0>39
+    SLICE_X22Y57.BQ      Tito_logic            0.701   Gain21_cast<83>
+                                                       Msub_Gain21_cast<85:40>_cy<0>_42
+                                                       Gain21_cast<81>_rt
+    SLICE_X26Y53.B6      net (fanout=1)     e  0.710   Gain21_cast<81>
+    SLICE_X26Y53.COUT    Topcyb                0.380   Delay5_out1<43>
+                                                       Maccum_Delay5_out1_lut<41>
+                                                       Maccum_Delay5_out1_cy<43>
+    SLICE_X26Y54.CIN     net (fanout=1)     e  0.003   Maccum_Delay5_out1_cy<43>
+    SLICE_X26Y54.CLK     Tcinck                0.214   Delay5_out1<45>
+                                                       Maccum_Delay5_out1_xor<45>
+                                                       Delay5_out1_44
+    -------------------------------------------------  ---------------------------
+    Total                                     24.726ns (15.569ns logic, 9.157ns route)
+                                                       (63.0% logic, 37.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Delay5_out1_43 (SLICE_X26Y53.B6), 586104763481 paths
+--------------------------------------------------------------------------------
+Delay (setup path):     24.747ns (data path - clock path skew + uncertainty)
+  Source:               Delay5_out1_16 (FF)
+  Destination:          Delay5_out1_43 (FF)
+  Data Path Delay:      24.712ns (Levels of Logic = 15)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising
+  Destination Clock:    clk_BUFGP rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Delay5_out1_16 to Delay5_out1_43
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y47.AQ      Tcko                  0.447   Delay5_out1<19>
+                                                       Delay5_out1_16
+    DSP48_X0Y9.A16       net (fanout=6)     e  1.580   Delay5_out1<16>
+    DSP48_X0Y9.P47       Tdspdo_A_P            3.346   Mmult_n0150_submult_0
+                                                       Mmult_n0150_submult_0
+    DSP48_X0Y10.C36      net (fanout=18)    e  0.910   Mmult_n0150_submult_0_P47_to_Mmult_n0150_submult_01
+    DSP48_X0Y10.PCOUT0   Tdspdo_C_PCOUT        2.689   Mmult_n0150_submult_01
+                                                       Mmult_n0150_submult_01
+    DSP48_X0Y11.PCIN0    net (fanout=1)     e  0.002   Mmult_n0150_submult_01_PCOUT_to_Mmult_n0150_submult_02_PCIN_0
+    DSP48_X0Y11.P47      Tdspdo_PCIN_P         2.264   Mmult_n0150_submult_02
+                                                       Mmult_n0150_submult_02
+    DSP48_X0Y12.C36      net (fanout=18)    e  0.883   Mmult_n0150_submult_02_P47_to_Mmult_n0150_submult_03
+    DSP48_X0Y12.P34      Tdspdo_C_P            2.687   Mmult_n0150_submult_03
+                                                       Mmult_n0150_submult_03
+    SLICE_X22Y60.A6      net (fanout=1)     e  1.865   Mmult_n0150_submult_0_68
+    SLICE_X22Y60.COUT    Topcya                0.379   Mmult_n01500_Madd_cy<71>
+                                                       Mmult_n01500_Madd_lut<68>
+                                                       Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.BMUX    Tcinb                 0.292   Mmult_n01500_Madd_cy<75>
+                                                       Mmult_n01500_Madd_cy<75>
+    SLICE_X20Y60.D6      net (fanout=2)     e  0.493   Mmult_n01500_Madd_73
+    SLICE_X20Y60.COUT    Topcyd                0.260   Mmult_n01502_Madd_cy<73>
+                                                       Mmult_n01502_Madd_lut<73>
+                                                       Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.AMUX    Tcina                 0.177   Mmult_n01502_Madd_cy<77>
+                                                       Mmult_n01502_Madd_cy<77>
+    SLICE_X24Y59.C4      net (fanout=1)     e  0.929   n0150<74>
+    SLICE_X24Y59.CMUX    Tilo                  0.251   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.D5      net (fanout=2)     e  0.400   Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.COUT    Topcyd                0.260   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>_lut<0>35
+                                                       Msub_Gain16_cast<85:40>_cy<0>_34
+    SLICE_X24Y60.CIN     net (fanout=1)     e  0.003   Msub_Gain16_cast<85:40>_cy<0>35
+    SLICE_X24Y60.AQ      Tito_logic            0.581   Gain16_cast<79>
+                                                       Msub_Gain16_cast<85:40>_cy<0>_38
+                                                       Gain16_cast<76>_rt
+    SLICE_X22Y56.A2      net (fanout=2)     e  0.988   Gain16_cast<76>
+    SLICE_X22Y56.AMUX    Tilo                  0.261   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.B5      net (fanout=2)     e  0.382   Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.COUT    Topcyb                0.380   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>_lut<0>37
+                                                       Msub_Gain21_cast<85:40>_cy<0>_38
+    SLICE_X22Y57.CIN     net (fanout=1)     e  0.003   Msub_Gain21_cast<85:40>_cy<0>39
+    SLICE_X22Y57.BQ      Tito_logic            0.701   Gain21_cast<83>
+                                                       Msub_Gain21_cast<85:40>_cy<0>_42
+                                                       Gain21_cast<81>_rt
+    SLICE_X26Y53.B6      net (fanout=1)     e  0.710   Gain21_cast<81>
+    SLICE_X26Y53.CLK     Tas                   0.583   Delay5_out1<43>
+                                                       Maccum_Delay5_out1_lut<41>
+                                                       Maccum_Delay5_out1_cy<43>
+                                                       Delay5_out1_43
+    -------------------------------------------------  ---------------------------
+    Total                                     24.712ns (15.558ns logic, 9.154ns route)
+                                                       (63.0% logic, 37.0% route)
+
+--------------------------------------------------------------------------------
+Delay (setup path):     24.747ns (data path - clock path skew + uncertainty)
+  Source:               Delay5_out1_16 (FF)
+  Destination:          Delay5_out1_43 (FF)
+  Data Path Delay:      24.712ns (Levels of Logic = 15)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising
+  Destination Clock:    clk_BUFGP rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Delay5_out1_16 to Delay5_out1_43
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y47.AQ      Tcko                  0.447   Delay5_out1<19>
+                                                       Delay5_out1_16
+    DSP48_X0Y9.A16       net (fanout=6)     e  1.580   Delay5_out1<16>
+    DSP48_X0Y9.P47       Tdspdo_A_P            3.346   Mmult_n0150_submult_0
+                                                       Mmult_n0150_submult_0
+    DSP48_X0Y10.C36      net (fanout=18)    e  0.910   Mmult_n0150_submult_0_P47_to_Mmult_n0150_submult_01
+    DSP48_X0Y10.PCOUT9   Tdspdo_C_PCOUT        2.689   Mmult_n0150_submult_01
+                                                       Mmult_n0150_submult_01
+    DSP48_X0Y11.PCIN9    net (fanout=1)     e  0.002   Mmult_n0150_submult_01_PCOUT_to_Mmult_n0150_submult_02_PCIN_9
+    DSP48_X0Y11.P47      Tdspdo_PCIN_P         2.264   Mmult_n0150_submult_02
+                                                       Mmult_n0150_submult_02
+    DSP48_X0Y12.C36      net (fanout=18)    e  0.883   Mmult_n0150_submult_02_P47_to_Mmult_n0150_submult_03
+    DSP48_X0Y12.P34      Tdspdo_C_P            2.687   Mmult_n0150_submult_03
+                                                       Mmult_n0150_submult_03
+    SLICE_X22Y60.A6      net (fanout=1)     e  1.865   Mmult_n0150_submult_0_68
+    SLICE_X22Y60.COUT    Topcya                0.379   Mmult_n01500_Madd_cy<71>
+                                                       Mmult_n01500_Madd_lut<68>
+                                                       Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.BMUX    Tcinb                 0.292   Mmult_n01500_Madd_cy<75>
+                                                       Mmult_n01500_Madd_cy<75>
+    SLICE_X20Y60.D6      net (fanout=2)     e  0.493   Mmult_n01500_Madd_73
+    SLICE_X20Y60.COUT    Topcyd                0.260   Mmult_n01502_Madd_cy<73>
+                                                       Mmult_n01502_Madd_lut<73>
+                                                       Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.AMUX    Tcina                 0.177   Mmult_n01502_Madd_cy<77>
+                                                       Mmult_n01502_Madd_cy<77>
+    SLICE_X24Y59.C4      net (fanout=1)     e  0.929   n0150<74>
+    SLICE_X24Y59.CMUX    Tilo                  0.251   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.D5      net (fanout=2)     e  0.400   Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.COUT    Topcyd                0.260   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>_lut<0>35
+                                                       Msub_Gain16_cast<85:40>_cy<0>_34
+    SLICE_X24Y60.CIN     net (fanout=1)     e  0.003   Msub_Gain16_cast<85:40>_cy<0>35
+    SLICE_X24Y60.AQ      Tito_logic            0.581   Gain16_cast<79>
+                                                       Msub_Gain16_cast<85:40>_cy<0>_38
+                                                       Gain16_cast<76>_rt
+    SLICE_X22Y56.A2      net (fanout=2)     e  0.988   Gain16_cast<76>
+    SLICE_X22Y56.AMUX    Tilo                  0.261   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.B5      net (fanout=2)     e  0.382   Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.COUT    Topcyb                0.380   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>_lut<0>37
+                                                       Msub_Gain21_cast<85:40>_cy<0>_38
+    SLICE_X22Y57.CIN     net (fanout=1)     e  0.003   Msub_Gain21_cast<85:40>_cy<0>39
+    SLICE_X22Y57.BQ      Tito_logic            0.701   Gain21_cast<83>
+                                                       Msub_Gain21_cast<85:40>_cy<0>_42
+                                                       Gain21_cast<81>_rt
+    SLICE_X26Y53.B6      net (fanout=1)     e  0.710   Gain21_cast<81>
+    SLICE_X26Y53.CLK     Tas                   0.583   Delay5_out1<43>
+                                                       Maccum_Delay5_out1_lut<41>
+                                                       Maccum_Delay5_out1_cy<43>
+                                                       Delay5_out1_43
+    -------------------------------------------------  ---------------------------
+    Total                                     24.712ns (15.558ns logic, 9.154ns route)
+                                                       (63.0% logic, 37.0% route)
+
+--------------------------------------------------------------------------------
+Delay (setup path):     24.747ns (data path - clock path skew + uncertainty)
+  Source:               Delay5_out1_16 (FF)
+  Destination:          Delay5_out1_43 (FF)
+  Data Path Delay:      24.712ns (Levels of Logic = 15)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising
+  Destination Clock:    clk_BUFGP rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Delay5_out1_16 to Delay5_out1_43
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y47.AQ      Tcko                  0.447   Delay5_out1<19>
+                                                       Delay5_out1_16
+    DSP48_X0Y9.A16       net (fanout=6)     e  1.580   Delay5_out1<16>
+    DSP48_X0Y9.P47       Tdspdo_A_P            3.346   Mmult_n0150_submult_0
+                                                       Mmult_n0150_submult_0
+    DSP48_X0Y10.C36      net (fanout=18)    e  0.910   Mmult_n0150_submult_0_P47_to_Mmult_n0150_submult_01
+    DSP48_X0Y10.PCOUT1   Tdspdo_C_PCOUT        2.689   Mmult_n0150_submult_01
+                                                       Mmult_n0150_submult_01
+    DSP48_X0Y11.PCIN1    net (fanout=1)     e  0.002   Mmult_n0150_submult_01_PCOUT_to_Mmult_n0150_submult_02_PCIN_1
+    DSP48_X0Y11.P47      Tdspdo_PCIN_P         2.264   Mmult_n0150_submult_02
+                                                       Mmult_n0150_submult_02
+    DSP48_X0Y12.C36      net (fanout=18)    e  0.883   Mmult_n0150_submult_02_P47_to_Mmult_n0150_submult_03
+    DSP48_X0Y12.P34      Tdspdo_C_P            2.687   Mmult_n0150_submult_03
+                                                       Mmult_n0150_submult_03
+    SLICE_X22Y60.A6      net (fanout=1)     e  1.865   Mmult_n0150_submult_0_68
+    SLICE_X22Y60.COUT    Topcya                0.379   Mmult_n01500_Madd_cy<71>
+                                                       Mmult_n01500_Madd_lut<68>
+                                                       Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01500_Madd_cy<71>
+    SLICE_X22Y61.BMUX    Tcinb                 0.292   Mmult_n01500_Madd_cy<75>
+                                                       Mmult_n01500_Madd_cy<75>
+    SLICE_X20Y60.D6      net (fanout=2)     e  0.493   Mmult_n01500_Madd_73
+    SLICE_X20Y60.COUT    Topcyd                0.260   Mmult_n01502_Madd_cy<73>
+                                                       Mmult_n01502_Madd_lut<73>
+                                                       Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.CIN     net (fanout=1)     e  0.003   Mmult_n01502_Madd_cy<73>
+    SLICE_X20Y61.AMUX    Tcina                 0.177   Mmult_n01502_Madd_cy<77>
+                                                       Mmult_n01502_Madd_cy<77>
+    SLICE_X24Y59.C4      net (fanout=1)     e  0.929   n0150<74>
+    SLICE_X24Y59.CMUX    Tilo                  0.251   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.D5      net (fanout=2)     e  0.400   Msub_Gain16_cast<85:40>34
+    SLICE_X24Y59.COUT    Topcyd                0.260   Gain16_cast<75>
+                                                       Msub_Gain16_cast<85:40>_lut<0>35
+                                                       Msub_Gain16_cast<85:40>_cy<0>_34
+    SLICE_X24Y60.CIN     net (fanout=1)     e  0.003   Msub_Gain16_cast<85:40>_cy<0>35
+    SLICE_X24Y60.AQ      Tito_logic            0.581   Gain16_cast<79>
+                                                       Msub_Gain16_cast<85:40>_cy<0>_38
+                                                       Gain16_cast<76>_rt
+    SLICE_X22Y56.A2      net (fanout=2)     e  0.988   Gain16_cast<76>
+    SLICE_X22Y56.AMUX    Tilo                  0.261   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.B5      net (fanout=2)     e  0.382   Msub_Gain21_cast<85:40>36
+    SLICE_X22Y56.COUT    Topcyb                0.380   Gain21_cast<79>
+                                                       Msub_Gain21_cast<85:40>_lut<0>37
+                                                       Msub_Gain21_cast<85:40>_cy<0>_38
+    SLICE_X22Y57.CIN     net (fanout=1)     e  0.003   Msub_Gain21_cast<85:40>_cy<0>39
+    SLICE_X22Y57.BQ      Tito_logic            0.701   Gain21_cast<83>
+                                                       Msub_Gain21_cast<85:40>_cy<0>_42
+                                                       Gain21_cast<81>_rt
+    SLICE_X26Y53.B6      net (fanout=1)     e  0.710   Gain21_cast<81>
+    SLICE_X26Y53.CLK     Tas                   0.583   Delay5_out1<43>
+                                                       Maccum_Delay5_out1_lut<41>
+                                                       Maccum_Delay5_out1_cy<43>
+                                                       Delay5_out1_43
+    -------------------------------------------------  ---------------------------
+    Total                                     24.712ns (15.558ns logic, 9.154ns route)
+                                                       (63.0% logic, 37.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: Default period analysis for net "clk_BUFGP"
+
+--------------------------------------------------------------------------------
+
+Paths for end point Delay_out1_3 (SLICE_X32Y19.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.557ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Delay_out1_2 (FF)
+  Destination:          Delay_out1_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.557ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising
+  Destination Clock:    clk_BUFGP rising
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Delay_out1_2 to Delay_out1_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y19.CQ      Tcko                  0.200   Delay_out1<3>
+                                                       Delay_out1_2
+    SLICE_X32Y19.CX      net (fanout=3)     e  0.215   Delay_out1<2>
+    SLICE_X32Y19.CLK     Tckdi       (-Th)    -0.142   Delay_out1<3>
+                                                       Maccum_Delay_out1_cy<3>
+                                                       Delay_out1_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.557ns (0.342ns logic, 0.215ns route)
+                                                       (61.4% logic, 38.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Delay_out1_7 (SLICE_X32Y20.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.557ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Delay_out1_6 (FF)
+  Destination:          Delay_out1_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.557ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising
+  Destination Clock:    clk_BUFGP rising
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Delay_out1_6 to Delay_out1_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y20.CQ      Tcko                  0.200   Delay_out1<7>
+                                                       Delay_out1_6
+    SLICE_X32Y20.CX      net (fanout=3)     e  0.215   Delay_out1<6>
+    SLICE_X32Y20.CLK     Tckdi       (-Th)    -0.142   Delay_out1<7>
+                                                       Maccum_Delay_out1_cy<7>
+                                                       Delay_out1_7
+    -------------------------------------------------  ---------------------------
+    Total                                      0.557ns (0.342ns logic, 0.215ns route)
+                                                       (61.4% logic, 38.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Delay_out1_11 (SLICE_X32Y21.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.557ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Delay_out1_10 (FF)
+  Destination:          Delay_out1_11 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.557ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising
+  Destination Clock:    clk_BUFGP rising
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Delay_out1_10 to Delay_out1_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y21.CQ      Tcko                  0.200   Delay_out1<11>
+                                                       Delay_out1_10
+    SLICE_X32Y21.CX      net (fanout=3)     e  0.215   Delay_out1<10>
+    SLICE_X32Y21.CLK     Tckdi       (-Th)    -0.142   Delay_out1<11>
+                                                       Maccum_Delay_out1_cy<11>
+                                                       Delay_out1_11
+    -------------------------------------------------  ---------------------------
+    Total                                      0.557ns (0.342ns logic, 0.215ns route)
+                                                       (61.4% logic, 38.6% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Default OFFSET IN BEFORE analysis for clock "clk_BUFGP" 
+
+ 204702391704 paths analyzed, 1046 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is  13.065ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Delay1_out1_45 (SLICE_X6Y25.CIN), 16421020575 paths
+--------------------------------------------------------------------------------
+Offset (setup paths):   13.065ns (data path - clock path + uncertainty)
+  Source:               In1<45> (PAD)
+  Destination:          Delay1_out1_45 (FF)
+  Destination Clock:    clk_BUFGP rising
+  Data Path Delay:      16.152ns (Levels of Logic = 16)
+  Clock Path Delay:     3.112ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: In1<45> to Delay1_out1_45
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    T7.I                 Tiopi                 0.817   In1<45>
+                                                       In1<45>
+                                                       In1_45_IBUF
+                                                       ProtoComp56.IINV.3
+                                                       ProtoComp56.IMUX.3
+    SLICE_X44Y9.A5       net (fanout=6)     e  3.149   In1<45>_inv
+    SLICE_X44Y9.COUT     Topcya                0.379   Mmult_n0095_Madd_cy<33>
+                                                       In1<45>_inv_rt
+                                                       Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.BMUX    Tcinb                 0.292   Mmult_n0095_Madd_cy<37>
+                                                       Mmult_n0095_Madd_cy<37>
+    SLICE_X46Y8.B5       net (fanout=2)     e  0.726   Mmult_n0095_Madd_50
+    SLICE_X46Y8.COUT     Topcyb                0.375   Mmult_n0095_Madd4_cy<52>
+                                                       Mmult_n0095_Madd4_lut<50>
+                                                       Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.CIN      net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.DMUX     Tcind                 0.272   Mmult_n0095_Madd4_cy<56>
+                                                       Mmult_n0095_Madd4_cy<56>
+    SLICE_X34Y13.B5      net (fanout=2)     e  1.281   Mmult_n0095_Madd_563
+    SLICE_X34Y13.COUT    Topcyb                0.380   Mmult_n0095_Madd5_cy<58>
+                                                       Mmult_n0095_Madd5_lut<56>
+                                                       Mmult_n0095_Madd5_cy<58>
+    SLICE_X34Y14.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd5_cy<58>
+    SLICE_X34Y14.COUT    Tbyp                  0.076   Mmult_n0095_Madd5_cy<62>
+                                                       Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.BMUX    Tcinb                 0.292   n0095<64>
+                                                       Mmult_n0095_Madd5_xor<64>
+    SLICE_X30Y17.A2      net (fanout=22)    e  1.018   n0095<64>
+    SLICE_X30Y17.AMUX    Tilo                  0.261   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>32
+    SLICE_X30Y17.B5      net (fanout=2)     e  0.382   Msub_Gain14_cast<85:40>32
+    SLICE_X30Y17.COUT    Topcyb                0.380   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>_lut<0>33
+                                                       Msub_Gain14_cast<85:40>_cy<0>_34
+    SLICE_X30Y18.CIN     net (fanout=1)     e  0.003   Msub_Gain14_cast<85:40>_cy<0>35
+    SLICE_X30Y18.BQ      Tito_logic            0.701   Gain14_cast<79>
+                                                       Msub_Gain14_cast<85:40>_cy<0>_38
+                                                       Gain14_cast<77>_rt
+    SLICE_X38Y21.B3      net (fanout=2)     e  1.234   Gain14_cast<77>
+    SLICE_X38Y21.BMUX    Tilo                  0.261   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.C5      net (fanout=2)     e  0.381   Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.COUT    Topcyc                0.277   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>_lut<0>38
+                                                       Msub_Gain13_cast<85:40>_cy<0>_38
+    SLICE_X38Y22.CIN     net (fanout=1)     e  0.003   Msub_Gain13_cast<85:40>_cy<0>39
+    SLICE_X38Y22.BQ      Tito_logic            0.701   Gain13_cast<83>
+                                                       Msub_Gain13_cast<85:40>_cy<0>_42
+                                                       Gain13_cast<81>_rt
+    SLICE_X6Y24.B6       net (fanout=1)     e  1.812   Gain13_cast<81>
+    SLICE_X6Y24.COUT     Topcyb                0.380   Delay1_out1<43>
+                                                       Maccum_Delay1_out1_lut<41>
+                                                       Maccum_Delay1_out1_cy<43>
+    SLICE_X6Y25.CIN      net (fanout=1)     e  0.003   Maccum_Delay1_out1_cy<43>
+    SLICE_X6Y25.CLK      Tcinck                0.304   Delay1_out1<45>
+                                                       Maccum_Delay1_out1_xor<45>
+                                                       Delay1_out1_45
+    -------------------------------------------------  ---------------------------
+    Total                                     16.152ns (6.148ns logic, 10.004ns route)
+                                                       (38.1% logic, 61.9% route)
+
+  Minimum Clock Path at Slow Process Corner: clk to Delay1_out1_45
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.684   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.197   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X6Y25.CLK      net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.112ns (0.881ns logic, 2.231ns route)
+                                                       (28.3% logic, 71.7% route)
+
+--------------------------------------------------------------------------------
+Offset (setup paths):   13.065ns (data path - clock path + uncertainty)
+  Source:               In1<45> (PAD)
+  Destination:          Delay1_out1_45 (FF)
+  Destination Clock:    clk_BUFGP rising
+  Data Path Delay:      16.152ns (Levels of Logic = 16)
+  Clock Path Delay:     3.112ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: In1<45> to Delay1_out1_45
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    T7.I                 Tiopi                 0.817   In1<45>
+                                                       In1<45>
+                                                       In1_45_IBUF
+                                                       ProtoComp56.IINV.3
+                                                       ProtoComp56.IMUX.3
+    SLICE_X44Y9.A5       net (fanout=6)     e  3.149   In1<45>_inv
+    SLICE_X44Y9.COUT     Topcya                0.379   Mmult_n0095_Madd_cy<33>
+                                                       In1<45>_inv_rt
+                                                       Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.BMUX    Tcinb                 0.292   Mmult_n0095_Madd_cy<37>
+                                                       Mmult_n0095_Madd_cy<37>
+    SLICE_X46Y8.B5       net (fanout=2)     e  0.726   Mmult_n0095_Madd_50
+    SLICE_X46Y8.COUT     Topcyb                0.375   Mmult_n0095_Madd4_cy<52>
+                                                       Mmult_n0095_Madd4_lut<50>
+                                                       Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.CIN      net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.COUT     Tbyp                  0.076   Mmult_n0095_Madd4_cy<56>
+                                                       Mmult_n0095_Madd4_cy<56>
+    SLICE_X46Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<56>
+    SLICE_X46Y10.DMUX    Tcind                 0.272   Mmult_n0095_Madd4_cy<60>
+                                                       Mmult_n0095_Madd4_cy<60>
+    SLICE_X34Y14.B5      net (fanout=2)     e  1.281   Mmult_n0095_Madd_603
+    SLICE_X34Y14.COUT    Topcyb                0.380   Mmult_n0095_Madd5_cy<62>
+                                                       Mmult_n0095_Madd5_lut<60>
+                                                       Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.BMUX    Tcinb                 0.292   n0095<64>
+                                                       Mmult_n0095_Madd5_xor<64>
+    SLICE_X30Y17.A2      net (fanout=22)    e  1.018   n0095<64>
+    SLICE_X30Y17.AMUX    Tilo                  0.261   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>32
+    SLICE_X30Y17.B5      net (fanout=2)     e  0.382   Msub_Gain14_cast<85:40>32
+    SLICE_X30Y17.COUT    Topcyb                0.380   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>_lut<0>33
+                                                       Msub_Gain14_cast<85:40>_cy<0>_34
+    SLICE_X30Y18.CIN     net (fanout=1)     e  0.003   Msub_Gain14_cast<85:40>_cy<0>35
+    SLICE_X30Y18.BQ      Tito_logic            0.701   Gain14_cast<79>
+                                                       Msub_Gain14_cast<85:40>_cy<0>_38
+                                                       Gain14_cast<77>_rt
+    SLICE_X38Y21.B3      net (fanout=2)     e  1.234   Gain14_cast<77>
+    SLICE_X38Y21.BMUX    Tilo                  0.261   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.C5      net (fanout=2)     e  0.381   Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.COUT    Topcyc                0.277   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>_lut<0>38
+                                                       Msub_Gain13_cast<85:40>_cy<0>_38
+    SLICE_X38Y22.CIN     net (fanout=1)     e  0.003   Msub_Gain13_cast<85:40>_cy<0>39
+    SLICE_X38Y22.BQ      Tito_logic            0.701   Gain13_cast<83>
+                                                       Msub_Gain13_cast<85:40>_cy<0>_42
+                                                       Gain13_cast<81>_rt
+    SLICE_X6Y24.B6       net (fanout=1)     e  1.812   Gain13_cast<81>
+    SLICE_X6Y24.COUT     Topcyb                0.380   Delay1_out1<43>
+                                                       Maccum_Delay1_out1_lut<41>
+                                                       Maccum_Delay1_out1_cy<43>
+    SLICE_X6Y25.CIN      net (fanout=1)     e  0.003   Maccum_Delay1_out1_cy<43>
+    SLICE_X6Y25.CLK      Tcinck                0.304   Delay1_out1<45>
+                                                       Maccum_Delay1_out1_xor<45>
+                                                       Delay1_out1_45
+    -------------------------------------------------  ---------------------------
+    Total                                     16.152ns (6.148ns logic, 10.004ns route)
+                                                       (38.1% logic, 61.9% route)
+
+  Minimum Clock Path at Slow Process Corner: clk to Delay1_out1_45
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.684   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.197   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X6Y25.CLK      net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.112ns (0.881ns logic, 2.231ns route)
+                                                       (28.3% logic, 71.7% route)
+
+--------------------------------------------------------------------------------
+Offset (setup paths):   13.038ns (data path - clock path + uncertainty)
+  Source:               In1<45> (PAD)
+  Destination:          Delay1_out1_45 (FF)
+  Destination Clock:    clk_BUFGP rising
+  Data Path Delay:      16.125ns (Levels of Logic = 17)
+  Clock Path Delay:     3.112ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: In1<45> to Delay1_out1_45
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    T7.I                 Tiopi                 0.817   In1<45>
+                                                       In1<45>
+                                                       In1_45_IBUF
+                                                       ProtoComp56.IINV.3
+                                                       ProtoComp56.IMUX.3
+    SLICE_X44Y9.A5       net (fanout=6)     e  3.149   In1<45>_inv
+    SLICE_X44Y9.COUT     Topcya                0.379   Mmult_n0095_Madd_cy<33>
+                                                       In1<45>_inv_rt
+                                                       Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.BMUX    Tcinb                 0.292   Mmult_n0095_Madd_cy<37>
+                                                       Mmult_n0095_Madd_cy<37>
+    SLICE_X46Y8.B5       net (fanout=2)     e  0.726   Mmult_n0095_Madd_50
+    SLICE_X46Y8.COUT     Topcyb                0.375   Mmult_n0095_Madd4_cy<52>
+                                                       Mmult_n0095_Madd4_lut<50>
+                                                       Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.CIN      net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.COUT     Tbyp                  0.076   Mmult_n0095_Madd4_cy<56>
+                                                       Mmult_n0095_Madd4_cy<56>
+    SLICE_X46Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<56>
+    SLICE_X46Y10.DMUX    Tcind                 0.272   Mmult_n0095_Madd4_cy<60>
+                                                       Mmult_n0095_Madd4_cy<60>
+    SLICE_X34Y14.B5      net (fanout=2)     e  1.281   Mmult_n0095_Madd_603
+    SLICE_X34Y14.COUT    Topcyb                0.380   Mmult_n0095_Madd5_cy<62>
+                                                       Mmult_n0095_Madd5_lut<60>
+                                                       Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.BMUX    Tcinb                 0.292   n0095<64>
+                                                       Mmult_n0095_Madd5_xor<64>
+    SLICE_X30Y15.D2      net (fanout=22)    e  0.884   n0095<64>
+    SLICE_X30Y15.DMUX    Tilo                  0.261   Gain14_cast<67>
+                                                       Msub_Gain14_cast<85:40>27
+    SLICE_X30Y16.A5      net (fanout=2)     e  0.411   Msub_Gain14_cast<85:40>27
+    SLICE_X30Y16.COUT    Topcya                0.379   Gain14_cast<71>
+                                                       Msub_Gain14_cast<85:40>_lut<0>28
+                                                       Msub_Gain14_cast<85:40>_cy<0>_30
+    SLICE_X30Y17.CIN     net (fanout=1)     e  0.003   Msub_Gain14_cast<85:40>_cy<0>31
+    SLICE_X30Y17.COUT    Tbyp                  0.076   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>_cy<0>_34
+    SLICE_X30Y18.CIN     net (fanout=1)     e  0.003   Msub_Gain14_cast<85:40>_cy<0>35
+    SLICE_X30Y18.BQ      Tito_logic            0.701   Gain14_cast<79>
+                                                       Msub_Gain14_cast<85:40>_cy<0>_38
+                                                       Gain14_cast<77>_rt
+    SLICE_X38Y21.B3      net (fanout=2)     e  1.234   Gain14_cast<77>
+    SLICE_X38Y21.BMUX    Tilo                  0.261   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.C5      net (fanout=2)     e  0.381   Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.COUT    Topcyc                0.277   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>_lut<0>38
+                                                       Msub_Gain13_cast<85:40>_cy<0>_38
+    SLICE_X38Y22.CIN     net (fanout=1)     e  0.003   Msub_Gain13_cast<85:40>_cy<0>39
+    SLICE_X38Y22.BQ      Tito_logic            0.701   Gain13_cast<83>
+                                                       Msub_Gain13_cast<85:40>_cy<0>_42
+                                                       Gain13_cast<81>_rt
+    SLICE_X6Y24.B6       net (fanout=1)     e  1.812   Gain13_cast<81>
+    SLICE_X6Y24.COUT     Topcyb                0.380   Delay1_out1<43>
+                                                       Maccum_Delay1_out1_lut<41>
+                                                       Maccum_Delay1_out1_cy<43>
+    SLICE_X6Y25.CIN      net (fanout=1)     e  0.003   Maccum_Delay1_out1_cy<43>
+    SLICE_X6Y25.CLK      Tcinck                0.304   Delay1_out1<45>
+                                                       Maccum_Delay1_out1_xor<45>
+                                                       Delay1_out1_45
+    -------------------------------------------------  ---------------------------
+    Total                                     16.125ns (6.223ns logic, 9.902ns route)
+                                                       (38.6% logic, 61.4% route)
+
+  Minimum Clock Path at Slow Process Corner: clk to Delay1_out1_45
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.684   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.197   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X6Y25.CLK      net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.112ns (0.881ns logic, 2.231ns route)
+                                                       (28.3% logic, 71.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Delay1_out1_44 (SLICE_X6Y25.CIN), 16421020575 paths
+--------------------------------------------------------------------------------
+Offset (setup paths):   12.975ns (data path - clock path + uncertainty)
+  Source:               In1<45> (PAD)
+  Destination:          Delay1_out1_44 (FF)
+  Destination Clock:    clk_BUFGP rising
+  Data Path Delay:      16.062ns (Levels of Logic = 16)
+  Clock Path Delay:     3.112ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: In1<45> to Delay1_out1_44
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    T7.I                 Tiopi                 0.817   In1<45>
+                                                       In1<45>
+                                                       In1_45_IBUF
+                                                       ProtoComp56.IINV.3
+                                                       ProtoComp56.IMUX.3
+    SLICE_X44Y9.A5       net (fanout=6)     e  3.149   In1<45>_inv
+    SLICE_X44Y9.COUT     Topcya                0.379   Mmult_n0095_Madd_cy<33>
+                                                       In1<45>_inv_rt
+                                                       Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.BMUX    Tcinb                 0.292   Mmult_n0095_Madd_cy<37>
+                                                       Mmult_n0095_Madd_cy<37>
+    SLICE_X46Y8.B5       net (fanout=2)     e  0.726   Mmult_n0095_Madd_50
+    SLICE_X46Y8.COUT     Topcyb                0.375   Mmult_n0095_Madd4_cy<52>
+                                                       Mmult_n0095_Madd4_lut<50>
+                                                       Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.CIN      net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.DMUX     Tcind                 0.272   Mmult_n0095_Madd4_cy<56>
+                                                       Mmult_n0095_Madd4_cy<56>
+    SLICE_X34Y13.B5      net (fanout=2)     e  1.281   Mmult_n0095_Madd_563
+    SLICE_X34Y13.COUT    Topcyb                0.380   Mmult_n0095_Madd5_cy<58>
+                                                       Mmult_n0095_Madd5_lut<56>
+                                                       Mmult_n0095_Madd5_cy<58>
+    SLICE_X34Y14.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd5_cy<58>
+    SLICE_X34Y14.COUT    Tbyp                  0.076   Mmult_n0095_Madd5_cy<62>
+                                                       Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.BMUX    Tcinb                 0.292   n0095<64>
+                                                       Mmult_n0095_Madd5_xor<64>
+    SLICE_X30Y17.A2      net (fanout=22)    e  1.018   n0095<64>
+    SLICE_X30Y17.AMUX    Tilo                  0.261   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>32
+    SLICE_X30Y17.B5      net (fanout=2)     e  0.382   Msub_Gain14_cast<85:40>32
+    SLICE_X30Y17.COUT    Topcyb                0.380   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>_lut<0>33
+                                                       Msub_Gain14_cast<85:40>_cy<0>_34
+    SLICE_X30Y18.CIN     net (fanout=1)     e  0.003   Msub_Gain14_cast<85:40>_cy<0>35
+    SLICE_X30Y18.BQ      Tito_logic            0.701   Gain14_cast<79>
+                                                       Msub_Gain14_cast<85:40>_cy<0>_38
+                                                       Gain14_cast<77>_rt
+    SLICE_X38Y21.B3      net (fanout=2)     e  1.234   Gain14_cast<77>
+    SLICE_X38Y21.BMUX    Tilo                  0.261   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.C5      net (fanout=2)     e  0.381   Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.COUT    Topcyc                0.277   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>_lut<0>38
+                                                       Msub_Gain13_cast<85:40>_cy<0>_38
+    SLICE_X38Y22.CIN     net (fanout=1)     e  0.003   Msub_Gain13_cast<85:40>_cy<0>39
+    SLICE_X38Y22.BQ      Tito_logic            0.701   Gain13_cast<83>
+                                                       Msub_Gain13_cast<85:40>_cy<0>_42
+                                                       Gain13_cast<81>_rt
+    SLICE_X6Y24.B6       net (fanout=1)     e  1.812   Gain13_cast<81>
+    SLICE_X6Y24.COUT     Topcyb                0.380   Delay1_out1<43>
+                                                       Maccum_Delay1_out1_lut<41>
+                                                       Maccum_Delay1_out1_cy<43>
+    SLICE_X6Y25.CIN      net (fanout=1)     e  0.003   Maccum_Delay1_out1_cy<43>
+    SLICE_X6Y25.CLK      Tcinck                0.214   Delay1_out1<45>
+                                                       Maccum_Delay1_out1_xor<45>
+                                                       Delay1_out1_44
+    -------------------------------------------------  ---------------------------
+    Total                                     16.062ns (6.058ns logic, 10.004ns route)
+                                                       (37.7% logic, 62.3% route)
+
+  Minimum Clock Path at Slow Process Corner: clk to Delay1_out1_44
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.684   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.197   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X6Y25.CLK      net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.112ns (0.881ns logic, 2.231ns route)
+                                                       (28.3% logic, 71.7% route)
+
+--------------------------------------------------------------------------------
+Offset (setup paths):   12.975ns (data path - clock path + uncertainty)
+  Source:               In1<45> (PAD)
+  Destination:          Delay1_out1_44 (FF)
+  Destination Clock:    clk_BUFGP rising
+  Data Path Delay:      16.062ns (Levels of Logic = 16)
+  Clock Path Delay:     3.112ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: In1<45> to Delay1_out1_44
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    T7.I                 Tiopi                 0.817   In1<45>
+                                                       In1<45>
+                                                       In1_45_IBUF
+                                                       ProtoComp56.IINV.3
+                                                       ProtoComp56.IMUX.3
+    SLICE_X44Y9.A5       net (fanout=6)     e  3.149   In1<45>_inv
+    SLICE_X44Y9.COUT     Topcya                0.379   Mmult_n0095_Madd_cy<33>
+                                                       In1<45>_inv_rt
+                                                       Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.BMUX    Tcinb                 0.292   Mmult_n0095_Madd_cy<37>
+                                                       Mmult_n0095_Madd_cy<37>
+    SLICE_X46Y8.B5       net (fanout=2)     e  0.726   Mmult_n0095_Madd_50
+    SLICE_X46Y8.COUT     Topcyb                0.375   Mmult_n0095_Madd4_cy<52>
+                                                       Mmult_n0095_Madd4_lut<50>
+                                                       Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.CIN      net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.COUT     Tbyp                  0.076   Mmult_n0095_Madd4_cy<56>
+                                                       Mmult_n0095_Madd4_cy<56>
+    SLICE_X46Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<56>
+    SLICE_X46Y10.DMUX    Tcind                 0.272   Mmult_n0095_Madd4_cy<60>
+                                                       Mmult_n0095_Madd4_cy<60>
+    SLICE_X34Y14.B5      net (fanout=2)     e  1.281   Mmult_n0095_Madd_603
+    SLICE_X34Y14.COUT    Topcyb                0.380   Mmult_n0095_Madd5_cy<62>
+                                                       Mmult_n0095_Madd5_lut<60>
+                                                       Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.BMUX    Tcinb                 0.292   n0095<64>
+                                                       Mmult_n0095_Madd5_xor<64>
+    SLICE_X30Y17.A2      net (fanout=22)    e  1.018   n0095<64>
+    SLICE_X30Y17.AMUX    Tilo                  0.261   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>32
+    SLICE_X30Y17.B5      net (fanout=2)     e  0.382   Msub_Gain14_cast<85:40>32
+    SLICE_X30Y17.COUT    Topcyb                0.380   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>_lut<0>33
+                                                       Msub_Gain14_cast<85:40>_cy<0>_34
+    SLICE_X30Y18.CIN     net (fanout=1)     e  0.003   Msub_Gain14_cast<85:40>_cy<0>35
+    SLICE_X30Y18.BQ      Tito_logic            0.701   Gain14_cast<79>
+                                                       Msub_Gain14_cast<85:40>_cy<0>_38
+                                                       Gain14_cast<77>_rt
+    SLICE_X38Y21.B3      net (fanout=2)     e  1.234   Gain14_cast<77>
+    SLICE_X38Y21.BMUX    Tilo                  0.261   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.C5      net (fanout=2)     e  0.381   Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.COUT    Topcyc                0.277   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>_lut<0>38
+                                                       Msub_Gain13_cast<85:40>_cy<0>_38
+    SLICE_X38Y22.CIN     net (fanout=1)     e  0.003   Msub_Gain13_cast<85:40>_cy<0>39
+    SLICE_X38Y22.BQ      Tito_logic            0.701   Gain13_cast<83>
+                                                       Msub_Gain13_cast<85:40>_cy<0>_42
+                                                       Gain13_cast<81>_rt
+    SLICE_X6Y24.B6       net (fanout=1)     e  1.812   Gain13_cast<81>
+    SLICE_X6Y24.COUT     Topcyb                0.380   Delay1_out1<43>
+                                                       Maccum_Delay1_out1_lut<41>
+                                                       Maccum_Delay1_out1_cy<43>
+    SLICE_X6Y25.CIN      net (fanout=1)     e  0.003   Maccum_Delay1_out1_cy<43>
+    SLICE_X6Y25.CLK      Tcinck                0.214   Delay1_out1<45>
+                                                       Maccum_Delay1_out1_xor<45>
+                                                       Delay1_out1_44
+    -------------------------------------------------  ---------------------------
+    Total                                     16.062ns (6.058ns logic, 10.004ns route)
+                                                       (37.7% logic, 62.3% route)
+
+  Minimum Clock Path at Slow Process Corner: clk to Delay1_out1_44
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.684   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.197   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X6Y25.CLK      net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.112ns (0.881ns logic, 2.231ns route)
+                                                       (28.3% logic, 71.7% route)
+
+--------------------------------------------------------------------------------
+Offset (setup paths):   12.948ns (data path - clock path + uncertainty)
+  Source:               In1<45> (PAD)
+  Destination:          Delay1_out1_44 (FF)
+  Destination Clock:    clk_BUFGP rising
+  Data Path Delay:      16.035ns (Levels of Logic = 17)
+  Clock Path Delay:     3.112ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: In1<45> to Delay1_out1_44
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    T7.I                 Tiopi                 0.817   In1<45>
+                                                       In1<45>
+                                                       In1_45_IBUF
+                                                       ProtoComp56.IINV.3
+                                                       ProtoComp56.IMUX.3
+    SLICE_X44Y9.A5       net (fanout=6)     e  3.149   In1<45>_inv
+    SLICE_X44Y9.COUT     Topcya                0.379   Mmult_n0095_Madd_cy<33>
+                                                       In1<45>_inv_rt
+                                                       Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.BMUX    Tcinb                 0.292   Mmult_n0095_Madd_cy<37>
+                                                       Mmult_n0095_Madd_cy<37>
+    SLICE_X46Y8.B5       net (fanout=2)     e  0.726   Mmult_n0095_Madd_50
+    SLICE_X46Y8.COUT     Topcyb                0.375   Mmult_n0095_Madd4_cy<52>
+                                                       Mmult_n0095_Madd4_lut<50>
+                                                       Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.CIN      net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.COUT     Tbyp                  0.076   Mmult_n0095_Madd4_cy<56>
+                                                       Mmult_n0095_Madd4_cy<56>
+    SLICE_X46Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<56>
+    SLICE_X46Y10.DMUX    Tcind                 0.272   Mmult_n0095_Madd4_cy<60>
+                                                       Mmult_n0095_Madd4_cy<60>
+    SLICE_X34Y14.B5      net (fanout=2)     e  1.281   Mmult_n0095_Madd_603
+    SLICE_X34Y14.COUT    Topcyb                0.380   Mmult_n0095_Madd5_cy<62>
+                                                       Mmult_n0095_Madd5_lut<60>
+                                                       Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.BMUX    Tcinb                 0.292   n0095<64>
+                                                       Mmult_n0095_Madd5_xor<64>
+    SLICE_X30Y15.D2      net (fanout=22)    e  0.884   n0095<64>
+    SLICE_X30Y15.DMUX    Tilo                  0.261   Gain14_cast<67>
+                                                       Msub_Gain14_cast<85:40>27
+    SLICE_X30Y16.A5      net (fanout=2)     e  0.411   Msub_Gain14_cast<85:40>27
+    SLICE_X30Y16.COUT    Topcya                0.379   Gain14_cast<71>
+                                                       Msub_Gain14_cast<85:40>_lut<0>28
+                                                       Msub_Gain14_cast<85:40>_cy<0>_30
+    SLICE_X30Y17.CIN     net (fanout=1)     e  0.003   Msub_Gain14_cast<85:40>_cy<0>31
+    SLICE_X30Y17.COUT    Tbyp                  0.076   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>_cy<0>_34
+    SLICE_X30Y18.CIN     net (fanout=1)     e  0.003   Msub_Gain14_cast<85:40>_cy<0>35
+    SLICE_X30Y18.BQ      Tito_logic            0.701   Gain14_cast<79>
+                                                       Msub_Gain14_cast<85:40>_cy<0>_38
+                                                       Gain14_cast<77>_rt
+    SLICE_X38Y21.B3      net (fanout=2)     e  1.234   Gain14_cast<77>
+    SLICE_X38Y21.BMUX    Tilo                  0.261   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.C5      net (fanout=2)     e  0.381   Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.COUT    Topcyc                0.277   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>_lut<0>38
+                                                       Msub_Gain13_cast<85:40>_cy<0>_38
+    SLICE_X38Y22.CIN     net (fanout=1)     e  0.003   Msub_Gain13_cast<85:40>_cy<0>39
+    SLICE_X38Y22.BQ      Tito_logic            0.701   Gain13_cast<83>
+                                                       Msub_Gain13_cast<85:40>_cy<0>_42
+                                                       Gain13_cast<81>_rt
+    SLICE_X6Y24.B6       net (fanout=1)     e  1.812   Gain13_cast<81>
+    SLICE_X6Y24.COUT     Topcyb                0.380   Delay1_out1<43>
+                                                       Maccum_Delay1_out1_lut<41>
+                                                       Maccum_Delay1_out1_cy<43>
+    SLICE_X6Y25.CIN      net (fanout=1)     e  0.003   Maccum_Delay1_out1_cy<43>
+    SLICE_X6Y25.CLK      Tcinck                0.214   Delay1_out1<45>
+                                                       Maccum_Delay1_out1_xor<45>
+                                                       Delay1_out1_44
+    -------------------------------------------------  ---------------------------
+    Total                                     16.035ns (6.133ns logic, 9.902ns route)
+                                                       (38.2% logic, 61.8% route)
+
+  Minimum Clock Path at Slow Process Corner: clk to Delay1_out1_44
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.684   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.197   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X6Y25.CLK      net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.112ns (0.881ns logic, 2.231ns route)
+                                                       (28.3% logic, 71.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Delay1_out1_43 (SLICE_X6Y24.B6), 1189214193 paths
+--------------------------------------------------------------------------------
+Offset (setup paths):   12.961ns (data path - clock path + uncertainty)
+  Source:               In1<45> (PAD)
+  Destination:          Delay1_out1_43 (FF)
+  Destination Clock:    clk_BUFGP rising
+  Data Path Delay:      16.048ns (Levels of Logic = 15)
+  Clock Path Delay:     3.112ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: In1<45> to Delay1_out1_43
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    T7.I                 Tiopi                 0.817   In1<45>
+                                                       In1<45>
+                                                       In1_45_IBUF
+                                                       ProtoComp56.IINV.3
+                                                       ProtoComp56.IMUX.3
+    SLICE_X44Y9.A5       net (fanout=6)     e  3.149   In1<45>_inv
+    SLICE_X44Y9.COUT     Topcya                0.379   Mmult_n0095_Madd_cy<33>
+                                                       In1<45>_inv_rt
+                                                       Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.BMUX    Tcinb                 0.292   Mmult_n0095_Madd_cy<37>
+                                                       Mmult_n0095_Madd_cy<37>
+    SLICE_X46Y8.B5       net (fanout=2)     e  0.726   Mmult_n0095_Madd_50
+    SLICE_X46Y8.COUT     Topcyb                0.375   Mmult_n0095_Madd4_cy<52>
+                                                       Mmult_n0095_Madd4_lut<50>
+                                                       Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.CIN      net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.DMUX     Tcind                 0.272   Mmult_n0095_Madd4_cy<56>
+                                                       Mmult_n0095_Madd4_cy<56>
+    SLICE_X34Y13.B5      net (fanout=2)     e  1.281   Mmult_n0095_Madd_563
+    SLICE_X34Y13.COUT    Topcyb                0.380   Mmult_n0095_Madd5_cy<58>
+                                                       Mmult_n0095_Madd5_lut<56>
+                                                       Mmult_n0095_Madd5_cy<58>
+    SLICE_X34Y14.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd5_cy<58>
+    SLICE_X34Y14.COUT    Tbyp                  0.076   Mmult_n0095_Madd5_cy<62>
+                                                       Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.BMUX    Tcinb                 0.292   n0095<64>
+                                                       Mmult_n0095_Madd5_xor<64>
+    SLICE_X30Y17.A2      net (fanout=22)    e  1.018   n0095<64>
+    SLICE_X30Y17.AMUX    Tilo                  0.261   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>32
+    SLICE_X30Y17.B5      net (fanout=2)     e  0.382   Msub_Gain14_cast<85:40>32
+    SLICE_X30Y17.COUT    Topcyb                0.380   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>_lut<0>33
+                                                       Msub_Gain14_cast<85:40>_cy<0>_34
+    SLICE_X30Y18.CIN     net (fanout=1)     e  0.003   Msub_Gain14_cast<85:40>_cy<0>35
+    SLICE_X30Y18.BQ      Tito_logic            0.701   Gain14_cast<79>
+                                                       Msub_Gain14_cast<85:40>_cy<0>_38
+                                                       Gain14_cast<77>_rt
+    SLICE_X38Y21.B3      net (fanout=2)     e  1.234   Gain14_cast<77>
+    SLICE_X38Y21.BMUX    Tilo                  0.261   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.C5      net (fanout=2)     e  0.381   Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.COUT    Topcyc                0.277   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>_lut<0>38
+                                                       Msub_Gain13_cast<85:40>_cy<0>_38
+    SLICE_X38Y22.CIN     net (fanout=1)     e  0.003   Msub_Gain13_cast<85:40>_cy<0>39
+    SLICE_X38Y22.BQ      Tito_logic            0.701   Gain13_cast<83>
+                                                       Msub_Gain13_cast<85:40>_cy<0>_42
+                                                       Gain13_cast<81>_rt
+    SLICE_X6Y24.B6       net (fanout=1)     e  1.812   Gain13_cast<81>
+    SLICE_X6Y24.CLK      Tas                   0.583   Delay1_out1<43>
+                                                       Maccum_Delay1_out1_lut<41>
+                                                       Maccum_Delay1_out1_cy<43>
+                                                       Delay1_out1_43
+    -------------------------------------------------  ---------------------------
+    Total                                     16.048ns (6.047ns logic, 10.001ns route)
+                                                       (37.7% logic, 62.3% route)
+
+  Minimum Clock Path at Slow Process Corner: clk to Delay1_out1_43
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.684   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.197   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X6Y24.CLK      net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.112ns (0.881ns logic, 2.231ns route)
+                                                       (28.3% logic, 71.7% route)
+
+--------------------------------------------------------------------------------
+Offset (setup paths):   12.961ns (data path - clock path + uncertainty)
+  Source:               In1<45> (PAD)
+  Destination:          Delay1_out1_43 (FF)
+  Destination Clock:    clk_BUFGP rising
+  Data Path Delay:      16.048ns (Levels of Logic = 15)
+  Clock Path Delay:     3.112ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: In1<45> to Delay1_out1_43
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    T7.I                 Tiopi                 0.817   In1<45>
+                                                       In1<45>
+                                                       In1_45_IBUF
+                                                       ProtoComp56.IINV.3
+                                                       ProtoComp56.IMUX.3
+    SLICE_X44Y9.A5       net (fanout=6)     e  3.149   In1<45>_inv
+    SLICE_X44Y9.COUT     Topcya                0.379   Mmult_n0095_Madd_cy<33>
+                                                       In1<45>_inv_rt
+                                                       Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.BMUX    Tcinb                 0.292   Mmult_n0095_Madd_cy<37>
+                                                       Mmult_n0095_Madd_cy<37>
+    SLICE_X46Y8.B5       net (fanout=2)     e  0.726   Mmult_n0095_Madd_50
+    SLICE_X46Y8.COUT     Topcyb                0.375   Mmult_n0095_Madd4_cy<52>
+                                                       Mmult_n0095_Madd4_lut<50>
+                                                       Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.CIN      net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.COUT     Tbyp                  0.076   Mmult_n0095_Madd4_cy<56>
+                                                       Mmult_n0095_Madd4_cy<56>
+    SLICE_X46Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<56>
+    SLICE_X46Y10.DMUX    Tcind                 0.272   Mmult_n0095_Madd4_cy<60>
+                                                       Mmult_n0095_Madd4_cy<60>
+    SLICE_X34Y14.B5      net (fanout=2)     e  1.281   Mmult_n0095_Madd_603
+    SLICE_X34Y14.COUT    Topcyb                0.380   Mmult_n0095_Madd5_cy<62>
+                                                       Mmult_n0095_Madd5_lut<60>
+                                                       Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.BMUX    Tcinb                 0.292   n0095<64>
+                                                       Mmult_n0095_Madd5_xor<64>
+    SLICE_X30Y17.A2      net (fanout=22)    e  1.018   n0095<64>
+    SLICE_X30Y17.AMUX    Tilo                  0.261   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>32
+    SLICE_X30Y17.B5      net (fanout=2)     e  0.382   Msub_Gain14_cast<85:40>32
+    SLICE_X30Y17.COUT    Topcyb                0.380   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>_lut<0>33
+                                                       Msub_Gain14_cast<85:40>_cy<0>_34
+    SLICE_X30Y18.CIN     net (fanout=1)     e  0.003   Msub_Gain14_cast<85:40>_cy<0>35
+    SLICE_X30Y18.BQ      Tito_logic            0.701   Gain14_cast<79>
+                                                       Msub_Gain14_cast<85:40>_cy<0>_38
+                                                       Gain14_cast<77>_rt
+    SLICE_X38Y21.B3      net (fanout=2)     e  1.234   Gain14_cast<77>
+    SLICE_X38Y21.BMUX    Tilo                  0.261   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.C5      net (fanout=2)     e  0.381   Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.COUT    Topcyc                0.277   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>_lut<0>38
+                                                       Msub_Gain13_cast<85:40>_cy<0>_38
+    SLICE_X38Y22.CIN     net (fanout=1)     e  0.003   Msub_Gain13_cast<85:40>_cy<0>39
+    SLICE_X38Y22.BQ      Tito_logic            0.701   Gain13_cast<83>
+                                                       Msub_Gain13_cast<85:40>_cy<0>_42
+                                                       Gain13_cast<81>_rt
+    SLICE_X6Y24.B6       net (fanout=1)     e  1.812   Gain13_cast<81>
+    SLICE_X6Y24.CLK      Tas                   0.583   Delay1_out1<43>
+                                                       Maccum_Delay1_out1_lut<41>
+                                                       Maccum_Delay1_out1_cy<43>
+                                                       Delay1_out1_43
+    -------------------------------------------------  ---------------------------
+    Total                                     16.048ns (6.047ns logic, 10.001ns route)
+                                                       (37.7% logic, 62.3% route)
+
+  Minimum Clock Path at Slow Process Corner: clk to Delay1_out1_43
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.684   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.197   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X6Y24.CLK      net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.112ns (0.881ns logic, 2.231ns route)
+                                                       (28.3% logic, 71.7% route)
+
+--------------------------------------------------------------------------------
+Offset (setup paths):   12.934ns (data path - clock path + uncertainty)
+  Source:               In1<45> (PAD)
+  Destination:          Delay1_out1_43 (FF)
+  Destination Clock:    clk_BUFGP rising
+  Data Path Delay:      16.021ns (Levels of Logic = 16)
+  Clock Path Delay:     3.112ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: In1<45> to Delay1_out1_43
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    T7.I                 Tiopi                 0.817   In1<45>
+                                                       In1<45>
+                                                       In1_45_IBUF
+                                                       ProtoComp56.IINV.3
+                                                       ProtoComp56.IMUX.3
+    SLICE_X44Y9.A5       net (fanout=6)     e  3.149   In1<45>_inv
+    SLICE_X44Y9.COUT     Topcya                0.379   Mmult_n0095_Madd_cy<33>
+                                                       In1<45>_inv_rt
+                                                       Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd_cy<33>
+    SLICE_X44Y10.BMUX    Tcinb                 0.292   Mmult_n0095_Madd_cy<37>
+                                                       Mmult_n0095_Madd_cy<37>
+    SLICE_X46Y8.B5       net (fanout=2)     e  0.726   Mmult_n0095_Madd_50
+    SLICE_X46Y8.COUT     Topcyb                0.375   Mmult_n0095_Madd4_cy<52>
+                                                       Mmult_n0095_Madd4_lut<50>
+                                                       Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.CIN      net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<52>
+    SLICE_X46Y9.COUT     Tbyp                  0.076   Mmult_n0095_Madd4_cy<56>
+                                                       Mmult_n0095_Madd4_cy<56>
+    SLICE_X46Y10.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd4_cy<56>
+    SLICE_X46Y10.DMUX    Tcind                 0.272   Mmult_n0095_Madd4_cy<60>
+                                                       Mmult_n0095_Madd4_cy<60>
+    SLICE_X34Y14.B5      net (fanout=2)     e  1.281   Mmult_n0095_Madd_603
+    SLICE_X34Y14.COUT    Topcyb                0.380   Mmult_n0095_Madd5_cy<62>
+                                                       Mmult_n0095_Madd5_lut<60>
+                                                       Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.CIN     net (fanout=1)     e  0.003   Mmult_n0095_Madd5_cy<62>
+    SLICE_X34Y15.BMUX    Tcinb                 0.292   n0095<64>
+                                                       Mmult_n0095_Madd5_xor<64>
+    SLICE_X30Y15.D2      net (fanout=22)    e  0.884   n0095<64>
+    SLICE_X30Y15.DMUX    Tilo                  0.261   Gain14_cast<67>
+                                                       Msub_Gain14_cast<85:40>27
+    SLICE_X30Y16.A5      net (fanout=2)     e  0.411   Msub_Gain14_cast<85:40>27
+    SLICE_X30Y16.COUT    Topcya                0.379   Gain14_cast<71>
+                                                       Msub_Gain14_cast<85:40>_lut<0>28
+                                                       Msub_Gain14_cast<85:40>_cy<0>_30
+    SLICE_X30Y17.CIN     net (fanout=1)     e  0.003   Msub_Gain14_cast<85:40>_cy<0>31
+    SLICE_X30Y17.COUT    Tbyp                  0.076   Gain14_cast<75>
+                                                       Msub_Gain14_cast<85:40>_cy<0>_34
+    SLICE_X30Y18.CIN     net (fanout=1)     e  0.003   Msub_Gain14_cast<85:40>_cy<0>35
+    SLICE_X30Y18.BQ      Tito_logic            0.701   Gain14_cast<79>
+                                                       Msub_Gain14_cast<85:40>_cy<0>_38
+                                                       Gain14_cast<77>_rt
+    SLICE_X38Y21.B3      net (fanout=2)     e  1.234   Gain14_cast<77>
+    SLICE_X38Y21.BMUX    Tilo                  0.261   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.C5      net (fanout=2)     e  0.381   Msub_Gain13_cast<85:40>37
+    SLICE_X38Y21.COUT    Topcyc                0.277   Gain13_cast<79>
+                                                       Msub_Gain13_cast<85:40>_lut<0>38
+                                                       Msub_Gain13_cast<85:40>_cy<0>_38
+    SLICE_X38Y22.CIN     net (fanout=1)     e  0.003   Msub_Gain13_cast<85:40>_cy<0>39
+    SLICE_X38Y22.BQ      Tito_logic            0.701   Gain13_cast<83>
+                                                       Msub_Gain13_cast<85:40>_cy<0>_42
+                                                       Gain13_cast<81>_rt
+    SLICE_X6Y24.B6       net (fanout=1)     e  1.812   Gain13_cast<81>
+    SLICE_X6Y24.CLK      Tas                   0.583   Delay1_out1<43>
+                                                       Maccum_Delay1_out1_lut<41>
+                                                       Maccum_Delay1_out1_cy<43>
+                                                       Delay1_out1_43
+    -------------------------------------------------  ---------------------------
+    Total                                     16.021ns (6.122ns logic, 9.899ns route)
+                                                       (38.2% logic, 61.8% route)
+
+  Minimum Clock Path at Slow Process Corner: clk to Delay1_out1_43
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.684   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.197   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X6Y24.CLK      net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.112ns (0.881ns logic, 2.231ns route)
+                                                       (28.3% logic, 71.7% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: Default OFFSET IN BEFORE analysis for clock "clk_BUFGP"
+
+--------------------------------------------------------------------------------
+
+Paths for end point Delay1_out1_1 (SLICE_X6Y14.CE), 1 path
+--------------------------------------------------------------------------------
+Offset (hold paths):    -0.343ns (data path - clock path + uncertainty)
+  Source:               clk_enable (PAD)
+  Destination:          Delay1_out1_1 (FF)
+  Destination Clock:    clk_BUFGP rising
+  Data Path Delay:      2.911ns (Levels of Logic = 1)
+  Clock Path Delay:     3.230ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Minimum Data Path at Slow Process Corner: clk_enable to Delay1_out1_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    U5.I                 Tiopi                 0.684   clk_enable
+                                                       clk_enable
+                                                       clk_enable_IBUF
+                                                       ProtoComp54.IMUX.2
+    SLICE_X6Y14.CE       net (fanout=97)    e  2.532   ce_out_OBUF
+    SLICE_X6Y14.CLK      Tckce       (-Th)     0.305   Delay1_out1<3>
+                                                       Delay1_out1_1
+    -------------------------------------------------  ---------------------------
+    Total                                      2.911ns (0.379ns logic, 2.532ns route)
+                                                       (13.0% logic, 87.0% route)
+
+  Maximum Clock Path at Slow Process Corner: clk to Delay1_out1_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.790   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.209   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X6Y14.CLK      net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.230ns (0.999ns logic, 2.231ns route)
+                                                       (30.9% logic, 69.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Delay1_out1_3 (SLICE_X6Y14.CE), 1 path
+--------------------------------------------------------------------------------
+Offset (hold paths):    -0.329ns (data path - clock path + uncertainty)
+  Source:               clk_enable (PAD)
+  Destination:          Delay1_out1_3 (FF)
+  Destination Clock:    clk_BUFGP rising
+  Data Path Delay:      2.925ns (Levels of Logic = 1)
+  Clock Path Delay:     3.230ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Minimum Data Path at Slow Process Corner: clk_enable to Delay1_out1_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    U5.I                 Tiopi                 0.684   clk_enable
+                                                       clk_enable
+                                                       clk_enable_IBUF
+                                                       ProtoComp54.IMUX.2
+    SLICE_X6Y14.CE       net (fanout=97)    e  2.532   ce_out_OBUF
+    SLICE_X6Y14.CLK      Tckce       (-Th)     0.291   Delay1_out1<3>
+                                                       Delay1_out1_3
+    -------------------------------------------------  ---------------------------
+    Total                                      2.925ns (0.393ns logic, 2.532ns route)
+                                                       (13.4% logic, 86.6% route)
+
+  Maximum Clock Path at Slow Process Corner: clk to Delay1_out1_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.790   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.209   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X6Y14.CLK      net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.230ns (0.999ns logic, 2.231ns route)
+                                                       (30.9% logic, 69.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Delay1_out1_2 (SLICE_X6Y14.CE), 1 path
+--------------------------------------------------------------------------------
+Offset (hold paths):    -0.325ns (data path - clock path + uncertainty)
+  Source:               clk_enable (PAD)
+  Destination:          Delay1_out1_2 (FF)
+  Destination Clock:    clk_BUFGP rising
+  Data Path Delay:      2.929ns (Levels of Logic = 1)
+  Clock Path Delay:     3.230ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Minimum Data Path at Slow Process Corner: clk_enable to Delay1_out1_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    U5.I                 Tiopi                 0.684   clk_enable
+                                                       clk_enable
+                                                       clk_enable_IBUF
+                                                       ProtoComp54.IMUX.2
+    SLICE_X6Y14.CE       net (fanout=97)    e  2.532   ce_out_OBUF
+    SLICE_X6Y14.CLK      Tckce       (-Th)     0.287   Delay1_out1<3>
+                                                       Delay1_out1_2
+    -------------------------------------------------  ---------------------------
+    Total                                      2.929ns (0.397ns logic, 2.532ns route)
+                                                       (13.6% logic, 86.4% route)
+
+  Maximum Clock Path at Slow Process Corner: clk to Delay1_out1_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.790   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.209   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X6Y14.CLK      net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.230ns (0.999ns logic, 2.231ns route)
+                                                       (30.9% logic, 69.1% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Default OFFSET OUT AFTER analysis for clock "clk_BUFGP" 
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Maximum allowable offset is   9.865ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Out1<1> (P7.PAD), 1 path
+--------------------------------------------------------------------------------
+Offset (slowest paths): 9.865ns (clock path + data path + uncertainty)
+  Source:               Delay7_out1_45 (FF)
+  Destination:          Out1<1> (PAD)
+  Source Clock:         clk_BUFGP rising
+  Data Path Delay:      6.610ns (Levels of Logic = 1)
+  Clock Path Delay:     3.230ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Clock Path at Slow Process Corner: clk to Delay7_out1_45
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.790   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.209   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X46Y28.CLK     net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      3.230ns (0.999ns logic, 2.231ns route)
+                                                       (30.9% logic, 69.1% route)
+
+  Maximum Data Path at Slow Process Corner: Delay7_out1_45 to Out1<1>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X46Y28.BQ      Tcko                  0.408   Delay7_out1<45>
+                                                       Delay7_out1_45
+    P7.O                 net (fanout=292)   e  4.201   Delay7_out1<45>
+    P7.PAD               Tioop                 2.001   Out1<1>
+                                                       Out1_1_OBUF
+                                                       Out1<1>
+    -------------------------------------------------  ---------------------------
+    Total                                      6.610ns (2.409ns logic, 4.201ns route)
+                                                       (36.4% logic, 63.6% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: Default OFFSET OUT AFTER analysis for clock "clk_BUFGP"
+
+--------------------------------------------------------------------------------
+
+Paths for end point Out1<1> (P7.PAD), 1 path
+--------------------------------------------------------------------------------
+Offset (fastest paths): 8.025ns (clock path + data path - uncertainty)
+  Source:               Delay7_out1_45 (FF)
+  Destination:          Out1<1> (PAD)
+  Source Clock:         clk_BUFGP rising
+  Data Path Delay:      5.439ns (Levels of Logic = 1)
+  Clock Path Delay:     2.611ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Minimum Clock Path at Fast Process Corner: clk to Delay7_out1_45
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    K3.I                 Tiopi                 0.321   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+                                                       ProtoComp54.IMUX
+    BUFGMUX_X3Y13.I0     net (fanout=1)     e  0.835   clk_BUFGP/IBUFG
+    BUFGMUX_X3Y13.O      Tgi0o                 0.059   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG
+    SLICE_X46Y28.CLK     net (fanout=96)    e  1.396   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.611ns (0.380ns logic, 2.231ns route)
+                                                       (14.6% logic, 85.4% route)
+
+  Minimum Data Path at Fast Process Corner: Delay7_out1_45 to Out1<1>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X46Y28.BQ      Tcko                  0.200   Delay7_out1<45>
+                                                       Delay7_out1_45
+    P7.O                 net (fanout=292)   e  4.201   Delay7_out1<45>
+    P7.PAD               Tioop                 1.038   Out1<1>
+                                                       Out1_1_OBUF
+                                                       Out1<1>
+    -------------------------------------------------  ---------------------------
+    Total                                      5.439ns (1.238ns logic, 4.201ns route)
+                                                       (22.8% logic, 77.2% route)
+
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+In1<0>      |   11.222(R)|      SLOW  |   -2.789(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<1>      |   11.960(R)|      SLOW  |   -2.617(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<2>      |   12.099(R)|      SLOW  |   -3.376(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<3>      |   11.256(R)|      SLOW  |   -2.782(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<4>      |   11.231(R)|      SLOW  |   -2.817(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<5>      |   12.286(R)|      SLOW  |   -2.868(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<6>      |   12.371(R)|      SLOW  |   -3.343(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<7>      |   12.253(R)|      SLOW  |   -3.307(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<8>      |   11.535(R)|      SLOW  |   -2.164(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<9>      |   12.038(R)|      SLOW  |   -2.136(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<10>     |   11.610(R)|      SLOW  |   -3.183(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<11>     |   11.612(R)|      SLOW  |   -3.136(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<12>     |   12.172(R)|      SLOW  |   -2.982(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<13>     |   12.112(R)|      SLOW  |   -2.218(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<14>     |   11.578(R)|      SLOW  |   -2.218(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<15>     |   11.593(R)|      SLOW  |   -2.739(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<16>     |   12.399(R)|      SLOW  |   -3.099(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<17>     |   11.779(R)|      SLOW  |   -3.089(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<18>     |   11.665(R)|      SLOW  |   -2.703(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<19>     |   11.295(R)|      SLOW  |   -2.855(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<20>     |   12.648(R)|      SLOW  |   -3.426(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<21>     |   11.995(R)|      SLOW  |   -3.449(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<22>     |   11.212(R)|      SLOW  |   -3.161(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<23>     |   11.192(R)|      SLOW  |   -3.179(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<24>     |   12.643(R)|      SLOW  |   -3.895(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<25>     |   12.640(R)|      SLOW  |   -3.760(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<26>     |   12.803(R)|      SLOW  |   -4.013(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<27>     |   12.528(R)|      SLOW  |   -3.668(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<28>     |   12.142(R)|      SLOW  |   -3.642(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<29>     |   12.623(R)|      SLOW  |   -3.486(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<30>     |   12.304(R)|      SLOW  |   -3.610(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<31>     |   12.285(R)|      SLOW  |   -3.760(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<32>     |   12.449(R)|      SLOW  |   -4.327(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<33>     |   11.454(R)|      SLOW  |   -3.597(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<34>     |   11.764(R)|      SLOW  |   -3.739(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<35>     |   12.325(R)|      SLOW  |   -3.674(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<36>     |   12.099(R)|      SLOW  |   -3.643(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<37>     |   11.766(R)|      SLOW  |   -3.970(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<38>     |   12.002(R)|      SLOW  |   -3.594(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<39>     |   12.258(R)|      SLOW  |   -3.934(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<40>     |   12.453(R)|      SLOW  |   -4.601(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<41>     |   12.290(R)|      SLOW  |   -4.353(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<42>     |   11.755(R)|      SLOW  |   -4.094(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<43>     |   11.920(R)|      SLOW  |   -4.330(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<44>     |   11.944(R)|      SLOW  |   -4.461(R)|      FAST  |clk_BUFGP         |   0.000|
+In1<45>     |   13.065(R)|      SLOW  |   -5.345(R)|      FAST  |clk_BUFGP         |   0.000|
+clk_enable  |    3.433(R)|      SLOW  |    0.344(R)|      SLOW  |clk_BUFGP         |   0.000|
+reset       |    3.244(R)|      FAST  |   -0.221(R)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Out1<1>     |         9.865(R)|      SLOW  |         8.025(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   24.851|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 374070445660663 paths, 0 nets, and 9271 connections
+
+Design statistics:
+   Minimum period:  24.851ns{1}   (Maximum frequency:  40.240MHz)
+   Minimum input required time before clock:  13.065ns
+   Maximum output delay after clock:   9.865ns
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Sun Jan 07 17:20:01 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 277 MB
+
+
+

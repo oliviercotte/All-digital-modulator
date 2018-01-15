@@ -1,0 +1,2446 @@
+# Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
+# do {testbench.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:22:38 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 ipcore_dir/Clock_Generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Compiling entity Clock_Generator
+# -- Compiling architecture xilinx of Clock_Generator
+# End time: 02:22:39 on Jan 07,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:22:40 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 ipcore_dir/DDS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DDS
+# -- Compiling architecture DDS_a of DDS
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package bip_utils_pkg_v2_0
+# -- Loading package bip_usecase_utils_pkg_v2_0
+# -- Loading package xcc_utils_v2_0
+# -- Loading package pkg_dds_compiler_v4_0
+# -- Loading package dds_compiler_v4_0_sim_comps
+# -- Loading package xbip_pipe_v2_0_xst_comp
+# -- Loading entity dds_compiler_v4_0
+# End time: 02:22:40 on Jan 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:22:44 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 DSM_MOD8_HDL.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DSM_MOD8_HDL
+# -- Compiling architecture rtl of DSM_MOD8_HDL
+# End time: 02:22:44 on Jan 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:22:45 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 top_fpga.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity top_fpga
+# -- Compiling architecture Behavioral of top_fpga
+# End time: 02:22:46 on Jan 07,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:22:47 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture behavior of testbench
+# End time: 02:22:47 on Jan 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui -do "do {testbench.fdo}" 
+# Start time: 02:22:49 on Jan 07,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.top_fpga(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading unisim.vcomponents
+# Loading work.clock_generator(xilinx)
+# Loading unisim.ibufg(ibufg_v)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.pll_base(pll_base_v)
+# Loading unisim.pll_adv(pll_adv_v)
+# Loading ieee.math_real(body)
+# Loading xilinxcorelib.bip_utils_pkg_v2_0(body)
+# Loading xilinxcorelib.bip_usecase_utils_pkg_v2_0(body)
+# Loading xilinxcorelib.xcc_utils_v2_0(body)
+# Loading xilinxcorelib.pkg_dds_compiler_v4_0(body)
+# Loading xilinxcorelib.dds_compiler_v4_0_sim_comps
+# Loading xilinxcorelib.xbip_pipe_v2_0_xst_comp
+# Loading work.dds(dds_a)
+# Loading xilinxcorelib.dds_compiler_v4_0(behavioral)
+# Loading xilinxcorelib.xbip_pipe_v2_0_comp
+# Loading xilinxcorelib.xbip_pipe_v2_0_xst(behavioral)
+# Loading xilinxcorelib.xbip_pipe_v2_0(behavioral)
+# Loading xilinxcorelib.dds_compiler_v4_0_eff(synth)
+# Loading xilinxcorelib.bip_dsp48_multadd_pkg_v2_0(body)
+# Loading xilinxcorelib.xbip_dsp48_multadd_v2_0_comp
+# Loading xilinxcorelib.mult_gen_v11_0_xst_comp
+# Loading xilinxcorelib.dds_compiler_v4_0_multadd_wrapper(synth)
+# Loading xilinxcorelib.xbip_dsp48_multadd_v2_0(behavioral)
+# Loading xilinxcorelib.bip_bram18k_pkg_v2_1(body)
+# Loading xilinxcorelib.xbip_bram18k_v2_1_xst_comp
+# Loading xilinxcorelib.bip_bram18k_v2_1_sim_pkg
+# Loading xilinxcorelib.dds_compiler_v4_0_eff_lut(rtl)
+# Loading work.dsm_mod8_hdl(rtl)
+# ** Warning: Design size of 41313 statements or 97 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/uut/DAC_OUT13(35 downto 0) has no driver.
+# 
+# This port will contribute value (36'hXXXXXXXXX) to the signal network.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U3
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U3
+do {testbench.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:32:52 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 ipcore_dir/Clock_Generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Compiling entity Clock_Generator
+# -- Compiling architecture xilinx of Clock_Generator
+# End time: 02:32:52 on Jan 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:32:55 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 ipcore_dir/DDS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DDS
+# -- Compiling architecture DDS_a of DDS
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package bip_utils_pkg_v2_0
+# -- Loading package bip_usecase_utils_pkg_v2_0
+# -- Loading package xcc_utils_v2_0
+# -- Loading package pkg_dds_compiler_v4_0
+# -- Loading package dds_compiler_v4_0_sim_comps
+# -- Loading package xbip_pipe_v2_0_xst_comp
+# -- Loading entity dds_compiler_v4_0
+# End time: 02:32:55 on Jan 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:32:58 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 DSM_MOD8_HDL.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DSM_MOD8_HDL
+# -- Compiling architecture rtl of DSM_MOD8_HDL
+# End time: 02:32:58 on Jan 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:33:00 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 top_fpga.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity top_fpga
+# -- Compiling architecture Behavioral of top_fpga
+# End time: 02:33:01 on Jan 07,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:33:03 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture behavior of testbench
+# End time: 02:33:03 on Jan 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 02:33:11 on Jan 07,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.top_fpga(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading unisim.vcomponents
+# Loading work.clock_generator(xilinx)
+# Loading unisim.ibufg(ibufg_v)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.pll_base(pll_base_v)
+# Loading unisim.pll_adv(pll_adv_v)
+# Loading ieee.math_real(body)
+# Loading xilinxcorelib.bip_utils_pkg_v2_0(body)
+# Loading xilinxcorelib.bip_usecase_utils_pkg_v2_0(body)
+# Loading xilinxcorelib.xcc_utils_v2_0(body)
+# Loading xilinxcorelib.pkg_dds_compiler_v4_0(body)
+# Loading xilinxcorelib.dds_compiler_v4_0_sim_comps
+# Loading xilinxcorelib.xbip_pipe_v2_0_xst_comp
+# Loading work.dds(dds_a)
+# Loading xilinxcorelib.dds_compiler_v4_0(behavioral)
+# Loading xilinxcorelib.xbip_pipe_v2_0_comp
+# Loading xilinxcorelib.xbip_pipe_v2_0_xst(behavioral)
+# Loading xilinxcorelib.xbip_pipe_v2_0(behavioral)
+# Loading xilinxcorelib.dds_compiler_v4_0_eff(synth)
+# Loading xilinxcorelib.bip_dsp48_multadd_pkg_v2_0(body)
+# Loading xilinxcorelib.xbip_dsp48_multadd_v2_0_comp
+# Loading xilinxcorelib.mult_gen_v11_0_xst_comp
+# Loading xilinxcorelib.dds_compiler_v4_0_multadd_wrapper(synth)
+# Loading xilinxcorelib.xbip_dsp48_multadd_v2_0(behavioral)
+# Loading xilinxcorelib.bip_bram18k_pkg_v2_1(body)
+# Loading xilinxcorelib.xbip_bram18k_v2_1_xst_comp
+# Loading xilinxcorelib.bip_bram18k_v2_1_sim_pkg
+# Loading xilinxcorelib.dds_compiler_v4_0_eff_lut(rtl)
+# Loading work.fixed_float_types
+# Loading work.fixed_pkg(body)
+# Loading work.dsm_pkg
+# Loading work.mash_hdl(rtl)
+# Loading work.matlab_function(rtl)
+# ** Warning: Design size of 47856 statements or 99 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/uut/DAC_OUT14(35 downto 0) has no driver.
+# 
+# This port will contribute value (36'hXXXXXXXXX) to the signal network.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: :work:fixed_pkg:"<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function1
+# ** Warning: :work:fixed_pkg:"<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# ** Warning: :work:fixed_pkg:">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/U2/u_MATLAB_Function
+# Break key hit
+# Simulation stop requested.
+do {testbench.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:37:33 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 ipcore_dir/Clock_Generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Compiling entity Clock_Generator
+# -- Compiling architecture xilinx of Clock_Generator
+# End time: 02:37:34 on Jan 07,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:37:34 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 ipcore_dir/DDS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DDS
+# -- Compiling architecture DDS_a of DDS
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package bip_utils_pkg_v2_0
+# -- Loading package bip_usecase_utils_pkg_v2_0
+# -- Loading package xcc_utils_v2_0
+# -- Loading package pkg_dds_compiler_v4_0
+# -- Loading package dds_compiler_v4_0_sim_comps
+# -- Loading package xbip_pipe_v2_0_xst_comp
+# -- Loading entity dds_compiler_v4_0
+# End time: 02:37:34 on Jan 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:37:34 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 DSM_MOD8_HDL.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DSM_MOD8_HDL
+# -- Compiling architecture rtl of DSM_MOD8_HDL
+# End time: 02:37:34 on Jan 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:37:34 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 top_fpga.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity top_fpga
+# -- Compiling architecture Behavioral of top_fpga
+# End time: 02:37:34 on Jan 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 02:37:34 on Jan 07,2018
+# vcom -reportprogress 300 -explicit -93 testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture behavior of testbench
+# End time: 02:37:34 on Jan 07,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 02:37:36 on Jan 07,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.top_fpga(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading unisim.vcomponents
+# Loading work.clock_generator(xilinx)
+# Loading unisim.ibufg(ibufg_v)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.pll_base(pll_base_v)
+# Loading unisim.pll_adv(pll_adv_v)
+# Loading ieee.math_real(body)
+# Loading xilinxcorelib.bip_utils_pkg_v2_0(body)
+# Loading xilinxcorelib.bip_usecase_utils_pkg_v2_0(body)
+# Loading xilinxcorelib.xcc_utils_v2_0(body)
+# Loading xilinxcorelib.pkg_dds_compiler_v4_0(body)
+# Loading xilinxcorelib.dds_compiler_v4_0_sim_comps
+# Loading xilinxcorelib.xbip_pipe_v2_0_xst_comp
+# Loading work.dds(dds_a)
+# Loading xilinxcorelib.dds_compiler_v4_0(behavioral)
+# Loading xilinxcorelib.xbip_pipe_v2_0_comp
+# Loading xilinxcorelib.xbip_pipe_v2_0_xst(behavioral)
+# Loading xilinxcorelib.xbip_pipe_v2_0(behavioral)
+# Loading xilinxcorelib.dds_compiler_v4_0_eff(synth)
+# Loading xilinxcorelib.bip_dsp48_multadd_pkg_v2_0(body)
+# Loading xilinxcorelib.xbip_dsp48_multadd_v2_0_comp
+# Loading xilinxcorelib.mult_gen_v11_0_xst_comp
+# Loading xilinxcorelib.dds_compiler_v4_0_multadd_wrapper(synth)
+# Loading xilinxcorelib.xbip_dsp48_multadd_v2_0(behavioral)
+# Loading xilinxcorelib.bip_bram18k_pkg_v2_1(body)
+# Loading xilinxcorelib.xbip_bram18k_v2_1_xst_comp
+# Loading xilinxcorelib.bip_bram18k_v2_1_sim_pkg
+# Loading xilinxcorelib.dds_compiler_v4_0_eff_lut(rtl)
+# Loading work.fixed_float_types
+# Loading work.fixed_pkg(body)
+# Loading work.dsm_pkg
+# Loading work.mash_hdl(rtl)
+# Loading work.matlab_function(rtl)
+# ** Warning: Design size of 47856 statements or 99 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/uut/DAC_OUT14(35 downto 0) has no driver.
+# 
+# This port will contribute value (36'hXXXXXXXXX) to the signal network.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+quit
+# Break key hit
+# Simulation stop requested.
+# End time: 02:45:55 on Jan 07,2018, Elapsed time: 0:08:19
+# Errors: 0, Warnings: 2

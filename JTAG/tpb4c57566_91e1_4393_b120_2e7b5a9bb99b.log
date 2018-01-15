@@ -1,0 +1,54 @@
+if { [catch {vsimulink top_fpga -t 1ps -novopt  } errmsg] } {
+    echo "Loading simulation and HDL Verifier library failed."; 
+    echo $errmsg; 
+    quit -f; 
+}
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim 
+# Start time: 05:21:05 on Jan 07,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.top_fpga(behavioral)
+# ** Warning: (vsim-3473) Component instance "U0 : Clock_Generator" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_fpga File: C:/FIL/JTAG/DSM_SIM/top_fpga.vhd
+# Loading work.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading work.fixed_pkg(body)
+# Loading work.dsm_pkg
+# Loading work.mash_hdl(rtl)
+# Loading work.matlab_function(rtl)
+# Loading work.dsm_mod8_hdl(rtl)
+# Loading work.dsm_mod8_lte_hdl(rtl)
+# ** Warning: Design size of 17878 statements or 5 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+# Loading C:/Program Files/MATLAB/R2013b/toolbox/edalink/extensions/modelsim/windows32/liblfmhdls_gcc421vc9.dll
+# ************************************************************************
+# HDL server has been started in batch mode. The HDL simulator will be 
+# blocked until Simulink starts cosimulation. If you do not want to run
+# in batch mode, restart the HDL simulator in a different run mode. To 
+# exit the HDL simulator without running a cosimulation session, issue 
+# the breakHdlSim('54148') command in MATLAB.
+
+# 
+# <EOF>
+# End time: 05:21:06 on Jan 07,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2

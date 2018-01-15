@@ -1,0 +1,40 @@
+[
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  undef,
+  [
+    [
+      'xlpersistentdff.ngc',
+      undef,
+    ],
+    'C:/FIL/JTAG/netlist/sysgen/perl_results.vhd',
+  ],
+  [
+    [
+      'addsb_11_0_378a84205e17796b.ngc',
+      {
+        'producer' => 'coregen',
+      },
+    ],
+    [
+      'addsb_11_0_378a84205e17796b.vhd',
+      {
+        'producer' => 'coregen',
+      },
+    ],
+  ],
+]

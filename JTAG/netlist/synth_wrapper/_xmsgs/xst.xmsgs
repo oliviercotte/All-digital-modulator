@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:\FIL\JTAG\netlist\synth_wrapper\jtagcosim_top.vhd" Line 2185: &lt;<arg fmt="%s" index="1">bufgmux</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:\FIL\JTAG\netlist\synth_wrapper\jtagcosim_top.vhd" Line 2080: &lt;<arg fmt="%s" index="1">ibuf</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:\FIL\JTAG\netlist\synth_wrapper\jtagcosim_top.vhd" Line 2193: &lt;<arg fmt="%s" index="1">ibufg</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:\FIL\JTAG\netlist\synth_wrapper\jtagcosim_top.vhd" Line 2199: &lt;<arg fmt="%s" index="1">jtagcosim_iface_spartan6</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:\FIL\JTAG\netlist\synth_wrapper\jtagcosim_top.vhd" Line 1899: &lt;<arg fmt="%s" index="1">dac_mod_5_sim_cw</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\FIL\JTAG\netlist\synth_wrapper\jtagcosim_top.vhd</arg>&quot; line <arg fmt="%s" index="2">2296</arg>: Output port &lt;<arg fmt="%s" index="3">LEDs_8Bits</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sysgen_hwcosim_iface</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">preserve_signal</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">preserve_signal</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">DIP_Switches_8Bits</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Push_Buttons_5Bits</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">re</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">data_out_mm</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">2</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">xlmemmap</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">sysgen_hw_cosim_interface</arg>: <arg fmt="%d" index="2">8</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
+</messages>

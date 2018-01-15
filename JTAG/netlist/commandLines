@@ -1,0 +1,4 @@
+C:/Xilinx/14.7/ISE_DS/ISE/sysgen/bin/nt64/saferun.exe -a C:/FIL/JTAG/netlist/dac_mod_2_4_sim_cw_import.log -- c:/xilinx/14.7/ise_ds/ise//bin/nt64/xtclsh.exe ProjectGeneration.tcl
+C:/Xilinx/14.7/ISE_DS/ISE/sysgen/bin/nt64/saferun.exe -a C:/FIL/JTAG/netlist/dac_mod_2_4_sim_cw_import.log -- c:/xilinx/14.7/ise_ds/ise//bin/nt64/xtclsh.exe ProjectGeneration.tcl
+C:/Xilinx/14.7/ISE_DS/ISE/sysgen/bin/nt64/saferun.exe -a C:/FIL/JTAG/netlist/dac_mod_6_sim_2_cw_import.log -- c:/xilinx/14.7/ise_ds/ise//bin/nt64/xtclsh.exe ProjectGeneration.tcl
+C:/Xilinx/14.7/ISE_DS/ISE/sysgen/bin/nt64/saferun.exe -a C:/FIL/JTAG/netlist/dac_mod_5_sim_cw_import.log -- c:/xilinx/14.7/ise_ds/ise//bin/nt64/xtclsh.exe ProjectGeneration.tcl

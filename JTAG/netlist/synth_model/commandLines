@@ -1,0 +1,1 @@
+C:/Xilinx/14.7/ISE_DS/ISE/sysgen/bin/nt64/saferun.exe -- c:/xilinx/14.7/ise_ds/ise//bin/nt64/xst.exe -ifn xst_dac_mod_5_sim.scr -ofn dac_mod_5_sim_cw.syr

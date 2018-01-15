@@ -1,0 +1,1 @@
+run -ifn xst_dac_mod_5_sim.prj -ifmt mixed -ofn dac_mod_5_sim_cw.ngc -ofmt NGC -p xc6slx45-3csg324 -ent dac_mod_5_sim_cw -keep_hierarchy NO -iobuf YES -bus_delimiter () -top dac_mod_5_sim_cw -hierarchy_separator / -report_timing_constraint_problems warning -register_balancing no -iob Auto -uc dac_mod_5_sim_cw.xcf -write_timing_constraints yes

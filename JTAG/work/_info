@@ -1,0 +1,895 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FIL/JTAG
+Eall_digital_modulator
+Z1 w1515502633
+Z2 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z3 DPx4 work 17 fixed_float_types 0 22 Pf^dnP9MhB?FU_Q61Me4T0
+Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 work 9 fixed_pkg 0 22 _CeI]mUCLh1oPO>U_><^n1
+R0
+Z8 8C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd
+Z9 FC:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd
+l0
+L35
+VHR1FMeQAH;QOO9jEX3[fX1
+!s100 `l_FQfAc^jb5_zM_Ch`n42
+Z10 OP;C;10.4a;61
+32
+Z11 !s110 1515503545
+!i10b 1
+Z12 !s108 1515503545.000000
+Z13 !s90 -work|work|-2002|-explicit|-stats=none|C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd|
+Z14 !s107 C:/Newcomputer/DSM_Final/DSM_Final/all_digital_modulator.vhd|
+!i113 1
+Z15 o-work work -2002 -explicit -O0
+Z16 tExplicit 1
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 21 all_digital_modulator 0 22 HR1FMeQAH;QOO9jEX3[fX1
+l200
+L54
+V;bVB8>Hi4Z^4>3ZP=Cb1J0
+!s100 G@SXKeOofQOf16L;8R]Dc1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Echannel_filter
+Z17 w1515502001
+R6
+R5
+R0
+Z18 8C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Channel_Filter.vhd
+Z19 FC:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Channel_Filter.vhd
+l0
+L66
+V`CN]W8zeNGL`CZYgY_IGT0
+!s100 6Bd_LY1g>CC3YYNf?>=Ug2
+R10
+32
+Z20 !s110 1515503548
+!i10b 1
+Z21 !s108 1515503548.000000
+Z22 !s90 -work|work|-2002|-explicit|-stats=none|C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Channel_Filter.vhd|
+Z23 !s107 C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Channel_Filter.vhd|
+!i113 1
+R15
+R16
+Achannel_filter_a
+Z24 DPx13 xilinxcorelib 8 ul_utils 0 22 1:M3oM:ahGdSaNR8SUozX3
+Z25 DPx13 xilinxcorelib 27 fir_compiler_v5_0_sim_comps 0 22 m<KX`kNE;E0f6E[hggaF;2
+Z26 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R4
+Z27 DPx13 xilinxcorelib 25 fir_compiler_v5_0_sim_pkg 0 22 5P_E>SZ7@hf@A1Z0<41l^3
+Z28 DPx13 xilinxcorelib 18 bip_utils_pkg_v2_0 0 22 :[90Y[:8DzaQIDSm09Og91
+Z29 DEx13 xilinxcorelib 17 fir_compiler_v5_0 0 22 OQUOY`9=W9=Ed_fLFeaKe1
+R6
+R5
+Z30 DEx4 work 14 channel_filter 0 22 `CN]W8zeNGL`CZYgY_IGT0
+l137
+L75
+Z31 VOi0E0N4m=0A5OW5n9LkVY3
+Z32 !s100 =8]iZAPg[DEK@7Vc^Q4Hl0
+R10
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R15
+R16
+Eclock_generator_1
+Z33 w1515502219
+Z34 DPx6 unisim 11 vcomponents 0 22 2L_N91<XgM:Bh8=P>9OR]0
+R4
+Z35 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z36 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R6
+R5
+R0
+Z37 8C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Clock_Generator_1.vhd
+Z38 FC:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Clock_Generator_1.vhd
+l0
+L77
+VlbRN`E>?^42n`OQXnRoP]0
+!s100 c]d[nDDcNP9Y3Y8162LMQ2
+R10
+32
+Z39 !s110 1515503547
+!i10b 1
+Z40 !s108 1515503546.000000
+Z41 !s90 -work|work|-2002|-explicit|-stats=none|C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Clock_Generator_1.vhd|
+Z42 !s107 C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Clock_Generator_1.vhd|
+!i113 1
+R15
+R16
+Axilinx
+R34
+R4
+R35
+R36
+R6
+R5
+DEx4 work 17 clock_generator_1 0 22 lbRN`E>?^42n`OQXnRoP]0
+l106
+L89
+VLdJSBn[d;^KD;_j:;7g1d2
+!s100 Z4G`^Y=nS<[Kj6?M<ABo]0
+R10
+32
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 1
+R15
+R16
+Edds
+Z43 w1515502871
+R6
+R5
+R0
+Z44 8C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/dds.vhd
+Z45 FC:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/dds.vhd
+l0
+L43
+Vi`VD_nn@>_VYA2S7Y3cYP1
+!s100 dSgIXYPC45IB;bCHdBYee2
+R10
+32
+R39
+!i10b 1
+Z46 !s108 1515503547.000000
+Z47 !s90 -work|work|-2002|-explicit|-stats=none|C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/dds.vhd|
+Z48 !s107 C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/dds.vhd|
+!i113 1
+R15
+R16
+Adds_a
+DPx13 xilinxcorelib 23 xbip_pipe_v2_0_xst_comp 0 22 GLeToj@0>lJEEWJHQMUB60
+DPx13 xilinxcorelib 27 dds_compiler_v4_0_sim_comps 0 22 EV6S`:Ck0:[PN1SX594hN1
+DPx13 xilinxcorelib 21 pkg_dds_compiler_v4_0 0 22 Y][OUJ?TookJz0Sjaf59W3
+DPx13 xilinxcorelib 14 xcc_utils_v2_0 0 22 iL>iYlEG?o`Ro`zQR0Ta=3
+DPx13 xilinxcorelib 26 bip_usecase_utils_pkg_v2_0 0 22 Y33YXC0i8TT>hj@mT`0K10
+R28
+R2
+R4
+R35
+DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+DEx13 xilinxcorelib 17 dds_compiler_v4_0 0 22 RU0G`bCAoRZ[5mg:`I8i]1
+R6
+R5
+DEx4 work 3 dds 0 22 i`VD_nn@>_VYA2S7Y3cYP1
+l91
+L50
+VMJF8SLAiWU?FX=mC4:MEh0
+!s100 lkeP=bl7SHIJd;a6loY1O3
+R10
+32
+R39
+!i10b 1
+R46
+R47
+R48
+!i113 1
+R15
+R16
+Edsm_mod8_hdl
+Z49 w1515365895
+R4
+R6
+R5
+R0
+Z50 8C:/FIL/JTAG/DSM_SIM/DSM_MOD8_HDL.vhd
+Z51 FC:/FIL/JTAG/DSM_SIM/DSM_MOD8_HDL.vhd
+l0
+L41
+VeoYG[IlVjVPQNBe7AfXQX0
+!s100 gg`bb9;fk`[iPiV2bZN[>1
+R10
+32
+Z52 !s110 1515366147
+!i10b 1
+Z53 !s108 1515366147.000000
+Z54 !s90 -work|work|-2002|-explicit|-stats=none|C:/FIL/JTAG/DSM_SIM/DSM_MOD8_HDL.vhd|
+Z55 !s107 C:/FIL/JTAG/DSM_SIM/DSM_MOD8_HDL.vhd|
+!i113 1
+R15
+R16
+Artl
+Z56 DEx4 work 4 sign 0 22 gdzD7PceXbXjR>DRSj:Wj2
+Z57 DEx4 work 9 quantizer 0 22 41?DhhzcA0GNXZ_3kD<:J0
+R4
+R6
+R5
+DEx4 work 12 dsm_mod8_hdl 0 22 eoYG[IlVjVPQNBe7AfXQX0
+l167
+L52
+VRGGo9ik?NLl=DFaZ_>K5X1
+!s100 @mC<]Cn@aIABzWAi:MSOm3
+R10
+32
+R52
+!i10b 1
+R53
+R54
+R55
+!i113 1
+R15
+R16
+Edsm_mod8_lte_hdl
+Z58 w1515319743
+R4
+R6
+R5
+R0
+Z59 8C:/FIL/JTAG/DSM_SIM/DSM_MOD8_LTE_HDL.vhd
+Z60 FC:/FIL/JTAG/DSM_SIM/DSM_MOD8_LTE_HDL.vhd
+l0
+L41
+VRDe;J;EG6DTiGH5UP2Ro03
+!s100 =9A77J7:GBI99zcZB1Cjb1
+R10
+32
+Z61 !s110 1515324988
+!i10b 1
+Z62 !s108 1515324988.000000
+Z63 !s90 -work|work|-2002|-explicit|-stats=none|C:/FIL/JTAG/DSM_SIM/DSM_MOD8_LTE_HDL.vhd|
+Z64 !s107 C:/FIL/JTAG/DSM_SIM/DSM_MOD8_LTE_HDL.vhd|
+!i113 1
+R15
+R16
+Artl
+R4
+R6
+R5
+DEx4 work 16 dsm_mod8_lte_hdl 0 22 RDe;J;EG6DTiGH5UP2Ro03
+l146
+L52
+VNQFm^@[UPJLMK2VW0Zm;e1
+!s100 `QGVKGYZD>83AB:do0YAF2
+R10
+32
+R61
+!i10b 1
+R62
+R63
+R64
+!i113 1
+R15
+R16
+Pdsm_pkg
+R3
+R7
+R2
+R5
+R6
+R4
+w1515308439
+R0
+8C:/FIL/JTAG/DSM_SIM/dsm_pkg.vhd
+FC:/FIL/JTAG/DSM_SIM/dsm_pkg.vhd
+l0
+L7
+VkAC_@A>5:lA_E07=5S>FZ2
+!s100 5L^[G3ObN<Gz=RWY^kJ6o1
+R10
+32
+R52
+!i10b 1
+R53
+!s90 -work|work|-2002|-explicit|-stats=none|C:/FIL/JTAG/DSM_SIM/dsm_pkg.vhd|
+!s107 C:/FIL/JTAG/DSM_SIM/dsm_pkg.vhd|
+!i113 1
+R15
+R16
+Eeight_order_delta_sigma_modulator
+Z65 w1514420062
+R4
+R6
+R5
+R0
+Z66 8C:/FIL/JTAG/DSM_SIM/Eight_order_delta_sigma_modulator.vhd
+Z67 FC:/FIL/JTAG/DSM_SIM/Eight_order_delta_sigma_modulator.vhd
+l0
+L41
+V[C@B:nMDI;_C@GKKgiPkn2
+!s100 9N:Ak@g7b:AO`VZ<<5zgf3
+R10
+32
+Z68 !s110 1515493633
+!i10b 1
+Z69 !s108 1515493633.000000
+Z70 !s90 -work|work|-2002|-explicit|-stats=none|C:/FIL/JTAG/DSM_SIM/Eight_order_delta_sigma_modulator.vhd|
+Z71 !s107 C:/FIL/JTAG/DSM_SIM/Eight_order_delta_sigma_modulator.vhd|
+!i113 1
+R15
+R16
+Artl
+Z72 DEx4 work 15 matlab_function 0 22 l>PYT>;K;aJ<6?PzXRDl73
+R4
+R6
+R5
+DEx4 work 33 eight_order_delta_sigma_modulator 0 22 [C@B:nMDI;_C@GKKgiPkn2
+l141
+L52
+VdEDFmbWBo]AcO[YEkbini1
+!s100 >6J1SZ2<PiSIPT5HM55mY2
+R10
+32
+R68
+!i10b 1
+R69
+R70
+R71
+!i113 1
+R15
+R16
+Pfixed_float_types
+w1476106834
+R0
+8C:/Newcomputer/DSM_Final/DSM_Final/fixed_float_types_c.vhdl
+FC:/Newcomputer/DSM_Final/DSM_Final/fixed_float_types_c.vhdl
+l0
+L16
+VPf^dnP9MhB?FU_Q61Me4T0
+!s100 cW]eNFhGGd5lB:5@0FCJB2
+R10
+32
+Z73 !s110 1515503546
+!i10b 1
+R40
+!s90 -work|work|-2002|-explicit|-stats=none|C:/Newcomputer/DSM_Final/DSM_Final/fixed_float_types_c.vhdl|
+!s107 C:/Newcomputer/DSM_Final/DSM_Final/fixed_float_types_c.vhdl|
+!i113 1
+R15
+R16
+Pfixed_pkg
+R3
+R4
+R5
+R6
+Z74 w1513918845
+R0
+Z75 8C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl
+Z76 FC:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl
+l0
+L24
+V_CeI]mUCLh1oPO>U_><^n1
+!s100 S;ZYM^cL2YXXBdNY>h5[z0
+R10
+32
+b1
+R73
+!i10b 1
+R40
+Z77 !s90 -work|work|-2002|-explicit|-stats=none|C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl|
+Z78 !s107 C:/Newcomputer/DSM_Final/DSM_Final/fixed_pkg_c.vhdl|
+!i113 1
+R15
+R16
+Bbody
+R7
+R2
+R3
+R4
+R5
+R6
+l0
+L1465
+VO:5dQn5z]I:7b>APKi3EJ1
+!s100 fiZUPY?zc`04NBGbaCd=K1
+R10
+32
+R73
+!i10b 1
+R40
+R77
+R78
+!i113 1
+R15
+R16
+Z79 nbody
+Pfloat_pkg
+R7
+R3
+R4
+R5
+R6
+Z80 w1515400674
+R0
+Z81 8C:/Newcomputer/DSM_Final/DSM_Final/float_pkg_c.vhdl
+Z82 FC:/Newcomputer/DSM_Final/DSM_Final/float_pkg_c.vhdl
+l0
+L27
+VZ9SVF^D@bdg:UmoeYeMd[1
+!s100 WbIkEJl_ME2i;ZIEU7?bX0
+R10
+32
+b1
+R73
+!i10b 1
+R40
+Z83 !s90 -work|work|-2002|-explicit|-stats=none|C:/Newcomputer/DSM_Final/DSM_Final/float_pkg_c.vhdl|
+Z84 !s107 C:/Newcomputer/DSM_Final/DSM_Final/float_pkg_c.vhdl|
+!i113 1
+R15
+R16
+Bbody
+DPx4 work 9 float_pkg 0 22 Z9SVF^D@bdg:UmoeYeMd[1
+R7
+R3
+R4
+R5
+R6
+l0
+L1005
+V2HSLM:ma]=^6=T?V?@:=D2
+!s100 cRCUNKQ_NaIYh9C8_1JzL2
+R10
+32
+R73
+!i10b 1
+R40
+R83
+R84
+!i113 1
+R15
+R16
+R79
+Ehalfband_1_61_44
+Z85 w1515502067
+R6
+R5
+R0
+Z86 8C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_1_61_44.vhd
+Z87 FC:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_1_61_44.vhd
+l0
+L66
+VUUE1l2E[U4m3^48h_SbXP2
+!s100 zWZ98fJQK?HXa=]WP=bE60
+R10
+32
+R39
+!i10b 1
+R46
+Z88 !s90 -work|work|-2002|-explicit|-stats=none|C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_1_61_44.vhd|
+Z89 !s107 C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_1_61_44.vhd|
+!i113 1
+R15
+R16
+Ahalfband_1_61_44_a
+R24
+R25
+R26
+R4
+R27
+R28
+R29
+R6
+R5
+DEx4 work 16 halfband_1_61_44 0 22 UUE1l2E[U4m3^48h_SbXP2
+l137
+L75
+Vj<hIl2Z;R4KGD1:gHWz302
+!s100 QiAf<2JcT;8jU@9YK<fAS2
+R10
+32
+R39
+!i10b 1
+R46
+R88
+R89
+!i113 1
+R15
+R16
+Ehalfband_2_122_88
+Z90 w1515502128
+R6
+R5
+R0
+Z91 8C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_2_122_88.vhd
+Z92 FC:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_2_122_88.vhd
+l0
+L66
+VCFA:>AHChjQIV2F93hLGi1
+!s100 dFjb:R6J_?Bm68ciE=:=]0
+R10
+32
+R39
+!i10b 1
+R46
+Z93 !s90 -work|work|-2002|-explicit|-stats=none|C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_2_122_88.vhd|
+Z94 !s107 C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_2_122_88.vhd|
+!i113 1
+R15
+R16
+Ahalfband_2_122_88_a
+R24
+R25
+R26
+R4
+R27
+R28
+R29
+R6
+R5
+DEx4 work 17 halfband_2_122_88 0 22 CFA:>AHChjQIV2F93hLGi1
+l137
+L75
+V=32[l?F5ca8X=Z::ajkW]0
+!s100 zXfiZT7WL]:k`h:^YSS[o1
+R10
+32
+R39
+!i10b 1
+R46
+R93
+R94
+!i113 1
+R15
+R16
+Ehalfband_3_245_76
+Z95 w1515503345
+R6
+R5
+R0
+Z96 8C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_3_245_76.vhd
+Z97 FC:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_3_245_76.vhd
+l0
+L66
+V8hkIIRG_EPoGPISV<k?LR2
+!s100 <V5O<8TYgg77Sn4D>zHAE1
+R10
+32
+R39
+!i10b 1
+R46
+Z98 !s90 -work|work|-2002|-explicit|-stats=none|C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_3_245_76.vhd|
+Z99 !s107 C:/Newcomputer/DSM_Final/DSM_Final/ipcore_dir/Halfband_3_245_76.vhd|
+!i113 1
+R15
+R16
+Ahalfband_3_245_76_a
+R24
+R25
+R26
+R4
+R27
+R28
+R29
+R6
+R5
+DEx4 work 17 halfband_3_245_76 0 22 8hkIIRG_EPoGPISV<k?LR2
+l137
+L75
+VkE<EEF4_502CFgj[BmB1V3
+!s100 fR7YWS1B_iC5c0<hglPA^3
+R10
+32
+R20
+!i10b 1
+R46
+R98
+R99
+!i113 1
+R15
+R16
+Ehalfband_4_491_52
+Z100 w1514449989
+R4
+R6
+R5
+R0
+Z101 8C:/Newcomputer/DSM_Final/DSM_Final/Halfband_4_491_52.vhd
+Z102 FC:/Newcomputer/DSM_Final/DSM_Final/Halfband_4_491_52.vhd
+l0
+L55
+VJlhEmUO]528`ccbVmOm6?2
+!s100 HP>ZfhOWojo`IE5SG?j092
+R10
+32
+R11
+!i10b 1
+R12
+Z103 !s90 -work|work|-2002|-explicit|-stats=none|C:/Newcomputer/DSM_Final/DSM_Final/Halfband_4_491_52.vhd|
+Z104 !s107 C:/Newcomputer/DSM_Final/DSM_Final/Halfband_4_491_52.vhd|
+!i113 1
+R15
+R16
+Artl
+R4
+R6
+R5
+DEx4 work 17 halfband_4_491_52 0 22 JlhEmUO]528`ccbVmOm6?2
+l111
+L70
+VA:c3VDghebM?]zP5N8WaW0
+!s100 =JX9i6:]JD5Sk=JN6Y2im3
+R10
+32
+R11
+!i10b 1
+R12
+R103
+R104
+!i113 1
+R15
+R16
+Emash_hdl
+Z105 w1515320196
+R4
+R6
+R5
+R0
+Z106 8C:/FIL/JTAG/DSM_SIM/MASH_HDL.vhd
+Z107 FC:/FIL/JTAG/DSM_SIM/MASH_HDL.vhd
+l0
+L41
+VidoYlKUY^U3f<;CSgSR`90
+!s100 7>SziiK:kZK6L4h65iR0A2
+R10
+32
+R61
+!i10b 1
+R62
+Z108 !s90 -work|work|-2002|-explicit|-stats=none|C:/FIL/JTAG/DSM_SIM/MASH_HDL.vhd|
+Z109 !s107 C:/FIL/JTAG/DSM_SIM/MASH_HDL.vhd|
+!i113 1
+R15
+R16
+Artl
+R2
+DPx4 work 7 dsm_pkg 0 22 kAC_@A>5:lA_E07=5S>FZ2
+R3
+R7
+DEx4 work 15 matlab_function 0 22 43BQiaREECA2Hllm_43AF3
+R4
+R6
+R5
+DEx4 work 8 mash_hdl 0 22 idoYlKUY^U3f<;CSgSR`90
+l116
+L52
+VC0N0eT5k`_Q`TFgl6_:Zm1
+!s100 AKE6aD^>^KJKXfi;dJ1BF3
+R10
+32
+R61
+!i10b 1
+R62
+R108
+R109
+!i113 1
+R15
+R16
+Ematlab_function
+Z110 w1514418197
+R4
+R6
+R5
+R0
+Z111 8C:/FIL/JTAG/DSM_SIM/MATLAB_Function.vhd
+Z112 FC:/FIL/JTAG/DSM_SIM/MATLAB_Function.vhd
+l0
+L22
+Vl>PYT>;K;aJ<6?PzXRDl73
+!s100 OIbYRY=10j=l`i2MF1_V;3
+R10
+32
+R68
+!i10b 1
+Z113 !s108 1515493632.000000
+Z114 !s90 -work|work|-2002|-explicit|-stats=none|C:/FIL/JTAG/DSM_SIM/MATLAB_Function.vhd|
+Z115 !s107 C:/FIL/JTAG/DSM_SIM/MATLAB_Function.vhd|
+!i113 1
+R15
+R16
+Artl
+R4
+R6
+R5
+R72
+l35
+L29
+V3QaEzZZ0Zg[JMd@MzQkN]1
+!s100 `YVGDaO@S]WIeKB[o_1Pn3
+R10
+32
+R68
+!i10b 1
+R113
+R114
+R115
+!i113 1
+R15
+R16
+Epll_clock
+Z116 w1515403250
+R34
+R4
+R6
+R5
+R0
+Z117 8C:/Newcomputer/DSM_Final/DSM_Final/PLL_CLOCK.vhd
+Z118 FC:/Newcomputer/DSM_Final/DSM_Final/PLL_CLOCK.vhd
+l0
+L31
+V:TM_SUHA@9B_GSL6Dn2<^1
+!s100 I:cQ8^0G9h40Ya6=nkD1Y2
+R10
+32
+R73
+!i10b 1
+R12
+Z119 !s90 -work|work|-2002|-explicit|-stats=none|C:/Newcomputer/DSM_Final/DSM_Final/PLL_CLOCK.vhd|
+Z120 !s107 C:/Newcomputer/DSM_Final/DSM_Final/PLL_CLOCK.vhd|
+!i113 1
+R15
+R16
+Abehavioral
+R34
+R4
+R6
+R5
+DEx4 work 9 pll_clock 0 22 :TM_SUHA@9B_GSL6Dn2<^1
+l50
+L39
+VL^]5=6onR7fQNT5H5XBO[3
+!s100 bLe[@?nCE8OBK;_c_9faB2
+R10
+32
+R73
+!i10b 1
+R12
+R119
+R120
+!i113 1
+R15
+R16
+Equantizer
+Z121 w1515366077
+R4
+R6
+R5
+R0
+Z122 8C:/FIL/JTAG/DSM_SIM/Quantizer.vhd
+Z123 FC:/FIL/JTAG/DSM_SIM/Quantizer.vhd
+l0
+L22
+V41?DhhzcA0GNXZ_3kD<:J0
+!s100 QbeBS0T[]i4IV?aPOKKMd2
+R10
+32
+R52
+!i10b 1
+R53
+Z124 !s90 -work|work|-2002|-explicit|-stats=none|C:/FIL/JTAG/DSM_SIM/Quantizer.vhd|
+Z125 !s107 C:/FIL/JTAG/DSM_SIM/Quantizer.vhd|
+!i113 1
+R15
+R16
+Artl
+R4
+R6
+R5
+R57
+l35
+L29
+VN<j=kG:Pda:R_;]C:`h8V3
+!s100 k6c0^MZDDVP7ZB0URV4>73
+R10
+32
+R52
+!i10b 1
+R53
+R124
+R125
+!i113 1
+R15
+R16
+Esign
+Z126 w1515366070
+R4
+R6
+R5
+R0
+Z127 8C:/FIL/JTAG/DSM_SIM/Sign.vhd
+Z128 FC:/FIL/JTAG/DSM_SIM/Sign.vhd
+l0
+L22
+VgdzD7PceXbXjR>DRSj:Wj2
+!s100 5CV8^]P9A8cVlQlL^JQo03
+R10
+32
+R52
+!i10b 1
+R53
+Z129 !s90 -work|work|-2002|-explicit|-stats=none|C:/FIL/JTAG/DSM_SIM/Sign.vhd|
+Z130 !s107 C:/FIL/JTAG/DSM_SIM/Sign.vhd|
+!i113 1
+R15
+R16
+Artl
+R4
+R6
+R5
+R56
+l35
+L29
+VGDiljSNzl;R99Ug7`FR_h0
+!s100 E<VULZQf;AP:O@V]zGhB30
+R10
+32
+R52
+!i10b 1
+R53
+R129
+R130
+!i113 1
+R15
+R16
+Etop_fpga
+Z131 w1515366535
+R4
+R6
+R5
+R0
+Z132 8C:/FIL/JTAG/DSM_SIM/top_fpga.vhd
+Z133 FC:/FIL/JTAG/DSM_SIM/top_fpga.vhd
+l0
+L32
+VOh@]7_cS6hhVN7IjKz5_81
+!s100 gUQT<]oh<d6KgE=EPL22i3
+R10
+32
+Z134 !s110 1515493632
+!i10b 1
+R113
+Z135 !s90 -work|work|-2002|-explicit|-stats=none|C:/FIL/JTAG/DSM_SIM/top_fpga.vhd|
+Z136 !s107 C:/FIL/JTAG/DSM_SIM/top_fpga.vhd|
+!i113 1
+R15
+R16
+Abehavioral
+R4
+R6
+R5
+DEx4 work 8 top_fpga 0 22 Oh@]7_cS6hhVN7IjKz5_81
+l76
+L39
+VMNkk<64z`TOl;am:BTd813
+!s100 SK4df<:dgnl9MCK5S[Udd0
+R10
+32
+R134
+!i10b 1
+R113
+R135
+R136
+!i113 1
+R15
+R16

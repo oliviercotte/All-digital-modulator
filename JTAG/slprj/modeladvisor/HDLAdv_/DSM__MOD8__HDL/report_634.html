@@ -1,0 +1,646 @@
+<html>  <head>  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Model Advisor Report for 'DSM_MOD8_HDL'</title>  
+<style><!--
+H3 {font-size:14pt; font-weight:200;}  
+H4 {font-size:9pt; font-weight:normal;}  
+H5 {font-size: 12pt; font-style:italic; font-weight: bold; color: #333333; margin-bottom: 2px}  
+body {font-family: Arial, Helvetica, sans-serif}  
+.subsection {padding-left: 30px;}  
+
+table.AdvTable { border-collapse:collapse; margin:0px 0px 20px 0px; border:1px solid #ececec; border-right:none; border-bottom:none; }
+.AdvTable td.AdvTableColHeading { padding-left:5px; padding-right:5px; color:#fff; line-height:120%; background:#80a0c1 url(data:image/gif;base64,R0lGODlhAQAaAKIAAHSRr3mXtn+fv2V/mX2cvG2JpVxzi4CgwSH5BAAAAAAALAAAAAABABoAAAMJeLrcLCSAMkwCADs=) repeat-x bottom left; border-right: 1px solid #ececec; border-bottom: 1px solid #ececec; }
+.AdvTable td { padding-left:5px; padding-right:5px; border-right:1px solid #ececec; border-bottom: 1px solid #ececec; }
+td.AdvTableColHeading p { margin-bottom:0px; }
+.AdvTable p { margin-bottom:10px; }
+table.AdvTableNoBorder { border-collapse:collapse; margin:0px 0px 20px 0px; border:none}
+.AdvTableNoBorder td { padding-left:5px; padding-right:5px; border:none; }
+.AdvTableNoBorder p { margin-bottom:10px; }
+--></style>  
+<script> <!-- 
+// rtwreport needs it 
+function init() {
+    var showFailed = document.getElementById("Failed Checkbox");
+    var showPassed = document.getElementById("Passed Checkbox");
+    var showWarning = document.getElementById("Warning Checkbox");
+    var showNotRun = document.getElementById("Not Run Checkbox");       
+    
+    inputText = RegExp('\\?(.*)').exec(window.location.search);
+    
+    if (inputText == null) {
+        return;
+    }
+    else {
+        showFailed.checked = false;
+        showPassed.checked = false;
+        showWarning.checked = false;
+        showNotRun.checked = false;
+    }
+    
+    if (!inputText[1].localeCompare("showPassedChecks")) {
+        showPassed.checked = true;
+    }
+    if (!inputText[1].localeCompare("showWarningChecks")) {
+        showWarning.checked = true;
+    }
+    if (!inputText[1].localeCompare("showFailedChecks")) {
+        showFailed.checked = true;
+    }
+    if (!inputText[1].localeCompare("showNotRunChecks")) {
+        showNotRun.checked = true;
+    }
+    updateVisibleChecks();
+}
+
+function updateVisibleChecks(){
+    
+    var showFailed = document.getElementById("Failed Checkbox").checked;
+    var showPassed = document.getElementById("Passed Checkbox").checked;
+    var showWarning = document.getElementById("Warning Checkbox").checked;
+    var showNotRun = document.getElementById("Not Run Checkbox").checked;
+    var allshowFlag = showFailed && showPassed && showWarning && showNotRun;
+    var passedChecks = document.getElementsByName("Passed Check");
+    var failedChecks = document.getElementsByName("Failed Check");
+    var warningChecks = document.getElementsByName("Warning Check");
+    var notRunChecks = document.getElementsByName("Not Run Check");
+    var i;
+    
+    if(failedChecks==null){failedChecks = 0;}
+    if(passedChecks==null){passedChecks = 0;}
+    if(warningChecks==null){warningChecks = 0;}
+    if(notRunChecks==null){notRunChecks = 0;}
+    
+    for(i = 0; i < passedChecks.length; i++)
+    {
+        passedChecks[i].style.display = "none";
+    }     
+    for(i = 0; i < failedChecks.length; i++)
+    {
+        failedChecks[i].style.display = "none";
+    }     
+    for(i = 0; i < warningChecks.length; i++)
+    {
+        warningChecks[i].style.display = "none";
+    }     
+    for(i = 0; i < notRunChecks.length; i++)
+    {
+        notRunChecks[i].style.display = "none";
+    }     
+    
+    if(showFailed || allshowFlag)
+    {
+        for(i = 0; i < failedChecks.length; i++)
+        {
+	    failedChecks[i].style.display = "";
+        }     
+    }
+    
+    if(showPassed || allshowFlag)
+    {
+        for(i = 0; i < passedChecks.length; i++)
+        {
+	    passedChecks[i].style.display = "";
+        }     
+    }
+    
+    if(showWarning || allshowFlag)
+    {
+        for(i = 0; i < warningChecks.length; i++)
+        {
+	    warningChecks[i].style.display = "";
+        }     
+    }
+    
+    if(showNotRun || allshowFlag)
+    {
+        for(i = 0; i < notRunChecks.length; i++)
+        {
+	    notRunChecks[i].style.display = "";
+        }     
+    }
+}
+
+function MATableShrink(o,tagNameStr,tagNameStr1){
+    var temp = document.getElementsByName(tagNameStr);
+    var classUsed = document.getElementsByName('EmbedImages'); 
+    var embeddedMode = !(classUsed.length == 0);
+    if (temp[0].style.display == "") 
+    {
+        temp[0].style.display = "none";
+        if (embeddedMode)
+        {
+            //o.innerHTML = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAkUlEQVR42mL8//8/AyUAIICYGCgEAAFEsQEAAUSxAQABxIIu0NTURDBQ6urqGGFsgABiwaagpqYOp+aWliYUPkAAEfQCCwt+JQABRHEYAAQQCzE2w9h//vzDUAcQQDgNgCkGacamEQYAAohiLwAEEEED8NkOAgABxEJMVOEDAAHESGlmAgggisMAIIAoNgAgwAC+/BqtC+40NQAAAABJRU5ErkJggg==" class="plus"/>';        
+            o.firstChild.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAkUlEQVR42mL8//8/AyUAIICYGCgEAAFEsQEAAUSxAQABxIIu0NTURDBQ6urqGGFsgABiwaagpqYOp+aWliYUPkAAEfQCCwt+JQABRHEYAAQQCzE2w9h//vzDUAcQQDgNgCkGacamEQYAAohiLwAEEEED8NkOAgABxEJMVOEDAAHESGlmAgggisMAIIAoNgAgwAC+/BqtC+40NQAAAABJRU5ErkJggg==";
+        }
+        else
+        {
+            //o.innerHTML = '<img src="plus.png"/>';    
+            o.firstChild.src = "plus.png";
+        }
+        temp = document.getElementsByName(tagNameStr1);
+        if(temp[0] != undefined)
+        {
+            temp[0].style.display = "";
+        }
+    } 
+    else 
+    {
+        temp[0].style.display = "";
+        if (embeddedMode)
+        {
+            //o.innerHTML = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAhklEQVR42mL8//8/AyUAIICYGCgEAAFEsQEAAUSxAQABxIIu0NTURDBQ6urqGGFsgABiwaagpqYOp+aWliYUPkAAUewFgACi2ACAAGLBKcGCafafP/8wxAACCKcB2BRjAwABRLEXAAKIYgMAAoiFmKjCBwACiJHSzAQQQBR7ASCAKDYAIMAAUtQUow+YsTsAAAAASUVORK5CYII=" />';
+            o.firstChild.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAhklEQVR42mL8//8/AyUAIICYGCgEAAFEsQEAAUSxAQABxIIu0NTURDBQ6urqGGFsgABiwaagpqYOp+aWliYUPkAAUewFgACi2ACAAGLBKcGCafafP/8wxAACCKcB2BRjAwABRLEXAAKIYgMAAoiFmKjCBwACiJHSzAQQQBR7ASCAKDYAIMAAUtQUow+YsTsAAAAASUVORK5CYII=";
+        }
+        else
+        {
+            //o.innerHTML = '<img src="minus.png"/>';
+            o.firstChild.src = "minus.png";
+        }
+        temp = document.getElementsByName(tagNameStr1);
+        if(temp[0] != undefined)
+        {
+            temp[0].style.display = "none";
+        }
+    }
+}
+
+// rtwreport needs it 
+function updateHyperlink() {
+    docObj = window.document;
+    loc = document.location;
+    var aHash = "";
+    var externalweb = "false";
+    if (loc.search || loc.hash) {
+        if (loc.search)
+            aHash = loc.search.substring(1);
+        else
+            aHash = loc.hash.substring(1);
+    }    
+    var args = new Array();
+    args = aHash.split('&');
+    for (var i = 0; i < args.length; ++i) {
+        var arg = args[i];
+          sep = arg.indexOf('=');
+        if (sep != -1) {
+            var cmd = arg.substring(0,sep);
+            var opt = arg.substring(sep+1);
+            switch (cmd.toLowerCase()) {
+            case "externalweb":
+                externalweb = opt;
+                break;
+            }
+        }
+    }        
+    if (externalweb === "true") {        
+        var objs = docObj.getElementsByTagName("a");
+        if (objs.length > 0 && objs[0].removeAttribute) {
+            for (var i = 0; i < objs.length; ++i) {           
+                if (objs[i].href.indexOf('matlab') > -1)           
+                    objs[i].removeAttribute("href");                
+            }
+        }
+    }
+    init();
+}
+    
+/* Copyright 2013 The MathWorks, Inc. */
+//COLLAPSIBLE FEATURE
+/* global variables */
+var GlobalCollapseState = "off";
+
+/* System defined collapsible mode */
+function collapseSDHelper(o, CollElement, disp){
+
+    if (CollElement.nodeName == "UL" || CollElement.nodeName == "OL"){
+        var CollName = "LI";
+    }else if (CollElement.nodeName == "TABLE"){
+        var CollName = "TR";
+    }
+    // get children (li for list and tr for table)
+    var children = CollElement.childNodes;
+    if (children[0].nodeName=="TBODY"){
+        children = children[0].childNodes;
+    }
+    var nElements = 0;
+    for (var i=0;i<children.length;i++){
+        if (children[i].nodeName == CollName){
+            nElements = nElements + 1;
+            if (nElements > 5){
+                children[i].style.display = disp;
+            }
+        }
+    }
+    if (disp == "none"){
+        if (CollName == "LI"){
+            var text = " items)";
+        }else{
+            var text = " rows)";
+        }
+        var textNode = document.createTextNode(("\u2228 More (" + (nElements-5) + text));
+        o.replaceChild(textNode,o.firstChild);
+
+        CollElement.setAttribute("dataCollapse", "on");
+    }else{
+        var textNode = document.createTextNode(("\u2227 " + "Less"));
+        o.replaceChild(textNode,o.firstChild);
+
+        CollElement.setAttribute("dataCollapse", "off");
+    }
+}
+
+function collapseSD(o, ID){
+    var CollElement = document.getElementById(ID);
+    if (CollElement != null){
+        if (CollElement.getAttribute("dataCollapse") == "off"){
+            var disp="none";
+        }else{
+            var disp="";
+        }
+        collapseSDHelper(o, CollElement, disp);
+    }
+}
+
+/* Collapse all mode */
+function collapseAllHelper(o, CollElement, CollInfo, disp){
+
+    if (CollElement != null){
+        if (disp == "none"){
+            CollElement.style.display = disp;
+			o.firstChild.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAkUlEQVR42mL8//8/AyUAIICYGCgEAAFEsQEAAUSxAQABxIIu0NTURDBQ6urqGGFsgABiwaagpqYOp+aWliYUPkAAEfQCCwt+JQABRHEYAAQQCzE2w9h//vzDUAcQQDgNgCkGacamEQYAAohiLwAEEEED8NkOAgABxEJMVOEDAAHESGlmAgggisMAIIAoNgAgwAC+/BqtC+40NQAAAABJRU5ErkJggg==";
+        }else{
+            CollElement.style.display = disp;
+			o.firstChild.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAhklEQVR42mL8//8/AyUAIICYGCgEAAFEsQEAAUSxAQABxIIu0NTURDBQ6urqGGFsgABiwaagpqYOp+aWliYUPkAAUewFgACi2ACAAGLBKcGCafafP/8wxAACCKcB2BRjAwABRLEXAAKIYgMAAoiFmKjCBwACiJHSzAQQQBR7ASCAKDYAIMAAUtQUow+YsTsAAAAASUVORK5CYII=";
+        }
+
+        if (CollInfo != null){
+            if (disp == "none"){
+                CollInfo.style.display = "";
+            }else{
+                CollInfo.style.display = "none";
+            }
+        }
+    }
+}
+function collapseAll(o, ID, ID2){
+    var CollElement = document.getElementById(ID);
+    var CollInfo = document.getElementById(ID2);
+
+    if (CollElement.style.display == ""){
+        var disp = "none";
+    }else{
+        var disp = "";
+    }
+
+    collapseAllHelper(o, CollElement, CollInfo, disp);
+}
+
+/* Collapsible helper functions */
+function getNextTag(o, tag){
+    while(o.nextSibling.nodeName != tag){
+        o = o.nextSibling;
+    }
+    return o.nextSibling;
+}
+
+function getPreviousTag(o, tag){
+    while(o.nodeName != tag){
+        o = o.previousSibling;
+    }
+    return o;
+}
+
+function getElByClassName(cla, tags){
+    //var nodes;
+    var ClassNodes = [];
+    for (var i=0;i<tags.length;i++){
+        var nodes = document.getElementsByTagName(tags[i]);
+        for (var ii=0;ii<nodes.length;ii++){
+            var tempclass = nodes[ii].className;
+            if (nodes[ii].className.indexOf(cla) != -1){
+                ClassNodes.push(nodes[ii]);
+            }
+        }
+    }
+    return ClassNodes;
+}
+
+/* Expand / collapse all */
+function expandCollapseAll(o){
+	/* IE has no method for getting elements by class name */
+    if (!(document.getElementsByClassName)){
+        var SDCollapse = getElByClassName("SystemdefinedCollapse", Array("table","ul","ol"));
+    }else{		
+        var SDCollapse = document.getElementsByClassName("SystemdefinedCollapse");
+    }
+    var Button = null;
+
+    if (GlobalCollapseState == "off"){
+        var disp = "none";
+        GlobalCollapseState = "on";
+        if (o != null){
+            o.innerHTML = "&or; ";
+        }
+    }else{
+        var disp = "";
+        GlobalCollapseState = "off";
+        if (o != null){
+            o.innerHTML = "&and; ";
+        }
+    }
+    for (var i=0;i<SDCollapse.length;i++){
+        Button = getNextTag(SDCollapse[i], "SPAN");
+        collapseSDHelper(Button, SDCollapse[i], disp);
+    }
+	
+    if (!(document.getElementsByClassName)){
+        var AllCollapse = getElByClassName("AllCollapse", Array("div"));
+    }else{		
+        var AllCollapse = document.getElementsByClassName("AllCollapse");
+    }
+
+    for (i=0;i<AllCollapse.length;i++){
+		Button = getPreviousTag(AllCollapse[i], "SPAN");
+		
+        var HiddenText =  getNextTag(AllCollapse[i], "DIV");
+        collapseAllHelper(Button, AllCollapse[i], HiddenText, disp);
+    }
+}
+
+
+function expandCollapseAllOnLoad(){
+    GlobalCollapseState = "on";
+    var Switch = document.getElementById("ExpandCollapseAll");
+    expandCollapseAll(Switch);
+}
+//END COLLAPSIBLE
+
+ --></script></head>  
+<body onload="updateHyperlink(); expandCollapseAllOnLoad();">  
+<table width="100%" class="AdvTableNoBorder" border="0"><tr><td colspan="2" align="center"><b>Model Advisor Report - <font color="#800000">DSM_MOD8_HDL.slx</font></b>
+</td>
+</tr>
+<tr><td align="left" valign="top"><b>Simulink version: <font color="#800000">8.2</font></b>
+</td>
+<td align="right" valign="top"><b>Model version: <font color="#800000">1.172</font></b>
+</td>
+</tr>
+<tr><td align="left" valign="top"><b>System: <font color="#800000">DSM_MOD8_HDL</font></b>
+</td>
+<td align="right" valign="top"><b>Current run: <font color="#800000">07-Jan-2018 17:17:51</font></b>
+</td>
+</tr>
+</table>
+<br /><font color="#800000"><b>Run Summary</b></font><br /><table width="60%" class="AdvTableNoBorder" border="0"><tr><td align="left" valign="top"><b><input  type="checkbox" onClick="updateVisibleChecks()" id ="Passed Checkbox"  checked = "checked" /> Pass</b>
+</td>
+<td align="left" valign="top"><b><input  type="checkbox" onClick="updateVisibleChecks()" id ="Failed Checkbox"  checked = "checked" />Fail</b>
+</td>
+<td align="left" valign="top"><b><input  type="checkbox" onClick="updateVisibleChecks()" id ="Warning Checkbox"  checked = "checked" />Warning</b>
+</td>
+<td align="left" valign="top"><b><input  type="checkbox" onClick="updateVisibleChecks()" id ="Not Run Checkbox"  checked = "checked" />Not Run</b>
+</td>
+<td align="left" valign="top"><b>Total</b>
+</td>
+</tr>
+<tr><td align="left" valign="top">&#160;&#160;<img src="task_passed.png" /> 1</td>
+<td align="left" valign="top">&#160;&#160;<img src="task_failed.png" /> 0</td>
+<td align="left" valign="top">&#160;&#160;<img src="task_warning.png" /> 0</td>
+<td align="left" valign="top">&#160;&#160;<img src="icon_task.png" /> 0</td>
+<td align="left" valign="top"> 1</td>
+</tr>
+</table>
+<!-- Compile Status Flag --><!-- Service Status Flag -->
+<!-- mdladv_ignore_start --><div name = "Passed Check"  id = "Passed Check" style="margin-left: 0pt;"><!-- mdladv_ignore_finish -->
+<p><hr /></p>  <A NAME="CheckRecord_64" /><!-- mdladv_ignore_start --><img border="0" src="task_passed.png" />&#160;<!-- mdladv_ignore_finish --><font size="+1"><!-- mdladv_ignore_start --></font><!-- mdladv_ignore_finish --><b>4.2.1. Perform Logic Synthesis</b><!-- mdladv_ignore_start --><font><!-- mdladv_ignore_finish --></font>
+<!-- mdladv_ignore_start --><div align="left" class="subsection"><!-- mdladv_ignore_finish --><p /><font color="Green">Passed</font>
+Logic Synthesis.<p /><font color="Green">Synthesis Tool Log:</font>
+<p /><pre>### Open existing Xilinx ISE 14.7 project hdl_prj\ise_prj\DSM_MOD8_HDL_ise.xise
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/FIL/JTAG/hdl_prj/hdlsrc/DSM_MOD8_HDL/DSM_MOD8_HDL.vhd" into library work
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/FIL/JTAG/hdl_prj/hdlsrc/DSM_MOD8_HDL/Quantizer.vhd" into library work
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/FIL/JTAG/hdl_prj/hdlsrc/DSM_MOD8_HDL/Sign.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+### Running Synthesis in Xilinx ISE 14.7 ...
+Qt: Untested Windows version 6.2 detected!
+
+Started : "Synthesize - XST".
+Running xst...
+Command Line: xst -intstyle ise -ifn "C:/FIL/JTAG/hdl_prj/ise_prj/DSM_MOD8_HDL.xst" -ofn "C:/FIL/JTAG/hdl_prj/ise_prj/DSM_MOD8_HDL.syr"
+Reading design: DSM_MOD8_HDL.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\FIL\JTAG\hdl_prj\hdlsrc\DSM_MOD8_HDL\Sign.vhd" into library work
+Parsing entity &lt;Sign&gt;.
+Parsing architecture &lt;rtl&gt; of entity &lt;sign&gt;.
+Parsing VHDL file "C:\FIL\JTAG\hdl_prj\hdlsrc\DSM_MOD8_HDL\Quantizer.vhd" into library work
+Parsing entity &lt;Quantizer&gt;.
+Parsing architecture &lt;rtl&gt; of entity &lt;quantizer&gt;.
+Parsing VHDL file "C:\FIL\JTAG\hdl_prj\hdlsrc\DSM_MOD8_HDL\DSM_MOD8_HDL.vhd" into library work
+Parsing entity &lt;DSM_MOD8_HDL&gt;.
+Parsing architecture &lt;rtl&gt; of entity &lt;dsm_mod8_hdl&gt;.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity &lt;DSM_MOD8_HDL&gt; (architecture &lt;rtl&gt;) from library &lt;work&gt;.
+
+Elaborating entity &lt;Quantizer&gt; (architecture &lt;rtl&gt;) from library &lt;work&gt;.
+
+Elaborating entity &lt;Sign&gt; (architecture &lt;rtl&gt;) from library &lt;work&gt;.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit &lt;DSM_MOD8_HDL&gt;.
+    Related source file is "C:\FIL\JTAG\hdl_prj\hdlsrc\DSM_MOD8_HDL\DSM_MOD8_HDL.vhd".
+    Found 46-bit register for signal &lt;Delay4_out1&gt;.
+    Found 46-bit register for signal &lt;Delay2_out1&gt;.
+    Found 46-bit register for signal &lt;Delay_out1&gt;.
+    Found 46-bit register for signal &lt;Delay1_out1&gt;.
+    Found 46-bit register for signal &lt;Delay3_out1&gt;.
+    Found 46-bit register for signal &lt;Delay5_out1&gt;.
+    Found 46-bit register for signal &lt;Delay7_out1&gt;.
+    Found 46-bit register for signal &lt;Delay6_out1&gt;.
+    Found 46-bit adder for signal &lt;Sum3_out1&gt; created at line 295.
+    Found 46-bit adder for signal &lt;Sum5_out1&gt; created at line 321.
+    Found 46-bit adder for signal &lt;Sum7_out1&gt; created at line 330.
+    Found 46-bit adder for signal &lt;Sum9_out1&gt; created at line 356.
+    Found 46-bit adder for signal &lt;Sum11_out1&gt; created at line 365.
+    Found 46-bit adder for signal &lt;Sum15_out1&gt; created at line 391.
+    Found 46-bit adder for signal &lt;Sum13_out1&gt; created at line 400.
+    Found 46-bit subtractor for signal &lt;Sum_op_stage2&gt; created at line 116.
+    Found 46-bit subtractor for signal &lt;Gain14_cast&lt;85:40&gt;&gt; created at line 118.
+    Found 46-bit adder for signal &lt;Sum1_out1&gt; created at line 108.
+    Found 46-bit subtractor for signal &lt;Gain13_cast&lt;85:40&gt;&gt; created at line 123.
+    Found 46-bit subtractor for signal &lt;_n0330&gt; created at line 145.
+    Found 46-bit subtractor for signal &lt;Gain16_cast&lt;85:40&gt;&gt; created at line 145.
+    Found 46-bit subtractor for signal &lt;Gain21_cast&lt;85:40&gt;&gt; created at line 149.
+    Found 46-bit subtractor for signal &lt;_n0333&gt; created at line 158.
+    Found 46-bit subtractor for signal &lt;Gain22_cast&lt;85:40&gt;&gt; created at line 158.
+    Found 46-bit subtractor for signal &lt;_n0335&gt; created at line 132.
+    Found 46-bit subtractor for signal &lt;Gain12_cast&lt;85:40&gt;&gt; created at line 132.
+    Found 46-bit subtractor for signal &lt;Gain11_cast&lt;85:40&gt;&gt; created at line 136.
+    Found 46-bit subtractor for signal &lt;Gain27_cast&lt;85:40&gt;&gt; created at line 162.
+    Found 19x46-bit multiplier for signal &lt;n0095&gt; created at line 196.
+    Found 46x46-bit multiplier for signal &lt;Gain25_mul_temp&gt; created at line 201.
+    Found 46x46-bit multiplier for signal &lt;Gain23_mul_temp&gt; created at line 216.
+    Found 46x46-bit multiplier for signal &lt;Gain19_mul_temp&gt; created at line 219.
+    Found 46x46-bit multiplier for signal &lt;Gain17_mul_temp&gt; created at line 234.
+    Found 46x46-bit multiplier for signal &lt;Gain4_mul_temp&gt; created at line 237.
+    Found 46x46-bit multiplier for signal &lt;Gain3_mul_temp&gt; created at line 252.
+    Found 46x46-bit multiplier for signal &lt;Gain2_mul_temp&gt; created at line 255.
+    Found 46x46-bit multiplier for signal &lt;Gain1_mul_temp&gt; created at line 272.
+    Found 32x46-bit multiplier for signal &lt;n0124&gt; created at line 275.
+    Found 35x46-bit multiplier for signal &lt;n0137&gt; created at line 309.
+    Found 36x46-bit multiplier for signal &lt;n0150&gt; created at line 344.
+    Found 37x46-bit multiplier for signal &lt;n0163&gt; created at line 379.
+    Summary:
+	inferred  13 Multiplier(s).
+	inferred  20 Adder/Subtractor(s).
+	inferred 368 D-type flip-flop(s).
+Unit &lt;DSM_MOD8_HDL&gt; synthesized.
+
+Synthesizing Unit &lt;Quantizer&gt;.
+    Related source file is "C:\FIL\JTAG\hdl_prj\hdlsrc\DSM_MOD8_HDL\Quantizer.vhd".
+    Found 46-bit comparator greater for signal &lt;GND_5_o_u_signed[45]_LessThan_2_o&gt; created at line 39
+    Summary:
+	inferred   1 Comparator(s).
+Unit &lt;Quantizer&gt; synthesized.
+
+Synthesizing Unit &lt;Sign&gt;.
+    Related source file is "C:\FIL\JTAG\hdl_prj\hdlsrc\DSM_MOD8_HDL\Sign.vhd".
+    Found 46-bit comparator greater for signal &lt;GND_6_o_u_signed[45]_LessThan_2_o&gt; created at line 39
+    Summary:
+	inferred   1 Comparator(s).
+Unit &lt;Sign&gt; synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 13
+ 46x19-bit multiplier                                  : 1
+ 46x32-bit multiplier                                  : 1
+ 46x35-bit multiplier                                  : 1
+ 46x36-bit multiplier                                  : 1
+ 46x37-bit multiplier                                  : 1
+ 46x46-bit multiplier                                  : 8
+# Adders/Subtractors                                   : 20
+ 46-bit adder                                          : 8
+ 46-bit subtractor                                     : 12
+# Registers                                            : 8
+ 46-bit register                                       : 8
+# Comparators                                          : 2
+ 46-bit comparator greater                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit &lt;DSM_MOD8_HDL&gt;.
+The following registers are absorbed into accumulator &lt;Delay4_out1&gt;: 1 register on signal &lt;Delay4_out1&gt;.
+The following registers are absorbed into accumulator &lt;Delay3_out1&gt;: 1 register on signal &lt;Delay3_out1&gt;.
+The following registers are absorbed into accumulator &lt;Delay2_out1&gt;: 1 register on signal &lt;Delay2_out1&gt;.
+The following registers are absorbed into accumulator &lt;Delay1_out1&gt;: 1 register on signal &lt;Delay1_out1&gt;.
+The following registers are absorbed into accumulator &lt;Delay_out1&gt;: 1 register on signal &lt;Delay_out1&gt;.
+The following registers are absorbed into accumulator &lt;Delay7_out1&gt;: 1 register on signal &lt;Delay7_out1&gt;.
+The following registers are absorbed into accumulator &lt;Delay6_out1&gt;: 1 register on signal &lt;Delay6_out1&gt;.
+The following registers are absorbed into accumulator &lt;Delay5_out1&gt;: 1 register on signal &lt;Delay5_out1&gt;.
+Unit &lt;DSM_MOD8_HDL&gt; synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 13
+ 46x19-bit multiplier                                  : 1
+ 46x32-bit multiplier                                  : 1
+ 46x35-bit multiplier                                  : 1
+ 46x36-bit multiplier                                  : 1
+ 46x37-bit multiplier                                  : 1
+ 46x46-bit multiplier                                  : 8
+# Adders/Subtractors                                   : 16
+ 46-bit adder                                          : 4
+ 46-bit subtractor                        INFO:TclTasksC:1850 - process run : Synthesize - XST is done.
+             : 12
+# Accumulators                                         : 8
+ 46-bit up accumulator                                 : 8
+# Comparators                                          : 2
+ 46-bit comparator greater                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit &lt;DSM_MOD8_HDL&gt; ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DSM_MOD8_HDL, actual ratio is 11.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 368
+ Flip-Flops                                            : 368
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 368   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 23.749ns (Maximum Frequency: 42.108MHz)
+   Minimum input arrival time before clock: 12.562ns
+   Maximum output required time after clock: 5.093ns
+   Maximum combinational path delay: 5.869ns
+
+=========================================================================
+
+Process "Synthesize - XST" completed successfully
+### Synthesis Complete.
+### Close Xilinx ISE 14.7 project.
+
+Elapsed time is 27.0667 seconds.
+</pre><!-- mdladv_ignore_start --></div><!-- mdladv_ignore_finish --><!-- mdladv_ignore_start --></div><!-- mdladv_ignore_finish -->
+
+</body>  
+</html>  

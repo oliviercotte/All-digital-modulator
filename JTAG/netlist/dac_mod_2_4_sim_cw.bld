@@ -1,0 +1,42 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc dac_mod_2_4_sim_cw.ucf -p xc6slx45-csg324-3
+dac_mod_2_4_sim_cw.ngc dac_mod_2_4_sim_cw.ngd
+
+Reading NGO file "C:/FIL/JTAG/netlist/dac_mod_2_4_sim_cw.ngc" ...
+Loading design module "C:\FIL\JTAG\netlist/xlpersistentdff.ngc"...
+Loading design module "C:\FIL\JTAG\netlist/addsb_11_0_378a84205e17796b.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "dac_mod_2_4_sim_cw.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'default_clock_driver_dac_mod_2_4_sim_x0/xlclockdriver_1/clr_reg/latency_gt_0
+   .fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected
+   output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 207496 kilobytes
+
+Writing NGD file "dac_mod_2_4_sim_cw.ngd" ...
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "dac_mod_2_4_sim_cw.bld"...

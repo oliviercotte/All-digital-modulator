@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/FIL/JTAG/netlist/dac_mod_2_4_sim_cw.xst" -ofn "C:/FIL/JTAG/netlist/dac_mod_2_4_sim_cw.syr" 
+xst -intstyle ise -ifn "C:/FIL/JTAG/netlist/dac_mod_2_4_sim_cw.xst" -ofn "C:/FIL/JTAG/netlist/dac_mod_2_4_sim_cw.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dac_mod_2_4_sim_cw.ucf -p xc6slx45-csg324-3 dac_mod_2_4_sim_cw.ngc dac_mod_2_4_sim_cw.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dac_mod_2_4_sim_cw_map.ncd dac_mod_2_4_sim_cw.ngd dac_mod_2_4_sim_cw.pcf 
+par -w -intstyle ise -ol high -mt off dac_mod_2_4_sim_cw_map.ncd dac_mod_2_4_sim_cw.ncd dac_mod_2_4_sim_cw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dac_mod_2_4_sim_cw.twx dac_mod_2_4_sim_cw.ncd -o dac_mod_2_4_sim_cw.twr dac_mod_2_4_sim_cw.pcf -ucf dac_mod_2_4_sim_cw.ucf 
+bitgen -intstyle ise -f dac_mod_2_4_sim_cw.ut dac_mod_2_4_sim_cw.ncd 

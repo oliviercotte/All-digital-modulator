@@ -1,0 +1,1 @@
+run -ifn xst_jtagcosim_top.prj -ifmt mixed -ofn jtagcosim_top.ngc -ofmt NGC -p xc6slx45-3csg324 -ent jtagcosim_top -keep_hierarchy NO -iobuf NO -bus_delimiter () -top jtagcosim_top -hierarchy_separator / -report_timing_constraint_problems warning -register_balancing no -iob Auto

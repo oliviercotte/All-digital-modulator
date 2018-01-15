@@ -1,0 +1,3 @@
+DSM_MOD8_HDL/Quantizer --> Quantizer
+DSM_MOD8_HDL/Sign --> Sign
+DSM_MOD8_HDL --> DSM_MOD8_HDL

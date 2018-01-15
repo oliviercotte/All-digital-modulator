@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/FIL/JTAG/hdl_prj/ise_prj/DSM_MOD8_HDL.xst" -ofn "C:/FIL/JTAG/hdl_prj/ise_prj/DSM_MOD8_HDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 DSM_MOD8_HDL.ngc DSM_MOD8_HDL.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DSM_MOD8_HDL_map.ncd DSM_MOD8_HDL.ngd DSM_MOD8_HDL.pcf 
+trce -intstyle ise -v 3 -a -s 3 -n 3 -fastpaths -xml DSM_MOD8_HDL_preroute.twx DSM_MOD8_HDL_map.ncd -o DSM_MOD8_HDL_preroute.twr DSM_MOD8_HDL.pcf 

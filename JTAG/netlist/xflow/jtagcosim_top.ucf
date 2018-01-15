@@ -1,0 +1,13 @@
+#
+# Filename:    atlys.ucf
+#
+# Description: Defines the clock input pin, clock speed, and
+#              non-memory mapped ports for the
+#              Atlys_491_52
+#
+
+NET "sys_clk" LOC = "L15";
+NET "sys_clk" TNM_NET = "hwcosim_sys_clk";
+TIMESPEC "TS_hwcosim_sys_clk" = PERIOD "hwcosim_sys_clk" 491.52 MHz HIGH 50%;
+
+# Non-memory mapped port definitions.

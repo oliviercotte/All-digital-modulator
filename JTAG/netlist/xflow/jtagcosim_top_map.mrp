@@ -1,0 +1,2867 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'jtagcosim_top'
+
+Design Information
+------------------
+Command Line   : map -o jtagcosim_top_map.ncd -intstyle xflow -timing -pr b -ol
+high jtagcosim_top.ngd jtagcosim_top.pcf 
+Target Device  : xc6slx45
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Sun Jan 07 23:24:42 2018
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   13
+Slice Logic Utilization:
+  Number of Slice Registers:                   637 out of  54,576    1%
+    Number used as Flip Flops:                 637
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      1,003 out of  27,288    3%
+    Number used as logic:                      980 out of  27,288    3%
+      Number using O6 output only:             837
+      Number using O5 output only:              64
+      Number using O5 and O6:                   79
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   6,408    0%
+    Number used exclusively as route-thrus:     23
+      Number with same-slice register load:     17
+      Number with same-slice carry load:         5
+      Number with other load:                    1
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   308 out of   6,822    4%
+  Number of MUXCYs used:                       804 out of  13,644    5%
+  Number of LUT Flip Flop pairs used:        1,053
+    Number with an unused Flip Flop:           471 out of   1,053   44%
+    Number with an unused LUT:                  50 out of   1,053    4%
+    Number of fully used LUT-FF pairs:         532 out of   1,053   50%
+    Number of unique control sets:              20
+    Number of slice register sites lost
+      to control set restrictions:              59 out of  54,576    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                         1 out of     218    1%
+    Number of LOCed IOBs:                        1 out of       1  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         2 out of     116    1%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       3 out of      16   18%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      2
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     376    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     376    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     376    0%
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                           45 out of      58   77%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       4    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                2.01
+
+Peak Memory Usage:  616 MB
+Total REAL time to MAP completion:  47 secs 
+Total CPU time to MAP completion:   47 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal DIP_Switches_8Bits(6) connected to top level port
+   DIP_Switches_8Bits(6) has been removed.
+WARNING:MapLib:701 - Signal DIP_Switches_8Bits(5) connected to top level port
+   DIP_Switches_8Bits(5) has been removed.
+WARNING:MapLib:701 - Signal DIP_Switches_8Bits(4) connected to top level port
+   DIP_Switches_8Bits(4) has been removed.
+WARNING:MapLib:701 - Signal DIP_Switches_8Bits(3) connected to top level port
+   DIP_Switches_8Bits(3) has been removed.
+WARNING:MapLib:701 - Signal DIP_Switches_8Bits(2) connected to top level port
+   DIP_Switches_8Bits(2) has been removed.
+WARNING:MapLib:701 - Signal DIP_Switches_8Bits(1) connected to top level port
+   DIP_Switches_8Bits(1) has been removed.
+WARNING:MapLib:701 - Signal DIP_Switches_8Bits(0) connected to top level port
+   DIP_Switches_8Bits(0) has been removed.
+WARNING:MapLib:701 - Signal Push_Buttons_5Bits(4) connected to top level port
+   Push_Buttons_5Bits(4) has been removed.
+WARNING:MapLib:701 - Signal Push_Buttons_5Bits(3) connected to top level port
+   Push_Buttons_5Bits(3) has been removed.
+WARNING:MapLib:701 - Signal Push_Buttons_5Bits(2) connected to top level port
+   Push_Buttons_5Bits(2) has been removed.
+WARNING:MapLib:701 - Signal Push_Buttons_5Bits(1) connected to top level port
+   Push_Buttons_5Bits(1) has been removed.
+WARNING:MapLib:701 - Signal Push_Buttons_5Bits(0) connected to top level port
+   Push_Buttons_5Bits(0) has been removed.
+WARNING:Pack:1653 - At least one timing constraint is impossible to meet because component delays alone exceed the constraint. A timing
+   constraint summary below shows the failing constraints (preceded with an Asterisk (*)). Please use the Timing Analyzer (GUI) or TRCE
+   (command line) with the Mapped NCD and PCF files to identify which constraints and paths are failing because of the component delays
+   alone. If the failing path(s) is mapped to Xilinx components as expected, consider relaxing the constraint. If it is not mapped to
+   components as expected, re-evaluate your HDL and how synthesis is optimizing the path. To allow the tools to bypass this error, set the
+   environment variable XIL_TIMING_ALLOW_IMPOSSIBLE to 1.
+
+
+   For more information about the Timing Analyzer, consult the Xilinx Timing Analyzer Reference manual; for more information on TRCE,
+   consult the Xilinx Command Line Tools User Guide "TRACE" chapter.
+
+Section 3 - Informational
+-------------------------
+INFO:Map:220 - The command line option -timing is automatically supported for
+   this architecture. Therefore, it is not necessary to specify this option.
+INFO:LIT:243 - Logical network N0 has no load.
+INFO:LIT:395 - The above info message is repeated 53 more times for the
+   following (max. 5 shown):
+   jtag_iface/serial_iface/dout_fifo/fifostatus_w[8],
+   jtag_iface/serial_iface/dout_fifo/fifostatus_w[7],
+   jtag_iface/serial_iface/dout_fifo/fifostatus_w[6],
+   jtag_iface/serial_iface/dout_fifo/fifostatus_w[5],
+   jtag_iface/serial_iface/dout_fifo/fifostatus_w[4]
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
+   Command Line Tools User Guide for information on generating a TSI report.
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 594 block(s) removed
+  26 block(s) optimized away
+ 588 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "ibuf_DIP_Switches_8Bits/ibuf_array[0].u1" (BUF) removed.
+ The signal "DIP_Switches_8Bits(0)" is loadless and has been removed.
+  Loadless block "DIP_Switches_8Bits(0)" (PAD) removed.
+Loadless block "ibuf_DIP_Switches_8Bits/ibuf_array[1].u1" (BUF) removed.
+ The signal "DIP_Switches_8Bits(1)" is loadless and has been removed.
+  Loadless block "DIP_Switches_8Bits(1)" (PAD) removed.
+Loadless block "ibuf_DIP_Switches_8Bits/ibuf_array[2].u1" (BUF) removed.
+ The signal "DIP_Switches_8Bits(2)" is loadless and has been removed.
+  Loadless block "DIP_Switches_8Bits(2)" (PAD) removed.
+Loadless block "ibuf_DIP_Switches_8Bits/ibuf_array[3].u1" (BUF) removed.
+ The signal "DIP_Switches_8Bits(3)" is loadless and has been removed.
+  Loadless block "DIP_Switches_8Bits(3)" (PAD) removed.
+Loadless block "ibuf_DIP_Switches_8Bits/ibuf_array[4].u1" (BUF) removed.
+ The signal "DIP_Switches_8Bits(4)" is loadless and has been removed.
+  Loadless block "DIP_Switches_8Bits(4)" (PAD) removed.
+Loadless block "ibuf_DIP_Switches_8Bits/ibuf_array[5].u1" (BUF) removed.
+ The signal "DIP_Switches_8Bits(5)" is loadless and has been removed.
+  Loadless block "DIP_Switches_8Bits(5)" (PAD) removed.
+Loadless block "ibuf_DIP_Switches_8Bits/ibuf_array[6].u1" (BUF) removed.
+ The signal "DIP_Switches_8Bits(6)" is loadless and has been removed.
+  Loadless block "DIP_Switches_8Bits(6)" (PAD) removed.
+Loadless block "ibuf_Push_Buttons_5Bits/ibuf_array[0].u1" (BUF) removed.
+ The signal "Push_Buttons_5Bits(0)" is loadless and has been removed.
+  Loadless block "Push_Buttons_5Bits(0)" (PAD) removed.
+Loadless block "ibuf_Push_Buttons_5Bits/ibuf_array[1].u1" (BUF) removed.
+ The signal "Push_Buttons_5Bits(1)" is loadless and has been removed.
+  Loadless block "Push_Buttons_5Bits(1)" (PAD) removed.
+Loadless block "ibuf_Push_Buttons_5Bits/ibuf_array[2].u1" (BUF) removed.
+ The signal "Push_Buttons_5Bits(2)" is loadless and has been removed.
+  Loadless block "Push_Buttons_5Bits(2)" (PAD) removed.
+Loadless block "ibuf_Push_Buttons_5Bits/ibuf_array[3].u1" (BUF) removed.
+ The signal "Push_Buttons_5Bits(3)" is loadless and has been removed.
+  Loadless block "Push_Buttons_5Bits(3)" (PAD) removed.
+Loadless block "ibuf_Push_Buttons_5Bits/ibuf_array[4].u1" (BUF) removed.
+ The signal "Push_Buttons_5Bits(4)" is loadless and has been removed.
+  Loadless block "Push_Buttons_5Bits(4)" (PAD) removed.
+Loadless block
+"sysgen_hwcosim_iface/sysgen_dut/default_clock_driver_dac_mod_5_sim_x0/xlclockdr
+iver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_
+comp" (SFF) removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_w[8]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_w[7]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_w[6]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_w[5]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_w[4]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_w[3]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_w[2]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_w[1]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_w[0]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[13]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[12]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[11]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[10]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[9]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[8]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[7]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[6]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[5]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[4]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[3]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[2]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[1]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/fifostatus_r[0]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/almost_empty" is sourceless and
+has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/almost_empty_RNO" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/almost_empty_RNO/O" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/almost_empty_RNO/LUT6_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/N_302_i" is sourceless and has
+been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/almost_empty" (FF) removed.
+The signal "jtag_iface/serial_iface/dout_fifo/VCC" is sourceless and has been
+removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_0"
+(MUX) removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_0/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_0/MUXCY_L_BUF" (BUF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_0" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_1" (XOR)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_1" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_w[1]" (FF)
+removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_1"
+(MUX) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_1/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_1/MUXCY_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_1" is
+sourceless and has been removed.
+         Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_2" (XOR)
+removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_2" is
+sourceless and has been removed.
+           Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_w[2]" (FF)
+removed.
+         Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_2"
+(MUX) removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_2/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_2/MUXCY_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_2" is
+sourceless and has been removed.
+             Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_3" (XOR)
+removed.
+              The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_3" is
+sourceless and has been removed.
+               Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_w[3]" (FF)
+removed.
+             Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_3"
+(MUX) removed.
+              The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_3/O" is
+sourceless and has been removed.
+               Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_3/MUXCY_L_BUF" (BUF)
+removed.
+                The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_3" is
+sourceless and has been removed.
+                 Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_4" (XOR)
+removed.
+                  The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_4" is
+sourceless and has been removed.
+                   Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_w[4]" (FF)
+removed.
+                 Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_4"
+(MUX) removed.
+                  The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_4/O" is
+sourceless and has been removed.
+                   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_4/MUXCY_L_BUF" (BUF)
+removed.
+                    The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_4" is
+sourceless and has been removed.
+                     Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_5" (XOR)
+removed.
+                      The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_5" is
+sourceless and has been removed.
+                       Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_w[5]" (FF)
+removed.
+                     Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_5"
+(MUX) removed.
+                      The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_5/O" is
+sourceless and has been removed.
+                       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_5/MUXCY_L_BUF" (BUF)
+removed.
+                        The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_5" is
+sourceless and has been removed.
+                         Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_6" (XOR)
+removed.
+                          The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_6" is
+sourceless and has been removed.
+                           Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_w[6]" (FF)
+removed.
+                         Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_6"
+(MUX) removed.
+                          The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_6/O" is
+sourceless and has been removed.
+                           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_6/MUXCY_L_BUF" (BUF)
+removed.
+                            The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_6" is
+sourceless and has been removed.
+                             Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_7" (XOR)
+removed.
+                              The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_7" is
+sourceless and has been removed.
+                               Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_w[7]" (FF)
+removed.
+                             Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_7"
+(MUX) removed.
+                              The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_7/O" is
+sourceless and has been removed.
+                               Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_7/MUXCY_L_BUF" (BUF)
+removed.
+                                The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_cry_7" is
+sourceless and has been removed.
+                                 Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_8" (XOR)
+removed.
+                                  The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_s_8" is
+sourceless and has been removed.
+                                   Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_w[8]" (FF)
+removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_0"
+(MUX) removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_0/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_0/MUXCY_L_BUF" (BUF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_0" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_1" (XOR)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_1" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[1]" (FF)
+removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_1"
+(MUX) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_1/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_1/MUXCY_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_1" is
+sourceless and has been removed.
+         Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_2" (XOR)
+removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_2" is
+sourceless and has been removed.
+           Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[2]" (FF)
+removed.
+         Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_2"
+(MUX) removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_2/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_2/MUXCY_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_2" is
+sourceless and has been removed.
+             Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_3" (XOR)
+removed.
+              The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_3" is
+sourceless and has been removed.
+               Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[3]" (FF)
+removed.
+             Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_3"
+(MUX) removed.
+              The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_3/O" is
+sourceless and has been removed.
+               Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_3/MUXCY_L_BUF" (BUF)
+removed.
+                The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_3" is
+sourceless and has been removed.
+                 Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_4" (XOR)
+removed.
+                  The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_4" is
+sourceless and has been removed.
+                   Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[4]" (FF)
+removed.
+                 Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_4"
+(MUX) removed.
+                  The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_4/O" is
+sourceless and has been removed.
+                   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_4/MUXCY_L_BUF" (BUF)
+removed.
+                    The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_4" is
+sourceless and has been removed.
+                     Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_5" (XOR)
+removed.
+                      The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_5" is
+sourceless and has been removed.
+                       Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[5]" (FF)
+removed.
+                     Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_5"
+(MUX) removed.
+                      The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_5/O" is
+sourceless and has been removed.
+                       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_5/MUXCY_L_BUF" (BUF)
+removed.
+                        The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_5" is
+sourceless and has been removed.
+                         Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_6" (XOR)
+removed.
+                          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_6" is
+sourceless and has been removed.
+                           Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[6]" (FF)
+removed.
+                         Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_6"
+(MUX) removed.
+                          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_6/O" is
+sourceless and has been removed.
+                           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_6/MUXCY_L_BUF" (BUF)
+removed.
+                            The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_6" is
+sourceless and has been removed.
+                             Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_7" (XOR)
+removed.
+                              The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_7" is
+sourceless and has been removed.
+                               Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[7]" (FF)
+removed.
+                             Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_7"
+(MUX) removed.
+                              The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_7/O" is
+sourceless and has been removed.
+                               Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_7/MUXCY_L_BUF" (BUF)
+removed.
+                                The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_7" is
+sourceless and has been removed.
+                                 Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_8" (XOR)
+removed.
+                                  The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_8" is
+sourceless and has been removed.
+                                   Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[8]" (FF)
+removed.
+                                 Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_8"
+(MUX) removed.
+                                  The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_8/O" is
+sourceless and has been removed.
+                                   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_8/MUXCY_L_BUF" (BUF)
+removed.
+                                    The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_8" is
+sourceless and has been removed.
+                                     Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_9" (XOR)
+removed.
+                                      The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_9" is
+sourceless and has been removed.
+                                       Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[9]" (FF)
+removed.
+                                     Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_9"
+(MUX) removed.
+                                      The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_9/O" is
+sourceless and has been removed.
+                                       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_9/MUXCY_L_BUF" (BUF)
+removed.
+                                        The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_9" is
+sourceless and has been removed.
+                                         Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_10" (XOR)
+removed.
+                                          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_10" is
+sourceless and has been removed.
+                                           Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[10]" (FF)
+removed.
+                                         Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_10"
+(MUX) removed.
+                                          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_10/O" is
+sourceless and has been removed.
+                                           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_10/MUXCY_L_BUF" (BUF)
+removed.
+                                            The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_10" is
+sourceless and has been removed.
+                                             Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_11" (XOR)
+removed.
+                                              The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_11" is
+sourceless and has been removed.
+                                               Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[11]" (FF)
+removed.
+                                             Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_11"
+(MUX) removed.
+                                              The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_11/O" is
+sourceless and has been removed.
+                                               Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_11/MUXCY_L_BUF" (BUF)
+removed.
+                                                The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_11" is
+sourceless and has been removed.
+                                                 Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_12" (XOR)
+removed.
+*The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_12" is
+sourceless and has been removed.
+* Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[12]" (FF)
+removed.
+                                                 Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_12"
+(MUX) removed.
+*The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_12/O" is
+sourceless and has been removed.
+* Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_12/MUXCY_L_BUF" (BUF)
+removed.
+*  The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_12" is
+sourceless and has been removed.
+*   Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_13" (XOR)
+removed.
+*    The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_s_13" is
+sourceless and has been removed.
+*     Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[13]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[0]" is sourceless
+and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_0_RNO"
+(ROM) removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_cry_0_sf" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_r[0]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[5]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_0"
+(ROM) removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_0" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_0_i_0"
+(ROM) removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_0_i_0/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_0_i_0/LUT2_L_BUF" (BUF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_0_i" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/fifostatus_w[0]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[0]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_7[7]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[7]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[7]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[7]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[7]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_7"
+(ROM) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_7/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_7/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_7" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_29[3]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[3]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[3]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[3]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[3]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_3"
+(ROM) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_3/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_3/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_3" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_11[6]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[6]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[6]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[6]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[6]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_6"
+(ROM) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_6/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_6/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_6" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_37_0[2]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_37_0[2]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_37_0[2]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_37[2]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[2]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[2]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[2]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[2]" is
+sourceless and has been removed.
+         Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_2"
+(ROM) removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_2/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_2/LUT2_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_2" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_16[5]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[5]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[5]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[5]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[5]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_5"
+(ROM) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_5/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_5/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_5" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_46_0[1]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_46_0[1]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_46_0[1]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_46[1]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[1]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[1]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[1]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[1]" is
+sourceless and has been removed.
+         Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_1"
+(ROM) removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_1/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_1/LUT2_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_1" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_22[4]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[4]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[4]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[4]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[4]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_4"
+(ROM) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_4/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_4/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_4" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_56_0[0]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_56_0[0]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_56_0[0]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_56[0]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[0]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[0]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[0]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[12]" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_103_0[9]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_103[9]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[9]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[9]" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_137_0[5]" (ROM)
+removed.
+    The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_137_0[5]/O" is
+sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_137_0[5]/LUT5_L_BUF"
+(BUF) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_137[5]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[5]" (FF)
+removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_97_0[10]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_97[10]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[10]"
+(FF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[10]" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_127_0[6]" (ROM)
+removed.
+    The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_127_0[6]/O" is
+sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_127_0[6]/LUT5_L_BUF"
+(BUF) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_127[6]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[6]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[6]" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_92_0[11]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_92[11]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[11]"
+(FF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[11]" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_118_0[7]" (ROM)
+removed.
+    The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_118_0[7]/O" is
+sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_118_0[7]/LUT5_L_BUF"
+(BUF) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_118[7]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[7]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[7]" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_88_0[12]" (ROM)
+removed.
+  The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_88_0[12]/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_88_0[12]/LUT2_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_88[12]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[12]"
+(FF) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[12]" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_110_0[8]" (ROM)
+removed.
+  The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_110_0[8]/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_110_0[8]/LUT6_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graydecode_1.graydecode_110[8]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[8]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[8]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[13]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[13]"
+(FF) removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/read_addr_writeside[13]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_8"
+(ROM) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_8/O" is
+sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_8/LUT2_L_BUF" (BUF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un3_fifostatus_w_axb_8" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[8]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[9]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[10]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[11]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[7]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[6]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[5]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[7]" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_386_0[4]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_386[4]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_readside[4]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/write_addr_readside[4]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_9"
+(ROM) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_9/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_9/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_9" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_420_0[0]" (ROM)
+removed.
+    The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_420_0[0]/O" is
+sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_420_0[0]/LUT5_L_BUF"
+(BUF) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_420[0]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_readside[0]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/write_addr_readside[0]" is
+sourceless and has been removed.
+         Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_5"
+(ROM) removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_5/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_5/LUT2_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_5" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_380_0[5]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_380[5]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_readside[5]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/write_addr_readside[5]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_10"
+(ROM) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_10/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_10/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_10" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_410_0[1]" (ROM)
+removed.
+    The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_410_0[1]/O" is
+sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_410_0[1]/LUT5_L_BUF"
+(BUF) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_410[1]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_readside[1]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/write_addr_readside[1]" is
+sourceless and has been removed.
+         Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_6"
+(ROM) removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_6/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_6/LUT2_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_6" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_375_0[6]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_375[6]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_readside[6]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/write_addr_readside[6]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_11"
+(ROM) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_11/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_11/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_11" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_401_0[2]" (ROM)
+removed.
+    The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_401_0[2]/O" is
+sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_401_0[2]/LUT5_L_BUF"
+(BUF) removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_401[2]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_readside[2]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/write_addr_readside[2]" is
+sourceless and has been removed.
+         Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_7"
+(ROM) removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_7/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_7/LUT2_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_7" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_371_0[7]" (ROM)
+removed.
+  The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_371_0[7]/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_371_0[7]/LUT2_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_371[7]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_readside[7]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/write_addr_readside[7]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_12"
+(ROM) removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_12/O" is
+sourceless and has been removed.
+         Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_12/LUT2_L_BUF" (BUF)
+removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_12" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_393_0[3]" (ROM)
+removed.
+  The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_393_0[3]/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_393_0[3]/LUT6_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graydecode_3.graydecode_393[3]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_readside[3]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/write_addr_readside[3]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_8"
+(ROM) removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_8/O" is
+sourceless and has been removed.
+         Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_8/LUT2_L_BUF" (BUF)
+removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_8" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[8]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_readside[8]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/write_addr_readside[8]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_13"
+(ROM) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_13/O" is
+sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_13/LUT2_L_BUF" (BUF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_13" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[3]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[4]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[5]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[6]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[2]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[1]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[0]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_230[12]"
+is sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[12]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[12]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[12]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[12]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray[3]" is sourceless
+and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_302_0[3]" (ROM)
+removed.
+  The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_302_0[3]/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_302_0[3]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_302[3]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[3]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[3]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[3]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[3]" is sourceless
+and has been removed.
+         Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_3"
+(ROM) removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_3/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_3/LUT1_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_3" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_315_0[2]" (ROM)
+removed.
+  The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_315_0[2]/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_315_0[2]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_315[2]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[2]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[2]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[2]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[2]" is sourceless
+and has been removed.
+         Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_2"
+(ROM) removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_2/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_2/LUT1_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_2" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_329_0[1]" (ROM)
+removed.
+  The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_329_0[1]/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_329_0[1]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_329[1]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[1]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[1]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[1]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[1]" is sourceless
+and has been removed.
+         Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_1"
+(ROM) removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_1/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_1/LUT1_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_1" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_344_0[0]" (ROM)
+removed.
+  The signal
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_344_0[0]/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_344_0[0]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_344[0]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[0]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[0]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[0]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray[4]" is sourceless
+and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_290_0[4]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_290[4]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[4]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[4]" is sourceless
+and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[4]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[4]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_4"
+(ROM) removed.
+        The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_4/O" is
+sourceless and has been removed.
+         Sourceless block
+"jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_4/LUT1_L_BUF" (BUF)
+removed.
+          The signal "jtag_iface/serial_iface/dout_fifo/un2_fifostatus_r_axb_4" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_260[7]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[7]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[7]" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[7]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[7]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray[2]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_269[6]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[6]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[6]" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[6]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[6]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray[1]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_279[5]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[5]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[5]" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[5]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[5]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addrgray[0]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[8]" is sourceless
+and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[8]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[8]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[9]" is sourceless
+and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[9]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[9]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[10]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[10]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[10]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[11]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[11]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[11]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[13]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[13]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_2_[13]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_252[8]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[8]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_245[9]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[9]" (FF)
+removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_279_0[5]" (ROM)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_239[10]"
+is sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[10]" (FF)
+removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_269_0[6]" (ROM)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_234[11]"
+is sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[11]" (FF)
+removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_260_0[7]" (ROM)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[8]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[8]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_2_[8]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr[0]" is sourceless and
+has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_351_0[0]" (ROM) removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_351_0[0]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_351_0[0]/LUT2_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_351[0]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/read_nextgray[0]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/read_nextgray[0]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addrgray[0]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr[1]" is sourceless and
+has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_350_0[1]" (ROM) removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_350_0[1]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_350_0[1]/LUT2_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_350[1]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/read_nextgray[1]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/read_nextgray[1]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addrgray[1]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr[2]" is sourceless and
+has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_349_0[2]" (ROM) removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_349_0[2]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_349_0[2]/LUT2_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_349[2]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/read_nextgray[2]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/read_nextgray[2]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addrgray[2]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr[3]" is sourceless and
+has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_348_0[3]" (ROM) removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_348_0[3]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_348_0[3]/LUT2_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_348[3]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/read_nextgray[3]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/read_nextgray[3]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addrgray[3]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr[4]" is sourceless and
+has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_347_0[4]" (ROM) removed.
+  The signal "jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_347_0[4]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_347_0[4]/LUT2_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/dout_fifo/graycode_10.graycode_347[4]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/dout_fifo/read_nextgray[4]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/dout_fifo/read_nextgray[4]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/dout_fifo/read_addrgray[4]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1__RNO[7]/O" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/write_addr_dly_1__RNO[7]/LUT2_L_BUF" (BUF)
+removed.
+The signal "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_29_0[3]/O"
+is sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_29_0[3]/LUT6_L_BUF"
+(BUF) removed.
+The signal "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1__RNO[12]/O" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/dout_fifo/read_addr_dly_1__RNO[12]/LUT2_L_BUF" (BUF)
+removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[13]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[12]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[11]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[10]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[9]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[8]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[7]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[6]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[5]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[4]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[3]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[2]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[1]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_w[0]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_r[8]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_r[7]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_r[6]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_r[5]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_r[4]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_r[3]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_r[2]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_r[1]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/fifostatus_r[0]" is sourceless and
+has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/almost_full" is sourceless and has
+been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/almost_full_RNO" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/almost_full_RNO/O" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/almost_full_RNO/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/N_307_i" is sourceless and has been
+removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/almost_full" (FF) removed.
+The signal "jtag_iface/serial_iface/din_fifo/almost_empty" is sourceless and has
+been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/almost_empty_RNO" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/almost_empty_RNO/O" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/almost_empty_RNO/LUT6_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/N_308_i" is sourceless and has been
+removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/almost_empty" (FF) removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addr_writeside[0]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_5" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_5" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_5" (MUX)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_5/O" is
+sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_5/MUXCY_L_BUF" (BUF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_5" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_6" (XOR)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_6" is sourceless
+and has been removed.
+         Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[6]" (FF)
+removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_6" (MUX)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_6/O" is
+sourceless and has been removed.
+         Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_6/MUXCY_L_BUF" (BUF)
+removed.
+          The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_6" is
+sourceless and has been removed.
+           Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_7" (XOR)
+removed.
+            The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_7" is sourceless
+and has been removed.
+             Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[7]" (FF)
+removed.
+           Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_7" (MUX)
+removed.
+            The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_7/O" is
+sourceless and has been removed.
+             Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_7/MUXCY_L_BUF" (BUF)
+removed.
+              The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_7" is
+sourceless and has been removed.
+               Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_8" (XOR)
+removed.
+                The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_8" is sourceless
+and has been removed.
+                 Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[8]" (FF)
+removed.
+               Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_8" (MUX)
+removed.
+                The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_8/O" is
+sourceless and has been removed.
+                 Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_8/MUXCY_L_BUF" (BUF)
+removed.
+                  The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_8" is
+sourceless and has been removed.
+                   Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_9" (XOR)
+removed.
+                    The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_9" is sourceless
+and has been removed.
+                     Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[9]" (FF)
+removed.
+                   Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_9" (MUX)
+removed.
+                    The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_9/O" is
+sourceless and has been removed.
+                     Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_9/MUXCY_L_BUF" (BUF)
+removed.
+                      The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_9" is
+sourceless and has been removed.
+                       Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_10" (XOR)
+removed.
+                        The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_10" is
+sourceless and has been removed.
+                         Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[10]" (FF)
+removed.
+                       Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_10"
+(MUX) removed.
+                        The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_10/O" is
+sourceless and has been removed.
+                         Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_10/MUXCY_L_BUF" (BUF)
+removed.
+                          The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_10" is
+sourceless and has been removed.
+                           Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_11" (XOR)
+removed.
+                            The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_11" is
+sourceless and has been removed.
+                             Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[11]" (FF)
+removed.
+                           Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_11"
+(MUX) removed.
+                            The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_11/O" is
+sourceless and has been removed.
+                             Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_11/MUXCY_L_BUF" (BUF)
+removed.
+                              The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_11" is
+sourceless and has been removed.
+                               Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_12" (XOR)
+removed.
+                                The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_12" is
+sourceless and has been removed.
+                                 Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[12]" (FF)
+removed.
+                               Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_12"
+(MUX) removed.
+                                The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_12/O" is
+sourceless and has been removed.
+                                 Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_12/MUXCY_L_BUF" (BUF)
+removed.
+                                  The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_cry_12" is
+sourceless and has been removed.
+                                   Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_13" (XOR)
+removed.
+                                    The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_13" is
+sourceless and has been removed.
+                                     Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[13]" (FF)
+removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_5_i"
+(ROM) removed.
+  The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_5_i/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_5_i/LUT2_L_BUF" (BUF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_5_i" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[5]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[5]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[0]" is sourceless
+and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_0" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_0" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_0" (MUX)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_0/O" is
+sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_0/MUXCY_L_BUF" (BUF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_0" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_1" (XOR)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_1" is sourceless
+and has been removed.
+         Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_r[1]" (FF)
+removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_1" (MUX)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_1/O" is
+sourceless and has been removed.
+         Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_1/MUXCY_L_BUF" (BUF)
+removed.
+          The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_1" is
+sourceless and has been removed.
+           Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_2" (XOR)
+removed.
+            The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_2" is sourceless
+and has been removed.
+             Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_r[2]" (FF)
+removed.
+           Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_2" (MUX)
+removed.
+            The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_2/O" is
+sourceless and has been removed.
+             Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_2/MUXCY_L_BUF" (BUF)
+removed.
+              The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_2" is
+sourceless and has been removed.
+               Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_3" (XOR)
+removed.
+                The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_3" is sourceless
+and has been removed.
+                 Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_r[3]" (FF)
+removed.
+               Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_3" (MUX)
+removed.
+                The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_3/O" is
+sourceless and has been removed.
+                 Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_3/MUXCY_L_BUF" (BUF)
+removed.
+                  The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_3" is
+sourceless and has been removed.
+                   Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_4" (XOR)
+removed.
+                    The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_4" is sourceless
+and has been removed.
+                     Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_r[4]" (FF)
+removed.
+                   Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_4" (MUX)
+removed.
+                    The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_4/O" is
+sourceless and has been removed.
+                     Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_4/MUXCY_L_BUF" (BUF)
+removed.
+                      The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_4" is
+sourceless and has been removed.
+                       Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_5" (XOR)
+removed.
+                        The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_5" is sourceless
+and has been removed.
+                         Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_r[5]" (FF)
+removed.
+                       Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_5" (MUX)
+removed.
+                        The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_5/O" is
+sourceless and has been removed.
+                         Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_5/MUXCY_L_BUF" (BUF)
+removed.
+                          The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_5" is
+sourceless and has been removed.
+                           Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_6" (XOR)
+removed.
+                            The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_6" is sourceless
+and has been removed.
+                             Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_r[6]" (FF)
+removed.
+                           Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_6" (MUX)
+removed.
+                            The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_6/O" is
+sourceless and has been removed.
+                             Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_6/MUXCY_L_BUF" (BUF)
+removed.
+                              The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_6" is
+sourceless and has been removed.
+                               Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_7" (XOR)
+removed.
+                                The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_7" is sourceless
+and has been removed.
+                                 Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_r[7]" (FF)
+removed.
+                               Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_7" (MUX)
+removed.
+                                The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_7/O" is
+sourceless and has been removed.
+                                 Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_7/MUXCY_L_BUF" (BUF)
+removed.
+                                  The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_cry_7" is
+sourceless and has been removed.
+                                   Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_8" (XOR)
+removed.
+                                    The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_s_8" is sourceless
+and has been removed.
+                                     Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_r[8]" (FF)
+removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_0_i_0"
+(ROM) removed.
+  The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_0_i_0/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_0_i_0/LUT2_L_BUF" (BUF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_0_i" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_r[0]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addr_readside[5]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[7]" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_163_0[4]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_163[4]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_writeside[4]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/read_addr_writeside[4]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_9" (ROM)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_9/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_9/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_9" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_197_0[0]" (ROM)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_197_0[0]/O"
+is sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_197_0[0]/LUT5_L_BUF"
+(BUF) removed.
+      The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_197[0]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_writeside[0]" (FF)
+removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_157_0[5]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_157[5]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_writeside[5]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/read_addr_writeside[5]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_10"
+(ROM) removed.
+      The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_10/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_10/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_10" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_187_0[1]" (ROM)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_187_0[1]/O"
+is sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_187_0[1]/LUT5_L_BUF"
+(BUF) removed.
+      The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_187[1]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_writeside[1]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/read_addr_writeside[1]" is
+sourceless and has been removed.
+         Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_6" (ROM)
+removed.
+          The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_6/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_6/LUT2_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_6" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_152_0[6]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_152[6]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_writeside[6]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/read_addr_writeside[6]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_11"
+(ROM) removed.
+      The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_11/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_11/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_11" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_178_0[2]" (ROM)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_178_0[2]/O"
+is sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_178_0[2]/LUT5_L_BUF"
+(BUF) removed.
+      The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_178[2]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_writeside[2]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/read_addr_writeside[2]" is
+sourceless and has been removed.
+         Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_7" (ROM)
+removed.
+          The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_7/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_7/LUT2_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_7" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_148_0[7]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_148_0[7]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_148_0[7]/LUT2_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_148[7]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_writeside[7]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/read_addr_writeside[7]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_12"
+(ROM) removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_12/O" is
+sourceless and has been removed.
+         Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_12/LUT2_L_BUF" (BUF)
+removed.
+          The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_12" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_170_0[3]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_170_0[3]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_170_0[3]/LUT6_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_1.graydecode_170[3]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_writeside[3]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/read_addr_writeside[3]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_8" (ROM)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_8/O" is
+sourceless and has been removed.
+         Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_8/LUT2_L_BUF" (BUF)
+removed.
+          The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_8" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[8]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_writeside[8]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/read_addr_writeside[8]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_13"
+(ROM) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_13/O" is
+sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_13/LUT2_L_BUF" (BUF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_axb_13" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[3]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[4]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[5]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[6]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[2]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[1]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[0]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_230[7]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[7]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[7]" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[7]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[7]" is sourceless
+and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_7" (ROM)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_7/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_7/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_7" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_252[3]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[3]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[3]" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[3]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[3]" is sourceless
+and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_3" (ROM)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_3/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_3/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_3" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_234[6]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[6]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[6]" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[6]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[6]" is sourceless
+and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_6" (ROM)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_6/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_6/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_6" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_260_0[2]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_260_0[2]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_260_0[2]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_260[2]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[2]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[2]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[2]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[2]" is sourceless
+and has been removed.
+         Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_2" (ROM)
+removed.
+          The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_2/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_2/LUT2_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_2" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_239[5]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[5]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[5]" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[5]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[5]" is sourceless
+and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_5" (ROM)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_5/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_5/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_5" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_269_0[1]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_269_0[1]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_269_0[1]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_269[1]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[1]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[1]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[1]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[1]" is sourceless
+and has been removed.
+         Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_1" (ROM)
+removed.
+          The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_1/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_1/LUT2_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_1" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_245[4]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[4]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[4]" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[4]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[4]" is sourceless
+and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_4" (ROM)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_4/O" is
+sourceless and has been removed.
+       Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_4/LUT2_L_BUF" (BUF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_4" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_279_0[0]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_279_0[0]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_279_0[0]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_279[0]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[0]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[0]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[0]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[12]" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_326_0[9]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_326[9]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_readside[9]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/write_addr_readside[9]" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_360_0[5]" (ROM)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_360_0[5]/O"
+is sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_360_0[5]/LUT5_L_BUF"
+(BUF) removed.
+      The signal "jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_360[5]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_readside[5]" (FF)
+removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_320_0[10]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_320[10]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_readside[10]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/write_addr_readside[10]" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_350_0[6]" (ROM)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_350_0[6]/O"
+is sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_350_0[6]/LUT5_L_BUF"
+(BUF) removed.
+      The signal "jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_350[6]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_readside[6]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/write_addr_readside[6]" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_315_0[11]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_315[11]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_readside[11]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/write_addr_readside[11]" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_341_0[7]" (ROM)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_341_0[7]/O"
+is sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_341_0[7]/LUT5_L_BUF"
+(BUF) removed.
+      The signal "jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_341[7]" is
+sourceless and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_readside[7]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/write_addr_readside[7]" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_311_0[12]" (ROM)
+removed.
+  The signal
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_311_0[12]/O" is
+sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_311_0[12]/LUT2_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_311[12]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_readside[12]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/write_addr_readside[12]" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_333_0[8]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_333_0[8]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_333_0[8]/LUT6_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_3.graydecode_333[8]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_readside[8]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/write_addr_readside[8]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[13]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_readside[13]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/write_addr_readside[13]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_8" (ROM)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_8/O" is
+sourceless and has been removed.
+     Sourceless block
+"jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_8/LUT2_L_BUF" (BUF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/un2_fifostatus_r_axb_8" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[8]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[9]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[10]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[11]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[7]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[6]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[5]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_7[12]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[12]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[12]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[12]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[12]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray[3]" is sourceless
+and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_79_0[3]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_79_0[3]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_79_0[3]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_79[3]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[3]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[3]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[3]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[3]" is sourceless
+and has been removed.
+         Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_3" (ROM)
+removed.
+          The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_3/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_3/LUT1_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_3" is sourceless
+and has been removed.
+             Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[3]" (FF)
+removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_92_0[2]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_92_0[2]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_92_0[2]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_92[2]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[2]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[2]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[2]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[2]" is sourceless
+and has been removed.
+         Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_2" (ROM)
+removed.
+          The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_2/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_2/LUT1_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_2" is sourceless
+and has been removed.
+             Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[2]" (FF)
+removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_106_0[1]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_106_0[1]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_106_0[1]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_106[1]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[1]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[1]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[1]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[1]" is sourceless
+and has been removed.
+         Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_1" (ROM)
+removed.
+          The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_1/O" is
+sourceless and has been removed.
+           Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_1/LUT1_L_BUF" (BUF)
+removed.
+            The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_1" is sourceless
+and has been removed.
+             Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[1]" (FF)
+removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_121_0[0]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_121_0[0]/O"
+is sourceless and has been removed.
+   Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_121_0[0]/LUT5_L_BUF"
+(BUF) removed.
+    The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_121[0]" is
+sourceless and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[0]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[0]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[0]" (FF)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[0]" is sourceless
+and has been removed.
+         Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[0]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray[4]" is sourceless
+and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_67_0[4]" (ROM)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_67[4]" is
+sourceless and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[4]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[4]" is sourceless
+and has been removed.
+     Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[4]" (FF)
+removed.
+      The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[4]" is sourceless
+and has been removed.
+       Sourceless block "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_4" (ROM)
+removed.
+        The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_4/O" is
+sourceless and has been removed.
+         Sourceless block
+"jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_4/LUT1_L_BUF" (BUF)
+removed.
+          The signal "jtag_iface/serial_iface/din_fifo/un3_fifostatus_w_s_4" is sourceless
+and has been removed.
+           Sourceless block "jtag_iface/serial_iface/din_fifo/fifostatus_w[4]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_37[7]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[7]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[7]" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[7]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[7]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray[2]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_46[6]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[6]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[6]" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[6]" (FF)
+removed.
+    The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[6]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray[1]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_56[5]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[5]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[5]" is sourceless
+and has been removed.
+   Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[5]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addrgray[0]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[8]" is sourceless
+and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[8]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[8]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[9]" is sourceless
+and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[9]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[9]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[10]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[10]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[10]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[11]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[11]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[11]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[13]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[13]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_2_[13]" is
+sourceless and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_29[8]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[8]" (FF)
+removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_22[9]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[9]" (FF)
+removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_56_0[5]" (ROM)
+removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_16[10]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[10]" (FF)
+removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_46_0[6]" (ROM)
+removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_11[11]" is
+sourceless and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[11]" (FF)
+removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_37_0[7]" (ROM)
+removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[8]" is sourceless
+and has been removed.
+ Sourceless block "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[8]" (FF)
+removed.
+  The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_2_[8]" is sourceless
+and has been removed.
+The signal "jtag_iface/serial_iface/din_fifo/read_addr_dly_1__RNO[7]/O" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/read_addr_dly_1__RNO[7]/LUT2_L_BUF" (BUF)
+removed.
+The signal "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_252_0[3]/O"
+is sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_252_0[3]/LUT6_L_BUF"
+(BUF) removed.
+The signal "jtag_iface/serial_iface/din_fifo/write_addr_dly_1__RNO[12]/O" is
+sourceless and has been removed.
+ Sourceless block
+"jtag_iface/serial_iface/din_fifo/write_addr_dly_1__RNO[12]/LUT2_L_BUF" (BUF)
+removed.
+The signal "sysgen_hwcosim_iface/sysgen_dut/persistentdff_inst_q" is sourceless
+and has been removed.
+ Sourceless block "sysgen_hwcosim_iface/sysgen_dut/persistentdff_inst/q" (FF)
+removed.
+The signal
+"sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub18/comp0.core_instance0/
+s(46)" is sourceless and has been removed.
+The signal
+"sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub19/comp0.core_instance0/
+s(46)" is sourceless and has been removed.
+The signal
+"sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub20/comp0.core_instance0/
+s(46)" is sourceless and has been removed.
+The signal
+"sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub21/comp0.core_instance0/
+s(46)" is sourceless and has been removed.
+The signal
+"sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub22/comp0.core_instance0/
+s(46)" is sourceless and has been removed.
+The signal
+"sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub23/comp0.core_instance0/
+s(46)" is sourceless and has been removed.
+The signal
+"sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub24/comp0.core_instance0/
+s(46)" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "N0" is unused and has been removed.
+ Unused block "XST_VCC" (ONE) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_11_0[11]"
+(ROM) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_16_0[10]"
+(ROM) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_22_0[9]"
+(ROM) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/graydecode_0.graydecode_29_0[8]"
+(ROM) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_234_0[6]"
+(ROM) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_239_0[5]"
+(ROM) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_245_0[4]"
+(ROM) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/graydecode_2.graydecode_252_0[3]"
+(ROM) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/read_addr_dly_1_[8]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/read_addr_dly_1__RNO[7]" (ROM)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[0]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[1]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[2]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[3]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[4]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[5]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[6]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[7]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/read_addrgray_writeside[8]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1_[13]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addr_dly_1__RNO[12]" (ROM)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray[0]" (FF) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray[1]" (FF) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray[2]" (FF) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray[3]" (FF) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray[4]" (FF) removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[10]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[11]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[12]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[13]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[5]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[6]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[7]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[8]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/din_fifo/write_addrgray_readside[9]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/VCC" (ONE) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_11_0[6]"
+(ROM) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_16_0[5]"
+(ROM) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_22_0[4]"
+(ROM) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/graydecode_0.graydecode_29_0[3]"
+(ROM) removed.
+Unused block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_234_0[11]" (ROM)
+removed.
+Unused block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_239_0[10]" (ROM)
+removed.
+Unused block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_245_0[9]" (ROM)
+removed.
+Unused block
+"jtag_iface/serial_iface/dout_fifo/graydecode_2.graydecode_252_0[8]" (ROM)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addr[0]" (FF) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addr[1]" (FF) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addr[2]" (FF) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addr[3]" (FF) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addr[4]" (FF) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1_[13]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addr_dly_1__RNO[12]" (ROM)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[10]"
+(FF) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[11]"
+(FF) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[12]"
+(FF) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[13]"
+(FF) removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[5]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[6]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[7]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[8]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/read_addrgray_writeside[9]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1_[8]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/write_addr_dly_1__RNO[7]" (ROM)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[0]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[1]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[2]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[3]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[4]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[5]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[6]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[7]" (FF)
+removed.
+Unused block "jtag_iface/serial_iface/dout_fifo/write_addrgray_readside[8]" (FF)
+removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+GND 		jtag_iface/XST_GND
+VCC 		jtag_iface/XST_VCC
+GND 		jtag_iface/serial_iface/din_fifo/GND
+VCC 		jtag_iface/serial_iface/din_fifo/VCC
+GND 		jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/GND
+VCC 		jtag_iface/serial_iface/din_fifo/genblk1.RAM.blockram/VCC
+GND 		jtag_iface/serial_iface/dout_fifo/GND
+GND 		jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/GND
+VCC 		jtag_iface/serial_iface/dout_fifo/genblk1.RAM.blockram/VCC
+GND 		sysgen_hwcosim_iface/sysgen_dut/XST_GND
+VCC 		sysgen_hwcosim_iface/sysgen_dut/XST_VCC
+VCC
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub18/comp0.core_instance0
+/blk00000001/blk00000002
+GND
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub18/comp0.core_instance0
+/blk00000001/blk00000003
+VCC
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub19/comp0.core_instance0
+/blk00000001/blk00000002
+GND
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub19/comp0.core_instance0
+/blk00000001/blk00000003
+VCC
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub20/comp0.core_instance0
+/blk00000001/blk00000002
+GND
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub20/comp0.core_instance0
+/blk00000001/blk00000003
+VCC
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub21/comp0.core_instance0
+/blk00000001/blk00000002
+GND
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub21/comp0.core_instance0
+/blk00000001/blk00000003
+VCC
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub22/comp0.core_instance0
+/blk00000001/blk00000002
+GND
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub22/comp0.core_instance0
+/blk00000001/blk00000003
+VCC
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub23/comp0.core_instance0
+/blk00000001/blk00000002
+GND
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub23/comp0.core_instance0
+/blk00000001/blk00000003
+VCC
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub24/comp0.core_instance0
+/blk00000001/blk00000002
+GND
+		sysgen_hwcosim_iface/sysgen_dut/dac_mod_5_sim_x0/addsub24/comp0.core_instance0
+/blk00000001/blk00000003
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 11 - Timing Report
+--------------------------
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more 
+   information, see the TSI report.  Please consult the Xilinx Command Line 
+   Tools User Guide for information on generating a TSI report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+Number of Timing Constraints that were not applied: 1
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_hwcosim_sys_clk = PERIOD TIMEGRP "hwco | SETUP       |   -15.235ns|    17.269ns|    1009|     9659801
+  sim_sys_clk" 491.52 MHz HIGH 50%          | HOLD        |     0.132ns|            |       0|           0
+                                            | MINPERIOD   |    -1.090ns|     3.124ns|       2|        2180
+----------------------------------------------------------------------------------------------------------
+  TS_clk_3a27f2d5 = PERIOD TIMEGRP "clk_3a2 | MINPERIOD   |     1.604ns|     0.430ns|       0|           0
+  7f2d5" 2.03450521 ns HIGH 50%             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_J_TO_U = MAXDELAY FROM TIMEGRP "J_CLK" | SETUP       |    13.903ns|     1.097ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.257ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  NET "jtag_iface/drck" PERIOD = 30 ns HIGH | SETUP       |    28.299ns|     1.701ns|       0|           0
+   50%                                      | HOLD        |     0.132ns|            |       0|           0
+                                            | MINPERIOD   |    26.876ns|     3.124ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sys_clk                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

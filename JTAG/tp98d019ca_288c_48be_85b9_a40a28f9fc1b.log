@@ -1,0 +1,40 @@
+if { [catch {vsimulink top_fpga -t 1ps -novopt  } errmsg] } {
+    echo "Loading simulation and HDL Verifier library failed."; 
+    echo $errmsg; 
+    quit -f; 
+}
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim 
+# Start time: 18:07:41 on Jan 07,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.top_fpga(behavioral)
+# Loading work.eight_order_delta_sigma_modulator(rtl)
+# ** Fatal: (vsim-3817) Port "Baseband_signal" of entity "eight_order_delta_sigma_modulator" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /top_fpga/U1 File: C:/FIL/JTAG/DSM_SIM/Eight_order_delta_sigma_modulator.vhd Line: 45
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design
+#        Executing onElabError command(s): echo "Loading simulation and HDL Verifier library failed."; quit -f
+# Loading simulation and HDL Verifier library failed.
+# End time: 18:07:41 on Jan 07,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

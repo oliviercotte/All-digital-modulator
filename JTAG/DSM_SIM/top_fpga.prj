@@ -1,0 +1,3 @@
+vhdl work "MATLAB_Function.vhd"
+vhdl work "Eight_order_delta_sigma_modulator.vhd"
+vhdl work "top_fpga.vhd"

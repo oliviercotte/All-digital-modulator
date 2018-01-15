@@ -1,0 +1,3 @@
+LIBRARY MASH_sfun.mexw64
+EXPORTS
+mexFunction

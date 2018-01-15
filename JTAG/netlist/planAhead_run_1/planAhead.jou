@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Jan 09 07:39:25 2018
+# Process ID: 3820
+# Log file: C:/FIL/JTAG/netlist/planAhead_run_1/planAhead.log
+# Journal file: C:/FIL/JTAG/netlist/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/FIL/JTAG/netlist/pa.fromNcd.tcl
